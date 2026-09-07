@@ -70,21 +70,9 @@
         "accordion_EE6Ypn": {
           "type": "accordion",
           "settings": {
-            "title": "Description",
-            "icon": "",
-            "content": "<p>The SIHOO Doro C300 Pro V2 is designed to adapt to the way you sit, work and unwind. Featuring SIHOO's next-generation DynaCore™ Full-Body Support System, it synchronises the headrest, backrest, lumbar support and armrests to move naturally with your body. Whether you're working long hours, attending meetings or taking a well-earned break, the Doro C300 Pro V2 delivers personalised ergonomic comfort throughout the day.</p>",
-            "page": "",
-            "custom_liquid": "",
-            "open": false,
-            "show_in_quickbuy": false
-          }
-        },
-        "accordion_P6igYg": {
-          "type": "accordion",
-          "settings": {
             "title": "Features",
             "icon": "",
-            "content": "<p><strong>DynaCore™ Full-Body Support System: </strong>Keeps your head, back, lumbar region and arms aligned as your body naturally changes position.</p><p><strong>SyncroFlex™ Back-Glide System: </strong>Follows your spine as you recline, delivering continuous support without constant manual adjustments.</p><p><strong>Self-Adaptive Dynamic Lumbar Support 2.0: </strong>Enhanced dual lumbar support responds to your movements, helping reduce pressure on your lower back throughout the day.</p><p><strong>8D Bionic Armrests: </strong>Adjust in multiple directions to provide ergonomic support while typing, gaming, reading or relaxing.</p><p><strong>Ultra-Wide Adjustable Headrest: </strong>Offers broader neck support with multi-directional adjustment for improved comfort in both upright and reclined positions.</p><p><strong>Waterfall Seat with Adjustable Depth: </strong>Distributes pressure more evenly while allowing a personalised seating position for different body types.</p>",
+            "content": "<p><strong>Dual lumbar support</strong>: Adapts to your movements for all-day lower back comfort.</p><p><strong>Adjustable backrest and headrest</strong>: Raise the headrest for neck support while relaxing, or lower it to focus on back and lumbar support while working—your choice for personalized comfort.</p><p><strong>Recline up to 135°</strong>: Lean back with lumbar support that moves with you for easy relaxation.</p><p><strong>Pressure-free seat</strong>: Waterfall-shaped cushion relieves pressure on your thighs and hips.</p><p><strong>Breathable mesh</strong>: Stay cool and comfortable with durable, airflow-promoting mesh.</p><p><strong>Easy seat depth adjustment</strong>: Adjust the seat depth to fit your height for better leg support.</p><p><strong>4D armrests</strong>: Move them up, down, back, forth, and sideways for personalized comfort.</p><p><strong>Built to last</strong>: Certified by BIFMA and SGS for safety and quality.</p>",
             "page": "",
             "custom_liquid": "",
             "open": false,
@@ -96,7 +84,7 @@
           "settings": {
             "title": "Benefits",
             "icon": "",
-            "content": "<ul><li><strong>Ergonomic Support That Moves With You: </strong>Unlike traditional office chairs, the Doro C300 Pro V2 adapts as you move, helping maintain consistent support throughout your workday.</li><li><strong>Personalised Comfort From the First Sit:</strong> Intelligent ergonomic adjustments automatically work with your posture, creating a seating experience tailored to your body.</li><li><strong>Built for Long Hours: </strong>Designed for professionals, remote workers, students and gamers who spend extended periods at their desk.</li><li><strong>Comfort in Every Position: </strong>Whether you're focused on work, collaborating in meetings or reclining during a break, the chair continues to provide balanced support.</li><li><strong>Premium Quality for Everyday Use: </strong>Constructed with durable materials and rigorously tested components to deliver reliable ergonomic performance for years to come.</li></ul>",
+            "content": "<ul><li>Supports up to 330 lbs</li><li>Endorsed by Gamerant, GeekDad, Gamezebo, Designboom and more than 800 media approvals</li><li>4D adjustable armrests and multi-adjustable headrest for personalized comfort</li><li>Dual dynamic lumbar support for consistent lower back support</li><li>Breathable mesh and waterfall-shaped seat for ergonomic comfort</li><li>Reclines up to 135° for effortless relaxation</li><li>Certified by BIFMA and SGS for quality and durability</li></ul>",
             "page": "",
             "custom_liquid": "",
             "open": false,
@@ -126,7 +114,6 @@
         "buy-buttons",
         "description",
         "accordion_EE6Ypn",
-        "accordion_P6igYg",
         "accordion_PQkFaa",
         "spec_compare_specification_table_hCWNKg"
       ],
@@ -163,22 +150,22 @@
         "media_grouping_option": "Color,Colour,Couleur,Farbe"
       }
     },
-    "custom_main_product_KyFbga": {
+    "custom_main_product_Jkb3zp": {
       "type": "custom-main-product",
       "blocks": {
-        "reviews_wtrcPW": {
+        "reviews_9XzTh4": {
           "type": "reviews",
           "settings": {
-            "label": "review",
+            "label": "reviews",
             "show_when_empty": false,
             "empty_label": "reviews"
           }
         },
-        "title_Vhrb3b": {
+        "title_C6PnGM": {
           "type": "title",
           "settings": {}
         },
-        "price_Hi7Bc7": {
+        "price_bhNgMH": {
           "type": "price",
           "settings": {
             "show_tax_and_shipping": false,
@@ -188,22 +175,22 @@
             "low_stock_label": "LOW ON STOCK"
           }
         },
-        "demand_alert_9tnVfK": {
+        "demand_alert_NFxemk": {
           "type": "demand-alert",
           "settings": {
             "title": "HIGH DEMAND",
             "text": "Extended dispatch: Please allow an additional 5–7 business days before your order is shipped.",
-            "show_for": "all",
-            "variants": ""
+            "show_for": "specific",
+            "variants": "Dark Grey"
           }
         },
-        "shipping_note_TaKnaK": {
+        "shipping_note_6xwLMR": {
           "type": "shipping-note",
           "settings": {
             "text": "Free shipping with delivery in 1-5 days"
           }
         },
-        "variant_picker_rmC9cY": {
+        "variant_picker_PGdwDL": {
           "type": "variant-picker",
           "settings": {
             "show_single": false,
@@ -215,7 +202,7 @@
             "size_chart_page": ""
           }
         },
-        "buy_buttons_UPr6Lx": {
+        "buy_buttons_AJDtwj": {
           "type": "buy-buttons",
           "settings": {
             "show_quantity_selector": true,
@@ -227,7 +214,7 @@
             "show_gift_card_recipient": false
           }
         },
-        "trust_badges_ftFawU": {
+        "trust_badges_qeWtK8": {
           "type": "trust-badges",
           "settings": {
             "badge_1_icon": "award",
@@ -238,36 +225,24 @@
             "badge_3_text": "Free Shipping"
           }
         },
-        "accordion_C7tCNH": {
-          "type": "accordion",
-          "settings": {
-            "title": "Description",
-            "icon": "",
-            "content": "<p>The SIHOO Doro C300 Pro V2 is designed to adapt to the way you sit, work and unwind. Featuring SIHOO's next-generation DynaCore™ Full-Body Support System, it synchronises the headrest, backrest, lumbar support and armrests to move naturally with your body. Whether you're working long hours, attending meetings or taking a well-earned break, the Doro C300 Pro V2 delivers personalised ergonomic comfort throughout the day.</p>",
-            "page": "",
-            "custom_liquid": "",
-            "open": false,
-            "show_in_quickbuy": false
-          }
-        },
-        "accordion_yxpT6n": {
+        "accordion_fBFBKr": {
           "type": "accordion",
           "settings": {
             "title": "Features",
             "icon": "",
-            "content": "<p><strong>DynaCore™ Full-Body Support System: </strong>Keeps your head, back, lumbar region and arms aligned as your body naturally changes position.</p><p><strong>SyncroFlex™ Back-Glide System: </strong>Follows your spine as you recline, delivering continuous support without constant manual adjustments.</p><p><strong>Self-Adaptive Dynamic Lumbar Support 2.0: </strong>Enhanced dual lumbar support responds to your movements, helping reduce pressure on your lower back throughout the day.</p><p><strong>8D Bionic Armrests: </strong>Adjust in multiple directions to provide ergonomic support while typing, gaming, reading or relaxing.</p><p><strong>Ultra-Wide Adjustable Headrest: </strong>Offers broader neck support with multi-directional adjustment for improved comfort in both upright and reclined positions.</p><p><strong>Waterfall Seat with Adjustable Depth: </strong>Distributes pressure more evenly while allowing a personalised seating position for different body types.</p>",
+            "content": "<p><strong>Dual lumbar support</strong>: Adapts to your movements for all-day lower back comfort.</p><p><strong>Adjustable backrest and headrest</strong>: Raise the headrest for neck support while relaxing, or lower it to focus on back and lumbar support while working—your choice for personalized comfort.</p><p><strong>Recline up to 135°</strong>: Lean back with lumbar support that moves with you for easy relaxation.</p><p><strong>Pressure-free seat</strong>: Waterfall-shaped cushion relieves pressure on your thighs and hips.</p><p><strong>Breathable mesh</strong>: Stay cool and comfortable with durable, airflow-promoting mesh.</p><p><strong>Easy seat depth adjustment</strong>: Adjust the seat depth to fit your height for better leg support.</p><p><strong>4D armrests</strong>: Move them up, down, back, forth, and sideways for personalized comfort.</p><p><strong>Built to last</strong>: Certified by BIFMA and SGS for safety and quality.</p>",
             "page": "",
             "custom_liquid": "",
             "open": false,
             "show_in_quickbuy": false
           }
         },
-        "accordion_99VbeP": {
+        "accordion_GxXei8": {
           "type": "accordion",
           "settings": {
             "title": "Benefits",
             "icon": "",
-            "content": "<ul><li><strong>Ergonomic Support That Moves With You: </strong>Unlike traditional office chairs, the Doro C300 Pro V2 adapts as you move, helping maintain consistent support throughout your workday.</li><li><strong>Personalised Comfort From the First Sit:</strong> Intelligent ergonomic adjustments automatically work with your posture, creating a seating experience tailored to your body.</li><li><strong>Built for Long Hours: </strong>Designed for professionals, remote workers, students and gamers who spend extended periods at their desk.</li><li><strong>Comfort in Every Position: </strong>Whether you're focused on work, collaborating in meetings or reclining during a break, the chair continues to provide balanced support.</li><li><strong>Premium Quality for Everyday Use: </strong>Constructed with durable materials and rigorously tested components to deliver reliable ergonomic performance for years to come.</li></ul>",
+            "content": "<ul><li>Supports up to 330 lbs</li><li>Endorsed by Gamerant, GeekDad, Gamezebo, Designboom and more than 800 media approvals</li><li>4D adjustable armrests and multi-adjustable headrest for personalized comfort</li><li>Dual dynamic lumbar support for consistent lower back support</li><li>Breathable mesh and waterfall-shaped seat for ergonomic comfort</li><li>Reclines up to 135° for effortless relaxation</li><li>Certified by BIFMA and SGS for quality and durability</li></ul>",
             "page": "",
             "custom_liquid": "",
             "open": false,
@@ -276,17 +251,16 @@
         }
       },
       "block_order": [
-        "reviews_wtrcPW",
-        "title_Vhrb3b",
-        "price_Hi7Bc7",
-        "demand_alert_9tnVfK",
-        "shipping_note_TaKnaK",
-        "variant_picker_rmC9cY",
-        "buy_buttons_UPr6Lx",
-        "trust_badges_ftFawU",
-        "accordion_C7tCNH",
-        "accordion_yxpT6n",
-        "accordion_99VbeP"
+        "reviews_9XzTh4",
+        "title_C6PnGM",
+        "price_bhNgMH",
+        "demand_alert_NFxemk",
+        "shipping_note_6xwLMR",
+        "variant_picker_PGdwDL",
+        "buy_buttons_AJDtwj",
+        "trust_badges_qeWtK8",
+        "accordion_fBFBKr",
+        "accordion_GxXei8"
       ],
       "name": "Custom product",
       "settings": {
@@ -295,11 +269,11 @@
         "demand_bg": "#fff8e8",
         "demand_border": "#e8c46a",
         "shipping_color": "#1f9d55",
-        "trust_color": "#6B7C8A",
+        "trust_color": "#6b7c8a",
         "show_breadcrumbs": false,
         "select_first_variant": true,
         "show_location_underneath": false,
-        "inventory_transfers_enable": false,
+        "inventory_transfers_enable": true,
         "enable_sticky_columns": true,
         "enable_sticky_atc": true,
         "sticky_atc_position": "center",
@@ -325,7 +299,7 @@
           "settings": {
             "hide_image": true,
             "title": "",
-            "description": "<h3>Overview</h3><p>The SIHOO Doro C300 Pro V2 combines intelligent ergonomic design with premium adjustability to deliver personalised support throughout your day. Featuring the advanced DynaCore™ Full-Body Support System, it adapts naturally to your movements while helping promote better posture, improved comfort and reduced fatigue during long hours of work, study or gaming.<br/><br/><strong>Product Name:</strong> SIHOO Doro C300 Pro V2 Ergonomic Office Chair<br/><br/><strong>Support System:</strong> DynaCore™ Full-Body Support System<br/><br/><strong>Materials:</strong> Premium elastic mesh back and seat with soft PU-coated armrests<br/><br/><strong>Assembly:</strong> Simple assembly required<br/><br/><strong>Net Weight: </strong>59.64 lbs<br/><br/><strong>Gross Weight: </strong>75.22 lbs<br/><br/><strong>Warranty</strong>: (3) years warranty</p>",
+            "description": "<h3>Overview</h3><p>Doro S100 moves with you, offering gentle, personalized lower back support and comfort in any position, with easy adjustments to fit your needs.</p><p><strong>Name</strong>: Doro-S100 Ergonomic Chair</p><p><strong>General Dimensions</strong>: 67 cm W x 70 cm D x 111 cm -126 cm H</p><p><strong>Product Weight</strong>: 22.3 kg</p><p><strong>Assembly</strong>: Requires assembly</p><p><strong>Materials</strong>: Mesh back and seat, soft PU coated armrests</p><p><strong>Maximum load</strong>: 150 kg</p><p><strong>Warranty</strong>: (3) years warranty</p>",
             "note": ""
           }
         },
@@ -333,9 +307,9 @@
           "type": "column",
           "settings": {
             "hide_image": false,
-            "image": "shopify://shop_images/1_5d9bb365-c711-433a-bc10-b417fe998ae0.jpg",
+            "image": "shopify://shop_images/S100-white-2.png",
             "title": "",
-            "description": "<p><strong>Backrest Height:</strong> 52.1 cm – 59.2 cm (20.5\" – 23.3\")</p><p><strong>Seat Depth:</strong> 42.9 cm – 47.0 cm (16.9\" – 18.5\")</p><p><strong>Seat Width:</strong> 52.1 cm (20.5\")</p><p><strong>Maximum Load:</strong> 150 kg (330 lbs)</p><p><strong>Armrests:</strong> 8D Bionic Armrests</p><p><strong>Backrest:</strong> SyncroFlex™ Back-Glide System</p><p><strong>Lumbar Support:</strong> Domino™ Sacral-Lumbar Support</p><p><strong>Recline Angles:</strong> 105°, 120° and 135°</p><p><strong>Seat Adjustment:</strong> 4 cm (1.6\") Seat Depth Adjustment</p>",
+            "description": "<p><strong>Chair back lifting height</strong>: 46.0 cm - 54.0 cm</p><p><strong>Seat depth</strong>: 38.5 cm - 43.5 cm</p><p><strong>Max hip width</strong>: 51.0 cm</p><p><strong>Maximum load</strong>: 150 kg</p><p><strong>Armrests</strong>: 4D coordinated armrests (Up and down, left, right, forward and backward, tilt linkage)</p>",
             "note": ""
           }
         },
@@ -343,7 +317,7 @@
           "type": "column",
           "settings": {
             "hide_image": false,
-            "image": "shopify://shop_images/2_695eede1-2dad-4265-9a55-fd00c1e7cd3a.jpg",
+            "image": "shopify://shop_images/S100-white.png",
             "title": "",
             "description": "<h3>Ergonomic Tech</h3><p><a href=\"https://youtu.be/d3BINOBo7Qs\" target=\"_blank\" title=\"https://youtu.be/d3BINOBo7Qs\">Installation Guide</a></p><p><a href=\"https://youtu.be/nnSIia7XDSA\" target=\"_blank\" title=\"https://youtu.be/nnSIia7XDSA\">Adjustment Guide</a></p><p><a href=\"https://cdn.shopify.com/s/files/1/0509/7819/3602/files/S100_c211194c-b449-45e0-92ef-7f337fcc575c.pdf?v=1776940592\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0509/7819/3602/files/S100_c211194c-b449-45e0-92ef-7f337fcc575c.pdf?v=1776940592\">Download Manual</a></p>",
             "note": ""
@@ -360,7 +334,7 @@
       ],
       "name": "Custom Multi-Column",
       "settings": {
-        "heading": "Sihoo Doro C300 Pro V2 Ergonomic Chair Specifications",
+        "heading": "Ergonomic Chair Specifications",
         "background_color": "#ffffff",
         "heading_color": "#1a1a1a",
         "card_background_color": "#f5f5f5",
@@ -413,7 +387,7 @@
       "type": "background-video",
       "name": "Background video",
       "settings": {
-        "video_external": "https://youtu.be/4FzlrQcUQCI",
+        "video_external": "https://youtu.be/552SU6d0c6E",
         "video_description": "",
         "text_alignment": "center center",
         "height_desktop": 700,
@@ -428,29 +402,29 @@
         "feature_GKNPQE": {
           "type": "feature",
           "settings": {
-            "image": "shopify://shop_images/3_6c1fc66a-6bfd-4bb6-9d90-3c22a1a6e135.png",
-            "label": "DynaCore™ Full-Body Support"
+            "image": "shopify://shop_images/dual-dynamic.png",
+            "label": "Dual Dynamic Lumbar Support"
           }
         },
         "feature_aeHDTM": {
           "type": "feature",
           "settings": {
-            "image": "shopify://shop_images/2_ff406c59-c6ba-4512-8c20-f10884f0fd2a.png",
-            "label": "SyncroFlex™ Back-Glide System"
+            "image": "shopify://shop_images/backrest.png",
+            "label": "Independent Backrest"
           }
         },
         "feature_ztX9nK": {
           "type": "feature",
           "settings": {
-            "image": "shopify://shop_images/15_7908b278-efa8-4de1-a492-0f370618267a.png",
-            "label": "8D Bionic Armrests"
+            "image": "shopify://shop_images/222.png",
+            "label": "4D Coordinated Armrest"
           }
         },
         "feature_q663PK": {
           "type": "feature",
           "settings": {
-            "image": "shopify://shop_images/6_dedca28f-527d-451a-a29c-cdde72ec0d9f.png",
-            "label": "Ultra-Wide 3D Adjustable Headrest"
+            "image": "shopify://shop_images/444.png",
+            "label": "Premium Elastic Mesh"
           }
         }
       },
@@ -461,11 +435,12 @@
         "feature_q663PK"
       ],
       "custom_css": [
-        ".product-promo-gallery .gallery-item-image {aspect-ratio: 0 !important;}"
+        ".product-promo-gallery .gallery-item-image {aspect-ratio: 0 !important;}",
+        ".product-promo-gallery .gallery-item-image img {height: 150px !important; object-fit: contain !important;}"
       ],
       "name": "Product promo gallery",
       "settings": {
-        "heading": "SIHOO Doro C300 Pro V2 Ergonomic Chair Features",
+        "heading": "Sihoo S100 Ergonomic Chair Features",
         "background_color": "#ffffff",
         "heading_color": "#2a2a2a",
         "text_color": "#2a2a2a",
@@ -478,17 +453,15 @@
         "testimonial_payBD6": {
           "type": "testimonial",
           "settings": {
-            "quote": "\"The Doro C300 Pro V2 was built with comfort in mind. Its DynaCore system gives you full-body dynamic support—not just in the back, but in the headrest, lumbar, and armrests too. And with SyncroFlex, the chair moves with you, so you’re not constantly readjusting your fit.\"",
-            "avatar": "shopify://shop_images/2018_Linus_Tech_Tips_logo_svg.avif",
-            "author": "Linus Tech Tips",
-            "source": "Top Tech Review Channel"
+            "quote": "The most noticeable aspect of the S100 is its split lower lumbar support, which flexes along with body movements.",
+            "author": "Adam Corsetti",
+            "source": "from gamerant, doro S100 review"
           }
         }
       },
       "block_order": [
         "testimonial_payBD6"
       ],
-      "custom_css": [],
       "name": "Product testimonial",
       "settings": {
         "background_color": "#171717",
@@ -550,9 +523,9 @@
           "type": "column",
           "settings": {
             "hide_image": false,
-            "image": "shopify://shop_images/1_314acf5e-be17-404f-b491-d8209ff2988a.webp",
-            "title": "Stay Comfortable Through Long Workdays",
-            "description": "<p>Designed to reduce pressure on your back, shoulders and hips, helping you stay focused and comfortable during extended hours at your desk.</p>",
+            "image": "shopify://shop_images/3.webp",
+            "title": "",
+            "description": "<h3>Wide spacious headrest</h3><p>Doro S100 provides a 5cm (1.97 in) seat<br/>depth adjustment range, ensuring<br/>comfortable support for your thighs and<br/>hips, regardless of your size.</p>",
             "note": ""
           }
         },
@@ -560,9 +533,9 @@
           "type": "column",
           "settings": {
             "hide_image": false,
-            "image": "shopify://shop_images/3_7fb71e38-2535-4d1d-b603-dd3ef847b47a.webp",
-            "title": "Find Your Perfect Sitting Position",
-            "description": "<p>Multiple adjustment points allow you to fine-tune the chair to suit your body, working style and preferred sitting posture.</p>",
+            "image": "shopify://shop_images/4.webp",
+            "title": "",
+            "description": "<h3>Full-back comfort for any size</h3><p>The headrest perfectly contours to the curve of your neck while providing a generously sized surface. You can comfortably rest your head on the side and relax during your work.</p>",
             "note": ""
           }
         },
@@ -570,9 +543,9 @@
           "type": "column",
           "settings": {
             "hide_image": false,
-            "image": "shopify://shop_images/2_63cc04fb-90d9-4773-ab00-1ae82a005fe3.webp",
-            "title": "Work, Create and Relax in Comfort",
-            "description": "<p>From focused work sessions to video calls and well-earned breaks, the Doro C300 Pro V2 delivers ergonomic comfort that adapts to the way you use your workspace.</p>",
+            "image": "shopify://shop_images/5.webp",
+            "title": "",
+            "description": "<h3>4D arm support</h3><p>Whether you're working, reclining, or relaxing, Doro S100 takes the pressure off your shoulders with 4-way adjustable armrests. Move them up and down (2.76 in), forward and back (1.18 in), side to side, and rotate 72°, all while staying in sync with the backrest.</p>",
             "note": ""
           }
         }
@@ -584,7 +557,7 @@
       ],
       "name": "Custom Multi-Column",
       "settings": {
-        "heading": "How Doro C300 Pro V2 Helps?",
+        "heading": "How S100 Chair Helps?",
         "background_color": "#ffffff",
         "heading_color": "#1a1a1a",
         "card_background_color": "#f5f5f5",
@@ -592,33 +565,23 @@
         "card_heading_color": "#1a1a1a",
         "card_text_color": "#555555",
         "padding_top": 80,
-        "padding_bottom": 0
+        "padding_bottom": 80
       }
     },
-    "custom_liquid_iYXdTf": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "show_space": true,
-        "code": "<style>\n.c300-compare {\n  max-width: 1280px;\n  margin: 0 auto;\n  padding: 40px 20px;\n  font-family: inherit;\n}\n\n.c300-grid {\n  display: grid;\n  grid-template-columns: 1fr 1.15fr 1.15fr;\n  align-items: stretch;\n  background: #fff;\n}\n\n.c300-cell {\n  padding: 28px 24px;\n  border-bottom: 1px solid #e5e5e5;\n}\n\n.c300-heading {\n  display: flex;\n  align-items: center;\n  font-size: 24px;\n  font-weight: 700;\n  color: #111;\n}\n\n.c300-product {\n  text-align: center;\n  position: relative;\n}\n\n.c300-highlight {\n  background: #dff8fb;\n}\n\n.c300-product img {\n  max-width: 220px;\n  width: 100%;\n  height: auto;\n  margin-bottom: 20px;\n}\n\n.c300-product-title {\n  font-size: 20px;\n  font-weight: 700;\n  color: #111;\n}\n\n.c300-product-title.muted {\n  color: #777;\n}\n\n.c300-badge {\n  position: absolute;\n  top: 16px;\n  right: 16px;\n  background: #ff4b00;\n  color: #fff;\n  font-size: 12px;\n  font-weight: 700;\n  padding: 6px 12px;\n  border-radius: 999px;\n}\n\n.c300-label {\n  font-weight: 700;\n  color: #111;\n  display: flex;\n  align-items: center;\n}\n\n.c300-text {\n  font-size: 15px;\n  line-height: 1.55;\n  color: #111;\n  text-align: center;\n}\n\n.c300-text strong {\n  font-weight: 700;\n}\n\n.c300-muted {\n  color: #666;\n}\n\n@media screen and (max-width: 768px) {\n  .c300-grid {\n    display: block;\n  }\n\n  .c300-heading {\n    font-size: 22px;\n    padding: 20px 0;\n  }\n\n  .c300-cell {\n    padding: 22px 18px;\n  }\n\n  .c300-product {\n    border-bottom: 1px solid #e5e5e5;\n  }\n\n  .c300-label {\n    background: #f7f7f7;\n    font-size: 16px;\n  }\n\n  .c300-text {\n    text-align: left;\n  }\n\n  .c300-product img {\n    max-width: 180px;\n  }\n}\n</style>\n\n<section class=\"c300-compare\">\n  <div class=\"c300-grid\">\n\n    <div class=\"c300-cell c300-heading\">\n      Why Upgrade to Pro V2?\n    </div>\n\n    <div class=\"c300-cell c300-product c300-highlight\">\n      <span class=\"c300-badge\">NEW!</span>\n      <img src=\"https://cdn.shopify.com/s/files/1/0509/7819/3602/files/Untitled_design_1.png?v=1781238603\" alt=\"Doro C300 Pro V2 ergonomic chair\">\n      <div class=\"c300-product-title\">Doro C300 Pro V2</div>\n    </div>\n\n    <div class=\"c300-cell c300-product\">\n      <img src=\"https://sihoo.com.au/cdn/shop/files/c300-white-footrest-1.jpg?v=1774886858&width=5000\" alt=\"Doro C300 Pro ergonomic chair\">\n      <div class=\"c300-product-title muted\">Doro C300 Pro</div>\n    </div>\n\n    <div class=\"c300-cell c300-label\">Support System</div>\n    <div class=\"c300-cell c300-text c300-highlight\">\n      <strong>DynaCore™ Full-Body Support</strong><br>\n      Keeps your headrest, backrest, lumbar support and armrests working together to provide consistent ergonomic support as your posture changes.\n    </div>\n    <div class=\"c300-cell c300-text c300-muted\">\n      <strong>Multi-Point Ergonomic Support</strong><br>\n      Provides balanced support across key body zones for everyday comfort while working or studying.\n    </div>\n\n    <div class=\"c300-cell c300-label\">Lumbar & Sacral Fit</div>\n    <div class=\"c300-cell c300-text c300-highlight\">\n      <strong>Domino™ Sacral-Lumbar Support</strong><br>\n      Provides targeted support across the lumbar and sacral regions for improved comfort.\n    </div>\n    <div class=\"c300-cell c300-text c300-muted\">\n      <strong>Self-Adaptive Dynamic Lumbar Support</strong><br>\n      Responsive lumbar support that adjusts to changes in posture for everyday ergonomic comfort.\n    </div>\n\n    <div class=\"c300-cell c300-label\">Backrest</div>\n    <div class=\"c300-cell c300-text c300-highlight\">\n      <strong>SyncroFlex™ Back-Glide System</strong><br>\n      Moves naturally with your posture to create a more personalised fit from the moment you sit down.\n    </div>\n    <div class=\"c300-cell c300-text c300-muted\">\n      <strong>Flexible Ergonomic Backrest</strong><br>\n      Contours to your back to provide comfortable support while sitting upright or reclining.\n    </div>\n\n    <div class=\"c300-cell c300-label\">Armrests</div>\n    <div class=\"c300-cell c300-text c300-highlight\">\n      <strong>8D Bionic Armrests</strong><br>\n      Expanded adjustment options help keep your arms comfortably supported across a wider range of work and relaxation positions.\n    </div>\n    <div class=\"c300-cell c300-text c300-muted\">\n      <strong>4D Coordinated Armrests</strong><br>\n      Adjustable armrests designed to support different tasks and sitting positions throughout the day.\n    </div>\n\n    <div class=\"c300-cell c300-label\">Seat Fit</div>\n    <div class=\"c300-cell c300-text c300-highlight\">\n      <strong>Pressure-Relief Seat with 1.6\" Depth Adjustment</strong><br>\n      Adjustable seat depth helps create a more personalised fit while promoting better leg support during extended sitting.\n    </div>\n    <div class=\"c300-cell c300-text c300-muted\">\n      <strong>Waterfall Mesh Seat</strong><br>\n      Breathable waterfall mesh seat designed to provide balanced comfort for everyday use.\n    </div>\n\n  </div>\n</section>"
-      }
-    },
-    "product_testimonial_Y9TBWU": {
+    "product_testimonial_hzeXfp": {
       "type": "product-testimonial",
       "blocks": {
-        "testimonial_MPBFW4": {
+        "testimonial_Y6wR4d": {
           "type": "testimonial",
           "settings": {
-            "quote": "\"Sitting is not a static position, you're constantly adjusting, moving, leaning, and shifting overall without you even realizing it. And so, the question here is not is this chair comfortable, but rather does it stay comfortable while you move. Full body adaptive support will help you.\"",
-            "avatar": "shopify://shop_images/unnamed.avif",
-            "author": "TechUtopia",
-            "source": "Product Reviewer"
+            "quote": "Doro S100 is like a work of a minimalist art, with thin, lightweight mesh upholstery, clean lines, visible springs, and a general sense of austere elegance.",
+            "author": "Maria Alexander",
+            "source": "from GAMEZEBO, S100 is the best gaming chair"
           }
         }
       },
       "block_order": [
-        "testimonial_MPBFW4"
+        "testimonial_Y6wR4d"
       ],
       "name": "Product testimonial",
       "settings": {
@@ -637,8 +600,8 @@
           "type": "column",
           "settings": {
             "hide_image": false,
-            "image": "shopify://shop_images/c300-pro-11.webp",
-            "title": "6D Adjustable Armrests",
+            "image": "shopify://shop_images/1_54fc5a51-998d-4b0d-ae34-8c53c000e7c5.webp",
+            "title": "",
             "description": "",
             "note": ""
           }
@@ -647,8 +610,8 @@
           "type": "column",
           "settings": {
             "hide_image": false,
-            "image": "shopify://shop_images/c300-pro-12.webp",
-            "title": "6D Adjustable Armrests",
+            "image": "shopify://shop_images/20231223-114502.webp",
+            "title": "",
             "description": "",
             "note": ""
           }
@@ -658,10 +621,9 @@
         "column_DWqU6X",
         "column_KNxTLJ"
       ],
-      "disabled": true,
       "name": "Custom Multi-Column",
       "settings": {
-        "heading": "Comfort, Control, and Durability",
+        "heading": "Dual dynamic lumbar support adjusts with your movements, offering personalized lower back comfort and wider support that suits any body type.",
         "background_color": "#ffffff",
         "heading_color": "#1a1a1a",
         "card_background_color": "#ffffff",
@@ -689,7 +651,7 @@
           "type": "column",
           "settings": {
             "hide_image": false,
-            "image": "shopify://shop_images/c300-pro-13.webp",
+            "image": "shopify://shop_images/20240112-101353.webp",
             "title": "",
             "description": "<h3>Pressure-free BM Tracking System</h3>",
             "note": ""
@@ -722,7 +684,7 @@
         "card_heading_color": "#1a1a1a",
         "card_text_color": "#555555",
         "padding_top": 20,
-        "padding_bottom": 80
+        "padding_bottom": 20
       }
     },
     "slideshow_TgHBPy": {
@@ -795,72 +757,12 @@
         "show_space": true
       }
     },
-    "faq_aFhnMb": {
-      "type": "faq",
-      "blocks": {
-        "faq_item_ChnMrL": {
-          "type": "faq_item",
-          "settings": {
-            "question": "What makes the SIHOO Doro C300 Pro V2 different from the Doro C300 Pro?",
-            "answer": "<p>The Doro C300 Pro V2 introduces several upgraded ergonomic features, including the DynaCore™ Full-Body Support System, Domino™ Sacral-Lumbar Support, SyncroFlex™ Back-Glide System and 8D Bionic Armrests. These enhancements are designed to provide more personalised support and a wider range of adjustments for different sitting styles.</p>"
-          }
-        },
-        "faq_item_Nbjiw6": {
-          "type": "faq_item",
-          "settings": {
-            "question": "Is the Doro C300 Pro V2 suitable for long hours of sitting?",
-            "answer": "<p>Yes. The chair is designed for people who spend extended periods at their desk. Its ergonomic support system, breathable mesh construction and multiple adjustment points help create a more comfortable seating experience throughout the working day.</p>"
-          }
-        },
-        "faq_item_qciCPr": {
-          "type": "faq_item",
-          "settings": {
-            "question": "Can the Doro C300 Pro V2 be adjusted to suit different body types?",
-            "answer": "<p>Yes. The chair offers multiple ergonomic adjustments, including an adjustable headrest, seat depth, armrests, lumbar support and recline positions. These features allow users to customise the chair for a more personalised fit.</p>"
-          }
-        },
-        "faq_item_7kwEB3": {
-          "type": "faq_item",
-          "settings": {
-            "question": "Is the mesh seat comfortable for Australia's warmer working environments?",
-            "answer": "<p>The Doro C300 Pro V2 features a breathable mesh backrest and seat that promote airflow while you're seated. This helps improve comfort during long work sessions, particularly in warmer environments or home offices without constant air conditioning.</p>"
-          }
-        },
-        "faq_item_UmcbjN": {
-          "type": "faq_item",
-          "settings": {
-            "question": "Who is the Doro C300 Pro V2 designed for?",
-            "answer": "<p>The Doro C300 Pro V2 is ideal for professionals, remote workers, students and anyone looking for ergonomic support during long hours of sitting. It's well suited to home offices, corporate workplaces and study spaces where comfort and adjustability are important.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "faq_item_ChnMrL",
-        "faq_item_Nbjiw6",
-        "faq_item_qciCPr",
-        "faq_item_7kwEB3",
-        "faq_item_UmcbjN"
-      ],
-      "name": "FAQ Accordion",
-      "settings": {
-        "title": "FAQs About Sihoo Doro C300 Pro V2",
-        "background_color": "",
-        "text_color": "#000000"
-      }
-    },
     "related-products": {
       "type": "related-products",
       "settings": {
         "title": "You may also like",
         "show_vendor": false,
-        "grid": 4
-      }
-    },
-    "specs_table": {
-      "type": "specs-table",
-      "settings": {
-        "heading": "Specifications",
-        "show_fit_guide": true
+        "grid": 3
       }
     },
     "review_source_note": {
@@ -874,9 +776,8 @@
   },
   "order": [
     "main",
-    "custom_main_product_KyFbga",
+    "custom_main_product_Jkb3zp",
     "custom_multi_column_WWXqNc",
-    "specs_table",
     "17724749789aac8752",
     "product_promo_strip_tqEm4C",
     "background_video_h37Gjq",
@@ -885,14 +786,12 @@
     "custom_image_text_rDQLYM",
     "custom_image_text_8MY9g7",
     "custom_multi_column_q8TVXy",
-    "custom_liquid_iYXdTf",
-    "product_testimonial_Y9TBWU",
+    "product_testimonial_hzeXfp",
     "custom_multi_column_MB6MeA",
     "custom_multi_column_tb6Dea",
     "slideshow_TgHBPy",
     "review_source_note",
     "1726717200db5c7e8b",
-    "faq_aFhnMb",
     "related-products"
   ]
 }

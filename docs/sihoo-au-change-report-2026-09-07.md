@@ -87,6 +87,13 @@
 
 ---
 
+### 1.5 `custom.review_source_note` 메타필드 정의 1개 + 3개 상품 값 (R1, 2026-09-07 추가분)
+
+- **무엇을**: Products 메타필드 정의 `custom.review_source_note`(multi_line_text, 스토어프론트 읽기 허용, ID 252117385507) 생성. M59AS·Doro S100·Doro C300 Pro V2 에 문구 입력 — "Reviews on this page include verified purchases from SIHOO's US store (sihoo.com), imported in September 2026. The <모델> sold in Australia is the same specification. Prices, delivery times and units mentioned in reviews may refer to the US." (C300 Pro V2 는 US 리뷰가 미검증이라 "verified purchases" 대신 "customer reviews").
+- **왜**: US 리뷰 임포트(Alex 결정 2026-09-07: 세 제품, 전량, 선별 없음) 전에 출처 문구가 있어야 ACCC 기준을 지킴. 메타필드 방식이라 제품별로 켜고 끌 수 있고, 확대 시 값만 넣으면 됨.
+- **주의**: 라이브 테마엔 이 섹션이 없어 고객에겐 아직 안 보임. 작업 테마 게시 시점에 US 리뷰가 아직 임포트되지 않았다면 이 3개 값을 비워 두고(문구가 사실이 아니게 됨) 임포트 직후 다시 채울 것 — §5 체크리스트 0번.
+- **되돌리기**: 값 삭제 → 섹션은 아무것도 렌더하지 않음.
+
 ## 2. 작업 테마(미공개)에 반영된 변경
 
 | # | 파일 | 변경 | 왜 (호주 시장·SEO·GEO 관점) |
@@ -103,6 +110,7 @@
 | 2.10 B5-lite | `sections/specs-table.liquid`(신규) + `product.c300-pro-2.json`·`product.m57.json`·`product.m-18.json` 에 섹션 삽입 | `specs.*` 만 읽는 스펙 표: 핏 가이드 문장("Recommended for users 150–190 cm, rated to 150 kg. Seat height 43–53 cm suits standard 72–75 cm Australian desks"), 16개 행, 리소스(설치·조정 영상·매뉴얼 PDF는 메타필드 입력 시 자동 노출), 3년 AU 보증 표기. 스펙이 없는 상품은 아무것도 렌더하지 않음 | 텍스트 표는 AI 검색·비교 답변이 인용 가능한 형태. 미터법 우선. 이 섹션이 단일 상품 템플릿 `product.chair.json` 의 첫 구성요소 |
 | 2.11 A16 | `config/settings_data.json` | `enable_product_reviews_collection: true` | Symmetry 카드가 `reviews.rating` 을 읽어 별점·리뷰수를 표시하는 내장 옵션이 꺼져 있었음. US 카드는 별점 노출 |
 | 2.12 C0 | 8개 파일 동기화 | 작업 테마를 LIVE(2026-09-06) 와 동일하게 맞춘 뒤 위 변경 적용 | 게시 시 LIVE 의 최근 설정·다이제스트 피드가 유실되지 않도록 |
+| 2.13 R1 | `sections/review-source-note.liquid`(신규) + `product.m59.json`·`product.s100-2.json`·`product.c300-pro-2.json` 의 Loox 리뷰 섹션(`1726717200db5c7e8b`) 바로 앞에 `review_source_note` 섹션 삽입 | 상품 메타필드 `custom.review_source_note` 가 있을 때만 리뷰 위젯 위에 작은 안내문("About these reviews" + 문구) 렌더. 비어 있으면 아무것도 출력 안 함 | US(sihoo.com) 리뷰를 Loox 로 가져올 때 ACCC 가 요구하는 출처 공개. 리뷰 임포트는 앱 데이터라 즉시 라이브에 나가므로 안내문이 먼저 준비돼야 함(`docs/review-import-assessment-2026-09-07.md` §4·§6) |
 
 ---
 
@@ -138,6 +146,7 @@ og:image 는 모든 페이지 `https:`. Podium 로더는 모든 페이지에서 
 
 ## 5. 게시 전 체크리스트 (Alex)
 
+0. **리뷰 출처 문구 타이밍**: US 리뷰 Loox 임포트가 끝난 뒤 게시하는 것이 원칙. 임포트 전에 게시해야 하면 M59AS·S100·C300 Pro V2 의 `custom.review_source_note` 값을 먼저 비우고, 임포트 직후 다시 채운다(§1.5).
 1. 프리뷰 URL 로 홈·M57·C300 Pro V2·컬렉션·FAQ·블로그 1개씩 육안 확인(레이아웃 변화는 스펙 표 3개 PDP 와 카드 별점뿐).
 2. Google Rich Results Test 에 M57 프리뷰 HTML 붙여넣기 → Product(머천트 리스팅)·Breadcrumb·FAQ 통과 확인.
 3. 게시 → 24시간 후 Search Console 커버리지·"상품 스니펫" 리포트 확인, PSI 로 §6.3 기준선 재측정(A22).
@@ -155,6 +164,10 @@ og:image 는 모든 페이지 `https:`. Podium 로더는 모든 페이지에서 
 | 테마 파일(신규) | `sections/specs-table.liquid` — `specs.*` 메타필드 스펙 표 + 핏 가이드 | 〃 |
 | 테마 파일(신규) | `snippets/spec-num.liquid` — 숫자 출력 보조(51.0 → 51) | 〃 |
 | 템플릿 섹션(추가) | `product.c300-pro-2.json`·`product.m57.json`·`product.m-18.json` 에 `specs_table` 섹션 1개씩 | 〃 |
+| 테마 파일(신규) | `sections/review-source-note.liquid` — 리뷰 출처 안내문(메타필드 있을 때만) | 〃 |
+| 템플릿 섹션(추가) | `product.m59.json`·`product.s100-2.json`·`product.c300-pro-2.json` 의 Loox 섹션 앞에 `review_source_note` 1개씩 | 〃 |
+| Admin 데이터(추가) | 메타필드 정의 `custom.review_source_note` 1개 + M59AS·S100·C300 Pro V2 값 3개 | 라이브 스토어(작업 테마 게시 전까지 고객 미노출) |
+| 데이터(신규) | `data/reviews/` — US Okendo 리뷰 329건의 Loox 임포트 CSV 초안 3개 + source-map 3개 (업로드 안 함) | 이 레포 |
 | 스키마 출력(추가) | FAQPage JSON-LD (faq · faq-accordion · collapsible-tabs 섹션), Offer 별 `shippingDetails`·`hasMerchantReturnPolicy`·`priceValidUntil`·`itemCondition`·`seller`·`gtin`·`color`, ProductGroup `aggregateRating`·`description`·`variesBy` | 작업 테마 렌더 결과 |
 | Admin 데이터(추가) | 메타필드 정의 33개 (`specs.*` 26 + `custom.*` 7) | 라이브 스토어 Settings → Custom data → Products |
 | Admin 데이터(추가) | 23개 상품 × 최대 26개 `specs.*` 값 | 라이브 상품(고객 화면엔 작업 테마 게시 전까지 미노출) |
@@ -195,8 +208,10 @@ og:image 는 모든 페이지 `https:`. Podium 로더는 모든 페이지에서 
 |---|---|---|
 | 홈 | https://sihoo.com.au/?preview_theme_id=187727839523 | 타이틀 한 줄, FAQ 스키마, 카드 별점 |
 | M57 PDP | https://sihoo.com.au/products/sihoo-m57-ergonomic-office-chair?preview_theme_id=187727839523 | 스펙 표 + 핏 가이드, ProductGroup 별점 4.6/885, 브레드크럼 |
-| C300 Pro V2 PDP | https://sihoo.com.au/products/sihoo-a3-doro-c300-pro-v2-ergonomic-office-chair?preview_theme_id=187727839523 | 새 설명, 스펙 표, FAQPage(5) |
+| C300 Pro V2 PDP | https://sihoo.com.au/products/sihoo-a3-doro-c300-pro-v2-ergonomic-office-chair?preview_theme_id=187727839523 | 새 설명, 스펙 표, FAQPage(5), 리뷰 출처 문구 |
 | M18 PDP | https://sihoo.com.au/products/sihoo-m18-ergonomics-task-office-chair?preview_theme_id=187727839523 | 스펙 표, 앱 스펙 표 중복 여부 |
+| M59AS PDP | https://sihoo.com.au/products/sihoo-m59as-ergonomic-office-chair?preview_theme_id=187727839523 | 리뷰 위젯 바로 위 "About these reviews" 출처 문구 |
+| Doro S100 PDP | https://sihoo.com.au/products/sihoo-doro-s100-ergonomic-office-chair?preview_theme_id=187727839523 | 출처 문구, 현재 Loox 4건·2.0점 표시 |
 | 컬렉션 | https://sihoo.com.au/collections/ergonomic-chairs?preview_theme_id=187727839523 | canonical 절대 URL, 카드 별점 16개, 브레드크럼 |
 | FAQ 페이지 | https://sihoo.com.au/pages/faq?preview_theme_id=187727839523 | FAQPage 16블록 |
 | 블로그 아티클 | https://sihoo.com.au/blogs/reviews/ergonomic-chair-for-tall-people?preview_theme_id=187727839523 | 3단 브레드크럼 |

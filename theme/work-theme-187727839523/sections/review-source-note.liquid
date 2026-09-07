@@ -1,0 +1,58 @@
+{%- comment -%}
+  Review source note (SIHOO AU, 2026-09).
+  Renders product.metafields.custom.review_source_note directly above the reviews widget
+  so imported reviews (e.g. from SIHOO's US store) are disclosed, as ACCC online-review
+  guidance requires. Renders nothing when the metafield is empty.
+{%- endcomment -%}
+{%- liquid
+  assign note = product.metafields.custom.review_source_note | default: blank
+-%}
+{%- if note != blank -%}
+  <div class="fully-spaced-row--{{ section.settings.height }} section-review-source-note" {%- render 'animation-attrs', attrs: 'data-cc-animate' -%}>
+    <div class="container container--reading-width">
+      <div class="rte review-source-note align-ltr-{{ section.settings.text_alignment }}" style="font-size: 0.875em; opacity: 0.85;">
+        {%- if section.settings.heading != blank -%}
+          <p class="subheading subheading--over">{{ section.settings.heading | escape }}</p>
+        {%- endif -%}
+        {{ note | newline_to_br }}
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Review source note",
+  "class": "section-review-source-note",
+  "disabled_on": { "groups": ["aside", "header", "footer"] },
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Shows the product metafield custom.review_source_note above the reviews widget. Nothing renders when that metafield is empty."
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Small heading",
+      "default": "About these reviews"
+    },
+    {
+      "type": "text_alignment",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "height",
+      "label": "Section height",
+      "default": "small",
+      "options": [
+        { "value": "small", "label": "Small" },
+        { "value": "medium", "label": "Medium" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Review source note" }]
+}
+{% endschema %}

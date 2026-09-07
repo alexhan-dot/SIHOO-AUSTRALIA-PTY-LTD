@@ -13,13 +13,13 @@
 |---|---|---|---|---|
 | M59AS | **3건 · 3.3점** | 118건 · 4.81점 (5★96 / 4★22), verified 108, 사진 34건, 2024-10 ~ 2026-07 | 4.3점 (ASIN B0DFGB4YRG; 본문 미공개) | 미확인 (샌드박스에서 503) |
 | Doro S100 | **4건 · 2.0점** | 189건 · 4.83점 (5★158 / 4★29 / 3★2), verified 162, 사진 44건, 2024-01 ~ 2026-05 | 약 4.0점 (ASIN B0CTSDG3VD 등 6개 리스팅) | 미확인 |
-| Doro C300 Pro V2 | **0건** | 22건 · 4.14점 (5★13 / 4★5 / 2★2 / 1★2), 전부 Shop 앱 경유, verified 0, 2026-04 ~ 2026-09 | 리스팅 6개 (평점 미확인) | 미확인 |
+| Doro C300 Pro V2 | **5건 · 4.6점** (Loox 메타필드 기준; 라이브 페이지 JSON-LD 엔 미출력) | 22건 · 4.14점 (5★13 / 4★5 / 2★2 / 1★2), 전부 Shop 앱 경유, verified 0, 2026-04 ~ 2026-09 | 리스팅 6개 (평점 미확인) | 미확인 |
 | (참고) M57 | 885건 · 4.6점 | 1,431건 · 4.84점 | — | 리스팅 있음 (판매자 SIHOO AU) |
 | (참고) M18 | — | 1,600건 · 4.87점 | — | 리스팅 있음 (판매자 SIHOO AU) |
 
 - US 데이터 출처: Okendo 공개 위젯 API (`api.okendo.io/v1/stores/eb1bc8c6-…/products/shopify-<id>/reviews`). 게시된(published) 리뷰만 나오며 이메일 등 PII 는 포함되지 않는다. 검증용으로만 조회했고 원본 JSON 은 repo 에 넣지 않았다.
 - AU 의 S100 은 4건 중 저평점이 많아 **2.0점이 상품 페이지와 Google 리치 결과에 그대로 노출**되고 있다. 이 상태가 US 189건·4.83점과 나란히 있는 것이 현재 가장 큰 전환 손실 요인이다.
-- C300 Pro V2 는 AU 리뷰 0건 → 구조화 데이터에 aggregateRating 자체가 없다.
+- C300 Pro V2 는 Loox 메타필드에 5건·4.6점이 있으나 라이브 테마 JSON-LD 에는 aggregateRating 이 없다(작업 테마는 메타필드를 읽으므로 게시 후 해결).
 
 ## 2. 앱 호환성
 
@@ -52,7 +52,7 @@ ACCC 온라인 리뷰 가이드와 2023-12 인터넷 스윕 결과의 요지:
 
 | 규칙 | 적용 방법 |
 |---|---|
-| 출처 공개 | 상품 페이지 리뷰 위젯 바로 위에 고정 문구: **"Reviews include verified purchases from SIHOO's US store (sihoo.com). Product specifications are identical; prices and delivery times shown in reviews may refer to the US."** 드래프트 테마 `main-product` 하단 텍스트 블록 또는 Loox 위젯 wrapper 에 추가(승인 후 작업). |
+| 출처 공개 | 상품 페이지 리뷰 위젯 바로 위에 고정 문구 — **구현 완료(작업 테마)**: `sections/review-source-note.liquid` 가 메타필드 `custom.review_source_note` 를 렌더. 현재 값: "Reviews on this page include verified purchases from SIHOO's US store (sihoo.com), imported in September 2026. The <모델> sold in Australia is the same specification. Prices, delivery times and units mentioned in reviews may refer to the US." |
 | 전량 임포트 | 별점 무관하게 **전부** 가져온다. 1~3점 리뷰 M59AS 0건, S100 2건, C300 Pro V2 4건 포함. |
 | 제외 규칙은 별점과 무관하게 | 호주 고객에게 오해를 줄 수 있는 문장(USD 가격, 미국 배송·FedEx, Shop 앱 프로모션)이 있는 리뷰는 **별점을 보지 않고 동일 규칙으로** 제외하거나 그대로 둔다. 해당 건수: M59AS 가격 6·배송 3, S100 가격 5·배송 6·아마존 언급 1, C300 Pro V2 가격 1·배송 2. 제외 목록은 source-map 파일에 사유와 함께 남긴다. 권장: **제외하지 않고 그대로 두고 출처 문구로 설명** — 선별 자체가 리스크. |
 | Verified 배지 | US 에서 `isVerified=true` 인 것만 `verified_purchase=TRUE`. C300 Pro V2 22건은 전부 미검증이므로 배지 없음. |
@@ -64,16 +64,16 @@ ACCC 온라인 리뷰 가이드와 2023-12 인터넷 스윕 결과의 요지:
 
 ## 5. 준비한 파일 (아직 업로드 안 함)
 
-`data/reviews/` — Okendo 공개 데이터를 Loox custom template 형식으로 변환한 **초안**. 컬럼: `product_handle(AU 핸들), product_id(AU), rating, author, body, created_at, photo_url, verified_purchase, reply, replied_at, source_note`.
+`data/reviews/` — Okendo 공개 데이터를 Loox custom template 형식으로 변환한 **초안**. 컬럼: `product_handle(AU 핸들), product_id(AU), rating, author, body, created_at, photo_url, verified_purchase, reply, replied_at` (Loox 템플릿 열만). Okendo reviewId 추적은 같은 폴더의 `source-map-*.csv`.
 
 | 파일 | 제품 | 행 | 비고 |
 |---|---|---|---|
 | `loox-import-m59as-from-sihoo-us-okendo-2026-09-07.csv` | M59AS → `sihoo-m59as-ergonomic-office-chair` (10184342307107) | 118 | |
-| `loox-import-doro-from-sihoo-us-okendo-2026-09-07.csv` | **S100** → `sihoo-doro-s100-ergonomic-office-chair` (10184342208803) | 189 | 파일명의 `doro` 는 S100 을 뜻함(생성 스크립트 명명 오류, 내용은 정상). 업로드 전 `…-s100-…` 로 이름만 바꿀 것 |
+| `loox-import-s100-from-sihoo-us-okendo-2026-09-07.csv` | S100 → `sihoo-doro-s100-ergonomic-office-chair` (10184342208803) | 189 | |
 | `loox-import-c300-pro-v2-from-sihoo-us-okendo-2026-09-07.csv` | C300 Pro V2 → `sihoo-a3-doro-c300-pro-v2-ergonomic-office-chair` (10264258281763) | 22 | verified 0 |
 
 업로드 전 손볼 것:
-1. `source_note` 열(Okendo reviewId 추적용)은 Loox 템플릿에 없는 열이므로 **삭제 후 업로드**하고, 삭제 전 사본을 `source-map-*.csv` 로 보관.
+1. ~~`source_note` 열 분리~~ 완료 — 임포트 파일은 Loox 템플릿 열만, 추적은 `source-map-*.csv`.
 2. 본사 공식 export 가 오면 이 초안을 버리고 공식 파일 기준으로 다시 만든다(공개 API 는 게시된 리뷰만 보여 주므로 본사 파일과 건수가 다를 수 있음).
 3. 제목(`title`)이 "5 Stars" 같은 자동 문구가 아닌 경우에만 본문 첫 줄로 합쳤다.
 
@@ -83,11 +83,18 @@ ACCC 온라인 리뷰 가이드와 2023-12 인터넷 스윕 결과의 요지:
 2. **Doris 에게 요청** (§8 초안) — (a) US 리뷰의 AU 사이트 재게시 서면 승인, (b) Okendo Settings → Import/Export → Reviews export (All time) CSV, (c) 리뷰 사진 사용 승인.
 3. Okendo export 를 받으면 AU 핸들로 매핑한 최종 CSV 생성, 행 수·별점 분포를 §1 표와 대조.
 4. Loox → Manage Reviews → Import Reviews → **Custom file** 업로드 (핸들이 같은 M59AS 는 Okendo 임포터로도 가능하지만 세 제품 방식을 통일). 임포트 요약 메일의 성공/실패 건수 기록.
-5. 드래프트 테마에 출처 문구 블록 추가 → 프리뷰 확인 → 리뷰 수·평점·JSON-LD 검증 → change report 갱신.
+5. ~~드래프트 테마에 출처 문구 블록 추가~~ **완료(2026-09-07)**: `sections/review-source-note.liquid` + 세 템플릿 삽입 + 메타필드 `custom.review_source_note` 정의·값 3개. 임포트 후 프리뷰에서 리뷰 수·평점·JSON-LD 검증 → change report 갱신.
 6. 임포트는 **앱 데이터라 즉시 라이브에 반영**된다(테마 드래프트와 무관). 그래서 출처 문구가 라이브 테마에 먼저 있어야 한다 → 순서: 라이브 테마에 문구 블록만 먼저 게시(테마 에디터에서 텍스트 블록 1개) → 임포트.
 7. 되돌리기: Loox 에서 임포트 배치 단위 삭제 가능. source-map 으로 건별 식별.
 
-## 7. Alex 가 결정할 것
+## 7. Alex 결정 (2026-09-07 확정)
+
+1. **제외 규칙**: (A) 채택 — USD 가격·미국 배송 언급 리뷰도 그대로 두고 출처 문구로 설명. 선별하지 않는다.
+2. **범위**: 세 제품(M59AS·S100·C300 Pro V2)만 먼저. 확대는 결과를 본 뒤 별도 결정.
+3. **본사 요청**: Alex 가 §8 초안으로 Doris 에게 직접 전달. 회신(서면 승인 + Okendo export)을 받으면 §6 절차대로 진행.
+4. **장기(Loox 유지 vs Okendo 전환)**: 미결정, 이번 범위 밖.
+
+### 결정 전 원래 선택지 (기록용)
 
 1. **제외 규칙**: USD 가격·미국 배송 언급 리뷰를 (A) 그대로 두고 출처 문구로 설명 [권장] / (B) 별점 무관 규칙으로 제외.
 2. **범위**: 세 제품만 먼저 할지, M57(US 1,431건)·M18(1,600건) 등 전 제품으로 확대할지. 전 제품이면 AU 평점이 US 로 사실상 덮이므로 출처 문구를 사이트 전역(리뷰 페이지·FAQ)에도 둔다.
