@@ -81,7 +81,7 @@
 - 스펙 값 임포트: 23개 상품 전부 `specs.*` 26키 저장 완료. 4개 상품(S300·C100·C500·C300 Pro V2)은 메타필드가 26개라 `metafieldsSet` 25개 제한에 걸려 13+13 으로 분할 재실행, 오류 0. 재조회로 26키 존재 확인.
 - 이미지 alt: C300 Pro V2 16장 + V1 1장(영상) 갱신, 오류 0.
 - `settings_data.json`: `current.enable_product_reviews_collection` 만 `false → true`, 나머지 바이트 동일(diff 확인).
-- 템플릿: `product.c300-pro-2.json`·`product.m57.json`·`product.m-18.json` 의 `sections` 에 `specs_table`(type `specs-table`) 추가, `order` 에서 메인 상품 섹션 바로 뒤에 삽입, 기존 섹션 바이트 동일. m57·m-18 에서 바로 뒤에 있던 Specs&Compare 앱 섹션(같은 데이터를 한 번 더 표시)은 중복을 피하기 위해 `disabled: true` 처리 요청 → 확인 후 본 리포트 갱신(c300-pro-2 는 이미 비활성).
+- 템플릿: `product.c300-pro-2.json`·`product.m57.json`·`product.m-18.json` 의 `sections` 에 `specs_table`(type `specs-table`) 추가, `order` 에서 메인 상품 섹션 바로 뒤에 삽입, 기존 섹션 바이트 동일. m57·m-18 에서 바로 뒤에 있던 Specs&Compare 앱 섹션(같은 데이터를 한 번 더 표시)은 중복을 피하기 위해 `disabled: true` 로 비활성화 완료 — m57 섹션 `172649452298bf6fcf`, m-18 섹션 `1786558889ff94005e`, 두 파일 모두 해당 키 1개만 변경(구조 diff 확인, userErrors 없음). c300-pro-2 는 이미 비활성이라 손대지 않음.
 - 프리뷰 확인: M57·C300 Pro V2·M18 PDP 에 스펙 표 렌더(핏 가이드 문장 포함), Liquid 오류 0. 컬렉션 카드에 별점 16개 노출.
 
 
@@ -175,7 +175,7 @@ og:image 는 모든 페이지 `https:`. Podium 로더는 모든 페이지에서 
 | 테마 | `sections/faq.liquid`, `sections/faq-accordion.liquid`, `sections/collapsible-tabs.liquid` | 시각 마크업 동일 + JSON-LD 출력 추가 |
 | 테마 | `layout/theme.liquid` | `/pages/commercial/*` meta-refresh 6블록·EOFY ItemList 제거, `structured-data-breadcrumbs` 렌더 1줄 추가 (16.6KB → 12.6KB) |
 | 테마 | `config/settings_data.json` | `enable_product_reviews_collection` false → true (그 외 동일) |
-| 템플릿 | `product.m57.json`, `product.m-18.json` | Specs&Compare 앱 섹션 `disabled` false → true (확인 대기) |
+| 템플릿 | `product.m57.json`, `product.m-18.json` | Specs&Compare 앱 섹션 `disabled` false → true (완료·확인됨) |
 | Admin 데이터 | 27개 상품 vendor / productType / SEO 타이틀 | §1.1 표 |
 
 ### 6.3 삭제된 것

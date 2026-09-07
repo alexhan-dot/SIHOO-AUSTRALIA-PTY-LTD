@@ -250,7 +250,8 @@
       "settings": {
         "full_width": false,
         "show_space": true
-      }
+      },
+      "disabled": true
     },
     "image_with_text_DnMLeR": {
       "type": "image-with-text",

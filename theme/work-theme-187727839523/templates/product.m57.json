@@ -284,7 +284,8 @@
       "settings": {
         "full_width": false,
         "show_space": false
-      }
+      },
+      "disabled": true
     },
     "rich_text_tiLGxg": {
       "type": "rich-text",
