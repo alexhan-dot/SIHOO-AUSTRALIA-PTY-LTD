@@ -1,5 +1,9 @@
 # DRAFT 업그레이드 변경 기록
 
+## 2026-09-08 — Spring Sale 동기화
+
+LIVE의 홈/공지/블로그/신규 랜딩 차이를 DRAFT에 반영하고, 중복 상품 카드가 잘못된 옵션을 장바구니에 보내는 문제를 봄 전용 섹션으로 수정했다. 7개 테마 파일 적용 및 실제 장바구니 Grey Mesh/A$339 시험과 제거 완료. [상세 변경·검증·운영 제한](SPRING-SALE-SYNC.ko.md).
+
 ## 2026-09-08 — U01/U02
 
 - 최신 `origin/main` b479ce2를 기반으로 `codex/draft-theme-upgrade` 시작.

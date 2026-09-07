@@ -1,0 +1,48 @@
+{
+  "draft_theme_id": 187727839523,
+  "live_theme_id": 181013971235,
+  "files": [
+    {
+      "path": "sections/header-group.json",
+      "existed_before": true,
+      "before_sha256": "cdb4f6e81c0f14307939502dabf0e37ff57fcec5102f89e7744cee9ceb6cd30b",
+      "remote_after_sha256": "557663156f89f384e6f519b1931d7707c8ab1329255ebeb381e60d62ba780832"
+    },
+    {
+      "path": "templates/index.json",
+      "existed_before": true,
+      "before_sha256": "04ec0838ed18db74565e028eb8b33c4c1c328aaddb950de11791c49af7ee01ea",
+      "remote_after_sha256": "9c61f9a9690f63076847bab4ae0a09fc93be44045170f6cdc9a4797ebd0165a7"
+    },
+    {
+      "path": "templates/article.json",
+      "existed_before": true,
+      "before_sha256": "ba7d72f68b327f1a741eaebd110e892abbb50a4a6977b7532069b5700e5b2081",
+      "remote_after_sha256": "05592d2441ce6a4edd2ffc8209d0f7d828bf23f963db03b0a04140ff1f79913a"
+    },
+    {
+      "path": "templates/page.spring-sale.json",
+      "existed_before": false,
+      "before_sha256": null,
+      "remote_after_sha256": "6ac7b3224a5d1a20abacd9a7dea877ac71918cceedfca26898040c73d3ca2363"
+    },
+    {
+      "path": "sections/sihoo-spring-banner.liquid",
+      "existed_before": false,
+      "before_sha256": null,
+      "remote_after_sha256": "052084d5c9d5802231122417a56fb79e2c75be8e4b2e3ca1b4248fec6c643851"
+    },
+    {
+      "path": "sections/sihoo-spring-grid.liquid",
+      "existed_before": false,
+      "before_sha256": null,
+      "remote_after_sha256": "03b106127a3df2388183a0bfcbe77fd397a77e1e6dc8ba3b7dc06f341100b0cc"
+    },
+    {
+      "path": "assets/sihoo-spring-grid.js",
+      "existed_before": false,
+      "before_sha256": null,
+      "remote_after_sha256": "76e474d31ad2bccc5c80ce605d8804075a1bbde82369ad9c5ba535a4793ee884"
+    }
+  ]
+}

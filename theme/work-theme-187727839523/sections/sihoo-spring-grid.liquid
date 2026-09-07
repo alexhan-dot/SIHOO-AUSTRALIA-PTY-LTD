@@ -1,0 +1,531 @@
+{%- liquid
+  assign section_background = section.settings.section_background | default: '#063f27'
+  assign heading_color = section.settings.heading_color | default: '#ffffff'
+  assign subheading_color = section.settings.subheading_color | default: '#ffffff'
+  assign card_background = section.settings.card_background | default: '#ffffff'
+  assign product_title_color = section.settings.product_title_color | default: '#1a1a1a'
+  assign variant_label_color = section.settings.variant_label_color | default: '#666666'
+  assign variant_value_color = section.settings.variant_value_color | default: '#1a1a1a'
+  assign price_current_color = section.settings.price_current_color | default: '#991011'
+  assign price_compare_color = section.settings.price_compare_color | default: '#888888'
+  assign sale_badge_background = section.settings.sale_badge_background | default: '#991011'
+  assign sale_badge_text = section.settings.sale_badge_text | default: '#ffffff'
+  assign button_background = section.settings.button_background | default: '#991011'
+  assign button_text = section.settings.button_text | default: '#ffffff'
+  assign button_disabled_background = section.settings.button_disabled_background | default: '#cccccc'
+  assign button_disabled_text = section.settings.button_disabled_text | default: '#666666'
+  assign dropdown_background = section.settings.dropdown_background | default: '#ffffff'
+  assign dropdown_text = section.settings.dropdown_text | default: '#1a1a1a'
+  assign dropdown_border_color = section.settings.dropdown_border_color | default: '#dddddd'
+-%}
+
+{% stylesheet %}
+.product-grid-wrapper {
+    justify-content: center !important;
+}
+.product-grid-item-image img {
+    object-fit: contain;
+}
+.product-grid-wrapper {
+    display: flex;
+}
+.product-grid-wrapper {
+    gap: 25px;
+}
+.product-grid-item {
+    flex: 0 0 calc(25% - 20px);
+}
+.product-grid-item-variation-selector select {
+    width: 100%;
+}
+.product-grid-item-variation-selector {
+    max-width: 283px;
+}
+.product-grid-wrapper {
+    display: flex
+;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Smooth image transitions */
+.product-grid-item-image img {
+    transition: opacity 0.3s ease-in-out;
+}
+
+  @media (max-width: 1024px) and (min-width: 769px) {
+
+.product-grid-item {
+    flex: 0 0 calc(50% - 15px);
+}
+
+.product-grid-wrapper {
+    gap: 30px;
+}
+  }
+
+@media (max-width:768px) {
+    .product-grid-wrapper {
+    flex-direction: column;
+    gap: 20px;
+}
+.product-grid .page-width {
+    padding: 40px 20px;
+}
+}
+
+.product-grid-subheading {
+    margin: 0.75rem auto 0px;
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 42rem;
+}
+{% endstylesheet %}
+
+<style>
+  #shopify-section-{{ section.id }} .product-grid {
+    background-color: {{ section_background }};
+  }
+
+  #shopify-section-{{ section.id }} .product-grid-title h2 {
+    color: {{ heading_color }};
+  }
+
+  #shopify-section-{{ section.id }} .product-grid-subheading {
+    color: {{ subheading_color }};
+    opacity: 1;
+  }
+
+  #shopify-section-{{ section.id }} .product-grid-item-content {
+    background-color: {{ card_background }};
+  }
+
+  #shopify-section-{{ section.id }} .product-grid-item-title h3,
+  #shopify-section-{{ section.id }} .product-grid-item-title a {
+    color: {{ product_title_color }};
+  }
+
+  #shopify-section-{{ section.id }} .product-grid-item-variant-label {
+    color: {{ variant_label_color }};
+  }
+
+  #shopify-section-{{ section.id }} .product-grid-item-variant-value {
+    color: {{ variant_value_color }};
+  }
+
+  #shopify-section-{{ section.id }} .product-grid-item-price,
+  #shopify-section-{{ section.id }} .product-grid-item-price .price__current {
+    color: {{ price_current_color }};
+  }
+
+  #shopify-section-{{ section.id }} .product-grid-item-price .price__was {
+    color: {{ price_compare_color }};
+  }
+
+  #shopify-section-{{ section.id }} .product-grid-item-image-sale {
+    background-color: {{ sale_badge_background }};
+  }
+
+  #shopify-section-{{ section.id }} .product-grid-item-image-sale-label {
+    color: {{ sale_badge_text }};
+  }
+
+  #shopify-section-{{ section.id }} .product-grid-item-button-link {
+    background-color: {{ button_background }};
+    color: {{ button_text }};
+    border-color: {{ button_background }};
+  }
+
+  #shopify-section-{{ section.id }} .product-grid-item-button-link:disabled {
+    background-color: {{ button_disabled_background }};
+    color: {{ button_disabled_text }};
+    border-color: {{ button_disabled_background }};
+  }
+
+  #shopify-section-{{ section.id }} .product-grid-item-variation-dropdown {
+    background-color: {{ dropdown_background }};
+    color: {{ dropdown_text }};
+    border-color: {{ dropdown_border_color }};
+  }
+</style>
+
+{% if section.settings.collection != blank or section.settings.products != blank %}
+    <sihoo-spring-grid style="display:block"><section class="product-grid">
+        <div class="page-width">
+            <div class="product-grid-title">
+            <h2>{{ section.settings.title | default: 'Product Grid' }}</h2>
+            {% if section.settings.subheading != blank %}
+                <p class="product-grid-subheading">{{ section.settings.subheading | escape | newline_to_br }}</p>
+            {% endif %}
+            </div>
+            <div class="product-grid-container">
+                <div class="product-grid-wrapper">
+                    {% if section.settings.collection != blank %}
+                    {% for product in collections[section.settings.collection].products limit: section.settings.products_to_show %}
+                        {% assign variant = product.selected_or_first_available_variant %}
+                        <div class="product-grid-item" data-product-id="{{ product.id }}">
+                                <div class="product-grid-item-image">
+                                    {% if section.settings.enable_product_links %}
+                            <a href="{{ product.url }}" class="product-grid-item-link">
+                                    {% endif %}
+                                {% if variant.compare_at_price > variant.price %}
+                                    <div class="product-grid-item-image-sale">
+                                        <span class="product-grid-item-image-sale-label">
+                                            Save {{ variant.compare_at_price | minus: variant.price | money }}
+                                        </span>
+                                    </div>
+                                {% endif %}
+                                <img width="575" height="575" loading="lazy" src="{{ product.featured_image | image_url: width: 575 }}" alt="{{ product.featured_image.alt | escape }}">
+                                {% if product.images.size > 1 %}
+                                    <img width="575" height="575" loading="lazy" src="{{ product.images[1] | image_url: width: 575 }}" alt="{{ product.images[1].alt | escape }}" class="hover-image">
+                                {% endif %}
+                                    {% if section.settings.enable_product_links %}
+                                        </a>
+                                {% endif %}
+                            </div>
+                            <div class="product-grid-item-content">
+                                <div class="product-grid-item-content-inner">
+                                <div class="product-grid-item-title">
+                                        {% if section.settings.enable_product_links %}
+                                            <a href="{{ product.url }}" class="product-grid-item-link">
+                                        {% endif %}
+                                    <h3>{{ product.title }}</h3>
+                                        {% if section.settings.enable_product_links %}
+                                            </a>
+                                        {% endif %}
+                                </div>
+                                {% if product.metafields.reviews.rating.value and product.metafields.reviews.rating_count > 0 %}
+                                    <div class="product-grid-item-rating">
+                                        {% render 'rating', rating_value: product.metafields.reviews.rating.value, rating_count: product.metafields.reviews.rating_count %}
+                                    </div>
+                                {% endif %}
+                                    {% if section.settings.show_variation_dropdown and product.variants.size > 1 %}
+                                        <div class="product-grid-item-variation-selector">
+                                            <select aria-label="Choose an option for {{ product.title | escape }}" class="product-grid-item-variation-dropdown" data-product-id="{{ product.id }}">
+                                                {% for variant in product.variants %}
+                                                    <option value="{{ variant.id }}" 
+                                                            data-savings="{{ variant.compare_at_price | minus: variant.price | money | escape }}" data-price="{{ variant.price | money | escape }}" 
+                                                            data-compare-price="{% if variant.compare_at_price > variant.price %}{{ variant.compare_at_price | money }}{% endif %}"
+                                                            data-image="{% if variant.featured_image %}{{ variant.featured_image | image_url: width: 575 }}{% else %}{{ product.featured_image | image_url: width: 575 }}{% endif %}"
+                                                            data-image-alt="{% if variant.featured_image %}{{ variant.featured_image.alt | escape }}{% else %}{{ product.featured_image.alt | escape }}{% endif %}"
+                                                            {% if variant == product.selected_or_first_available_variant %}selected{% endif %}
+                                                            {% unless variant.available %}disabled{% endunless %}>
+                                                        {% if variant.available %}
+                                                            {{ variant.title }} - {{ variant.price | money }}
+                                                            {% if variant.compare_at_price > variant.price %}
+                                                                (Save {{ variant.compare_at_price | minus: variant.price | money }})
+                                                            {% endif %}
+                                                        {% else %}
+                                                            {{ variant.title }} - Sold Out
+                                                        {% endif %}
+                                                    </option>
+                                                {% endfor %}
+                                            </select>
+                                        </div>
+                                    {% else %}
+                                <div class="product-grid-item-variants">
+                                    {% for option in product.options_with_values %}
+                                        <div class="product-grid-item-variant">
+                                            <span class="product-grid-item-variant-label">{{ option.name }}</span>
+                                            <span class="product-grid-item-variant-value">{{ option.values.first }}</span>
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                                    {% endif %}
+                                </div>
+                                <div class="product-grid-item-content-footer">
+                                    <div class="product-grid-item-price" data-product-id="{{ product.id }}">
+                                    {% if variant.compare_at_price > variant.price %}
+                                        Now <span class="price__current">{{ variant.price | money }}</span>
+                                        Was <span class="price__was">{{ variant.compare_at_price | money }}</span>
+                                    {% else %}
+                                        <span class="price__current">{{ variant.price | money }}</span>
+                                    {% endif %}
+                                </div>
+                                <div class="product-grid-item-button"><form method="post" action="{{ routes.cart_add_url }}"><input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}"><input type="hidden" name="quantity" value="1">
+                                    <button 
+                                        type="submit" class="product-grid-item-button-link" 
+                                        data-variant-id="{{ product.selected_or_first_available_variant.id }}"
+                                        data-product-title="{{ product.title | escape }}"
+                                        data-product-url="{{ product.url }}"
+                                        {% unless product.available %}disabled{% endunless %}>
+                                        {% if product.available %}Add to Cart{% else %}Sold Out{% endif %}
+                                    </button></form>
+                                </div>
+                            </div>
+                            </div>
+            
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        {% for product in section.settings.products %}
+                            {% assign variant = product.selected_or_first_available_variant %}
+                            <div class="product-grid-item" data-product-id="{{ product.id }}">
+                                <div class="product-grid-item-image">
+                                    {% if variant.compare_at_price > variant.price %}
+                                        <div class="product-grid-item-image-sale">
+                                            <span class="product-grid-item-image-sale-label">
+                                                Save {{ variant.compare_at_price | minus: variant.price | money }}
+                                            </span>
+                                        </div>
+                                    {% endif %}
+                                    <img width="575" height="575" loading="lazy" src="{{ product.featured_image | image_url: width: 575 }}" alt="{{ product.featured_image.alt | escape }}">
+                                    {% if product.images.size > 1 %}
+                                        <img width="575" height="575" loading="lazy" src="{{ product.images[1] | image_url: width: 575 }}" alt="{{ product.images[1].alt | escape }}" class="hover-image">
+                                    {% endif %}
+                                </div>
+                                <div class="product-grid-item-content">
+                                    <div class="product-grid-item-content-inner">
+                                    <div class="product-grid-item-title">
+                                        <h3>{{ product.title }}</h3>
+                                    </div>
+                                    {% if product.metafields.reviews.rating.value and product.metafields.reviews.rating_count > 0 %}
+                                        <div class="product-grid-item-rating">
+                                            {% render 'rating', rating_value: product.metafields.reviews.rating.value, rating_count: product.metafields.reviews.rating_count %}
+                                        </div>
+                                    {% endif %}
+                                    {% if section.settings.show_variation_dropdown and product.variants.size > 1 %}
+                                        <div class="product-grid-item-variation-selector">
+                                            <select aria-label="Choose an option for {{ product.title | escape }}" class="product-grid-item-variation-dropdown" data-product-id="{{ product.id }}">
+                                                {% for variant in product.variants %}
+                                                    <option value="{{ variant.id }}" 
+                                                            data-savings="{{ variant.compare_at_price | minus: variant.price | money | escape }}" data-price="{{ variant.price | money | escape }}" 
+                                                            data-compare-price="{% if variant.compare_at_price > variant.price %}{{ variant.compare_at_price | money }}{% endif %}"
+                                                            data-image="{% if variant.featured_image %}{{ variant.featured_image | image_url: width: 575 }}{% else %}{{ product.featured_image | image_url: width: 575 }}{% endif %}"
+                                                            data-image-alt="{% if variant.featured_image %}{{ variant.featured_image.alt | escape }}{% else %}{{ product.featured_image.alt | escape }}{% endif %}"
+                                                            {% if variant == product.selected_or_first_available_variant %}selected{% endif %}
+                                                            {% unless variant.available %}disabled{% endunless %}>
+                                                        {% if variant.available %}
+                                                            {{ variant.title }} - {{ variant.price | money }}
+                                                            {% if variant.compare_at_price > variant.price %}
+                                                                (Save {{ variant.compare_at_price | minus: variant.price | money }})
+                                                            {% endif %}
+                                                        {% else %}
+                                                            {{ variant.title }} - Sold Out
+                                                        {% endif %}
+                                                    </option>
+                                                {% endfor %}
+                                            </select>
+                                        </div>
+                                    {% else %}
+                                        <div class="product-grid-item-variants">
+                                            {% for option in product.options_with_values %}
+                                                <div class="product-grid-item-variant">
+                                                    <span class="product-grid-item-variant-label">{{ option.name }}</span>
+                                                    <span class="product-grid-item-variant-value">{{ option.values.first }}</span>
+                                                </div>
+                                            {% endfor %}
+                                        </div>
+                                    {% endif %}
+                                    </div>
+                                    <div class="product-grid-item-content-footer">
+                                    <div class="product-grid-item-price" data-product-id="{{ product.id }}">
+                                        {% if variant.compare_at_price > variant.price %}
+                                            Now <span class="price__current">{{ variant.price | money }}</span>
+                                            Was <span class="price__was">{{ variant.compare_at_price | money }}</span>
+                                        {% else %}
+                                            <span class="price__current">{{ variant.price | money }}</span>
+                                        {% endif %}
+                                    </div>
+                                    <div class="product-grid-item-button"><form method="post" action="{{ routes.cart_add_url }}"><input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}"><input type="hidden" name="quantity" value="1">
+                                        <button 
+                                            type="submit" class="product-grid-item-button-link" 
+                                            data-variant-id="{{ product.selected_or_first_available_variant.id }}"
+                                            data-product-title="{{ product.title | escape }}"
+                                            data-product-url="{{ product.url }}"
+                                            {% unless product.available %}disabled{% endunless %}>
+                                            {% if product.available %}Add to Cart{% else %}Sold Out{% endif %}
+                                        </button></form>
+                                    </div>
+                                </div>
+                                </div>
+    
+                        </div>
+                    {% endfor %}
+                    {% endif %}
+                 </div>
+            </div>
+        </div>
+    </section></sihoo-spring-grid>
+    {% endif %}
+    
+    <script src="{{ 'sihoo-spring-grid.js' | asset_url }}" defer></script>
+    
+    {% schema %}
+    {
+      "name": "SIHOO Spring products",
+      "tag": "section",
+      "class": "section",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Product Grid"
+        },
+        {
+          "type": "textarea",
+          "id": "subheading",
+          "label": "Subheading",
+          "info": "Optional text shown below the heading."
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection"
+        },
+        {
+          "type": "product_list",
+          "id": "products",
+          "label": "Specific Products",
+          "limit": 20,
+          "info": "Choose specific products to display. If both collection and products are selected, collection will be used."
+        },
+        {
+          "type": "checkbox",
+          "id": "show_variation_dropdown",
+          "label": "Show variation dropdown",
+          "default": false,
+          "info": "Enable to show a dropdown list of product variations with pricing"
+        },
+        {
+          "type": "range",
+          "id": "products_to_show",
+          "min": 2,
+          "max": 20,
+          "step": 1,
+          "default": 8,
+          "label": "Number of products to show"
+        },
+        {
+          "type": "header",
+          "content": "Section colors"
+        },
+        {
+          "type": "color",
+          "id": "section_background",
+          "label": "Section background",
+          "default": "#063f27"
+        },
+        {
+          "type": "color",
+          "id": "heading_color",
+          "label": "Heading color",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "subheading_color",
+          "label": "Subheading color",
+          "default": "#ffffff"
+        },
+        {
+          "type": "header",
+          "content": "Product card colors"
+        },
+        {
+          "type": "color",
+          "id": "card_background",
+          "label": "Card background",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "product_title_color",
+          "label": "Product title",
+          "default": "#1a1a1a"
+        },
+        {
+          "type": "color",
+          "id": "variant_label_color",
+          "label": "Variant label",
+          "default": "#666666"
+        },
+        {
+          "type": "color",
+          "id": "variant_value_color",
+          "label": "Variant value",
+          "default": "#1a1a1a"
+        },
+        {
+          "type": "color",
+          "id": "price_current_color",
+          "label": "Current price",
+          "default": "#991011"
+        },
+        {
+          "type": "color",
+          "id": "price_compare_color",
+          "label": "Compare-at price",
+          "default": "#888888"
+        },
+        {
+          "type": "header",
+          "content": "Badge & button colors"
+        },
+        {
+          "type": "color",
+          "id": "sale_badge_background",
+          "label": "Sale badge background",
+          "default": "#991011"
+        },
+        {
+          "type": "color",
+          "id": "sale_badge_text",
+          "label": "Sale badge text",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "button_background",
+          "label": "Button background",
+          "default": "#991011"
+        },
+        {
+          "type": "color",
+          "id": "button_text",
+          "label": "Button text",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "button_disabled_background",
+          "label": "Disabled button background",
+          "default": "#cccccc"
+        },
+        {
+          "type": "color",
+          "id": "button_disabled_text",
+          "label": "Disabled button text",
+          "default": "#666666"
+        },
+        {
+          "type": "header",
+          "content": "Dropdown colors"
+        },
+        {
+          "type": "color",
+          "id": "dropdown_background",
+          "label": "Dropdown background",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "dropdown_text",
+          "label": "Dropdown text",
+          "default": "#1a1a1a"
+        },
+        {
+          "type": "color",
+          "id": "dropdown_border_color",
+          "label": "Dropdown border",
+          "default": "#dddddd"
+        }
+      ],
+      "presets": [
+        {
+          "name": "Static Product Grid"
+        }
+      ]
+    }
+    {% endschema %}
