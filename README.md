@@ -4,6 +4,9 @@ sihoo.com.au(Shopify, Symmetry 테마)의 SEO·GEO·상품페이지·테마 업�
 
 ## 시작하기
 
+- DRAFT 업그레이드 작업지시서: [docs/upgrade-2026-09/WORK-ORDER.ko.md](docs/upgrade-2026-09/WORK-ORDER.ko.md)
+- 관리자 공동 편집용 [템플릿 연결 대장](docs/upgrade-2026-09/TEMPLATE-MAP.ko.md) · [업그레이드 변경 기록](docs/upgrade-2026-09/CHANGELOG.ko.md)
+
 - 현재 상태와 다음 할 일: [docs/sihoo-au-vs-us-site-audit-2026-09.md](docs/sihoo-au-vs-us-site-audit-2026-09.md) §8 작업 리스트
 - 오늘 무엇이 바뀌었나: [docs/sihoo-au-change-report-2026-09-07.md](docs/sihoo-au-change-report-2026-09-07.md) (§6 추가/변경/삭제 구분, §7 프리뷰 링크)
 - 제품 스펙 단일 소스: [docs/sihoo-au-product-spec-sheet-2026-09.md](docs/sihoo-au-product-spec-sheet-2026-09.md) + [data/sihoo-au-product-specs-import.csv](data/sihoo-au-product-specs-import.csv)
