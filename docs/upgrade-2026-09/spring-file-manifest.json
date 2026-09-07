@@ -36,7 +36,7 @@
       "path": "sections/sihoo-spring-grid.liquid",
       "existed_before": false,
       "before_sha256": null,
-      "remote_after_sha256": "03b106127a3df2388183a0bfcbe77fd397a77e1e6dc8ba3b7dc06f341100b0cc"
+      "remote_after_sha256": "f18c73f7b86a362979ab9c79a27a5b57c41c610283855550384722373e889032"
     },
     {
       "path": "assets/sihoo-spring-grid.js",

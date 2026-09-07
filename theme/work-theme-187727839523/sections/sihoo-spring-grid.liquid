@@ -203,8 +203,8 @@
                                         <div class="product-grid-item-variation-selector">
                                             <select aria-label="Choose an option for {{ product.title | escape }}" class="product-grid-item-variation-dropdown" data-product-id="{{ product.id }}">
                                                 {% for variant in product.variants %}
-                                                    <option value="{{ variant.id }}" 
-                                                            data-savings="{{ variant.compare_at_price | minus: variant.price | money | escape }}" data-price="{{ variant.price | money | escape }}" 
+                                                    <option value="{{ variant.id }}"
+                                                            data-savings="{{ variant.compare_at_price | minus: variant.price | money | escape }}" data-price="{{ variant.price | money | escape }}"
                                                             data-compare-price="{% if variant.compare_at_price > variant.price %}{{ variant.compare_at_price | money }}{% endif %}"
                                                             data-image="{% if variant.featured_image %}{{ variant.featured_image | image_url: width: 575 }}{% else %}{{ product.featured_image | image_url: width: 575 }}{% endif %}"
                                                             data-image-alt="{% if variant.featured_image %}{{ variant.featured_image.alt | escape }}{% else %}{{ product.featured_image.alt | escape }}{% endif %}"
@@ -243,8 +243,8 @@
                                     {% endif %}
                                 </div>
                                 <div class="product-grid-item-button"><form method="post" action="{{ routes.cart_add_url }}"><input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}"><input type="hidden" name="quantity" value="1">
-                                    <button 
-                                        type="submit" class="product-grid-item-button-link" 
+                                    <button
+                                        type="submit" class="product-grid-item-button-link"
                                         data-variant-id="{{ product.selected_or_first_available_variant.id }}"
                                         data-product-title="{{ product.title | escape }}"
                                         data-product-url="{{ product.url }}"
@@ -254,7 +254,7 @@
                                 </div>
                             </div>
                             </div>
-            
+
                             </div>
                         {% endfor %}
                     {% else %}
@@ -288,8 +288,8 @@
                                         <div class="product-grid-item-variation-selector">
                                             <select aria-label="Choose an option for {{ product.title | escape }}" class="product-grid-item-variation-dropdown" data-product-id="{{ product.id }}">
                                                 {% for variant in product.variants %}
-                                                    <option value="{{ variant.id }}" 
-                                                            data-savings="{{ variant.compare_at_price | minus: variant.price | money | escape }}" data-price="{{ variant.price | money | escape }}" 
+                                                    <option value="{{ variant.id }}"
+                                                            data-savings="{{ variant.compare_at_price | minus: variant.price | money | escape }}" data-price="{{ variant.price | money | escape }}"
                                                             data-compare-price="{% if variant.compare_at_price > variant.price %}{{ variant.compare_at_price | money }}{% endif %}"
                                                             data-image="{% if variant.featured_image %}{{ variant.featured_image | image_url: width: 575 }}{% else %}{{ product.featured_image | image_url: width: 575 }}{% endif %}"
                                                             data-image-alt="{% if variant.featured_image %}{{ variant.featured_image.alt | escape }}{% else %}{{ product.featured_image.alt | escape }}{% endif %}"
@@ -328,8 +328,8 @@
                                         {% endif %}
                                     </div>
                                     <div class="product-grid-item-button"><form method="post" action="{{ routes.cart_add_url }}"><input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}"><input type="hidden" name="quantity" value="1">
-                                        <button 
-                                            type="submit" class="product-grid-item-button-link" 
+                                        <button
+                                            type="submit" class="product-grid-item-button-link"
                                             data-variant-id="{{ product.selected_or_first_available_variant.id }}"
                                             data-product-title="{{ product.title | escape }}"
                                             data-product-url="{{ product.url }}"
@@ -339,7 +339,7 @@
                                     </div>
                                 </div>
                                 </div>
-    
+
                         </div>
                     {% endfor %}
                     {% endif %}
@@ -348,9 +348,9 @@
         </div>
     </section></sihoo-spring-grid>
     {% endif %}
-    
+
     <script src="{{ 'sihoo-spring-grid.js' | asset_url }}" defer></script>
-    
+
     {% schema %}
     {
       "name": "SIHOO Spring products",
