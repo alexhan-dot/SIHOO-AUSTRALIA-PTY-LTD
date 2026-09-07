@@ -1,0 +1,1133 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "klaviyo_reviews_average_rating_gckbyV": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "disabled": true,
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "divider": {
+          "type": "divider",
+          "settings": {
+            "show_in_quickbuy": true
+          }
+        },
+        "text_d8qqgx": {
+          "type": "text",
+          "settings": {
+            "text": "Free shipping with delivery in 1-5 days.",
+            "icon": "plane",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#c16452",
+            "show_in_quickbuy": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant-picker",
+          "settings": {
+            "show_single": true,
+            "selector_style": "listed",
+            "dynamic_availability": "show",
+            "enable_size_chart": false,
+            "size_chart_label": "Size guide",
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "5048318b-3d9e-4a57-b9a4-5761293955e9": {
+          "type": "inventory-level",
+          "disabled": true,
+          "settings": {
+            "show_inventory_notice": "low",
+            "show_inventory_count": "low",
+            "inventory_threshold": 10,
+            "enable_box": false,
+            "enable_pulse": true,
+            "show_in_quickbuy": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_backorder_text": true,
+            "show_pickup_availability": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "show_in_tab": false,
+            "open_tab": false,
+            "icon": "",
+            "show_in_quickbuy": false
+          }
+        },
+        "ff72739d-90fa-44b3-896f-ca72e4704c77": {
+          "type": "accordion",
+          "settings": {
+            "title": "The Next Generation of Space Seating Comfort",
+            "icon": "",
+            "content": "<p>The Sihoo Doro C500 sets a new benchmark for executive <a href=\"https://sihoo.com.au/\" target=\"_blank\">ergonomic chairs in Australia</a>, designed to deliver a superior seating experience for modern professionals. Building on Sihoo Australia’s commitment to ergonomic design, the C500 features precision engineering and advanced adjustability for support and comfort that adapts perfectly to you.</p>",
+            "page": "",
+            "custom_liquid": "",
+            "open": true,
+            "show_in_quickbuy": false
+          }
+        },
+        "ae5c0b7e-ed16-49ec-a868-6b6e2ba54cc3": {
+          "type": "related-products",
+          "disabled": true,
+          "settings": {
+            "title": "Related products",
+            "product_list": "{{ product.metafields[\"app--31615844353--specifications\"].compare_with.value }}"
+          }
+        },
+        "sihoo_reviews": {
+          "type": "sihoo-reviews",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "sihoo_reviews",
+        "price",
+        "klaviyo_reviews_average_rating_gckbyV",
+        "divider",
+        "text_d8qqgx",
+        "variant_picker",
+        "5048318b-3d9e-4a57-b9a4-5761293955e9",
+        "buy_buttons",
+        "description",
+        "ff72739d-90fa-44b3-896f-ca72e4704c77",
+        "ae5c0b7e-ed16-49ec-a868-6b6e2ba54cc3"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "select_first_variant": true,
+        "show_location_underneath": false,
+        "inventory_transfers_enable": true,
+        "enable_sticky_columns": true,
+        "enable_sticky_atc": true,
+        "sticky_atc_position": "center",
+        "sticky_atc_mobile": false,
+        "sticky_atc_behavior": "add_to_cart",
+        "sticky_atc_button_style": "primary",
+        "gallery_size": "large",
+        "gallery_layout": "carousel-beside",
+        "enable_zoom": true,
+        "show_alt_text": false,
+        "alt_text_icon": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_media_grouping": true,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe"
+      }
+    },
+    "172649452298bf6fcf": {
+      "type": "apps",
+      "blocks": {
+        "specification_compare_specification_table_MNnxw7": {
+          "type": "shopify://apps/specs-compare/blocks/specification-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
+          "settings": {
+            "product": "sihoo-doro-c500-ergonomic-office-chair",
+            "show_group_names": true,
+            "maximum_rows": 10,
+            "app_block_margin": 0,
+            "app_block_max_width": "custom",
+            "app_block_custom_max_width": 1000,
+            "append_parent_target_selector": ""
+          }
+        }
+      },
+      "block_order": [
+        "specification_compare_specification_table_MNnxw7"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_space": false
+      }
+    },
+    "rich_text_EjcAFq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_9daDKh": {
+          "type": "heading",
+          "settings": {
+            "title": "Sihoo DORO-C500 Ergonomic Chair Features",
+            "use_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9daDKh"
+      ],
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "custom_content_QaWjQY": {
+      "type": "custom-content",
+      "blocks": {
+        "image_TDt6pU": {
+          "type": "image",
+          "settings": {
+            "width": "quarter",
+            "image": "shopify://shop_images/C500_0822_790_02_36136fa3-0624-491d-9a8e-a4eb05bc9bfa.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "<p>Anti-Gravity Mechanism</p>",
+            "enlarge_text": true,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "bottom center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "image_neqKMW": {
+          "type": "image",
+          "settings": {
+            "width": "quarter",
+            "image": "shopify://shop_images/2024.05.07_c500_3617.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "<p>Domino 3D lumbar support system</p>",
+            "enlarge_text": true,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "bottom center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "image_YyyxfL": {
+          "type": "image",
+          "settings": {
+            "width": "quarter",
+            "image": "shopify://shop_images/2024.05.07_c500_3467.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "<p>Extra-soft mesh made of Italian velvet</p>",
+            "enlarge_text": true,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "bottom center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "image_47QKCX": {
+          "type": "image",
+          "settings": {
+            "width": "quarter",
+            "image": "shopify://shop_images/b438e0aca8d7dacf1ec0c61646bc88ce.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "<p>6D Bionic Joint Armrest</p>",
+            "enlarge_text": true,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "bottom center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        }
+      },
+      "block_order": [
+        "image_TDt6pU",
+        "image_neqKMW",
+        "image_YyyxfL",
+        "image_47QKCX"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "image_with_text_emAkdX": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Ezenpy": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Breakthrough Anti-Gravity Mechanism",
+            "use_h1": false
+          }
+        },
+        "text_zTWjfW": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Breakthrough Anti-Gravity Mechanism</h3><p>The Sihoo Doro C500 features a groundbreaking Anti-Gravity Mechanism, incorporating elastic plates made from aerospace-grade glass fibre - the same material used in spacecraft. This innovative design offers unmatched flexibility and adaptability, allowing users to enjoy full-body support with a weightless reclining experience that seems to defy gravity.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_UyLx7m": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Check Out How Doro S300 Was Designed",
+            "button_link": "shopify://blogs/all-about-ergonomic-chair/sihoo-doro-s300-design-story",
+            "button_style": "primary",
+            "open_loox_modal": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ezenpy",
+        "text_zTWjfW",
+        "button_UyLx7m"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/4_c317a06a-24d0-4ae7-b14a-13103ba93f91.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_cgmn3V": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_wrwT34": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Experience Weightlessness with the Doro C500",
+            "use_h1": false
+          }
+        },
+        "text_JMmVtJ": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Experience Weightlessness with the Doro C500</h3><p>Featuring elastic plates crafted from aerospace-grade glass fibre, the Sihoo Doro C500 offers personalised tension adjustment to suit users of all sizes and weights. These chairs are designed for next-level comfort, so you can stay supported and comfortable at any angle without locking the backrest. Return smoothly to an upright position and enjoy comfort even during long hours of gaming, working, or relaxing.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_wrwT34",
+        "text_JMmVtJ"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/S300_03_1358_840.gif",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_exBAbL": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_BcqGEn": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Adaptive Anti-Spine Lumbar Support",
+            "use_h1": false
+          }
+        },
+        "text_cM73X7": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Adaptive Anti-Spine Lumbar Support</h3><p>With the innovative Body Movement (BM) Tracking System, the integrated dynamic lumbar support of the Sihoo Doro C500 automatically adapts to the natural curve of your spine. This lasting ergonomic quality provides continuous posture-perfect alignment in any sitting position - no manual adjustments required.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_BcqGEn",
+        "text_cM73X7"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/C500_0904_790_13.gif",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_UiDj6e": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_GmmkxF": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Adjustable Backrest Height for Tailored Support",
+            "use_h1": false
+          }
+        },
+        "text_EM8cPi": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Adjustable Backrest Height for Tailored Support</h3><p>The upper section of the backrest can be independently adjusted across five positions, offering a generous 6cm seat height adjustment range. This ensures proper support for your shoulders and neck, whether you're 150 cm (5 feet) or 190 cm (6 feet 3 inches) tall. Throughout every adjustment, the lumbar system of Sihoo ergonomic chairs remains perfectly aligned to provide effective lower back support.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_GmmkxF",
+        "text_EM8cPi"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/C500_0904_790_20.gif",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_D4TiKX": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_mEUwWD": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Experience Effortless Comfort with the Sihoo Doro C500",
+            "use_h1": false
+          }
+        },
+        "text_R4je3R": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Experience Effortless Comfort with the Sihoo Doro C500</h3><p>The Sihoo Doro C500 offers personalised tension adjustment for users of all sizes and weights. Enjoy effortless reclining and return smoothly to an upright position with ease. Enhance your workspace with ergonomic design built for modern professionals, and discover why Sihoo ergonomic chairs deliver next-level comfort trusted by thousands.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_mEUwWD",
+        "text_R4je3R"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/4_i_2.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_3DfKjP": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Rm6PF6": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "6D armrests for arm support in all",
+            "use_h1": false
+          }
+        },
+        "text_c4QHVf": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>6D armrests for arm support in all</h3><p>The Sihoo Doro C500 leads the way with its advanced 6D armrests, allowing adjustment in six directions for truly personalised comfort. Whether you're typing, gaming, or relaxing, enjoy optimal arm support in any sitting position - helping you maintain healthy posture and full-body support throughout the day.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Rm6PF6",
+        "text_c4QHVf"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/C500_0904_790_15.gif",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_H8cx7F": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_aDbrPk": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Wide-Angle 3D Headrest for Exceptional Neck Support",
+            "use_h1": false
+          }
+        },
+        "text_fFLU3g": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Wide-Angle 3D Headrest for Exceptional Neck Support</h3><p>Crafted from soft, touchable materials, the Sihoo Doro C500's wide-angle 3D headrest gently conforms to the natural curve of your neck, ensuring a tailored fit every time. With its generously sized, multi-directional surface, you can comfortably rest your head to the side, perfect for relaxation after long hours at work.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_aDbrPk",
+        "text_fFLU3g"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/C500_0904_790_17.gif",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_7WAwRX": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Kitrym": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Customisable Seat Depth for Tailored Comfort",
+            "use_h1": false
+          }
+        },
+        "text_idwjYB": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Customisable Seat Depth for Tailored Comfort</h3><p>Easily adjust the Sihoo Doro C500's seat depth by up to 4cm to suit your leg length and sitting style. This feature ensures proper thigh support, promotes healthy circulation, and delivers comfort even during long hours of use.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Kitrym",
+        "text_idwjYB"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/C500_0904_790_22.gif",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "rich_text_BAyciK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fkW96k": {
+          "type": "heading",
+          "settings": {
+            "title": "Award-winning design",
+            "use_h1": false
+          }
+        },
+        "text_VzndM3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sihoo Doro S300, a recipient of the esteemed German Design Award, boasts both comfort and visual allure. Crafted from a single piece of aluminum alloy, its main structure undergoes 13 meticulous procedures to achieve its stunning and elegant esthetics.</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_fkW96k",
+        "text_VzndM3"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "image_with_text_NTA6Lj": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_iEY6gz": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Cloud-Like Softness",
+            "use_h1": false
+          }
+        },
+        "text_7jFwg6": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Cloud-Like Softness</h3><p>The Sihoo Doro C500 uses a unique weaving technique that combines Italian velvet with DuPont TPEE for its mesh material. This blend provides exceptional elasticity, durability, pressure relief, and a luxuriously soft texture-making it a staple of lasting ergonomic quality.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_iEY6gz",
+        "text_7jFwg6"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/1940-1200_3_352f2f8e-28ce-408a-bf79-a4d89308d755.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_NDVfei": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_EwCdaC": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Engineered for Durability and Certified Safety",
+            "use_h1": false
+          }
+        },
+        "text_y9kRXC": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Engineered for Durability and Certified Safety</h3><p>Crafted from premium materials and built to the highest standards, the Sihoo Doro C500 undergoes rigorous quality testing for lasting performance. Certified to Level 4 BIFMA standards, this ergonomic chair is built for years of reliable use, ensuring support and comfort without compromise.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_EwCdaC",
+        "text_y9kRXC"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/20240313-154830.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "custom_content_AcyUG6": {
+      "type": "custom-content",
+      "blocks": {
+        "image_geYbR8": {
+          "type": "image",
+          "settings": {
+            "width": "three-quarters",
+            "image": "shopify://shop_images/C500_1022_750_181.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "image_QarVXM": {
+          "type": "image",
+          "settings": {
+            "width": "three-quarters",
+            "image": "shopify://shop_images/C500_1022_750_19.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "image_fJMEiP": {
+          "type": "image",
+          "settings": {
+            "width": "three-quarters",
+            "image": "shopify://shop_images/C500_1022_750_20_3e840e8d-c9f1-4e6f-9b7d-1bb6def27b41.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        }
+      },
+      "block_order": [
+        "image_geYbR8",
+        "image_QarVXM",
+        "image_fJMEiP"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "background_video_VRGpGN": {
+      "type": "background-video",
+      "blocks": {
+        "subheading_74qCM8": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Tell your story"
+          }
+        },
+        "heading_yRW86z": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Background video",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_TDy7zd": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use a video to get a customer's attention</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_74qCM8",
+        "heading_yRW86z",
+        "text_TDy7zd"
+      ],
+      "settings": {
+        "video_shopify": "shopify://files/videos/FUNCTION DEMONSTRATION VID_533a52ab-42a8-48f6-9f82-a784001c5d7c.mp4",
+        "video_external": "",
+        "video_description": "",
+        "text_alignment": "center center",
+        "height_desktop": 660,
+        "height_mobile": 220,
+        "full_width": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "gallery_BYX7Lz": {
+      "type": "gallery",
+      "blocks": {
+        "media_DVknHy": {
+          "type": "media",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/3_59e346be-2c01-44fd-a443-ad1c5b6b675b.jpg",
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_mEmjcM": {
+          "type": "media",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/1_61afba7b-9c36-44fa-b2d0-51aa5fd0ee04_1.jpg",
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_yE8wn6": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/C500_e9daca91-f7a3-4435-9a27-ab5d4786c372.jpg",
+            "enlarge_media": true,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "media_DVknHy",
+        "media_mEmjcM",
+        "media_yE8wn6"
+      ],
+      "settings": {
+        "grid_desktop": 2,
+        "grid_mobile": "2",
+        "height": "adapt",
+        "desktop_image_height": 460,
+        "mobile_image_height": 400,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": true,
+        "full_width": false,
+        "color_scheme": "default",
+        "enable_carousel": true,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "collapsible_tabs_AWRURX": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_7XRT9a": {
+          "type": "question",
+          "settings": {
+            "title": "1. What makes the Sihoo Doro C500 different from other office chairs sold in Australia?",
+            "answer": "<p>The C500 stands out with its advanced ergonomic features, such as a 6D adjustable armrest, adaptive lumbar support, and aerospace-grade glass fibre construction. Designed for Australian workplaces, it offers superior comfort and durability—making it a popular choice among professionals who value both style and function.</p>"
+          }
+        },
+        "question_GLJV8c": {
+          "type": "question",
+          "settings": {
+            "title": "2. Is the Sihoo Doro C500 suitable for long hours of sitting?",
+            "answer": "<p>Absolutely. The C500’s breathable mesh back, adjustable seat depth, and waterfall-edge cushion ensure all-day comfort and support, helping you stay focused and productive during extended work sessions.</p>"
+          }
+        },
+        "question_UJEmwc": {
+          "type": "question",
+          "settings": {
+            "title": "3. Does the Sihoo Doro C500 come with a warranty?",
+            "answer": "<p>Yes, every C500 chair is backed by a comprehensive 5-year warranty. You can buy with confidence knowing your chair is built to last and supported by local after-sales service in Australia.</p>"
+          }
+        },
+        "question_FXcjwN": {
+          "type": "question",
+          "settings": {
+            "title": "4. How does the C500 support good posture and prevent back pain?",
+            "answer": "<p>The C500 features an adaptive anti-spine lumbar support and customisable seat adjustments that encourage natural alignment and reduce the risk of back and neck strain—essential for healthy posture during long hours at the desk.</p>"
+          }
+        },
+        "question_K6wfdN": {
+          "type": "question",
+          "settings": {
+            "title": "5. Can I adjust the armrests, seat, and backrest to fit my body?",
+            "answer": "<p>Definitely. The C500 offers 6D armrests, a 4cm adjustable seat depth, 6cm backrest height adjustment, and a wide-angle 3D headrest. This level of adjustability makes it easy to find your ideal sitting position, regardless of your height or body type.</p>"
+          }
+        },
+        "question_BkkfGe": {
+          "type": "question",
+          "settings": {
+            "title": "6. Is the Sihoo Doro C500 easy to assemble?",
+            "answer": "<p>Yes, the C500 comes with clear instructions and all tools included. Most users can fully assemble the chair in under 20 minutes—no professional help required.</p>"
+          }
+        },
+        "question_d8y7h6": {
+          "type": "question",
+          "settings": {
+            "title": "7. Does the C500 mesh fabric get hot or uncomfortable in the Australian climate?",
+            "answer": "<p>Not at all. The C500 uses premium, cloud-like mesh that promotes airflow, keeping you cool and comfortable—even during hot Australian summers.</p>"
+          }
+        },
+        "question_aEMANk": {
+          "type": "question",
+          "settings": {
+            "title": "8. Is the Sihoo Doro C500 suitable for both home offices and corporate environments?",
+            "answer": "<p>Absolutely. Its modern executive design, robust aluminium alloy base, and certified safety make it a top choice for both home offices and busy corporate settings across Australia.</p>"
+          }
+        },
+        "question_qfwJF7": {
+          "type": "question",
+          "settings": {
+            "title": "9. What certifications does the C500 hold, and why are they important?",
+            "answer": "<p>The Sihoo Doro C500 is Level 4, BIFMA, and SGS certified. These international certifications guarantee the chair meets strict standards for safety, quality, and durability—giving you peace of mind with every purchase.</p>"
+          }
+        },
+        "question_GGyWPJ": {
+          "type": "question",
+          "settings": {
+            "title": "10. Why is the Sihoo Doro C500 a bestseller in Australia?",
+            "answer": "<p>Australian customers love the C500 for its unmatched ergonomic support, stylish design, and proven durability. With glowing reviews and strong demand nationwide, it’s quickly become a favourite among those seeking a high-quality, adjustable office chair.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_7XRT9a",
+        "question_GLJV8c",
+        "question_UJEmwc",
+        "question_FXcjwN",
+        "question_K6wfdN",
+        "question_BkkfGe",
+        "question_d8y7h6",
+        "question_aEMANk",
+        "question_qfwJF7",
+        "question_GGyWPJ"
+      ],
+      "name": "Collapsible tabs",
+      "settings": {
+        "title": "FAQs About Sihoo Doro C500 Executive Ergonomic Mesh Office Chair"
+      }
+    },
+    "background_video_cqrB3X": {
+      "type": "background-video",
+      "blocks": {
+        "subheading_cJRGaH": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Tell your story"
+          }
+        },
+        "heading_WrGQpJ": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Background video",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_3KUBtn": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use a video to get a customer's attention</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_cJRGaH",
+        "heading_WrGQpJ",
+        "text_3KUBtn"
+      ],
+      "disabled": true,
+      "settings": {
+        "video_shopify": "shopify://files/videos/INSTALLATION VID.mp4",
+        "video_external": "",
+        "video_description": "",
+        "text_alignment": "center center",
+        "height_desktop": 660,
+        "height_mobile": 220,
+        "full_width": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "video_with_text_6WhCrc": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_tkY9Jf": {
+          "type": "heading",
+          "settings": {
+            "title": "Easy Installation Guide Video",
+            "use_h1": false
+          }
+        },
+        "text_qdxT8j": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Sihoo Doro C500 is designed for simple, hassle-free assembly. All necessary tools and step-by-step instructions are included in the package. Most customers can fully assemble their chair in under 20 minutes—no special skills required.</p><p><strong>Need help?</strong><br/>If you have any questions or need assistance during installation, please contact our support team. We’re here to help you every step of the way!</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_eEVHGf": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button text",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tkY9Jf",
+        "text_qdxT8j",
+        "button_eEVHGf"
+      ],
+      "name": "Video with text",
+      "settings": {
+        "video_shopify": "shopify://files/videos/INSTALLATION VID.mp4",
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_description": "",
+        "autoplay": false,
+        "video_position": "left",
+        "text_alignment": "center",
+        "color_scheme": "default"
+      }
+    },
+    "17264907824a3b621e": {
+      "type": "apps",
+      "blocks": {
+        "specification_compare_comparison_table_EE8bnJ": {
+          "type": "shopify://apps/specs-compare/blocks/comparison-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
+          "settings": {
+            "product": "sihoo-doro-c500-ergonomic-office-chair",
+            "product_list": [
+              "sihoo-m18-ergonomics-task-office-chair",
+              "sihoo-a3-doro-c300-ergonomic-office-chair",
+              "sihoo-doro-s300-ergonomic-office-chair",
+              "sihoo-m57-ergonomic-office-chair",
+              "sihoo-vito-m90-ergonomic-office-chair",
+              "sihoo-v1-ergonomic-office-chair",
+              "sihoo-a3-doro-c100-ergonomic-office-chair"
+            ],
+            "fallback_to_related_products": true,
+            "exclude_sold_out_products": true,
+            "enable_show_differences_switch": true,
+            "differences_switch_mode": "highlight_differences",
+            "show_variant_selector": true,
+            "show_group_names": true,
+            "maximum_rows": 15,
+            "maximum_visible_products": 4,
+            "show_in_modal": false,
+            "modal_trigger_button_text": "",
+            "app_block_margin": 0,
+            "app_block_max_width": "full_width",
+            "app_block_custom_max_width": 800,
+            "show_product_image": false,
+            "show_product_vendor": false,
+            "show_product_price": true,
+            "show_product_rating": false,
+            "show_view_details_button": false,
+            "enable_ai_analysis": false,
+            "append_parent_target_selector": ""
+          }
+        }
+      },
+      "block_order": [
+        "specification_compare_comparison_table_EE8bnJ"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_space": true
+      }
+    },
+    "1726495174ce454bc4": {
+      "type": "sihoo-product-reviews",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_qfzGna": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "reviews_to_display": "product_reviews_only",
+            "default_tab": "automatic",
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 10,
+            "hide_thumbnails": false,
+            "maxwidth": 1160,
+            "is_sample": false
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_qfzGna"
+      ],
+      "settings": {
+        "heading": "Customer reviews",
+        "show_source_note": false
+      }
+    },
+    "recommendations": {
+      "type": "related-products",
+      "settings": {
+        "title": "You may also like",
+        "show_vendor": false,
+        "grid": 4
+      }
+    }
+  },
+  "order": [
+    "main",
+    "172649452298bf6fcf",
+    "rich_text_EjcAFq",
+    "custom_content_QaWjQY",
+    "image_with_text_emAkdX",
+    "image_with_text_cgmn3V",
+    "image_with_text_exBAbL",
+    "image_with_text_UiDj6e",
+    "image_with_text_D4TiKX",
+    "image_with_text_3DfKjP",
+    "image_with_text_H8cx7F",
+    "image_with_text_7WAwRX",
+    "rich_text_BAyciK",
+    "image_with_text_NTA6Lj",
+    "image_with_text_NDVfei",
+    "custom_content_AcyUG6",
+    "background_video_VRGpGN",
+    "gallery_BYX7Lz",
+    "collapsible_tabs_AWRURX",
+    "background_video_cqrB3X",
+    "video_with_text_6WhCrc",
+    "17264907824a3b621e",
+    "1726495174ce454bc4",
+    "recommendations"
+  ]
+}

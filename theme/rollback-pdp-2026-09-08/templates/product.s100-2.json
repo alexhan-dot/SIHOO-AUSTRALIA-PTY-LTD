@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -279,8 +288,7 @@
         "enable_video_autoplay": false,
         "enable_video_looping": false,
         "enable_media_grouping": false,
-        "media_grouping_option": "Color,Colour,Couleur,Farbe",
-        "sihoo_unified_reviews": true
+        "media_grouping_option": "Color,Colour,Couleur,Farbe"
       }
     },
     "custom_multi_column_WWXqNc": {
@@ -725,19 +733,19 @@
       }
     },
     "1726717200db5c7e8b": {
-      "type": "sihoo-product-reviews",
+      "type": "apps",
       "blocks": {
         "loox_reviews_loox_dynamic_section_fyKK8z": {
           "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
-            "reviews_to_display": "product_reviews_only",
+            "reviews_to_display": "",
             "default_tab": "automatic",
             "only_photos": false,
             "aggregated": false,
-            "limit": 10,
+            "limit": 20,
             "hide_thumbnails": false,
-            "maxwidth": 1160,
-            "is_sample": false
+            "maxwidth": 1080,
+            "is_sample": true
           }
         }
       },
@@ -745,8 +753,8 @@
         "loox_reviews_loox_dynamic_section_fyKK8z"
       ],
       "settings": {
-        "heading": "Customer reviews",
-        "show_source_note": false
+        "full_width": false,
+        "show_space": true
       }
     },
     "related-products": {
@@ -755,6 +763,14 @@
         "title": "You may also like",
         "show_vendor": false,
         "grid": 3
+      }
+    },
+    "review_source_note": {
+      "type": "review-source-note",
+      "settings": {
+        "heading": "About these reviews",
+        "text_alignment": "center",
+        "height": "small"
       }
     }
   },
@@ -774,6 +790,7 @@
     "custom_multi_column_MB6MeA",
     "custom_multi_column_tb6Dea",
     "slideshow_TgHBPy",
+    "review_source_note",
     "1726717200db5c7e8b",
     "related-products"
   ]

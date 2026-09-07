@@ -6,6 +6,7 @@ sihoo.com.au(Shopify, Symmetry 테마)의 SEO·GEO·상품페이지·테마 업�
 
 - DRAFT 업그레이드 작업지시서: [docs/upgrade-2026-09/WORK-ORDER.ko.md](docs/upgrade-2026-09/WORK-ORDER.ko.md)
 - Spring Sale 동기화·구매 오류 수정: [변경 범위와 검증 결과](docs/upgrade-2026-09/SPRING-SALE-SYNC.ko.md)
+- 상품페이지·리뷰 통합: [실행 목록·US 대응표·미검증 범위](docs/upgrade-2026-09/PDP-REVIEWS-WORKLIST.ko.md)
 - 관리자 공동 편집용 [템플릿 연결 대장](docs/upgrade-2026-09/TEMPLATE-MAP.ko.md) · [업그레이드 변경 기록](docs/upgrade-2026-09/CHANGELOG.ko.md)
 
 - 현재 상태와 다음 할 일: [docs/sihoo-au-vs-us-site-audit-2026-09.md](docs/sihoo-au-vs-us-site-audit-2026-09.md) §8 작업 리스트

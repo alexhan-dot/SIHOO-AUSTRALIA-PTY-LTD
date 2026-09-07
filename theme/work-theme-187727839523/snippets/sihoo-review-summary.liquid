@@ -1,0 +1,19 @@
+{%- comment -%}The summary and full widget both use this product's Loox data.{%- endcomment -%}
+{%- liquid
+  assign review_count = product.metafields.loox.num_reviews | plus: 0
+  assign review_average = product.metafields.loox.avg_rating | plus: 0
+-%}
+<div class="sihoo-review-summary">
+  <a href="#sihoo-product-reviews">
+    {%- if review_count > 0 and review_average > 0 -%}
+      <div class="loox-rating" data-id="{{ product.id }}" data-rating="{{ review_average }}" data-raters="{{ review_count }}" data-pattern="[rating]/5 · [count] reviews"></div>
+      <noscript>{{ review_average | round: 1 }} / 5 · {{ review_count }} {% if review_count == 1 %}review{% else %}reviews{% endif %}</noscript>
+    {%- else -%}
+      Read or write a review
+    {%- endif -%}
+  </a>
+</div>
+{% stylesheet %}
+  .sihoo-review-summary a { text-decoration: underline; text-underline-offset: 3px; }
+  .sihoo-review-summary a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+{% endstylesheet %}

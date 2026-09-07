@@ -1,0 +1,346 @@
+{
+  "theme_id": 187727839523,
+  "products": [
+    {
+      "id": "gid://shopify/Product/6048691126466",
+      "title": "SIHOO M18 Ergonomic Office Chair",
+      "handle": "sihoo-m18-ergonomics-task-office-chair",
+      "status": "ACTIVE",
+      "templateSuffix": "m-18"
+    },
+    {
+      "id": "gid://shopify/Product/6074824392898",
+      "title": "Sihoo M57 Ergonomic Office Chair",
+      "handle": "sihoo-m57-ergonomic-office-chair",
+      "status": "ACTIVE",
+      "templateSuffix": "m57"
+    },
+    {
+      "id": "gid://shopify/Product/6080377258178",
+      "title": "Sihoo V1 Ergonomic Office Chair",
+      "handle": "sihoo-v1-ergonomic-office-chair",
+      "status": "ACTIVE",
+      "templateSuffix": "v1"
+    },
+    {
+      "id": "gid://shopify/Product/6103810703554",
+      "title": "SIHOO M16 Ergonomics Office Chair",
+      "handle": "sihoo-m16-ergonomics-office-chair",
+      "status": "ACTIVE",
+      "templateSuffix": "m-16"
+    },
+    {
+      "id": "gid://shopify/Product/6137598509250",
+      "title": "SIHOO M56 Ergonomics Office Chair",
+      "handle": "sihoo-m56-ergonomic-office-chair",
+      "status": "ACTIVE",
+      "templateSuffix": "m56-v1"
+    },
+    {
+      "id": "gid://shopify/Product/6137612665026",
+      "title": "SIHOO M59 Ergonomics Office Chair",
+      "handle": "sihoo-m59-ergonomic-office-chair",
+      "status": "ACTIVE",
+      "templateSuffix": ""
+    },
+    {
+      "id": "gid://shopify/Product/7479130194114",
+      "title": "Sihoo M57 Ergonomic Office Chair with built-in footrest",
+      "handle": "sihoo-m57-ergonomic-office-chair-with-built-in-footrest",
+      "status": "ACTIVE",
+      "templateSuffix": ""
+    },
+    {
+      "id": "gid://shopify/Product/7480195449026",
+      "title": "Sihoo VIto M90 Ergonomic Office Chair",
+      "handle": "sihoo-vito-m90-ergonomic-office-chair",
+      "status": "ACTIVE",
+      "templateSuffix": ""
+    },
+    {
+      "id": "gid://shopify/Product/8060533801251",
+      "title": "Sihoo A3 DORO-C300 Pro Ergonomic Office Chair",
+      "handle": "sihoo-a3-doro-c300-ergonomic-office-chair",
+      "status": "ACTIVE",
+      "templateSuffix": "doro-series-template"
+    },
+    {
+      "id": "gid://shopify/Product/8739162390819",
+      "title": "SIHOO M76 Ergonomics Office Chair",
+      "handle": "sihoo-m76-ergonomics-office-chair",
+      "status": "ACTIVE",
+      "templateSuffix": ""
+    },
+    {
+      "id": "gid://shopify/Product/8757046018339",
+      "title": "Sihoo VIto M90 Ergonomic Office Chair with Footrest",
+      "handle": "sihoo-vito-m90-ergonomic-office-chair-with-footrest",
+      "status": "ACTIVE",
+      "templateSuffix": ""
+    },
+    {
+      "id": "gid://shopify/Product/8968609431843",
+      "title": "Sihoo DORO-S300 Ergonomic Office Chair",
+      "handle": "sihoo-doro-s300-ergonomic-office-chair",
+      "status": "ACTIVE",
+      "templateSuffix": "s300"
+    },
+    {
+      "id": "gid://shopify/Product/9360837837091",
+      "title": "Sihoo A3 DORO-C100 Ergonomic Office Chair",
+      "handle": "sihoo-a3-doro-c100-ergonomic-office-chair",
+      "status": "ACTIVE",
+      "templateSuffix": "c100"
+    },
+    {
+      "id": "gid://shopify/Product/9882185040163",
+      "title": "Sihoo DORO-C500 Ergonomic Office Chair",
+      "handle": "sihoo-doro-c500-ergonomic-office-chair",
+      "status": "ACTIVE",
+      "templateSuffix": "c500"
+    },
+    {
+      "id": "gid://shopify/Product/9882207650083",
+      "title": "Sihoo M57 Pro Ergonomic Office Chair",
+      "handle": "sihoo-m57-pro-ergonomic-office-chair",
+      "status": "ACTIVE",
+      "templateSuffix": "m57-pro"
+    },
+    {
+      "id": "gid://shopify/Product/9883536228643",
+      "title": "Sihoo M18 Pro Ergonomic Office Chair",
+      "handle": "sihoo-m18-pro-ergonomic-office-chair",
+      "status": "ACTIVE",
+      "templateSuffix": "m18-pro"
+    },
+    {
+      "id": "gid://shopify/Product/9902935507235",
+      "title": "Sihoo M57 Pro Ergonomic Office Chair with Built in Footrest",
+      "handle": "sihoo-m57-pro-ergonomic-office-chair-with-built-in-footrest",
+      "status": "ACTIVE",
+      "templateSuffix": "m57-pro"
+    },
+    {
+      "id": "gid://shopify/Product/10184342208803",
+      "title": "Sihoo DORO S100 Ergonomic Office Chair",
+      "handle": "sihoo-doro-s100-ergonomic-office-chair",
+      "status": "ACTIVE",
+      "templateSuffix": "s100-2"
+    },
+    {
+      "id": "gid://shopify/Product/10184342307107",
+      "title": "Sihoo M59AS Ergonomic Office Chair",
+      "handle": "sihoo-m59as-ergonomic-office-chair",
+      "status": "ACTIVE",
+      "templateSuffix": "m59"
+    },
+    {
+      "id": "gid://shopify/Product/10264258281763",
+      "title": "Sihoo DORO-C300 Pro V2 Ergonomic Office Chair",
+      "handle": "sihoo-a3-doro-c300-pro-v2-ergonomic-office-chair",
+      "status": "ACTIVE",
+      "templateSuffix": "c300-pro-2"
+    }
+  ],
+  "files": [
+    {
+      "file": "templates/product.c100.json",
+      "before_sha256": "a849be0d53b050359279ae9a6f0333ae42d56b5d6fba50f658153e7968fda42c",
+      "after_sha256": "8336617d90d61c7d155b123c25617a15dfc42a11a7f700dd4aedd31a61e5f3f4",
+      "remote_after_sha256": "d5fc9ca06eb44945780d40d62bf0587d5d343dd6a7d265bf0ca00bd5c5968288",
+      "rollback_sha256": "dac4e6381b258606d591cebce66ca79d4fb148ac1f6bf52024d4326b266da63a"
+    },
+    {
+      "file": "templates/product.c300-pro-2.json",
+      "before_sha256": "e8e5e47617da919fe9adf6c0ec5d36f38669f638d0cd81b5feb88d0816362bf0",
+      "after_sha256": "fa336eb982531f38f8822934697c5c81f4d0d4cec73f38b0e23754054e630f38",
+      "remote_after_sha256": "daf01c2c0aa5de8a45e140b204a820182c247ea736bf6f37e824eb3dee7ffb1d",
+      "rollback_sha256": "0082a25b34f9a6b99c08e9129cde77a564678c2c2984e019ceeafa7f83483c74"
+    },
+    {
+      "file": "templates/product.c500.json",
+      "before_sha256": "5623bc21890a64c876129d8517902dd7c3712d6e5962dfac38313fc284b5a769",
+      "after_sha256": "32331cf97537da251d8599ecb7f2701624bd878dfc792898bf87c7560eecd5c6",
+      "remote_after_sha256": "1758c420d62fd283a801ab35cd3ac247d2bd63992a6763086322eccaeb809f99",
+      "rollback_sha256": "698c94642d480219ce05a9c87cdc8b727f917cc90f66e8b7f0b6ff900afc755d"
+    },
+    {
+      "file": "templates/product.doro-series-template.json",
+      "before_sha256": "24a248959b5a4370d5af434355d6a3cbce63c80c67692c45623502caee469727",
+      "after_sha256": "84d1b9a2de9c2b41cfb5918325d6f42f85568807ccff1dae32391e9ede3706cd",
+      "remote_after_sha256": "32aee69b5ecae97fb6df5ad661b11ab0dafa3278d59be56ce5ac31273bde11c3",
+      "rollback_sha256": "aa84758b7b73c3e4ee9e01a2c46ac27de8274b5b7b0bf6a0fb714a3cf67a7750"
+    },
+    {
+      "file": "templates/product.json",
+      "before_sha256": "9e9ef0fefdc4a25264221fab04af4cea4f98947fd70e43dcb7598a52b492827a",
+      "after_sha256": "c8cf7bb3a3d55dcaf01cb58dcf7907f9610bfe0a8591cc465a1e35b74a5995cd",
+      "remote_after_sha256": "dc7c56b64cae0435f2f7e1bdc5c4402ebc356803ff76b228eae8324e994deb8c",
+      "rollback_sha256": "b97c0ba9f53c22d0964e068a3b552a218578ad2819ef51c5e8aa06707b070648"
+    },
+    {
+      "file": "templates/product.m-16.json",
+      "before_sha256": "51a8bae27f1d82b446a8a23fe2438ce587b2a2dfe97cf612fcd88174d5b26b7a",
+      "after_sha256": "238bfa38e0098ddcc6e7ef82e5719be699a42033c7ddbf6c8d6e692ab22ae9ca",
+      "remote_after_sha256": "0f6fb8536f877159a6a80ca28ea09c81fbdf49c0fb46f2d408b0343238423abe",
+      "rollback_sha256": "862fc42773499ddac5fae8cd43bc2ec99532dde795df42ff61e5225f2771a2d5"
+    },
+    {
+      "file": "templates/product.m-18.json",
+      "before_sha256": "5b4c5df96aa3126ecdc46ec245dbe769d401692725e6c9e516af8c30c5dd56a5",
+      "after_sha256": "6d14649e055bce79e18b318e234dc7ea526fbb92055c71a79868cc2b44d97304",
+      "remote_after_sha256": "970ee59b748c0aed581b976100ccdae6b57e5bd2be77215c2e0970503353aca8",
+      "rollback_sha256": "a1e91eb1c92b57fdeb4fd88da7f603d5e1a4edee9d5e5b16dbb591d56a133f92"
+    },
+    {
+      "file": "templates/product.m18-pro.json",
+      "before_sha256": "ae95f82b51315da7f994fb503af06df1874f278e6d52762cc1502ca6c5168bf7",
+      "after_sha256": "20b023e223347101c5b4893a4a37a87a12c2460711be20721a5d87f34564dad5",
+      "remote_after_sha256": "25d87fd3c5c4de9cec73c0aabfc16d46c36bb6c1c89a093fbc473d4ef180eb12",
+      "rollback_sha256": "004033fe6d57f389bfb83e5b54f8b8c0585f5577a4857cbe0af02e547e09c5d0"
+    },
+    {
+      "file": "templates/product.m56-v1.json",
+      "before_sha256": "213adedc0179ed5fa6b0cff02c65a65397a948671d4140116c873fac98765c5c",
+      "after_sha256": "4d25594e596b2e8fd4e006f7b4a96ca7a01cce15fa9fc26e7d25569dac24fb44",
+      "remote_after_sha256": "35e049e7f4c645d9644bcfb5253bef5e1de4553711471bacc973008be17ccc89",
+      "rollback_sha256": "663c0085747e8e83c06c7446a604e91eab5a18668c4cf4e01778e131a00052f5"
+    },
+    {
+      "file": "templates/product.m57-pro.json",
+      "before_sha256": "fc165baa0f307f568cb36fb5f98f6186567b9bd4a9c916e0f8de08639df2a569",
+      "after_sha256": "b1d232876e42ad3a5299aa114db7e6453bd4b0352b685a915ed0f4a42c66bacc",
+      "remote_after_sha256": "1cecb50deaae56cb034e8b4e3e59476eefa169b6c0899c6e1ae8e6dc26a01988",
+      "rollback_sha256": "a57b2864e37bee99ccbbbcc135ea0bf69078406f8e0b113954a29911c8a86e43"
+    },
+    {
+      "file": "templates/product.m57.json",
+      "before_sha256": "24dabd19b147b87f1028178bd5375ac6a1455fbc818e753f56bb196630612b46",
+      "after_sha256": "61566273d402108992adb5e856b220ffc889a9f47bd7ded386d15e9d3d6f7fdc",
+      "remote_after_sha256": "c62ca471bdad53d313873543fbdd1ff80ad0395e7a1bed091d9ff4c89e0fbb7d",
+      "rollback_sha256": "3944f263294b537381b46402c56c1a1d873631d57244d72079916a98fe0fb4d9"
+    },
+    {
+      "file": "templates/product.m59.json",
+      "before_sha256": "663384523360fc7a2ed2786d77a9b42af5ff6fbb091200ca04161737df080c2b",
+      "after_sha256": "45c5b91dc106d8254f0e1bba71b732f73e7bef7e4e95cdf96c9af7ed10a90172",
+      "remote_after_sha256": "2cd238eefaddf1c5bedd9cdb8afce9d8e7f8f0f94d5388307d3666fd60c0970a",
+      "rollback_sha256": "825293e2b6bdfa70fdc6ee307926db06dd02a3b8de35f4256c217791e7338227"
+    },
+    {
+      "file": "templates/product.s100-2.json",
+      "before_sha256": "3f571e745b111ee057b0825727344f5c9d3719f61b70f20022ccf095900147e7",
+      "after_sha256": "052b2ec408ca67a9208f6861f139d43bad68cca4866184068aae81a07e8691d3",
+      "remote_after_sha256": "4b83c99bed3eede27875843057d41d4d7bf1cbc417919b3465aba8437b505fdd",
+      "rollback_sha256": "a38425fbdcb71cbb40b36f29820327bf56da2c6084cf534efab889e1ed57d229"
+    },
+    {
+      "file": "templates/product.s300.json",
+      "before_sha256": "bc3dc087b7dff10c9780ed6476a71a0cc55d3a26875069a7875f8523f67c7a5e",
+      "after_sha256": "3902af3fbc13249a54f251f07c117a07d3e04d8a2b2261c4a68e19492eee819b",
+      "remote_after_sha256": "31e77483831599566e006543cd5d415911750ab20601f4db0d1f751e1265c79e",
+      "rollback_sha256": "7c1dc5ed9f2709f3d67339e85d69231042a42afb8d443039b142126b451c5de1"
+    },
+    {
+      "file": "templates/product.v1.json",
+      "before_sha256": "ea448b5fc77d73d1497d44368ad7075b60f9577c660ff9c24db242a71dcf7c19",
+      "after_sha256": "341f0bd16ffc166a196a6002baeb6c738045b8f1f80df51098b3145ef5ccf45c",
+      "remote_after_sha256": "91eb367d8b1cda11b3dc0a458ffe47ebc9b95c9fd4290d0ea293e7611baa0d41",
+      "rollback_sha256": "cecce23eab757e821d1ab230adfe78f096cbb8046b88c27b915790cc79fbc26b"
+    },
+    {
+      "file": "sections/custom-main-product.liquid",
+      "before_sha256": "7839ef06c24db0786c217724f4591a523860c6dfb21d6855466d98d979c23285",
+      "after_sha256": "8c1ddb7c0d690d590a16e1dceb577a324e38bb5985850fd12e2aedaf3c710969",
+      "remote_after_sha256": "8c1ddb7c0d690d590a16e1dceb577a324e38bb5985850fd12e2aedaf3c710969",
+      "rollback_sha256": "7839ef06c24db0786c217724f4591a523860c6dfb21d6855466d98d979c23285"
+    },
+    {
+      "file": "sections/main-product.liquid",
+      "before_sha256": "f40e295b15ef1c366a089227dc6bf0090c8df2b6f70bbc3a67f321277c1e3cb5",
+      "after_sha256": "927163407e016b876ed8ff1cf9ef1fd214065e73a3853bd20db0cada34f2da01",
+      "remote_after_sha256": "927163407e016b876ed8ff1cf9ef1fd214065e73a3853bd20db0cada34f2da01",
+      "rollback_sha256": "a8a0e802ab3b1d720f05a7e278cb4505e8410585f0e29f26dc9b3feba88a40b2"
+    },
+    {
+      "file": "sections/sihoo-product-reviews.liquid",
+      "before_sha256": null,
+      "after_sha256": "16159ac62af81f2270f5fe29599237b351aa9e6cd9ed28e893054aa91fff5e1b",
+      "remote_after_sha256": "16159ac62af81f2270f5fe29599237b351aa9e6cd9ed28e893054aa91fff5e1b"
+    },
+    {
+      "file": "sections/sihoo-product-highlights.liquid",
+      "before_sha256": null,
+      "after_sha256": "19dd4cc15ba946e3c308eb0a51154f2ed1258a0921cd015bfdfebe9afd5251fb",
+      "remote_after_sha256": "19dd4cc15ba946e3c308eb0a51154f2ed1258a0921cd015bfdfebe9afd5251fb"
+    },
+    {
+      "file": "snippets/sihoo-review-summary.liquid",
+      "before_sha256": null,
+      "after_sha256": "4dcfa3c43a9bf93f89a515ca2a3d28510479cae255e90e7c6b4a9a372c48c005",
+      "remote_after_sha256": "4dcfa3c43a9bf93f89a515ca2a3d28510479cae255e90e7c6b4a9a372c48c005"
+    }
+  ],
+  "review_migrations": [
+    {
+      "file": "templates/product.c100.json",
+      "previous_provider": "Loox"
+    },
+    {
+      "file": "templates/product.c300-pro-2.json",
+      "previous_provider": "Loox"
+    },
+    {
+      "file": "templates/product.c500.json",
+      "previous_provider": "Loox"
+    },
+    {
+      "file": "templates/product.doro-series-template.json",
+      "previous_provider": "Loox"
+    },
+    {
+      "file": "templates/product.json",
+      "previous_provider": "Klaviyo"
+    },
+    {
+      "file": "templates/product.m-16.json",
+      "previous_provider": "Klaviyo"
+    },
+    {
+      "file": "templates/product.m-18.json",
+      "previous_provider": "Klaviyo"
+    },
+    {
+      "file": "templates/product.m18-pro.json",
+      "previous_provider": "Loox"
+    },
+    {
+      "file": "templates/product.m56-v1.json",
+      "previous_provider": "Loox"
+    },
+    {
+      "file": "templates/product.m57-pro.json",
+      "previous_provider": "Loox"
+    },
+    {
+      "file": "templates/product.m57.json",
+      "previous_provider": "Loox"
+    },
+    {
+      "file": "templates/product.m59.json",
+      "previous_provider": "Loox"
+    },
+    {
+      "file": "templates/product.s100-2.json",
+      "previous_provider": "Loox"
+    },
+    {
+      "file": "templates/product.s300.json",
+      "previous_provider": "Loox"
+    },
+    {
+      "file": "templates/product.v1.json",
+      "previous_provider": "Klaviyo"
+    }
+  ]
+}

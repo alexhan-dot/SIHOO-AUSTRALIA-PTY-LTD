@@ -1,0 +1,998 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "klaviyo_reviews_average_rating_gckbyV": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "disabled": true,
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "divider": {
+          "type": "divider",
+          "settings": {
+            "show_in_quickbuy": true
+          }
+        },
+        "text_d8qqgx": {
+          "type": "text",
+          "settings": {
+            "text": "Free shipping with delivery in 1-5 days.",
+            "icon": "plane",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#c16452",
+            "show_in_quickbuy": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant-picker",
+          "settings": {
+            "show_single": true,
+            "selector_style": "listed",
+            "dynamic_availability": "show",
+            "enable_size_chart": false,
+            "size_chart_label": "Size guide",
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "5048318b-3d9e-4a57-b9a4-5761293955e9": {
+          "type": "inventory-level",
+          "disabled": true,
+          "settings": {
+            "show_inventory_notice": "low",
+            "show_inventory_count": "low",
+            "inventory_threshold": 10,
+            "enable_box": false,
+            "enable_pulse": true,
+            "show_in_quickbuy": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_backorder_text": true,
+            "show_pickup_availability": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "show_in_tab": false,
+            "open_tab": false,
+            "icon": "",
+            "show_in_quickbuy": false
+          }
+        },
+        "ff72739d-90fa-44b3-896f-ca72e4704c77": {
+          "type": "accordion",
+          "settings": {
+            "title": "",
+            "icon": "",
+            "content": "<h2>Why Choose the SIHOO DORO-S300 Ergonomic Office Chair?</h2><p>The SIHOO DORO-S300 ergonomic office chair is designed to support the back, shoulders, neck, and posture during extended sitting sessions. Its ergonomic support system adapts to movement and sitting positions while helping reduce pressure during long work hours.</p><p>Key ergonomic features include:</p><ul><li>Adjustable dual dynamic lumbar support<br/></li><li>Breathable premium mesh materials<br/></li><li>Anti-gravity reclining mechanism<br/></li><li>Flexible ergonomic seating adjustments<br/></li><li>Spacious integrated headrest<br/></li><li>6D adjustable armrests<br/></li></ul><p>This ergonomic office chair is suitable for home offices, professional workspaces, gaming setups, and users looking for premium ergonomic seating support.</p>",
+            "page": "",
+            "custom_liquid": "",
+            "open": true,
+            "show_in_quickbuy": false
+          }
+        },
+        "ae5c0b7e-ed16-49ec-a868-6b6e2ba54cc3": {
+          "type": "related-products",
+          "disabled": true,
+          "settings": {
+            "title": "Related products",
+            "product_list": "{{ product.metafields[\"app--31615844353--specifications\"].compare_with.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "klaviyo_reviews_average_rating_gckbyV",
+        "divider",
+        "text_d8qqgx",
+        "variant_picker",
+        "5048318b-3d9e-4a57-b9a4-5761293955e9",
+        "buy_buttons",
+        "description",
+        "ff72739d-90fa-44b3-896f-ca72e4704c77",
+        "ae5c0b7e-ed16-49ec-a868-6b6e2ba54cc3"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "select_first_variant": true,
+        "show_location_underneath": false,
+        "inventory_transfers_enable": true,
+        "enable_sticky_columns": true,
+        "enable_sticky_atc": true,
+        "sticky_atc_position": "center",
+        "sticky_atc_mobile": false,
+        "sticky_atc_behavior": "add_to_cart",
+        "sticky_atc_button_style": "primary",
+        "gallery_size": "large",
+        "gallery_layout": "carousel-beside",
+        "enable_zoom": true,
+        "show_alt_text": false,
+        "alt_text_icon": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_media_grouping": true,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe"
+      }
+    },
+    "172649452298bf6fcf": {
+      "type": "apps",
+      "blocks": {
+        "specification_compare_specification_table_MNnxw7": {
+          "type": "shopify://apps/specs-compare/blocks/specification-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
+          "settings": {
+            "product": "{{product}}",
+            "show_group_names": true,
+            "maximum_rows": 10,
+            "app_block_margin": 0,
+            "app_block_max_width": "custom",
+            "app_block_custom_max_width": 1000,
+            "append_parent_target_selector": ""
+          }
+        }
+      },
+      "block_order": [
+        "specification_compare_specification_table_MNnxw7"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_space": false
+      }
+    },
+    "rich_text_JeXmGt": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_MbQCKR": {
+          "type": "heading",
+          "settings": {
+            "title": "Premium Ergonomic Office Chair for Long Work Hours",
+            "use_h1": false
+          }
+        },
+        "text_NGw3q4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The SIHOO DORO-S300 <a href=\"https://sihoo.com.au/\" title=\"https://sihoo.com.au/\">ergonomic office chair</a> is designed for users who spend long hours sitting at a desk, working from home, gaming, or managing professional office tasks. With advanced ergonomic support features, breathable mesh materials, adjustable lumbar support, and an anti-gravity reclining mechanism that adjusts to your weight automatically, the DORO-S300 is built to support posture, comfort, and productivity throughout the day.</p><p>Whether you need ergonomic support for a home office or a premium office chair for daily work, the SIHOO DORO-S300 combines ergonomic technology with modern comfort for long-term sitting support.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_MbQCKR",
+        "text_NGw3q4"
+      ],
+      "custom_css": [
+        ".use-color-scheme {background-color: #f4f4f4; padding: 0px 0px 80px;}",
+        ".container {max-width: 1200px;}",
+        ".feature-text-paired {margin: 0px;}",
+        ".feature-text-paired h2 {font-size: 1.777rem; font-weight: 600;}",
+        ".flexible-layout,.fixed-layout {flex-wrap: nowrap; gap: 40px;}",
+        ".feature-text-paired h2 {font-size: 1.777rem; font-weight: 600;}",
+        ".flexible-layout .column,.fixed-layout .column {padding-left: 0px;}",
+        "a,button {border-radius: 8px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "custom_content_AcyUG6": {
+      "type": "custom-content",
+      "blocks": {
+        "image_QarVXM": {
+          "type": "image",
+          "settings": {
+            "width": "three-quarters",
+            "image": "shopify://shop_images/20240309-153512.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        }
+      },
+      "block_order": [
+        "image_QarVXM"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "background_video_VRGpGN": {
+      "type": "background-video",
+      "blocks": {
+        "subheading_74qCM8": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Tell your story"
+          }
+        },
+        "heading_yRW86z": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Background video",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_TDy7zd": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use a video to get a customer's attention</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_74qCM8",
+        "heading_yRW86z",
+        "text_TDy7zd"
+      ],
+      "settings": {
+        "video_shopify": "shopify://files/videos/01eeaf68841f45f58bbf92a37c81de2e.HD-1080p-4.8Mbps-23833478.mp4",
+        "video_external": "",
+        "video_description": "",
+        "text_alignment": "center center",
+        "height_desktop": 540,
+        "height_mobile": 220,
+        "full_width": true,
+        "overlay_style": "shadow"
+      }
+    },
+    "rich_text_EjcAFq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_9daDKh": {
+          "type": "heading",
+          "settings": {
+            "title": "Sihoo DORO-S300 Ergonomic Office Chair Features",
+            "use_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9daDKh"
+      ],
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "custom_content_QaWjQY": {
+      "type": "custom-content",
+      "blocks": {
+        "image_TDt6pU": {
+          "type": "image",
+          "settings": {
+            "width": "quarter",
+            "image": "shopify://shop_images/600-863_2_7b939174-09c1-4d87-8a22-a3c3eefa83ef.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "<p>Anti-Gravity Mechanism</p>",
+            "enlarge_text": true,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "bottom center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "image_neqKMW": {
+          "type": "image",
+          "settings": {
+            "width": "quarter",
+            "image": "shopify://shop_images/600-863_1_4396b001-3ecf-46b3-bf05-30e1d7b728a9.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "<p>Dual dynamic lumbar support</p>",
+            "enlarge_text": true,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "bottom center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "image_YyyxfL": {
+          "type": "image",
+          "settings": {
+            "width": "quarter",
+            "image": "shopify://shop_images/600-863_4_9c7b28d4-b44a-45da-b2a1-a10dd5732c9d.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "<p>Extra-soft mesh made of Italian velvet</p>",
+            "enlarge_text": true,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "bottom center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "image_47QKCX": {
+          "type": "image",
+          "settings": {
+            "width": "quarter",
+            "image": "shopify://shop_images/600-863_3_7d220b07-a688-48f4-ac5a-de1f60cb7c25.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "<p>Independent backrest</p>",
+            "enlarge_text": true,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "bottom center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        }
+      },
+      "block_order": [
+        "image_TDt6pU",
+        "image_neqKMW",
+        "image_YyyxfL",
+        "image_47QKCX"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "image_with_text_emAkdX": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Ezenpy": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Anti-Gravity Recline for Smooth Ergonomic Support",
+            "use_h1": false
+          }
+        },
+        "text_zTWjfW": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Anti-Gravity Recline for Smooth Ergonomic Support</h3><p><br/>The anti-gravity reclining mechanism helps create smoother movement and weight distribution while reclining, supporting comfort during long sitting sessions and reducing pressure on the body.<br/><br/></p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ezenpy",
+        "text_zTWjfW"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/SIHOO.webp",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_cgmn3V": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_wrwT34": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Experience Weightlessness with the Doro S300",
+            "use_h1": false
+          }
+        },
+        "text_JMmVtJ": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Experience Weightlessness with the Doro S300</h3><p>Featuring elastic plates made from aerospace-grade glass fibre, the <strong>Sihoo Doro S300</strong> provides personalised tension adjustment to accommodate individuals of all sizes and weights. Enjoy effortless reclining at any angle without the need to lock the backrest, and smoothly return to an upright position with ease.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_wrwT34",
+        "text_JMmVtJ"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/S300_03_1358_840.gif",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_exBAbL": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_BcqGEn": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Comprehensive lower back support",
+            "use_h1": false
+          }
+        },
+        "text_cM73X7": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Comprehensive lower back support</h3><p>The <strong>dual dynamic lumbar support</strong>, shaped like wings, consists of two distinct pads to deliver adaptable and comprehensive lower back support. This feature accommodates a variety of body shapes and sitting positions. Additionally, the gas lift allows for precise lumbar adjustment between 90° and 105°, ensuring a perfect fit for every user.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_BcqGEn",
+        "text_cM73X7"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/01_8978772d-779b-4bfc-9a80-cdad91a683a0.gif",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_UiDj6e": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_GmmkxF": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Comfort for the Entire Back",
+            "use_h1": false
+          }
+        },
+        "text_EM8cPi": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Comfort for the Entire Back</h3><p>The upper section of the backrest can be independently adjusted into five positions, providing proper support for your shoulders and neck, whether you're 150 cm (5 feet) or 190 cm (6 feet 3 inches) tall. At the same time, the lumbar support remains perfectly positioned to offer effective lower back support.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_GmmkxF",
+        "text_EM8cPi"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/1940-1200_1_fa5d8119-df20-41b5-a4ff-e955431b8052.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_D4TiKX": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_mEUwWD": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Coordinated Support for the Full Body",
+            "use_h1": false
+          }
+        },
+        "text_R4je3R": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Coordinated Support for the Full Body</h3><p>The dual dynamic lumbar support, designed like wings, includes two pads that offer flexible lower back support, adapting to different body types and sitting positions. The gas lift enables precise adjustment of the lumbar support between 90° and 105°, ensuring the perfect fit for every user.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_mEUwWD",
+        "text_R4je3R"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/s300__12M_6d4c48c9-1fa1-4e6c-93dd-8484b65dde40.gif",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_H8cx7F": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_aDbrPk": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Soft and Spacious Headrest",
+            "use_h1": false
+          }
+        },
+        "text_fFLU3g": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Soft and Spacious Headrest</h3><p>Crafted from soft, touchable material, the headrest gently conforms to the curve of your neck, ensuring a perfect fit every time. With its generously sized surface area, you can rest your head comfortably on the side, whether you're relaxing after a long day or taking a short break from your tasks.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_aDbrPk",
+        "text_fFLU3g"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/1940-1200_5.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "rich_text_BAyciK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fkW96k": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Award-winning design",
+            "use_h1": false
+          }
+        },
+        "text_VzndM3": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Award-winning design</h3><p>Sihoo Doro S300, a recipient of the esteemed German Design Award, boasts both comfort and visual allure. Crafted from a single piece of aluminium alloy, its main structure undergoes 13 procedures to achieve its aesthetic.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fkW96k",
+        "text_VzndM3"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "gallery_BYX7Lz": {
+      "type": "gallery",
+      "blocks": {
+        "media_DVknHy": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/3_59e346be-2c01-44fd-a443-ad1c5b6b675b.jpg",
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_mEmjcM": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/1_61afba7b-9c36-44fa-b2d0-51aa5fd0ee04_1.jpg",
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_yE8wn6": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/2_64a0ce0e-2f3f-4ecb-82ed-fe02fce2ea1c.jpg",
+            "enlarge_media": true,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "media_DVknHy",
+        "media_mEmjcM",
+        "media_yE8wn6"
+      ],
+      "settings": {
+        "grid_desktop": 2,
+        "grid_mobile": "2",
+        "height": "adapt",
+        "desktop_image_height": 460,
+        "mobile_image_height": 400,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": true,
+        "full_width": false,
+        "color_scheme": "default",
+        "enable_carousel": true,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "image_with_text_NTA6Lj": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_iEY6gz": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Cloud-Like Softness",
+            "use_h1": false
+          }
+        },
+        "text_7jFwg6": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Cloud-Like Softness</h3><p>The <strong>Sihoo Doro S300</strong> uses a unique weaving technique that combines Italian velvet with DuPont TPEE for its mesh material. This blend provides exceptional elasticity, durability, pressure relief, and a luxuriously soft texture.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_iEY6gz",
+        "text_7jFwg6"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/1940-1200_3_352f2f8e-28ce-408a-bf79-a4d89308d755.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_4xp74p": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_8C3qeC": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Pressure-Relieving Seating",
+            "use_h1": false
+          }
+        },
+        "text_6eGjfQ": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Pressure-Relieving Seating</h3><p>The <strong>Sihoo Doro S300</strong> features a suspension system with four springs that effectively absorb shock when you sit down. The system dynamically adapts to changes in your seating position, ensuring consistent comfort no matter how you sit.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_8C3qeC",
+        "text_6eGjfQ"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/1940-1200_4_7ce1ccd8-f502-4511-bf0d-2ff8eedf0619.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_NDVfei": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_EwCdaC": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Robustly Built, Rigorously Tested",
+            "use_h1": false
+          }
+        },
+        "text_y9kRXC": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Robustly Built, Rigorously Tested</h3><p>Engineered with premium materials and crafted to the highest standards, the <strong>Sihoo Doro S300</strong> undergoes rigorous testing before it reaches your hands. It is <strong>BIFMA</strong> and <strong>SGS</strong> certified, providing extra peace of mind. Enjoy years of comfort and durability with your <strong>Doro S300</strong>.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_EwCdaC",
+        "text_y9kRXC"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/20240313-154830.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "rich_text_XNJUk6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fYbXQw": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "6D armrests for arm support in all",
+            "use_h1": false
+          }
+        },
+        "text_ppM63R": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>6D armrests for arm support in every direction</h3><p>Sihoo Doro S300 sets the industry standard with its armrests, which offer adjustments in six different directions. This feature ensures that your arms receive optimal support, regardless of your sitting position.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fYbXQw",
+        "text_ppM63R"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "image_with_text_overlay_QXFWVq": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/20240220-102152.jpg",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": false,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "rich_text_DMGPww": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_z9gUgN": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Complete control within your reach",
+            "use_h1": false
+          }
+        },
+        "text_iiJKHf": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Complete control within your reach</h3><p>The controls are conveniently situated on the right-hand side for easy access, enabling you to smoothly regulate the height, seat depth, reclining angle, and tension. This extensive range of adjustments ensures a comfortable fit for individuals of various body types when using the Sihoo Doro S300.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_z9gUgN",
+        "text_iiJKHf"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "image_with_text_overlay_rxmeYN": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "image": "shopify://shop_images/20240220-102210.jpg",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": false,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "17264907824a3b621e": {
+      "type": "apps",
+      "blocks": {
+        "specification_compare_comparison_table_EE8bnJ": {
+          "type": "shopify://apps/specs-compare/blocks/comparison-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
+          "settings": {
+            "product": "{{ product }}",
+            "product_list": [
+              "sihoo-m18-ergonomics-task-office-chair",
+              "sihoo-a3-doro-c300-ergonomic-office-chair",
+              "sihoo-doro-s300-ergonomic-office-chair",
+              "sihoo-m57-ergonomic-office-chair",
+              "sihoo-vito-m90-ergonomic-office-chair",
+              "sihoo-v1-ergonomic-office-chair",
+              "sihoo-a3-doro-c100-ergonomic-office-chair"
+            ],
+            "fallback_to_related_products": true,
+            "exclude_sold_out_products": true,
+            "enable_show_differences_switch": true,
+            "differences_switch_mode": "highlight_differences",
+            "show_variant_selector": true,
+            "show_group_names": true,
+            "maximum_rows": 15,
+            "maximum_visible_products": 4,
+            "show_in_modal": false,
+            "modal_trigger_button_text": "",
+            "app_block_margin": 0,
+            "app_block_max_width": "full_width",
+            "app_block_custom_max_width": 800,
+            "show_product_image": false,
+            "show_product_vendor": false,
+            "show_product_price": true,
+            "show_product_rating": false,
+            "show_view_details_button": false,
+            "enable_ai_analysis": false,
+            "append_parent_target_selector": ""
+          }
+        }
+      },
+      "block_order": [
+        "specification_compare_comparison_table_EE8bnJ"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_space": true
+      }
+    },
+    "1726495174ce454bc4": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_qfzGna": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "reviews_to_display": "",
+            "default_tab": "automatic",
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 10,
+            "hide_thumbnails": false,
+            "maxwidth": 1160,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_qfzGna"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_space": true
+      }
+    },
+    "recommendations": {
+      "type": "related-products",
+      "settings": {
+        "title": "You may also like",
+        "show_vendor": false,
+        "grid": 4
+      }
+    }
+  },
+  "order": [
+    "main",
+    "172649452298bf6fcf",
+    "rich_text_JeXmGt",
+    "custom_content_AcyUG6",
+    "background_video_VRGpGN",
+    "rich_text_EjcAFq",
+    "custom_content_QaWjQY",
+    "image_with_text_emAkdX",
+    "image_with_text_cgmn3V",
+    "image_with_text_exBAbL",
+    "image_with_text_UiDj6e",
+    "image_with_text_D4TiKX",
+    "image_with_text_H8cx7F",
+    "rich_text_BAyciK",
+    "gallery_BYX7Lz",
+    "image_with_text_NTA6Lj",
+    "image_with_text_4xp74p",
+    "image_with_text_NDVfei",
+    "rich_text_XNJUk6",
+    "image_with_text_overlay_QXFWVq",
+    "rich_text_DMGPww",
+    "image_with_text_overlay_rxmeYN",
+    "17264907824a3b621e",
+    "1726495174ce454bc4",
+    "recommendations"
+  ]
+}

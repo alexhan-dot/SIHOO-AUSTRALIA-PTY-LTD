@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -216,8 +225,7 @@
         "enable_video_autoplay": false,
         "enable_video_looping": false,
         "enable_media_grouping": false,
-        "media_grouping_option": "Color,Colour,Couleur,Farbe",
-        "sihoo_unified_reviews": true
+        "media_grouping_option": "Color,Colour,Couleur,Farbe"
       }
     },
     "1786558889ff94005e": {
@@ -747,28 +755,19 @@
       }
     },
     "1726717200db5c7e8b": {
-      "type": "sihoo-product-reviews",
+      "type": "apps",
       "blocks": {
         "klaviyo_reviews_product_reviews_feXhBH": {
-          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "settings": {
-            "reviews_to_display": "product_reviews_only",
-            "default_tab": "automatic",
-            "only_photos": false,
-            "aggregated": false,
-            "limit": 10,
-            "hide_thumbnails": false,
-            "maxwidth": 1160,
-            "is_sample": false
-          }
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
         }
       },
       "block_order": [
         "klaviyo_reviews_product_reviews_feXhBH"
       ],
       "settings": {
-        "heading": "Customer reviews",
-        "show_source_note": false
+        "full_width": false,
+        "show_space": true
       }
     },
     "related-products": {
@@ -785,47 +784,11 @@
         "heading": "Specifications",
         "show_fit_guide": true
       }
-    },
-    "sihoo_highlights": {
-      "type": "sihoo-product-highlights",
-      "blocks": {
-        "benefit_0": {
-          "type": "feature",
-          "settings": {
-            "heading": "Cushioned seat",
-            "text": "A padded seat pairs with a mesh backrest for a different feel from a full-mesh chair."
-          }
-        },
-        "benefit_1": {
-          "type": "feature",
-          "settings": {
-            "heading": "Adjustable lumbar support",
-            "text": "Adjust the lumbar support to suit your sitting position."
-          }
-        },
-        "benefit_2": {
-          "type": "feature",
-          "settings": {
-            "heading": "Choose your footrest option",
-            "text": "A footrest is included only with the Black with Leg Rest option. Check availability before ordering."
-          }
-        }
-      },
-      "block_order": [
-        "benefit_0",
-        "benefit_1",
-        "benefit_2"
-      ],
-      "settings": {
-        "heading": "Find your fit",
-        "fit_note": "Check your desk clearance and chosen chair options before ordering. Contact our Australian team if you need help choosing."
-      }
     }
   },
   "order": [
     "main",
     "custom_main_product_JXkkKe",
-    "sihoo_highlights",
     "specs_table",
     "1786558889ff94005e",
     "image_with_text_DnMLeR",

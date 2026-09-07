@@ -30,3 +30,10 @@ LIVE의 홈/공지/블로그/신규 랜딩 차이를 DRAFT에 반영하고, 중�
 격리된 임시 폴더에 `liquidjs@10.29.0` 설치 후 `node scripts/test-specs-section.mjs <임시 런타임 폴더>` 실행. 임시 node_modules는 저장소에 포함하지 않는다.
 
 복원 원본은 b479ce2의 `theme/work-theme-187727839523/sections/specs-table.liquid`다. 원격 최신본과 이번 수정본을 비교해 후속 관리자 변경이 없는지 확인한 뒤 원본 한 파일만 DRAFT에 복원한다. LIVE 게시·상품 데이터·템플릿 할당 변경은 수행하지 않았다.
+
+## 2026-09-08: PDP and review unification
+
+- 20 active SIHOO products / 15 existing templates now share one Loox review section and summary snippet in DRAFT 187727839523. Four Klaviyo display templates switched to Loox without deleting app data.
+- Added shared highlights to M18, M57, M59AS and C300 Pro V2. Preserved product assignments, purchase blocks and Spring Sale work.
+- Unverified US-import disclosures default OFF. M18 specification conflicts and M56 10-versus-11 review count discrepancy remain release blockers.
+- Worklist, US model mapping, validation limits and rollback procedure: [PDP-REVIEWS-WORKLIST.ko.md](PDP-REVIEWS-WORKLIST.ko.md). File hashes: [pdp-file-manifest.json](pdp-file-manifest.json).
