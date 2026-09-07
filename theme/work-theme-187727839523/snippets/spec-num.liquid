@@ -1,0 +1,4 @@
+{%- comment -%} Prints a number metafield value without a trailing .0 (51.0 -> 51, 43.5 -> 43.5). Usage: {% render 'spec-num', value: sp.seat_width_cm.value %} {%- endcomment -%}
+{%- assign s = value | append: '' -%}
+{%- assign parts = s | split: '.' -%}
+{%- if parts.size == 2 and parts.last == '0' -%}{{ parts.first }}{%- else -%}{{ s }}{%- endif -%}

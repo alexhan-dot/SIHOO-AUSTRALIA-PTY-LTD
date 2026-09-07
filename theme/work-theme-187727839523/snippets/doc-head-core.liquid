@@ -1,0 +1,63 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+{% assign today = 'now' | date: "%Y-%m-%d" %}
+{%- comment -%}
+  SIHOO AU 2026-09-07 (audit A1): the store-name suffix used to be added whenever the page
+  title did not contain the exact string "SIHOO Australia", so SEO titles such as
+  "Sihoo M57 ... | Shop Now" became "... | Shop Now | SIHOO Australia" (70+ chars).
+  Now the suffix is only added when the title does not already mention "sihoo"
+  (case-insensitive), and the title is emitted on a single line.
+{%- endcomment -%}
+{%- capture doc_title -%}
+  {%- if template == 'index' -%}
+    Ergonomic Chairs in Australia | SIHOO Australia
+  {%- elsif request.page_type == 'password' -%}
+    {{ shop.name }}
+  {%- elsif template == 'collection' and collection.handle == 'all' -%}
+    Office Desk and Ergonomic Chairs in Australia | SIHOO Australia
+  {%- else -%}
+    {{ page_title }}
+    {%- if current_tags %}
+      {%- assign meta_tags = current_tags | join: ', ' %} - {{ 'general.meta.tags' | t: tags: meta_tags }}
+    {%- endif -%}
+    {%- if current_page != 1 %} - {{ 'general.meta.page' | t: page: current_page }}{% endif -%}
+    {%- assign page_title_down = page_title | downcase -%}
+    {%- unless page_title_down contains 'sihoo' %} | {{ shop.name }}{% endunless -%}
+  {%- endif -%}
+{%- endcapture -%}
+<title>{{ doc_title | strip_newlines | strip }}</title>
+
+{%- if template == 'index' -%}
+  <meta name="description" content="Sitting 8+ hours daily? Sihoo ergonomic chairs in Australia offer better support, improved posture, and reliable comfort for everyday use.">
+{%- elsif template == 'collection' and collection.handle == 'all' -%}
+  <meta name="description" content="Discover premium office desks and ergonomic chairs in Australia for comfort, productivity, and style. Shop ergonomic, gaming, and kids’ chairs from SIHOO.">
+{%- else -%}
+  {%- assign meta_description_content = page_description -%}
+  {%- if meta_description_content == blank and template contains 'product' -%}
+    {%- assign meta_description_content = product.description -%}
+  {%- endif -%}
+  {%- if meta_description_content == blank and template contains 'collection' -%}
+    {%- assign meta_description_content = collection.description -%}
+  {%- endif -%}
+  {%- if meta_description_content == blank and template contains 'page' -%}
+    {%- assign meta_description_content = page.content -%}
+  {%- endif -%}
+  {%- if meta_description_content == blank -%}
+    {%- assign meta_description_content = shop.meta_description -%}
+  {%- endif -%}
+
+  {%- if meta_description_content != blank -%}
+    <meta name="description" content="{{ meta_description_content | strip_html | truncate: 160 | escape }}">
+  {%- endif -%}
+{%- endif -%}
+
+{%- if settings.favicon != blank -%}
+  {%- liquid
+    assign image_type = settings.favicon | split: '?' | first | split: '.' | last | downcase
+    if image_type == 'svg'
+      assign image_type = 'svg+xml'
+    endif
+  -%}
+  <link rel="icon" href="{{ settings.favicon | image_url: width: 48, height: 48 }}" type="image/{{ image_type }}">
+  <link rel="apple-touch-icon" href="{{ settings.favicon | image_url: width: 180, height: 180 }}">
+{%- endif -%}

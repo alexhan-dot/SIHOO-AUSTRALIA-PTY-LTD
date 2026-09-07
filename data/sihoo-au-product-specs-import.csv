@@ -1,0 +1,174 @@
+Handle,Title,Metafield: specs.family [single_line_text_field],Metafield: specs.user_height_min_cm [number_integer],Metafield: specs.user_height_max_cm [number_integer],Metafield: specs.max_load_kg [number_integer],Metafield: specs.seat_height_min_cm [number_decimal],Metafield: specs.seat_height_max_cm [number_decimal],Metafield: specs.seat_width_cm [number_decimal],Metafield: specs.seat_depth_min_cm [number_decimal],Metafield: specs.seat_depth_max_cm [number_decimal],Metafield: specs.overall_height_min_cm [number_decimal],Metafield: specs.overall_height_max_cm [number_decimal],Metafield: specs.recline_positions_deg [list.number_integer],Metafield: specs.net_weight_kg [number_decimal],Metafield: specs.armrest_type [single_line_text_field],Metafield: specs.armrest_detail [multi_line_text_field],Metafield: specs.lumbar_detail [multi_line_text_field],Metafield: specs.headrest_detail [multi_line_text_field],Metafield: specs.mechanism [multi_line_text_field],Metafield: specs.mesh_material [multi_line_text_field],Metafield: specs.seat_cushion [single_line_text_field],Metafield: specs.suspension [boolean],Metafield: specs.gas_lift_class [single_line_text_field],Metafield: specs.certifications [list.single_line_text_field],Metafield: specs.warranty_years [number_integer],Metafield: specs.data_source [single_line_text_field],Metafield: specs.needs_confirmation [multi_line_text_field]
+sihoo-m18-ergonomics-task-office-chair,SIHOO M18 Ergonomic Office Chair,Core Ergonomic (M/V),150,190,150,43,53,51,42,42,107,121,"[109, 122, 134]",18.5,2D,"2D armrest:
+Up and down: 7 CM
+Front and back: 6 CM
+Left and right: 15.2°
+Linked Recline","Up and down: 4 CM
+Front and back: 2 CM","2D headrest（Double joint）:
+Up and down: 11CM,8 level
+Headrest rotation: 45°
+22° up/down flip","Self-weighted design, supports lift, large-angle recline, and multi-position locking; 3 lockable recline positions",Polyester Mesh Fabric，High Toughness & Tensile Strength，Wear-Resistant,Fabric cushion,TRUE,,,3,AU sc_attributes 메타필드,"US 스펙과 상이: 시트 깊이 AU 42 / US 45.5cm, 순중량 AU 18.5 / US 16.8kg
+갤러리 영상 없음"
+sihoo-m57-ergonomic-office-chair,Sihoo M57 Ergonomic Office Chair,Core Ergonomic (M/V),150,190,150,43.5,53.5,51,46,46,110,127.5,"[110, 116, 126]",18.9,3D,"3D armrest:
+Up and down: 7 CM
+Front and back: 6 CM
+Armrest surface left and right: 35°","Up and down: 5 CM
+Front and back: 4 CM","2D headrest:
+Up and down: 8CM
+Headrest rotation: 45°","Single-lever control, thickened explosion-proof steel, adjustable lift and recline tension","PE + polyester mesh, wear-resistant, UV-resistant, and breathable suspension system",YES,TRUE,,"[""BIFMA"", ""SGS""]",3,AU sc_attributes 메타필드,갤러리 영상 없음
+sihoo-v1-ergonomic-office-chair,Sihoo V1 Ergonomic Office Chair,Core Ergonomic (M/V),150,190,136,47.5,57,53,44.5,49.5,116,137,,22.6,4D,4D,4D cushioned lumbar support,3D headrest,/,Breathable mesh,Breathable mesh,FALSE,,,3,AU sc_attributes 메타필드,"리클라인 원문 '	
+0°-9°-18°-27°' 는 틸트 각도 표기 → 좌석 기준 각도로 재확인
+메커니즘 값 없음
+이미지 alt 누락 1/31"
+sihoo-m16-ergonomics-office-chair,SIHOO M16 Ergonomics Office Chair,Core Ergonomic (M/V),150,190,150,44.5,54.5,51,45,46,107,130,"[110, 116, 130]",14.6,2D,"2D non-adjustable lumbar support:
+Up and down: Non-adjustable (Fixed at standard desk elbow height)
+Front and back: Non-adjustable
+Left and Right (Width/Swivel): Non-adjustable (Curved design for steady arm placement)
+Overall Armrest Outer Width: 60.0 cm","Up and down: 4 CM
+Front and back: 2 CM",Height- and angle-adjustable headrest,Thickened explosion-proof mechanism with adjustable tilt tension and 3 recline positions,Breathable polyester mesh backrest with high tensile strength and improved airflow,W-shaped 8.5 cm thickened foam seat cushion with breathable elastic mesh,,,,3,AU sc_attributes 메타필드,갤러리 영상 없음
+sihoo-m56-ergonomic-office-chair,SIHOO M56 Ergonomics Office Chair,Core Ergonomic (M/V),150,190,136,43,52.5,50,40.5,40.5,103.5,125.5,"[105, 135]",12.52,2D,"2D armrest:
+Up and down: 7 CM",Up and down: 3.5CM,"2D headrest:
+Up and down: 7.5CM
+Headrest rotation: 45°","Cold-rolled mechanical tension spring + mechanical steel multi-functional mechanism, double-lever control explosion-proof mechanism, adjustable lift/recline tension, infinitely lockable recline","Polyester mesh, colorfast, pressure-resistant, tear-resistant",Fabric cushion,TRUE,,,3,AU sc_attributes 메타필드,갤러리 영상 없음
+sihoo-m59-ergonomic-office-chair,SIHOO M59 Ergonomics Office Chair,Core Ergonomic (M/V),150,180,136,42.5,51,46.5,44.5,44.5,93.5,102,"[100, 120]",11.5,,Up and down: 80º,Up and down: 3CM,/,"Single-handle thickened explosion-proof mechanism, 4 gears of recline adjustment, adjustable lift and recline tension","PE + polyester special mesh, colorfast, high tensile strength, wear-resistant, non-toxic, corrosion/chemical resistant, UV-resistant, highly breathable",YES,TRUE,,"[""BIFMA"", ""SGS""]",3,AU sc_attributes 메타필드,"팔걸이 유형 미표준: 'Up and down: 80º' → 1D/2D/3D 로 분류
+헤드레스트 값 없음(없는 모델이면 ""없음"" 명시)
+갤러리 영상 없음"
+sihoo-m57-ergonomic-office-chair-with-built-in-footrest,Sihoo M57 Ergonomic Office Chair with built-in footrest,Core Ergonomic (M/V),150,190,150,43.5,53.5,51,46,46,110,127.5,"[110, 116, 126]",19.9,3D,3D,"Up and down: 5 CM
+Front and back: 4 CM","2D headrest:
+Up and down: 8CM
+Headrest rotation: 45°","Single-lever control, thickened explosion-proof steel, adjustable lift and recline tension","PE + polyester mesh, wear-resistant, UV-resistant, and breathable suspension system",YES,TRUE,,"[""BIFMA"", ""SGS""]",3,AU sc_attributes 메타필드,갤러리 영상 없음
+sihoo-vito-m90-ergonomic-office-chair,Sihoo VIto M90 Ergonomic Office Chair,Core Ergonomic (M/V),150,190,136,46,55,51,46,46,107,130,"[110, 116, 126]",21.2,2D,2D,Dual lumbar support,/,/,Breathable mesh,Full mesh cushion (Soft sponge cushion available with M90D model),FALSE,,"[""BIFMA"", ""SGS""]",3,AU sc_attributes 메타필드,"메커니즘 값 없음
+헤드레스트 값 없음(없는 모델이면 ""없음"" 명시)
+갤러리 영상 없음"
+sihoo-a3-doro-c300-ergonomic-office-chair,Sihoo A3 DORO-C300 Pro Ergonomic Office Chair,Doro Series,150,190,150,44,54,51,42.5,45,106,127,"[105, 120, 135]",24.2,6D,"6D armrest:
+Up and down: 6.5 CM
+Up and down:  35°
+Front and back: 5 CM
+Left and right: 75°
+PU Armrest Surface Left and right:5 positions
+Linked Recline",Adaptive PA+ fiber lumbar pillow with strong support,"Wide Adjustable 3D headrest:
+Up and down: 5CM
+Front and back:2.5
+Headrest rotation: 35°
+Bracket rotation: 45°",Self-weighting chassis with 3-position lock; backrest angle range 105°–135°,"High-elastic wave mesh, breathable, oil and stain resistant Suspension system",Waterfall Mesh Seat with 4 cm,,SGS Class 4,"[""BIFMA"", ""SGS""]",3,AU sc_attributes 메타필드,"리클라인 원문 '1105°' 오타 → 105°로 정정
+갤러리 영상 없음"
+desker-height-adjustable-dual-motor-sit-stand-desk,Desker Height Adjustable Dual Motor 3 Stage Electric Sit Stand Desk,Standing Desk,,,,,,,,,,,,,,,,,,,,,,,3,AU sc_attributes 메타필드,"메커니즘 값 없음
+헤드레스트 값 없음(없는 모델이면 ""없음"" 명시)
+데스크: 의자 스펙 스키마 미적용 → specs_desk.* (상판 크기·높이 범위·모터·하중) 별도 정의
+갤러리 영상 없음"
+sihoo-m76-ergonomics-office-chair,SIHOO M76 Ergonomics Office Chair,Core Ergonomic (M/V),150,180,136,40.5,50.5,48.5,44.5,44.5,88.5,98.5,"[108, 125]",9.6,,Up and down: 75º,Up and down: 2.5CM,/,"Old-rolled mechanical tension spring + steel thickened explosion-proof mechanism, adjustable lift/recline tension, recline lockable","Polyester three-proof mesh (water/dust/stain proof), chair seat with white elastic bottom cloth, colorfast, high tensile strength, UV-resistant",Fabric cushion,TRUE,,"[""BIFMA"", ""SGS""]",3,AU sc_attributes 메타필드,"팔걸이 유형 미표준: 'Up and down: 75º' → 1D/2D/3D 로 분류
+헤드레스트 값 없음(없는 모델이면 ""없음"" 명시)
+갤러리 영상 없음"
+sihoo-vito-m90-ergonomic-office-chair-with-footrest,Sihoo VIto M90 Ergonomic Office Chair with Footrest,Core Ergonomic (M/V),150,190,136,46,55,51,46,46,107,130,"[110, 116, 126]",21.2,4D,4D,Dual lumbar support,3D headrest,/,Breathable mesh,Full mesh cushion (Soft sponge cushion available with M90D model),FALSE,,"[""BIFMA"", ""SGS""]",3,AU sc_attributes 메타필드,"메커니즘 값 없음
+갤러리 영상 없음"
+desker-motion-desk-control-switch-black,Carbon Fibre Dual Motor 3 Stage Electric Sit Stand Desk in Black,Standing Desk,,,,,,,,,,,,,,,,,,,,,,,3,AU sc_attributes 메타필드,"메커니즘 값 없음
+헤드레스트 값 없음(없는 모델이면 ""없음"" 명시)
+데스크: 의자 스펙 스키마 미적용 → specs_desk.* (상판 크기·높이 범위·모터·하중) 별도 정의
+갤러리 영상 없음"
+sihoo-doro-s300-ergonomic-office-chair,Sihoo DORO-S300 Ergonomic Office Chair,Doro Series,150,190,150,49,57,51.5,40,47,111.5,127,"[100, 110, 130]",24.82,6D,"6D armrest:
+Up and down: 6.5 CM
+Up and down:  30°
+Front and back: 5 CM
+Left and right: 72°
+PU Armrest Surface Left and right:5 positions
+Linked Recline","6D dynamic lumbar support：
+90°-105 ° directional support","Integrated adjustable headrest, shoulder and neck support","Space Mechanism: Aviation-grade fiberglass spring blades, allowing free-floating at any angle and effortless reclining.","Premium velvet mesh, breathable and durable",YES (shock-absorbing seat cushion）,TRUE,SGS Class 4,"[""BIFMA"", ""SGS""]",3,AU sc_attributes 메타필드,"US 스펙과 상이: 시트 깊이 최소 AU 40 / US 43.5cm
+갤러리 영상 없음"
+sihoo-a3-doro-c100-ergonomic-office-chair,Sihoo A3 DORO-C100 Ergonomic Office Chair,Doro Series,150,190,150,45.5,55.5,51,42.5,45,106,127,"[105, 120, 135]",24.7,4D,"4D armrest:
+Up and down: 6.5CM
+Front and back: 5 CM
+Left and right: 75°
+Linked Recline",Adaptive PA+ fiber lumbar pillow with strong support,"3D headrest:
+Up and down: 5CM
+Front and back:2.5
+Headrest rotation: 35°
+Bracket rotation: 45°",Elf-weighting chassis with 3-position lock; backrest angle range 105°–135°,"High-elastic wave mesh, breathable, oil and stain resistant Suspension system",YES,TRUE,SGS Class 4,"[""BIFMA"", ""SGS""]",3,AU sc_attributes 메타필드,갤러리 영상 없음
+xallking-x5pro-ergonomic-gaming-chair,XALLKING X5 Pro Ergonomic Gaming Chair,XALLKING Gaming,150,190,136,45.5,54.5,51,40,47,109,127.5,"[100, 110, 130]",26.2,6D,6D synchronous tilting armrest,C-type adjustable lumbar support,Double joint headrest,Anti-Gravity Mechanism with aerospace-grade glass fiber elastic plates,Polyester Elastic Mesh,Saddle type pressure dividing seat cushion,,,,3,AU sc_attributes 메타필드,갤러리 영상 없음
+sihoo-doro-c500-ergonomic-office-chair,Sihoo DORO-C500 Ergonomic Office Chair,Doro Series,150,190,150,48,56.5,51,41,44,116.5,132,"[95, 145]",29.08,6D,"6D armrest:
+Up and down: 6.5 CM
+Up and down:  35°
+Front and back: 5 CM
+Left and right: 75°
+PU Armrest Surface Left and right:5 positions
+Linked Recline",Adaptive PA+ fiber lumbar pillow with strong support,"3D headrest:
+Up and down: 5CM
+Front and back:2.5
+Headrest rotation: 35°
+Bracket rotation: 45°","Space Mechanism: Aviation-grade fiberglass spring blades, allowing free-floating at any angle and effortless reclining.","High-elastic wave mesh, breathable, oil and stain resistant",YES,TRUE,SGS Class 4,"[""BIFMA"", ""SGS""]",3,AU sc_attributes 메타필드,갤러리 영상 없음
+sihoo-m57-pro-ergonomic-office-chair,Sihoo M57 Pro Ergonomic Office Chair,Core Ergonomic (M/V),150,190,150,42,50,50,45,45,105,131,"[109, 122, 134]",20,4D,"4D armrest:
+Up and down: 7 CM
+Front and back: 6 CM
+Left and right: 15.2°
+Linked Recline","Up and down: 4 CM
+Front and back: 2 CM","2D headrest（Double joint):
+Up and down: 11CM,8 level
+Headrest rotation: 45°
+22° up/down flip","Self-weighted design, supports lift, large-angle recline, and multi-position locking; 3 lockable recline positions","Polyester mesh, wear-resistant, UV-resistant, and breathable",YES,TRUE,,"[""BIFMA"", ""SGS""]",3,AU sc_attributes 메타필드,갤러리 영상 없음
+sihoo-m18-pro-ergonomic-office-chair,Sihoo M18 Pro Ergonomic Office Chair,Core Ergonomic (M/V),150,190,150,43,53,51,42,42,107,121,"[109, 122, 134]",21.7,2D,"2D armrest:
+Up and down: 7 CM
+Front and back: 6 CM
+Left and right: 15.2°
+Linked Recline","Up and down: 4 CM
+Front and back: 2 CM","2D headrest（Double joint）:
+Up and down: 11CM,8 level
+Headrest rotation: 45°
+22° up/down flip","Self-weighted design, supports lift, large-angle recline, and multi-position locking; 3 lockable recline positions",Polyester Mesh Fabric，High Toughness & Tensile Strength，Wear-Resistant,Fabric cushion,TRUE,,"[""BIFMA"", ""SGS""]",3,AU sc_attributes 메타필드,갤러리 영상 없음
+sihoo-m57-pro-ergonomic-office-chair-with-built-in-footrest,Sihoo M57 Pro Ergonomic Office Chair with Built in Footrest,Core Ergonomic (M/V),150,190,150,42,50,50,45,45,105,131,"[109, 122, 134]",21.7,4D,"4D armrest:
+Up and down: 7 CM
+Front and back: 6 CM
+Left and right: 15.2°
+Linked Recline","Height & Horizontal Adjustable Lumbar Support
+Integrated S-shape Backrest","2D headrest（Double joint):
+Up and down: 11CM,8 level
+Headrest rotation: 45°
+22° up/down flip","Self-weighted design, supports lift, large-angle recline, and multi-position locking; 3 lockable recline positions","Polyester mesh, wear-resistant, UV-resistant, and breathable",YES,TRUE,,"[""BIFMA"", ""SGS""]",3,AU sc_attributes 메타필드,갤러리 영상 없음
+xallking-x5c-ergonomic-gaming-chair,XALLKING X5C Ergonomic Gaming Chair,XALLKING Gaming,150,190,136,42.5,50.5,50.5,51,51,109,117,"[107, 135]",20.6,,"Up and down: 7 CM
+Front and back: 6 CM
+Left and right:35 CM
+Linked Recline","4-zone lumbar support
+Up and down: 4CM","3D headrest：
+Up and down: 7CM
+Headrest rotation: 45°
+Bracket rotation: 50°",Black/3rd gear/controller mechanism,Elastic-Breathable-Oilproof-Pressure-Resistant Mesh,Yes,TRUE,,,3,AU sc_attributes 메타필드,"팔걸이 유형 미표준: 'Up and down: 7 CM Front and back: 6 CM Left and right:35 CM ' → 1D/2D/3D 로 분류
+갤러리 영상 없음"
+xallking-x5f-ergonomic-gaming-chair,XALLKING X5F Ergonomic Gaming Chair,XALLKING Gaming,150,190,150,41.5,48,50.5,41,43.5,108.5,122,"[110, 122, 135]",24.6,4D,"4D armrest:
+Up and down: 6.5 CM
+Front and back: 4 CM
+Left and right: 70°
+Linked Recline","4-zone lumbar support
+Up and down: 4CM","3D headrest：
+Up and down: 7CM
+Headrest rotation: 45°
+Bracket rotation: 40°",Self-weight-bearing three-speed wire-controlled mechanism,Elastic-Breathable-Oilproof-Pressure-Resistant Mesh,Yes,TRUE,,,3,AU sc_attributes 메타필드,갤러리 영상 없음
+xallking-x5s-ergonomic-gaming-chair,XALLKING X5S Ergonomic Gaming Chair,XALLKING Gaming,150,190,150,43,51,50.5,42.5,46.5,108.5,123.5,"[108, 118, 128, 140]",25.05,4D,"4D armrest:
+Up and down: 8 CM
+Front and back: 4 CM
+Left and right: 70°
+Linked Recline","4-zone lumbar support
+Up and down: 4CM","3D headrest：
+Up and down: 7CM
+Headrest rotation: 45°
+Bracket rotation: 40°",Self-weight-bearing four-speed wire-controlled mechanism,Elastic-Breathable-Oilproof-Pressure-Resistant Mesh,Yes,TRUE,,,3,AU sc_attributes 메타필드,갤러리 영상 없음
+xallking-x3pro-premium-ergonomic-gaming-chair,XALLKING X3PRO Premium Ergonomic Gaming Chair,XALLKING Gaming,150,190,150,49,56,51,39.5,46,112,126,"[98, 108, 130, 145]",29,6D,"6D
+Up and down: 9 CM
+Up and down: 35°
+Front and back: 3.5 CM
+Left and right: 75 °
+Left and right: 8CM
+Linked Recline","6D lumbar support, Infinite transformation between 90°-105",,Self-weight-bearing four-speed wire-controlled mechanism,"Blue Red Gradient Special Mesh
+Elastic-Breathable-Oilproof-Pressure-Resistant Mesh",Yes,TRUE,,,3,AU sc_attributes 메타필드,"헤드레스트 값 없음(없는 모델이면 ""없음"" 명시)
+갤러리 영상 없음"
+sihoo-doro-s100-ergonomic-office-chair,Sihoo DORO S100 Ergonomic Office Chair,Doro Series,,,150,,,51,38.5,43.5,,,,22.3,4D,,,,,,,,,,3,US 스펙표(inch→cm 환산) — AU 메타필드 없음,"AU 메타필드 전무: US 환산값 임시, 본사 스펙시트로 확정 필요(시트 높이·권장 신장 미확인)
+메커니즘 값 없음
+헤드레스트 값 없음(없는 모델이면 ""없음"" 명시)
+상품 설명 비어 있음 → 초안 필요
+갤러리 영상 없음"
+sihoo-m59as-ergonomic-office-chair,Sihoo M59AS Ergonomic Office Chair,Core Ergonomic (M/V),,,150,,,50.5,43.5,43.5,113.5,134.5,,16.6,3D,,,,,,,,,,3,US 스펙표(inch→cm 환산) — AU 메타필드 없음,"AU 메타필드 전무: US 환산값 임시, 본사 스펙시트로 확정 필요(시트 높이·권장 신장 미확인)
+메커니즘 값 없음
+헤드레스트 값 없음(없는 모델이면 ""없음"" 명시)
+상품 설명 비어 있음 → 초안 필요
+갤러리 영상 없음"
+sihoo-a3-doro-c300-pro-v2-ergonomic-office-chair,Sihoo DORO-C300 Pro V2 Ergonomic Office Chair,Doro Series,150,190,150,46,56.7,52.1,42.9,47,106,130,"[105, 120, 135]",27.05,8D,8D Bionic Armrests,Domino™ Sacral-Lumbar Support / Self-Adaptive Dynamic Lumbar Support 2.0,Ultra-wide 3D adjustable headrest,SyncroFlex™ Back-Glide System,Premium elastic mesh back and seat with soft PU-coated armrests,"Pressure-relief waterfall seat with 4 cm / 1.6"" seat depth adjustment",TRUE,SGS Class 4,"[""BIFMA"", ""SGS""]",3,AU sc_attributes 메타필드,"상품 설명 비어 있음 → 초안 필요
+갤러리 영상 없음
+이미지 alt 누락 16/16
+SEO 타이틀 없음"

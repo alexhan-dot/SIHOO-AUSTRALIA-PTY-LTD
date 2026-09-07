@@ -1,0 +1,141 @@
+{%- comment -%}
+  Specifications table + fit guide, driven entirely by the normalised specs.* product metafields
+  (SIHOO AU 2026-09-07, audit B5-lite). Renders nothing when the product has no specs.
+  Metric first (cm / kg) for the Australian market. Resources row reads custom.install_video,
+  custom.adjust_video and custom.manual_pdf when they are set.
+{%- endcomment -%}
+{%- liquid
+  assign sp = product.metafields.specs
+  assign has_specs = false
+  if sp.max_load_kg.value != blank or sp.seat_height_min_cm.value != blank or sp.user_height_min_cm.value != blank or sp.armrest_type.value != blank
+    assign has_specs = true
+  endif
+  assign heading = section.settings.heading | default: 'Specifications'
+  capture sh_min
+    render 'spec-num', value: sp.seat_height_min_cm.value
+  endcapture
+  capture sh_max
+    render 'spec-num', value: sp.seat_height_max_cm.value
+  endcapture
+  capture sw
+    render 'spec-num', value: sp.seat_width_cm.value
+  endcapture
+  capture sd_min
+    render 'spec-num', value: sp.seat_depth_min_cm.value
+  endcapture
+  capture sd_max
+    render 'spec-num', value: sp.seat_depth_max_cm.value
+  endcapture
+  capture oh_min
+    render 'spec-num', value: sp.overall_height_min_cm.value
+  endcapture
+  capture oh_max
+    render 'spec-num', value: sp.overall_height_max_cm.value
+  endcapture
+  capture nw
+    render 'spec-num', value: sp.net_weight_kg.value
+  endcapture
+-%}
+{%- if has_specs -%}
+<section class="specs-table container" id="specs-{{ section.id }}" data-section-type="specs-table">
+  <h2 class="specs-table__heading">{{ heading | escape }}</h2>
+
+  {%- if section.settings.show_fit_guide and sp.user_height_min_cm.value != blank -%}
+  <div class="specs-table__fit">
+    <strong>Fit guide:</strong>
+    Recommended for users {{ sp.user_height_min_cm.value }}&ndash;{{ sp.user_height_max_cm.value }} cm tall
+    {%- if sp.max_load_kg.value != blank %}, rated to {{ sp.max_load_kg.value }} kg{% endif -%}.
+    {%- if sp.seat_height_min_cm.value != blank %} Seat height adjusts {{ sh_min }}&ndash;{{ sh_max }} cm, so it suits standard 72&ndash;75 cm Australian desks.{% endif -%}
+  </div>
+  {%- endif -%}
+
+  <div class="specs-table__grid">
+    <table class="specs-table__table">
+      <tbody>
+        {%- if sp.user_height_min_cm.value != blank -%}
+        <tr><th scope="row">Recommended user height</th><td>{{ sp.user_height_min_cm.value }}&ndash;{{ sp.user_height_max_cm.value }} cm</td></tr>
+        {%- endif -%}
+        {%- if sp.max_load_kg.value != blank -%}
+        <tr><th scope="row">Maximum load</th><td>{{ sp.max_load_kg.value }} kg</td></tr>
+        {%- endif -%}
+        {%- if sp.seat_height_min_cm.value != blank -%}
+        <tr><th scope="row">Seat height</th><td>{{ sh_min }}&ndash;{{ sh_max }} cm{% if sp.gas_lift_class.value != blank %} ({{ sp.gas_lift_class.value }} gas lift){% endif %}</td></tr>
+        {%- endif -%}
+        {%- if sp.seat_width_cm.value != blank -%}
+        <tr><th scope="row">Seat width</th><td>{{ sw }} cm</td></tr>
+        {%- endif -%}
+        {%- if sp.seat_depth_min_cm.value != blank -%}
+        <tr><th scope="row">Seat depth</th><td>{% if sp.seat_depth_max_cm.value != blank and sp.seat_depth_max_cm.value != sp.seat_depth_min_cm.value %}{{ sd_min }}&ndash;{{ sd_max }} cm (adjustable){% else %}{{ sd_min }} cm{% endif %}</td></tr>
+        {%- endif -%}
+        {%- if sp.overall_height_min_cm.value != blank -%}
+        <tr><th scope="row">Overall height</th><td>{{ oh_min }}&ndash;{{ oh_max }} cm</td></tr>
+        {%- endif -%}
+        {%- if sp.recline_positions_deg.value != blank -%}
+        <tr><th scope="row">Recline positions</th><td>{{ sp.recline_positions_deg.value | join: '&deg; / ' }}&deg;</td></tr>
+        {%- endif -%}
+        {%- if sp.armrest_type.value != blank or sp.armrest_detail.value != blank -%}
+        <tr><th scope="row">Armrests</th><td>{% if sp.armrest_type.value != blank %}<strong>{{ sp.armrest_type.value }}</strong>{% endif %}{% if sp.armrest_detail.value != blank %}<div class="specs-table__detail">{{ sp.armrest_detail.value | newline_to_br }}</div>{% endif %}</td></tr>
+        {%- endif -%}
+        {%- if sp.lumbar_detail.value != blank -%}
+        <tr><th scope="row">Lumbar support</th><td>{{ sp.lumbar_detail.value | newline_to_br }}</td></tr>
+        {%- endif -%}
+        {%- if sp.headrest_detail.value != blank -%}
+        <tr><th scope="row">Headrest</th><td>{{ sp.headrest_detail.value | newline_to_br }}</td></tr>
+        {%- endif -%}
+        {%- if sp.mechanism.value != blank -%}
+        <tr><th scope="row">Mechanism</th><td>{{ sp.mechanism.value | newline_to_br }}</td></tr>
+        {%- endif -%}
+        {%- if sp.mesh_material.value != blank -%}
+        <tr><th scope="row">Material</th><td>{{ sp.mesh_material.value | newline_to_br }}</td></tr>
+        {%- endif -%}
+        {%- if sp.seat_cushion.value != blank and sp.seat_cushion.value != 'YES' -%}
+        <tr><th scope="row">Seat cushion</th><td>{{ sp.seat_cushion.value }}</td></tr>
+        {%- endif -%}
+        {%- if sp.net_weight_kg.value != blank -%}
+        <tr><th scope="row">Net weight</th><td>{{ nw }} kg</td></tr>
+        {%- endif -%}
+        {%- if sp.certifications.value != blank -%}
+        <tr><th scope="row">Certifications</th><td>{{ sp.certifications.value | join: ', ' }}</td></tr>
+        {%- endif -%}
+        {%- if sp.warranty_years.value != blank -%}
+        <tr><th scope="row">Warranty</th><td>{{ sp.warranty_years.value }}-year Australian warranty (SIHOO Australia, Sydney)</td></tr>
+        {%- endif -%}
+        {%- assign cm = product.metafields.custom -%}
+        {%- if cm.install_video.value != blank or cm.adjust_video.value != blank or cm.manual_pdf.value != blank -%}
+        <tr><th scope="row">Resources</th><td>
+          {%- if cm.install_video.value != blank %}<a href="{{ cm.install_video.value }}" target="_blank" rel="noopener">Installation video</a>{% endif -%}
+          {%- if cm.adjust_video.value != blank %}{% if cm.install_video.value != blank %} &middot; {% endif %}<a href="{{ cm.adjust_video.value }}" target="_blank" rel="noopener">Adjustment guide</a>{% endif -%}
+          {%- if cm.manual_pdf.value != blank %}{% if cm.install_video.value != blank or cm.adjust_video.value != blank %} &middot; {% endif %}<a href="{{ cm.manual_pdf.value | file_url }}" target="_blank" rel="noopener">Download manual (PDF)</a>{% endif -%}
+        </td></tr>
+        {%- endif -%}
+      </tbody>
+    </table>
+  </div>
+</section>
+{%- endif -%}
+
+{% stylesheet %}
+.specs-table { padding: 40px 0 20px; }
+.specs-table__heading { text-align: center; margin: 0 0 20px; }
+.specs-table__fit { max-width: 900px; margin: 0 auto 24px; padding: 14px 18px; border-left: 4px solid #232323; background: #f7f7f8; line-height: 1.5; }
+.specs-table__grid { max-width: 900px; margin: 0 auto; overflow-x: auto; }
+.specs-table__table { width: 100%; border-collapse: collapse; font-size: 0.95em; }
+.specs-table__table th, .specs-table__table td { padding: 12px 14px; border-bottom: 1px solid #e1e1e1; vertical-align: top; text-align: left; }
+.specs-table__table th { width: 34%; font-weight: 600; color: #171717; background: #fafafa; }
+.specs-table__detail { margin-top: 4px; color: #5c5c5c; font-size: 0.92em; }
+@media (max-width: 767px) { .specs-table { padding: 28px 15px 10px; } .specs-table__table th { width: 42%; } }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Specs table (metafields)",
+  "tag": "section",
+  "class": "section-specs-table",
+  "settings": [
+    { "type": "paragraph", "content": "Reads the specs.* product metafields (Settings > Custom data > Products). Nothing renders if the product has no specs." },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Specifications" },
+    { "type": "checkbox", "id": "show_fit_guide", "label": "Show fit guide sentence (height / load / desk height)", "default": true }
+  ],
+  "presets": [ { "name": "Specs table (metafields)" } ]
+}
+{% endschema %}

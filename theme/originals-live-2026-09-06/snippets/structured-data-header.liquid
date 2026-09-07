@@ -1,0 +1,71 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SIHOO Australia",
+  "legalName": "SIHOO Australia Pty Ltd",
+  "description": "SIHOO Australia sells ergonomic office and gaming chairs designed for comfort and support.",
+  "url": "https://sihoo.com.au",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://sihoo.com.au/cdn/shop/files/sihoo_menu_logo.svg?v=1726486268&width=128",
+    "width": 128,
+    "height": 128
+  },
+  "sameAs": [
+    "https://www.facebook.com/SihooOfficeChair",
+    "https://www.youtube.com/@SIHOO_AU",
+    "https://www.instagram.com/sihoo_australia/",
+    "https://www.tiktok.com/@sihooaustralia",
+    "https://au.pinterest.com/ahan4341/",
+    "https://au.linkedin.com/company/sihoo-australia"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "11 Ferndell Street",
+    "addressLocality": "South Granville",
+    "addressRegion": "NSW",
+    "postalCode": "2142",
+    "addressCountry": "AU"
+  },
+  "telephone": "+61-1300-002-580",
+  "email": "support@sihoo.com.au",
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "telephone": "+61-1300-002-580",
+    "contactType": "customer support",
+    "email": "support@sihoo.com.au"
+  }],
+  "hasMerchantReturnPolicy": {
+    "@type": "MerchantReturnPolicy",
+    "returnPolicyCategory": "ReturnShippingFees",
+    "merchantReturnDays": 30,
+    "returnMethod": "Mail",
+    "returnFees": "FreeReturn",
+    "merchantReturnLink": "https://sihoo.com.au/pages/returns"
+  },
+  "foundingDate": "2018-05-01",
+  "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "minValue": 10,
+    "maxValue": 50
+  }
+}
+ </script> 
+
+{%- if request.page_type == 'index' -%}
+  {%- assign potential_action_target = shop.url | append: routes.search_url | append: "?q={search_term_string}" -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": {{ shop.name | json }},
+      "url": {{ shop.url | append: page.url | json }},
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {{ potential_action_target | json }},
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+{%- endif -%}

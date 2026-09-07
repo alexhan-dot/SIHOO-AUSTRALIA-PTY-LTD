@@ -1,0 +1,65 @@
+{%- comment -%}
+  Podium chat widget.
+
+  Homepage: load only on real tap/key press — NOT on scroll.
+  Lighthouse auto-scrolls during audits; treating scroll as engagement pulled in
+  connect.podium.com/styles.css + fonts (~6s) and ruined lab scores.
+
+  Other templates: idle after load, or earlier on any interaction including scroll.
+{%- endcomment -%}
+
+{%- assign podium_token = '26aba596-7abf-4ddf-88d2-b385a790bac9' -%}
+{%- assign podium_idle_timeout = 4000 -%}
+{%- assign podium_interaction_only = false -%}
+{%- if template.name == 'index' -%}
+  {%- assign podium_interaction_only = true -%}
+{%- endif -%}
+
+<script id="podium-widget-loader">
+(function () {
+  'use strict';
+
+  var INTERACTION_ONLY = {{ podium_interaction_only | json }};
+  /* Homepage: no scroll — PSI scrolls the page during the lab run. */
+  var ENGAGE_EVENTS = INTERACTION_ONLY
+    ? ['pointerdown', 'keydown', 'touchstart']
+    : ['scroll', 'pointerdown', 'keydown', 'touchstart'];
+  var injected = false;
+
+  function inject() {
+    if (injected) return;
+    injected = true;
+
+    ENGAGE_EVENTS.forEach(function (name) {
+      window.removeEventListener(name, inject, true);
+    });
+
+    var script = document.createElement('script');
+    script.id = 'podium-widget';
+    script.async = true;
+    script.src = 'https://connect.podium.com/widget.js#ORG_TOKEN={{ podium_token }}';
+    script.setAttribute('data-organization-api-token', '{{ podium_token }}');
+    document.body.appendChild(script);
+  }
+
+  function schedule() {
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(inject, { timeout: {{ podium_idle_timeout }} });
+    } else {
+      setTimeout(inject, {{ podium_idle_timeout }});
+    }
+  }
+
+  ENGAGE_EVENTS.forEach(function (name) {
+    window.addEventListener(name, inject, { capture: true, passive: true });
+  });
+
+  if (!INTERACTION_ONLY) {
+    if (document.readyState === 'complete') {
+      schedule();
+    } else {
+      window.addEventListener('load', schedule, { once: true });
+    }
+  }
+})();
+</script>

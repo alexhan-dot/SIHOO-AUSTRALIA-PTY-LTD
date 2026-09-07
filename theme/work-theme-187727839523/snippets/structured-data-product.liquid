@@ -1,0 +1,103 @@
+{%- comment -%}
+  Product structured data for SIHOO Australia (audit A3, 2026-09-07).
+  Replaces `{{ product | structured_data }}` so that the ProductGroup carries:
+  - aggregateRating from Shopify's standard reviews.rating / reviews.rating_count metafields (Loox sync)
+  - a fixed brand ("SIHOO", or "Desker" for desks) instead of the vendor string
+  - AU-specific Offer data Google requires for merchant listings: free AU shipping with delivery
+    time, 30-day free return policy, condition, seller, GTIN/SKU
+  Parameters: product, current_variant
+{%- endcomment -%}
+{%- liquid
+  assign product_url = shop.url | append: product.url
+  assign brand_name = 'SIHOO'
+  if product.vendor contains 'Desker'
+    assign brand_name = 'Desker'
+  endif
+  assign rating_count = product.metafields.reviews.rating_count | plus: 0
+  assign rating_obj = product.metafields.reviews.rating.value
+  assign sd_description = product.description | strip_html | strip_newlines | strip | truncate: 5000
+  if sd_description == blank
+    assign sd_description = product.metafields.global.description_tag | default: page_description
+  endif
+  assign price_valid_until = 'now' | date: '%s' | plus: 31536000 | date: '%Y-%m-%d'
+  assign has_color = false
+  for option in product.options
+    assign option_down = option | downcase
+    if option_down == 'color' or option_down == 'colour'
+      assign has_color = true
+    endif
+  endfor
+-%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "ProductGroup",
+  "@id": {{ product_url | append: '#product' | json }},
+  "name": {{ product.title | json }},
+  "description": {{ sd_description | json }},
+  "url": {{ product_url | json }},
+  "brand": { "@type": "Brand", "name": {{ brand_name | json }} },
+  "productGroupID": {{ product.id | json }},
+  "category": {{ product.type | json }},
+  "image": [{% for image in product.images limit: 8 %}{{ image | image_url: width: 1600 | prepend: 'https:' | json }}{% unless forloop.last %},{% endunless %}{% endfor %}],
+  {%- if has_color %}
+  "variesBy": ["https://schema.org/color"],
+  {%- endif %}
+  {%- if rating_count > 0 and rating_obj.rating != blank %}
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": {{ rating_obj.rating | json }},
+    "bestRating": {{ rating_obj.scale_max | default: 5 | json }},
+    "worstRating": {{ rating_obj.scale_min | default: 1 | json }},
+    "reviewCount": {{ rating_count }}
+  },
+  {%- endif %}
+  "hasVariant": [
+    {%- for variant in product.variants %}
+    {
+      "@type": "Product",
+      "@id": {{ product_url | append: '?variant=' | append: variant.id | append: '#variant' | json }},
+      "name": {% if variant.title == 'Default Title' %}{{ product.title | json }}{% else %}{{ product.title | append: ' - ' | append: variant.title | json }}{% endif %},
+      "sku": {{ variant.sku | json }},
+      {%- if variant.barcode != blank %}
+      "gtin": {{ variant.barcode | json }},
+      {%- endif %}
+      {%- if has_color %}
+      "color": {{ variant.option1 | json }},
+      {%- endif %}
+      "image": {% if variant.image %}{{ variant.image | image_url: width: 1600 | prepend: 'https:' | json }}{% else %}{{ product.featured_image | image_url: width: 1600 | prepend: 'https:' | json }}{% endif %},
+      "offers": {
+        "@type": "Offer",
+        "@id": {{ product_url | append: '?variant=' | append: variant.id | append: '#offer' | json }},
+        "url": {{ product_url | append: '?variant=' | append: variant.id | json }},
+        "price": {{ variant.price | money_without_currency | remove: ',' | json }},
+        "priceCurrency": {{ cart.currency.iso_code | json }},
+        "priceValidUntil": {{ price_valid_until | json }},
+        "availability": {% if variant.available %}"https://schema.org/InStock"{% else %}"https://schema.org/OutOfStock"{% endif %},
+        "itemCondition": "https://schema.org/NewCondition",
+        "seller": { "@type": "Organization", "name": "SIHOO Australia" },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": { "@type": "MonetaryAmount", "value": 0, "currency": "AUD" },
+          "shippingDestination": { "@type": "DefinedRegion", "addressCountry": "AU" },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 1, "unitCode": "DAY" },
+            "transitTime": { "@type": "QuantitativeValue", "minValue": 1, "maxValue": 7, "unitCode": "DAY" }
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "AU",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 30,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn",
+          "merchantReturnLink": "https://sihoo.com.au/pages/returns"
+        }
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ]
+}
+</script>

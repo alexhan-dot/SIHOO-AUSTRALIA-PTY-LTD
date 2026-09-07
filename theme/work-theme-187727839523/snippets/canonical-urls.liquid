@@ -1,0 +1,35 @@
+{% comment %}
+  Canonical URL Logic
+  Handles canonical tags for different page types to improve SEO
+  Order matters: Check most specific conditions first
+  2026-09-07 (audit A18): collection canonical must be an absolute URL — was `{{ collection.url }}` (relative), which Google ignores.
+{% endcomment %}
+
+{% if request.path == '/pages/compare-products' %}
+  <link rel="canonical" href="https://sihoo.com.au/pages/compare-products" />
+
+{% elsif template contains 'product' %}
+  <link rel="canonical" href="{{ shop.url }}{{ product.url }}" />
+
+{% elsif template contains 'collection' %}
+  {%- comment -%} Collections: always point to first page, absolute URL (removes pagination/filter params) {%- endcomment -%}
+  <link rel="canonical" href="{{ shop.url }}{{ collection.url }}" />
+
+{% elsif request.path == '/policies/terms-of-service' %}
+  <link rel="canonical" href="https://sihoo.com.au/pages/policy-terms" />
+{% elsif request.path == '/policies/privacy-policy' %}
+  <link rel="canonical" href="https://sihoo.com.au/pages/policy" />
+{% elsif request.path == '/policies/refund-policy' %}
+  <link rel="canonical" href="https://sihoo.com.au/pages/returns" />
+{% elsif request.path == '/policies/shipping-policy' %}
+  <link rel="canonical" href="https://sihoo.com.au/pages/shipping-policy" />
+
+{% elsif template contains 'page' and page %}
+  {%- comment -%} Regular pages → use page.url for accurate canonical {%- endcomment -%}
+  <link rel="canonical" href="{{ shop.url }}{{ page.url }}" />
+
+{% else %}
+  {%- comment -%} Fallback for everything else (blog, index, etc.) {%- endcomment -%}
+  <link rel="canonical" href="{{ shop.url }}{{ request.path }}" />
+
+{% endif %}

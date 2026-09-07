@@ -1,0 +1,272 @@
+{% if section.blocks.size > 0 %}
+{%- comment -%}
+  SIHOO AU 2026-09-07 (audit A7): FAQPage JSON-LD generated from the same blocks that render the
+  visible accordion (product pages, homepage, compare page), so schema and content can never drift.
+{%- endcomment -%}
+{%- assign faq_first = true -%}
+{%- capture faq_items -%}
+  {%- for block in section.blocks -%}
+    {%- if block.settings.question != blank and block.settings.answer != blank -%}
+      {%- unless faq_first %},{% endunless -%}
+      {"@type":"Question","name":{{ block.settings.question | strip_html | strip | json }},"acceptedAnswer":{"@type":"Answer","text":{{ block.settings.answer | strip_html | strip | json }}}}
+      {%- assign faq_first = false -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- if faq_first == false -%}
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{{ faq_items | strip }}]}</script>
+{%- endif -%}
+<section class="faq-section" style="background-color: {{ section.settings.background_color | default: '#ffffff' }}; color: {{ section.settings.text_color | default: '#000000' }};">
+  <div class="page-width">
+    {% if section.settings.title != blank %}
+      <h2 class="faq-title">{{ section.settings.title }}</h2>
+    {% endif %}
+    
+    <div class="faq-accordion">
+      {% for block in section.blocks %}
+        <div class="faq-item" {{ block.shopify_attributes }}>
+          <button class="faq-question" type="button" aria-expanded="false">
+            <h3 class="faq-question-text">{{ block.settings.question }}</h3>
+            <span class="faq-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              {{ block.settings.answer }}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% stylesheet %}
+/* FAQ Section */
+.faq-section {
+  padding: 54px 0px 108px;
+}
+
+.faq-item:first-child {
+    border-top: 1px solid #e1e1e1;
+}
+
+.faq-section .page-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.faq-title {
+  text-align: center;
+  font-weight: 600;
+  margin: 0 0 40px 0;
+  text-transform: capitalize;
+  line-height: 1.6em;
+}
+
+
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-item {
+    border-radius: 0px;
+    overflow: hidden;
+    transition: all .3s 
+ease;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 20px;
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size:1.333rem;
+  gap: 20px;
+  font-weight: 400;
+  color: inherit;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:focus {
+  outline: 2px solid #000;
+  outline-offset: -2px;
+}
+
+.faq-question-text {
+  flex: 1;
+  line-height: 1.4;
+  font-weight: 500;
+  font-size:1.333rem !important;
+}
+
+.faq-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 1000px;
+}
+
+span.faq-icon {
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+}
+
+.faq-accordion {
+    border: 1px solid #e1e1e1;
+    padding: 20px 20px;
+}
+
+.faq-accordion .faq-item:first-child {
+    border-top: 0px;
+}
+
+.faq-accordion .faq-item:last-child {
+    border-bottom: 0px;
+}
+
+.faq-answer-content {
+  padding: 0 20px 20px 20px;
+  line-height: 1.6;
+}
+
+.faq-answer-content p {
+  margin: 0 0 10px 0;
+}
+
+.faq-answer-content p:last-child {
+  margin-bottom: 0;
+}
+
+.faq-answer-content ul,
+.faq-answer-content ol {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.faq-answer-content li {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 40px 15px;
+  }
+  
+  .faq-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .faq-description {
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+  }
+  
+  .faq-question {
+    padding: 15px;
+    font-size: 15px;
+    gap: 15px;
+  }
+  
+  .faq-answer-content {
+    padding: 0 15px 15px 15px;
+    font-size: 0.9rem;
+  }
+}
+{% endstylesheet %}
+
+{% javascript %}
+document.addEventListener('DOMContentLoaded', function() {
+  const faqItems = document.querySelectorAll('.faq-item');
+  
+  faqItems.forEach(function(item) {
+    const question = item.querySelector('.faq-question');
+    const answer = item.querySelector('.faq-answer');
+    
+    question.addEventListener('click', function() {
+      const isActive = item.classList.contains('active');
+      item.classList.toggle('active');
+      
+      question.setAttribute('aria-expanded', !isActive);
+    });
+  });
+});
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "FAQ Accordion",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq_item",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ Accordion"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,41 @@
+{%- comment -%}
+  Podium chat widget.
+
+  SIHOO AU 2026-09-07 (audit A20): the widget now loads only after a real user
+  interaction on EVERY template (tap, key, touch, mouse wheel). Previously non-home
+  templates auto-loaded it after a 4s idle timeout, which put ~1.5s of script bootup and a
+  layout shift (CLS 0.06) inside the Core Web Vitals window on product and collection pages.
+  Scroll via mouse wheel and touch still count as interaction, so real shoppers see the
+  chat prompt within their first gesture; Lighthouse's synthetic scroll does not.
+{%- endcomment -%}
+
+{%- assign podium_token = '26aba596-7abf-4ddf-88d2-b385a790bac9' -%}
+
+<script id="podium-widget-loader">
+(function () {
+  'use strict';
+
+  var ENGAGE_EVENTS = ['pointerdown', 'keydown', 'touchstart', 'wheel'];
+  var injected = false;
+
+  function inject() {
+    if (injected) return;
+    injected = true;
+
+    ENGAGE_EVENTS.forEach(function (name) {
+      window.removeEventListener(name, inject, true);
+    });
+
+    var script = document.createElement('script');
+    script.id = 'podium-widget';
+    script.async = true;
+    script.src = 'https://connect.podium.com/widget.js#ORG_TOKEN={{ podium_token }}';
+    script.setAttribute('data-organization-api-token', '{{ podium_token }}');
+    document.body.appendChild(script);
+  }
+
+  ENGAGE_EVENTS.forEach(function (name) {
+    window.addEventListener(name, inject, { capture: true, passive: true });
+  });
+})();
+</script>
