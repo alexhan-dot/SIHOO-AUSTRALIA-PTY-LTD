@@ -47,3 +47,28 @@ Date: 2026-09-08. Title, price, variants, gallery, templateSuffix and status unt
 - faq_item: m59as-faq-1…8 → 316791357731, 316791390499, 316791423267, 316791456035, 316791488803, 316791521571, 316791554339, 316791587107 (ACTIVE)
 - faqs: faqs-m59as → 316791750947 (ACTIVE)
 - Metafields set: highlights, highlight_images (4), best_for, feature_stories, faqs, compare_products (M57, M59), compare_intro, lifestyle_images, whats_in_box. hero_video: unset (see note).
+
+## specs.* import (2026-09-08)
+
+Source: US https://www.sihoo.com/products/sihoo-m59as-ergonomic-office-chair — "Specifications" section text plus the two dimension diagrams (`M59AS_152416d9…webp` front, `M59AS_4ad23165…webp` side), inches → cm rounded to 0.5 cm, lb → kg. `data_source` = "US sihoo.com spec section 2026-09-08 (converted to metric)".
+
+| Key | Value | From |
+|---|---|---|
+| family | Core Ergonomic (M/V) | brief |
+| user_height_min/max_cm | unset | not published on US page (flagged) |
+| max_load_kg | 150 | 330 lb |
+| seat_height_min/max_cm | 45.5 / 53.0 | side diagram 17.9–20.9 in |
+| seat_width_cm | 50.5 | "Max hip width 19.88 in" (diagram 18.5 in = 47) |
+| seat_depth_min/max_cm | 43.5 / 43.5 | "Seat depth 17.13 in" fixed (diagram 16.5 in) |
+| overall_height_min/max_cm | 113.5 / 134.5 | "Chair back lifting height 44.69–52.95 in" = overall height (diagram 43.9–51.6 in) |
+| net_weight_kg | 16.6 | 36.7 lb = 16.65, listed 16.6 to match AU page |
+| recline_positions_deg | [126] | "Recline up to 126°" |
+| armrest_type / armrest_detail | 3D flip-up; up/down, fwd/back, rotation; pad ~23 cm, height ~24.5 cm | US text + diagram |
+| lumbar / headrest / mechanism / mesh_material / seat_cushion | dynamic lumbar in dual-section backrest (~45 cm wide); double-jointed headrest ~30 × 14 cm; 126° recline, gas lift, coat hanger; PE + polyester full mesh, aluminium; saddle-shaped mesh seat | US text + diagram |
+| suspension | true | full-mesh assumption (flagged) |
+| certifications | BIFMA, SGS | US text |
+| warranty_years | 3 | US text (AU page also 3) |
+| gas_lift_class | unset | not published |
+| needs_confirmation | see metafield | |
+
+23 keys set, userErrors: none.

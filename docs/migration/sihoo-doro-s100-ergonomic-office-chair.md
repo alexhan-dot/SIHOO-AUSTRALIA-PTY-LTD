@@ -47,3 +47,27 @@ Date: 2026-09-08. Title, price, variants, gallery, templateSuffix and status unt
 - faq_item: s100-faq-1…8 → 316790505763, 316790538531, 316790571299, 316790604067, 316790636835, 316790669603, 316790702371, 316790735139 (ACTIVE)
 - faqs: faqs-s100 → 316790997283 (ACTIVE)
 - Metafields set: highlights, highlight_images, best_for, feature_stories, faqs, compare_products (S300, C300 Pro), compare_intro, lifestyle_images, whats_in_box — userErrors: none. hero_video: unset.
+
+## specs.* import (2026-09-08)
+
+Source: US https://www.sihoo.com/products/sihoo-doro-s100-ergonomic-office-chair-with-dual-dynamic-lumbar-support — "Specifications" section text plus the two dimension diagrams (`S100_fc450542…webp` front, `S100_35c1f5a5…webp` side), inches → cm rounded to 0.5 cm, lb → kg. `data_source` = "US sihoo.com spec section 2026-09-08 (converted to metric)". `warranty_years` 5 kept (US page says 3).
+
+| Key | Value | From |
+|---|---|---|
+| family | Doro Series | brief |
+| user_height_min/max_cm | 150 / 190 | US "5 ft (150 cm) … 6 ft 3 in (190 cm)" |
+| max_load_kg | 150 | 330 lb |
+| seat_height_min/max_cm | 46.0 / 54.0 | "Chair back lifting height 18.11–21.25 in" (side diagram 18.1–21.3 in) |
+| seat_width_cm | 51.0 | "Max hip width 20.07 in" (diagram 20.3 in = 51.5) |
+| seat_depth_min/max_cm | 38.5 / 43.5 | "Seat depth 15.15–17.12 in" (diagram 16.5–17.5 in) |
+| overall_height_min/max_cm | 111.0 / 126.0 | side diagram 43.7–49.6 in (text line 45–50 in) |
+| net_weight_kg | 22.3 | 49.13 lb |
+| recline_positions_deg | [135] | "Recline up to 135°" (intermediate locks not published) |
+| armrest_type / armrest_detail | 4D; 7 cm up/down, 3 cm fwd/back, sideways, 72° rotation, linked recline; pad ~26.5 cm, height ~19–25.5 cm | US text + diagram |
+| lumbar / headrest / mechanism / mesh_material / seat_cushion | dual dynamic lumbar (~44 cm wide); integrated headrest ~16.5 cm on 5-level upper backrest; 135° recline + gas lift + 5 cm seat depth; elastic mesh back/seat, PU armrests; waterfall mesh seat | US text + diagram |
+| suspension | true | mesh-seat assumption (flagged) |
+| certifications | BIFMA, SGS | US text |
+| gas_lift_class | unset | not published |
+| needs_confirmation | see metafield (diagram vs text discrepancies, recline locks, gas lift, warranty 3 vs 5) | |
+
+24 keys set (23 + existing warranty_years), userErrors: none.
