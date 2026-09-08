@@ -73,14 +73,30 @@ endif
       </li>
 
     {%- elsif template.name == 'product' -%}
-      {%- if collection -%}
+      {%- liquid
+        comment
+          SIHOO AU 2026-09-08: when the product is opened directly (no /collections/x/products/y URL),
+          fall back to the product's first "real" collection so Home > Collection > Product is always shown.
+        endcomment
+        assign crumb_collection = collection
+        if crumb_collection == blank or crumb_collection.handle == blank
+          for pc in product.collections
+            if pc.handle == 'all' or pc.handle == 'frontpage' or pc.handle contains 'sale' or pc.handle contains 'new-arrival' or pc.handle contains 'eofy' or pc.handle contains 'clearance'
+              continue
+            endif
+            assign crumb_collection = pc
+            break
+          endfor
+        endif
+      -%}
+      {%- if crumb_collection and crumb_collection.handle != blank -%}
         {%- if show_collection_listing_link -%}
           <li class="breadcrumbs-list__item">
             <a class="breadcrumbs-list__link" href="{{ routes.collections_url }}">{{ collections_title | escape }}</a> {{ divider }}
           </li>
         {%- endif -%}
         <li class="breadcrumbs-list__item">
-          <a class="breadcrumbs-list__link" href="{{ collection.url }}">{{ collection.title | escape }}</a> {{ divider }}
+          <a class="breadcrumbs-list__link" href="{{ crumb_collection.url }}">{{ crumb_collection.title | escape }}</a> {{ divider }}
         </li>
       {%- endif -%}
       <li class="breadcrumbs-list__item">
