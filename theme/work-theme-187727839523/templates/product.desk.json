@@ -1,0 +1,353 @@
+{
+  "sections": {
+    "main": {
+      "type": "custom-main-product",
+      "blocks": {
+        "reviews": {
+          "type": "reviews",
+          "settings": {
+            "label": "reviews",
+            "show_when_empty": false,
+            "empty_label": "reviews"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "show_save_badge": true,
+            "save_label": "Save",
+            "show_save_percent": true,
+            "show_low_stock_badge": true,
+            "low_stock_label": "LOW ON STOCK"
+          }
+        },
+        "demand_alert": {
+          "type": "demand-alert",
+          "settings": {
+            "title": "HIGH DEMAND",
+            "text": "Extended dispatch: please allow an additional 5–7 business days before your order is shipped.",
+            "show_for": "specific",
+            "variants": ""
+          }
+        },
+        "shipping_note": {
+          "type": "shipping-note",
+          "settings": {
+            "text": "Free delivery Australia-wide, 1–5 business days",
+            "subtext": "Dispatched from Sydney, Melbourne, Brisbane or Perth · Afterpay and Zip available at checkout"
+          }
+        },
+        "variant_picker": {
+          "type": "variant-picker",
+          "settings": {
+            "show_single": false,
+            "selector_style": "listed",
+            "dynamic_availability": "show",
+            "enable_size_chart": false,
+            "size_chart_label": "Size guide",
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": false,
+            "show_buy_it_now": true,
+            "buy_it_now_label": "Buy it now",
+            "show_backorder_text": false,
+            "show_pickup_availability": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "trust_badges": {
+          "type": "trust-badges",
+          "settings": {
+            "badge_1_icon": "award",
+            "badge_1_text": "5-Year Frame Warranty",
+            "badge_2_icon": "return",
+            "badge_2_text": "30-Day Returns",
+            "badge_3_icon": "truck",
+            "badge_3_text": "Free AU Shipping"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "show_in_tab": true,
+            "open_tab": true,
+            "icon": "",
+            "show_in_quickbuy": false
+          }
+        },
+        "whats_in_box": {
+          "type": "accordion",
+          "settings": {
+            "title": "What's in the box",
+            "icon": "",
+            "content": "",
+            "page": "",
+            "custom_liquid": "{%- if product.metafields.custom.whats_in_box != blank -%}<ul>{%- assign box_items = product.metafields.custom.whats_in_box.value | newline_to_br | split: '<br />' -%}{%- for item in box_items -%}{%- assign item_s = item | strip -%}{%- if item_s != blank -%}<li>{{ item_s | escape }}</li>{%- endif -%}{%- endfor -%}</ul>{%- endif -%}",
+            "open": false,
+            "show_in_quickbuy": false
+          }
+        },
+        "delivery_returns": {
+          "type": "accordion",
+          "settings": {
+            "title": "Delivery, returns & warranty",
+            "icon": "",
+            "content": "<p><strong>Delivery:</strong> free Australia-wide. Metro orders usually arrive in 1–5 business days; regional and WA/NT addresses can take longer.</p><p><strong>Returns:</strong> 30-day change-of-mind returns in original packaging. See our <a href=\"/pages/returns\">returns policy</a>.</p><p><strong>Warranty:</strong> 3-year Australian warranty, supported by SIHOO Australia in Sydney.</p>",
+            "page": "",
+            "custom_liquid": "",
+            "open": false,
+            "show_in_quickbuy": false
+          }
+        }
+      },
+      "block_order": [
+        "reviews",
+        "title",
+        "price",
+        "demand_alert",
+        "shipping_note",
+        "variant_picker",
+        "buy_buttons",
+        "trust_badges",
+        "description",
+        "whats_in_box",
+        "delivery_returns"
+      ],
+      "settings": {
+        "accent_color": "#c20000",
+        "low_stock_threshold": 10,
+        "demand_bg": "#fff8e8",
+        "demand_border": "#e8c46a",
+        "shipping_color": "#1f9d55",
+        "trust_color": "#6B7C8A",
+        "hide_gallery_sale_label": true,
+        "show_breadcrumbs": true,
+        "select_first_variant": true,
+        "show_location_underneath": false,
+        "inventory_transfers_enable": false,
+        "enable_sticky_columns": true,
+        "enable_sticky_atc": true,
+        "sticky_atc_position": "center",
+        "sticky_atc_mobile": true,
+        "sticky_atc_behavior": "add_to_cart",
+        "sticky_atc_button_style": "secondary",
+        "gallery_size": "medium",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "show_alt_text": false,
+        "alt_text_icon": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_media_grouping": false,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe",
+        "sihoo_unified_reviews": false
+      }
+    },
+    "highlights": {
+      "type": "product-highlights",
+      "settings": {
+        "heading": "Why you'll like it",
+        "columns": "3",
+        "icons": "check_mark_in_circle",
+        "show_best_for": true,
+        "best_for_label": "Best for",
+        "color_scheme": "auto",
+        "height": "medium"
+      }
+    },
+    "hero_video": {
+      "type": "product-hero-video",
+      "settings": {
+        "video_url": "",
+        "heading": "",
+        "text": "",
+        "full_width": false,
+        "height": "small"
+      }
+    },
+    "feature_story": {
+      "type": "feature-story",
+      "settings": {
+        "heading": "",
+        "source": "auto",
+        "default_layout": "alternate",
+        "image_ratio": "3 / 2",
+        "color_scheme": "auto",
+        "max_items": 8,
+        "height": "medium"
+      }
+    },
+    "press_quotes": {
+      "type": "press-quotes",
+      "settings": {
+        "heading": "What the experts say",
+        "source": "auto",
+        "color_scheme": "auto",
+        "height": "medium"
+      }
+    },
+    "faq_accordion": {
+      "type": "faq-accordion",
+      "settings": {
+        "background_color": "#ffffff",
+        "text_color": "#000000"
+      }
+    },
+    "review_source_note": {
+      "type": "review-source-note",
+      "settings": {
+        "heading": "About these reviews",
+        "text_alignment": "center",
+        "height": "small"
+      }
+    },
+    "reviews_loox": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "reviews_to_display": "",
+            "default_tab": "automatic",
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_space": true
+      }
+    },
+    "related_products": {
+      "type": "related-products",
+      "settings": {
+        "title": "You may also like",
+        "show_vendor": false,
+        "grid": 4
+      }
+    },
+    "social_proof": {
+      "type": "social-proof",
+      "settings": {
+        "heading": "Trusted across Australia",
+        "show_site_reviews": true,
+        "units_sold": "10 million+",
+        "units_sold_label": "SIHOO chairs sold worldwide",
+        "certifications": "BIFMA · SGS · TÜV",
+        "certifications_label": "Independently tested and certified",
+        "warehouses_count": "4",
+        "warehouses": "Australian warehouses: Sydney, Melbourne, Brisbane, Perth",
+        "footnote": "Amazon rating and count are read from the Amazon.com.au listing and updated periodically.",
+        "color_scheme": "auto",
+        "height": "small"
+      }
+    },
+    "video_gallery": {
+      "type": "video-gallery",
+      "settings": {
+        "heading": "See it in action",
+        "text": "Real footage from our Australian team, our customers and independent reviewers.",
+        "show_group_labels": true,
+        "channel_url": "https://www.youtube.com/@SIHOO_AU",
+        "channel_label": "More on the SIHOO Australia YouTube channel",
+        "color_scheme": "auto",
+        "height": "medium"
+      }
+    },
+    "lifestyle_gallery": {
+      "type": "lifestyle-gallery",
+      "settings": {
+        "heading": "Made for the way you work",
+        "show_captions": true,
+        "ratio": "4 / 3",
+        "full_width": false,
+        "height": "medium"
+      }
+    },
+    "delivery_promise": {
+      "type": "delivery-promise",
+      "blocks": {
+        "syd": {
+          "type": "city",
+          "settings": {
+            "city": "Sydney",
+            "serves": "NSW · ACT",
+            "eta": "1–3 business days"
+          }
+        },
+        "mel": {
+          "type": "city",
+          "settings": {
+            "city": "Melbourne",
+            "serves": "VIC · TAS",
+            "eta": "1–3 business days"
+          }
+        },
+        "bne": {
+          "type": "city",
+          "settings": {
+            "city": "Brisbane",
+            "serves": "QLD · northern NSW",
+            "eta": "1–3 business days"
+          }
+        },
+        "per": {
+          "type": "city",
+          "settings": {
+            "city": "Perth",
+            "serves": "WA",
+            "eta": "1–3 business days"
+          }
+        }
+      },
+      "block_order": [
+        "syd",
+        "mel",
+        "bne",
+        "per"
+      ],
+      "settings": {
+        "heading": "Shipped from the warehouse nearest you",
+        "text": "<p>SIHOO Australia holds stock in four warehouses so most orders leave the same or next business day and arrive within 1–5 business days.</p>",
+        "footnote": "Delivery windows are typical courier times after dispatch. Regional and remote addresses can take longer; we will send tracking as soon as your chair ships.",
+        "link_label": "Read our delivery policy",
+        "link_url": "shopify://pages/shipping-policy",
+        "height": "medium"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "social_proof",
+    "highlights",
+    "hero_video",
+    "feature_story",
+    "video_gallery",
+    "lifestyle_gallery",
+    "press_quotes",
+    "faq_accordion",
+    "delivery_promise",
+    "review_source_note",
+    "reviews_loox",
+    "related_products"
+  ]
+}
