@@ -90,7 +90,7 @@
 | M57 · M 템플릿 | https://sihoo.com.au/products/sihoo-m57-ergonomic-office-chair?view=m&preview_theme_id=187727839523 | 아마존 4.1/5·5,084·Amazon's Choice 타일, 조립 영상 2, 스펙표 |
 | M18 · M 템플릿 | https://sihoo.com.au/products/sihoo-m18-ergonomics-task-office-chair?view=m&preview_theme_id=187727839523 | 아마존 4.2/5·16,727, 영상 3 |
 | X5S · X 템플릿 | https://sihoo.com.au/products/xallking-x5s-ergonomic-gaming-chair?view=x&preview_theme_id=187727839523 | 다크 스킴 (메타필드 없는 섹션은 비표시) |
-| B100 (DRAFT) | [Shopify 상품 관리자](https://admin.shopify.com/store/sihoo/products/10362607862051) | 기존 일반 URL은 404/컬렉션 이동 확인. 관리자에서 생성한 정식 상품 프리뷰로 검토 필요; 일반 테마 프리뷰만으로는 DRAFT 상품 공개 안 됨 |
+| B100 (DRAFT) | [Shopify 상품 관리자](https://admin.shopify.com/store/sihoo/products/10362607862051) | 기존 일반 URL은 404/컬렉션 이동 확인. 관리자 발급 키로 DRAFT M 프리뷰 검증 완료. [절차](sihoo-au-fix-report-2026-09-09.md#b100-비공개-프리뷰-절차) 참조; 일반 상품 URL로는 열리지 않음 |
 | FAQ 페이지 | https://sihoo.com.au/pages/faq?preview_theme_id=187727839523 | 4번 배송 답변 |
 | 블로그 초안 | Admin → Online Store → Blog posts → "Four Australian warehouses…" (비공개) | 공개 전 검토 |
 
