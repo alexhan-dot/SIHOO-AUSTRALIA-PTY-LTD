@@ -4,6 +4,7 @@ sihoo.com.au(Shopify, Symmetry 테마)의 SEO·GEO·상품페이지·테마 업�
 
 ## 시작하기
 
+- 최신 수정 결과: [2026-09-09 리뷰·비교표·정책 안내 수정 리포트](docs/sihoo-au-fix-report-2026-09-09.md) · [27개 상품 프리뷰 검수표](docs/fixes-2026-09-09/product-preview-checks.ko.md)
 - DRAFT 업그레이드 작업지시서: [docs/upgrade-2026-09/WORK-ORDER.ko.md](docs/upgrade-2026-09/WORK-ORDER.ko.md)
 - Spring Sale 동기화·구매 오류 수정: [변경 범위와 검증 결과](docs/upgrade-2026-09/SPRING-SALE-SYNC.ko.md)
 - 상품페이지·리뷰 통합: [실행 목록·US 대응표·미검증 범위](docs/upgrade-2026-09/PDP-REVIEWS-WORKLIST.ko.md)
@@ -19,9 +20,9 @@ sihoo.com.au(Shopify, Symmetry 테마)의 SEO·GEO·상품페이지·테마 업�
 | 페이지 | 링크 |
 |---|---|
 | 홈 | https://sihoo.com.au/?preview_theme_id=187727839523 |
-| M57 PDP | https://sihoo.com.au/products/sihoo-m57-ergonomic-office-chair?preview_theme_id=187727839523 |
-| C300 Pro V2 PDP | https://sihoo.com.au/products/sihoo-a3-doro-c300-pro-v2-ergonomic-office-chair?preview_theme_id=187727839523 |
-| 컬렉션 | https://sihoo.com.au/collections/ergonomic-chairs?preview_theme_id=187727839523 |
+| M57 새 M 템플릿 | https://sihoo.com.au/products/sihoo-m57-ergonomic-office-chair?view=m&preview_theme_id=187727839523 |
+| C300 Pro V2 새 Doro 템플릿 | https://sihoo.com.au/products/sihoo-a3-doro-c300-pro-v2-ergonomic-office-chair?view=doro&preview_theme_id=187727839523 |
+| Doro 컬렉션 | https://sihoo.com.au/collections/doro-series?preview_theme_id=187727839523 |
 | FAQ | https://sihoo.com.au/pages/faq?preview_theme_id=187727839523 |
 
 ## 폴더
@@ -34,7 +35,7 @@ theme/
   originals-live-2026-09-06/ 같은 파일의 LIVE 원본 (diff 용)
 ```
 
-`diff -ru theme/originals-live-2026-09-06 theme/work-theme-187727839523` 로 정확한 변경분을 볼 수 있다.
+`theme/work-theme-187727839523`는 전체 테마가 아닌 부분 스냅샷이다. 배포 전 원격을 다시 받고 해당 작업의 파일 manifest로 대조한 후, 명시한 파일만 `--nodelete`로 DRAFT에 적용한다. 폴더 전체를 그대로 덮어쓰거나 누락 파일을 삭제하지 않는다. 과거 LIVE 원본과의 diff는 그 시점에 보관한 파일 범위의 비교다.
 
 ## 규칙
 
