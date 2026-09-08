@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -259,7 +250,8 @@
         "enable_video_autoplay": false,
         "enable_video_looping": false,
         "enable_media_grouping": false,
-        "media_grouping_option": "Color,Colour,Couleur,Farbe"
+        "media_grouping_option": "Color,Colour,Couleur,Farbe",
+        "sihoo_unified_reviews": true
       }
     },
     "172649452298bf6fcf": {
@@ -744,19 +736,19 @@
       }
     },
     "1726495174ce454bc4": {
-      "type": "apps",
+      "type": "sihoo-product-reviews",
       "blocks": {
         "loox_reviews_loox_dynamic_section_qfzGna": {
           "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
-            "reviews_to_display": "",
+            "reviews_to_display": "product_reviews_only",
             "default_tab": "automatic",
             "only_photos": false,
             "aggregated": false,
             "limit": 10,
             "hide_thumbnails": false,
             "maxwidth": 1160,
-            "is_sample": true
+            "is_sample": false
           }
         }
       },
@@ -764,8 +756,8 @@
         "loox_reviews_loox_dynamic_section_qfzGna"
       ],
       "settings": {
-        "full_width": false,
-        "show_space": true
+        "heading": "Customer reviews",
+        "show_source_note": false
       }
     },
     "rich_text_rUrzDn": {
@@ -812,11 +804,47 @@
         "heading": "Specifications",
         "show_fit_guide": true
       }
+    },
+    "sihoo_highlights": {
+      "type": "sihoo-product-highlights",
+      "blocks": {
+        "benefit_0": {
+          "type": "feature",
+          "settings": {
+            "heading": "Mesh seat and back",
+            "text": "An open mesh seat and backrest allow airflow around your body."
+          }
+        },
+        "benefit_1": {
+          "type": "feature",
+          "settings": {
+            "heading": "Adjustable lumbar support",
+            "text": "Position the lumbar support to suit your lower back."
+          }
+        },
+        "benefit_2": {
+          "type": "feature",
+          "settings": {
+            "heading": "Adjustable arm support",
+            "text": "Move the armrests to support your forearms at your desk."
+          }
+        }
+      },
+      "block_order": [
+        "benefit_0",
+        "benefit_1",
+        "benefit_2"
+      ],
+      "settings": {
+        "heading": "Find your fit",
+        "fit_note": "Check your desk clearance and chosen chair options before ordering. Contact our Australian team if you need help choosing."
+      }
     }
   },
   "order": [
     "main",
     "custom_main_product_4gQ939",
+    "sihoo_highlights",
     "specs_table",
     "172649452298bf6fcf",
     "rich_text_tiLGxg",

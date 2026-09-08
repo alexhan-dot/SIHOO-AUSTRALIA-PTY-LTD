@@ -1,0 +1,668 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "divider": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "variant-picker": {
+          "type": "variant-picker",
+          "settings": {
+            "show_single": false,
+            "selector_style": "listed",
+            "dynamic_availability": "show",
+            "enable_size_chart": false,
+            "size_chart_label": "Size guide",
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "buy-buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_backorder_text": false,
+            "show_pickup_availability": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "show_in_tab": true,
+            "open_tab": false,
+            "icon": "",
+            "show_in_quickbuy": false
+          }
+        },
+        "accordion_EE6Ypn": {
+          "type": "accordion",
+          "settings": {
+            "title": "Features",
+            "icon": "",
+            "content": "<p><strong>Stay Cool, Stay Supported:</strong> The Sihoo M59AS combines a breathable mesh design with ergonomic features, ensuring comfort and support all day long.</p><p><strong>Breathable Mesh Design:</strong> The full mesh construction promotes airflow, keeping you cool and comfortable throughout long hours of sitting.</p><p><strong>Dual-Section Backrest:</strong> Designed to contour to your spine, this backrest provides tailored support and maintains a natural \"S\" shape for optimal back comfort.</p><p><strong>3D Adjustable Flip-Up Armrests:</strong> Adjust the armrests in three directions—up and down, back and forth, and rotating—for customizable arm and shoulder support, while also offering space-saving flexibility.</p><p><strong>Dynamic Lumbar Support:</strong> Adjusts seamlessly to your lower back's natural curvature, offering personalized comfort whether you're sitting still or moving.</p><p><strong>Double-Jointed Headrest:</strong> The headrest adjusts in height and rotates, providing precise neck support and aligning with your natural posture.</p><p><strong>Saddle-Shaped Seat Cushion:</strong> Expertly distributes pressure across your hips and thighs for added comfort, preventing fatigue during long work sessions.</p><p><strong>Recline and Relax:</strong> Recline up to 126° for a comfortable break. The recline function allows you to lean back, relax, and recharge effortlessly.</p><p><strong>Integrated Coat Hanger:</strong> Thoughtfully designed for added convenience, allowing you to store your coat or bag within easy reach and keep them wrinkle-free.</p><p><strong>Effortless Adjustments:</strong> Easily modify seat height and recline angle for a personalized, ergonomic seating experience with simple controls.</p><p><strong>Built to Last:</strong> Crafted with premium materials, including high-quality mesh and durable components, ensuring long-lasting comfort and reliability.</p>",
+            "page": "",
+            "custom_liquid": "",
+            "open": false,
+            "show_in_quickbuy": false
+          }
+        },
+        "accordion_PQkFaa": {
+          "type": "accordion",
+          "settings": {
+            "title": "Benefits",
+            "icon": "",
+            "content": "<ul><li>Dual-section backrest for comprehensive back support and posture adaptability</li><li>3D-adjustable flip-up armrests for customizable arm support and space-saving convenience</li><li>Dual-jointed headrest for precise neck support and comfort</li><li>Saddle-shaped seat cushion for enhanced comfort during long hours</li><li>Full premium mesh design for breathability, support, and easy maintenance</li><li>Integrated coat hanger for added practicality</li><li>Endorsed by industry experts for innovative design and functionality</li></ul>",
+            "page": "",
+            "custom_liquid": "",
+            "open": false,
+            "show_in_quickbuy": false
+          }
+        },
+        "spec_compare_specification_table_hCWNKg": {
+          "type": "shopify://apps/specs-compare/blocks/specification-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
+          "disabled": true,
+          "settings": {
+            "product": "sihoo-vito-m90-ergonomic-office-chair",
+            "show_group_names": true,
+            "maximum_rows": 10,
+            "app_block_margin": 0,
+            "app_block_max_width": "full_width",
+            "app_block_custom_max_width": 800,
+            "append_parent_target_selector": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "vendor",
+        "divider",
+        "variant-picker",
+        "buy-buttons",
+        "description",
+        "accordion_EE6Ypn",
+        "accordion_PQkFaa",
+        "spec_compare_specification_table_hCWNKg"
+      ],
+      "custom_css": [
+        ".product-title {margin: 0 0 0.5em; font-size: 2.18rem; font-weight: 500; line-height: 1.2em;}",
+        ".price__default {font-size: 1.4rem !important; color: #000;}",
+        "span.with-icon__beside {color: #000;}",
+        ".product-description {margin-top: 0px;}",
+        ".product-form .label {color: #000;}",
+        ".media-gallery {border-right: 1px solid #e1e1e1;}",
+        "ul.slider__grid {justify-content: center; align-items: center;}",
+        ".product-description {color: #000;}"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "select_first_variant": true,
+        "show_location_underneath": false,
+        "inventory_transfers_enable": true,
+        "enable_sticky_columns": false,
+        "enable_sticky_atc": true,
+        "sticky_atc_position": "center",
+        "sticky_atc_mobile": false,
+        "sticky_atc_behavior": "add_to_cart",
+        "sticky_atc_button_style": "secondary",
+        "gallery_size": "large",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "show_alt_text": false,
+        "alt_text_icon": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_media_grouping": false,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe"
+      }
+    },
+    "custom_multi_column_WWXqNc": {
+      "type": "custom-multi-column",
+      "blocks": {
+        "column_HhQzUb": {
+          "type": "column",
+          "settings": {
+            "hide_image": true,
+            "title": "",
+            "description": "<h3>Overview</h3><p>The Sihoo M59AS offers all-day comfort with its breathable mesh design and customisable features. Its dual-section backrest, adjustable armrests, and dynamic lumbar support provide tailored support for a truly ergonomic experience.</p><p><strong>Name</strong>: Sihoo M59AS Ergonomic Chair</p><p><strong>General Dimensions</strong>: 70.5 cm W x 70 cm D x 113.5 cm - 134.5 cm H</p><p><strong>Product Weight</strong>: 16.6 kg</p><p><strong>Assembly</strong>: Requires assembly</p><p><strong>Fabric</strong>: PE + polyester</p><p><strong>Materials</strong>: ‎Aluminum, Mesh</p><p><strong>Maximum load</strong>: 150 kg</p><p><strong>Warranty</strong>: (3) years warranty</p>",
+            "note": ""
+          }
+        },
+        "column_UkeDxJ": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/m59as_f5e6a091-9a18-4760-a6dc-0c8ea9a84bb2.png",
+            "title": "",
+            "description": "<p><strong>Chair back lifting height</strong>: 113.5 cm - 134.5 cm</p><p><strong>Seat depth</strong>: 43.5 cm</p><p><strong>Max hip width</strong>: 50.5 cm</p><p><strong>Maximum load</strong>: 150 kg</p><p><strong>Armrests</strong>: 3D coordinated armrests (Flip it up and down, left and right, forward and backward)</p>",
+            "note": ""
+          }
+        },
+        "column_mJUJWG": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/m59as-2.png",
+            "title": "",
+            "description": "<h3>Ergonomic Tech</h3><p><a href=\"https://youtu.be/oKvo5Vk7Xuo\" target=\"_blank\" title=\"https://youtu.be/oKvo5Vk7Xuo\">Installation Guide</a></p><p><a href=\"https://youtu.be/oKvo5Vk7Xuo\" target=\"_blank\" title=\"https://youtu.be/oKvo5Vk7Xuo\">Adjustment Guide</a></p>",
+            "note": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_HhQzUb",
+        "column_UkeDxJ",
+        "column_mJUJWG"
+      ],
+      "name": "Custom Multi-Column",
+      "settings": {
+        "heading": "Ergonomic Chair Specifications",
+        "background_color": "#ffffff",
+        "heading_color": "#1a1a1a",
+        "card_background_color": "#f5f5f5",
+        "image_background_color": "#e8e8e8",
+        "card_heading_color": "#1a1a1a",
+        "card_text_color": "#555555",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "17724749789aac8752": {
+      "type": "apps",
+      "blocks": {
+        "spec_compare_specification_table_ydPKRQ": {
+          "type": "shopify://apps/specs-compare/blocks/specification-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
+          "settings": {
+            "product": "sihoo-a3-doro-c300-ergonomic-office-chair",
+            "show_group_names": true,
+            "maximum_rows": 10,
+            "app_block_margin": 0,
+            "app_block_max_width": "full_width",
+            "app_block_custom_max_width": 800,
+            "append_parent_target_selector": ""
+          }
+        }
+      },
+      "block_order": [
+        "spec_compare_specification_table_ydPKRQ"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "show_space": true
+      }
+    },
+    "product_promo_strip_tqEm4C": {
+      "type": "product-promo-strip",
+      "custom_css": [
+        ".product-promo-strip {margin-bottom: 0px;}"
+      ],
+      "name": "Product promo strip",
+      "settings": {
+        "promo_text": "Built for all-day comfort, from a 9am start to a 5pm wrap-up.",
+        "background_color": "#171717",
+        "text_color": "#f0f0f0"
+      }
+    },
+    "background_video_h37Gjq": {
+      "type": "background-video",
+      "name": "Background video",
+      "settings": {
+        "video_external": "https://youtu.be/B2uD_VkSB_E",
+        "video_description": "",
+        "text_alignment": "center center",
+        "height_desktop": 700,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style": "shadow"
+      }
+    },
+    "product_promo_gallery_PDKJDe": {
+      "type": "product-promo-gallery",
+      "blocks": {
+        "feature_GKNPQE": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/1_6e448650-98f1-46f8-8f90-6c83344d63b9.webp",
+            "label": "Dual-section backrest design"
+          }
+        },
+        "feature_aeHDTM": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/2_61c3b2f5-f686-4cc3-9f8f-985cd37b89c1.jpg",
+            "label": "3D flip-up armrests"
+          }
+        },
+        "feature_ztX9nK": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/3_2e626903-aff1-4fcc-afe1-9db847b15f62.webp",
+            "label": "Double-jointed headrest"
+          }
+        },
+        "feature_q663PK": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/4_4c96c8f4-64c4-42d7-a3b8-1c382f03867f.jpg",
+            "label": "Full premium mesh design"
+          }
+        }
+      },
+      "block_order": [
+        "feature_GKNPQE",
+        "feature_aeHDTM",
+        "feature_ztX9nK",
+        "feature_q663PK"
+      ],
+      "name": "Product promo gallery",
+      "settings": {
+        "heading": "Sihoo M59AS Ergonomic Chair Features",
+        "background_color": "#ffffff",
+        "heading_color": "#2a2a2a",
+        "text_color": "#2a2a2a",
+        "image_background_color": "#f5f5f5"
+      }
+    },
+    "product_testimonial_BUrRiD": {
+      "type": "product-testimonial",
+      "blocks": {
+        "testimonial_payBD6": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "The most noticeable aspect of the S100 is its split lower lumbar support, which flexes along with body movements.",
+            "author": "Adam Corsetti",
+            "source": "from gamerant, doro S100 review"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_payBD6"
+      ],
+      "disabled": true,
+      "name": "Product testimonial",
+      "settings": {
+        "background_color": "#171717",
+        "quote_icon_color": "#6b6b6b",
+        "quote_text_color": "#ffffff",
+        "author_color": "#ffffff",
+        "source_color": "#9a9a9a",
+        "avatar_background_color": "#2a3a4a"
+      }
+    },
+    "custom_multi_column_tb6Dea": {
+      "type": "custom-multi-column",
+      "blocks": {
+        "column_iEqhY3": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/c300_19703e7a-9786-488c-a325-cddd4f8aeb7f.jpg",
+            "title": "",
+            "description": "<h3>Breathable Mesh Design</h3>",
+            "note": ""
+          }
+        },
+        "column_BFFGYK": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/20240112-101353.webp",
+            "title": "",
+            "description": "<h3>Pressure-free BM Tracking System</h3>",
+            "note": ""
+          }
+        },
+        "column_TLmNTa": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/20240112-101347_77ef1710-f4c9-4f23-ae8f-d33bb644ae0d.jpg",
+            "title": "",
+            "description": "<h3>Built for Last (BIFMA & SGS)</h3>",
+            "note": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_iEqhY3",
+        "column_BFFGYK",
+        "column_TLmNTa"
+      ],
+      "disabled": true,
+      "name": "Custom Multi-Column",
+      "settings": {
+        "heading": "",
+        "background_color": "#ffffff",
+        "heading_color": "#1a1a1a",
+        "card_background_color": "#f5f5f5",
+        "image_background_color": "#e8e8e8",
+        "card_heading_color": "#1a1a1a",
+        "card_text_color": "#555555",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "custom_multi_column_MB6MeA": {
+      "type": "custom-multi-column",
+      "blocks": {
+        "column_DWqU6X": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/11_ca8e69c8-f269-4a5c-a753-7458f4367ec7.jpg",
+            "title": "Pressure-free, fatigue-free",
+            "description": "",
+            "note": ""
+          }
+        },
+        "column_KNxTLJ": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/12.webp",
+            "title": "An addition of convenience",
+            "description": "",
+            "note": ""
+          }
+        },
+        "column_kfFQQQ": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/13.webp",
+            "title": "Built for Last (BIFMA & SGS)",
+            "description": "",
+            "note": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_DWqU6X",
+        "column_KNxTLJ",
+        "column_kfFQQQ"
+      ],
+      "name": "Custom Multi-Column",
+      "settings": {
+        "heading": "Comfort, Convenience, and Durability",
+        "background_color": "#ffffff",
+        "heading_color": "#1a1a1a",
+        "card_background_color": "#ffffff",
+        "image_background_color": "#ffffff",
+        "card_heading_color": "#1a1a1a",
+        "card_text_color": "#555555",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "custom_image_text_rDQLYM": {
+      "type": "custom-image-text",
+      "name": "Custom Image Text",
+      "settings": {
+        "image": "shopify://shop_images/5_4553b1dc-4a0f-4cde-a01d-4159d2f542bc.webp",
+        "image_fit": "contain",
+        "image_position": "left",
+        "heading": "Dual-section backrest for whole back comfort",
+        "description": "The Sihoo M59AS features a dual-section backrest that provides full back support. The top section offers ample support, while the dynamic lumbar support adjusts to your natural curve for all-day comfort.",
+        "button_label": "",
+        "button_link": "",
+        "background_color": "#ffffff",
+        "image_background_color": "#e8e8e8",
+        "heading_color": "#1a1a1a",
+        "text_color": "#555555",
+        "button_text_color": "#ffffff",
+        "button_background_color": "#1a1a1a",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "custom_image_text_8MY9g7": {
+      "type": "custom-image-text",
+      "name": "Custom Image Text",
+      "settings": {
+        "image": "shopify://shop_images/6.webp",
+        "image_fit": "cover",
+        "image_position": "right",
+        "heading": "Double-jointed headrest, extra-precise neck support",
+        "description": "The Sihoo M59AS headrest adjusts to fit the curve of your neck, offering broad support for comfort. With its dual-joint design, you can easily adjust the height and angle for a perfect fit.",
+        "button_label": "",
+        "button_link": "",
+        "background_color": "#ffffff",
+        "image_background_color": "#e8e8e8",
+        "heading_color": "#1a1a1a",
+        "text_color": "#555555",
+        "button_text_color": "#ffffff",
+        "button_background_color": "#1a1a1a",
+        "padding_top": 0,
+        "padding_bottom": 80
+      }
+    },
+    "product_testimonial_hzeXfp": {
+      "type": "product-testimonial",
+      "blocks": {
+        "testimonial_Y6wR4d": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Doro S100 is like a work of a minimalist art, with thin, lightweight mesh upholstery, clean lines, visible springs, and a general sense of austere elegance.",
+            "author": "Maria Alexander",
+            "source": "from GAMEZEBO, S100 is the best gaming chair"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_Y6wR4d"
+      ],
+      "disabled": true,
+      "name": "Product testimonial",
+      "settings": {
+        "background_color": "#171717",
+        "quote_icon_color": "#6b6b6b",
+        "quote_text_color": "#ffffff",
+        "author_color": "#ffffff",
+        "source_color": "#9a9a9a",
+        "avatar_background_color": "#2a3a4a"
+      }
+    },
+    "custom_multi_column_q8TVXy": {
+      "type": "custom-multi-column",
+      "blocks": {
+        "column_YxNdyi": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/7.webp",
+            "title": "",
+            "description": "<h3>Bigger, wider, softer arm support in 3D.</h3><p>Sihoo M59AS fits any workspace with flip-up armrests that tuck under your desk, saving space while providing ergonomic comfort.</p>",
+            "note": ""
+          }
+        },
+        "column_qdwD8x": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/8_d2781338-35cc-4840-a827-53a7f49275f9.webp",
+            "title": "",
+            "description": "<h3>Support and comfort for the entire back.</h3><p>Sihoo M59AS has a taller, roomier backrest, offering full support for your entire back, even for taller users.</p>",
+            "note": ""
+          }
+        },
+        "column_gzCtJy": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/9_37534b89-53e9-4c62-928b-c5233ff89c72.webp",
+            "title": "",
+            "description": "<h3>Lay back, relax. Rewind. Take a break.</h3><p>Recline in comfort on Sihoo M59AS, relax, and recharge to take on your next tasks with fresh energy and focus.</p>",
+            "note": ""
+          }
+        },
+        "column_aFifHJ": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/10_867679e4-10d1-45b6-986e-010fec23a694.jpg",
+            "title": "",
+            "description": "<h3>Flexible, breathable, and durable.</h3><p>The Sihoo M59AS mesh blend of PE and polyester offers breathability, support, durability, and easy maintenance.</p>",
+            "note": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_YxNdyi",
+        "column_qdwD8x",
+        "column_gzCtJy",
+        "column_aFifHJ"
+      ],
+      "name": "Custom Multi-Column",
+      "settings": {
+        "heading": "How M59AS Chair Helps?",
+        "background_color": "#ffffff",
+        "heading_color": "#1a1a1a",
+        "card_background_color": "#f5f5f5",
+        "image_background_color": "#e8e8e8",
+        "card_heading_color": "#1a1a1a",
+        "card_text_color": "#555555",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "slideshow_TgHBPy": {
+      "type": "slideshow",
+      "blocks": {
+        "image_rjeqq6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/C300_pro.webp",
+            "slide_link": "",
+            "subheading": "",
+            "title": "For every part of you",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": false,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_rjeqq6"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2.44rem; font-weight: 500; margin-bottom: 10px; font-family: inherit;}"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "full image-overlay--bg-shadow",
+        "transition": "fade",
+        "navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "accessibility_info": ""
+      }
+    },
+    "1726717200db5c7e8b": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_fyKK8z": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "reviews_to_display": "product_reviews_only",
+            "default_tab": "automatic",
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_fyKK8z"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_space": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "title": "You may also like",
+        "show_vendor": false,
+        "grid": 3
+      }
+    },
+    "review_source_note": {
+      "type": "review-source-note",
+      "settings": {
+        "heading": "About these reviews",
+        "text_alignment": "center",
+        "height": "small"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_multi_column_WWXqNc",
+    "17724749789aac8752",
+    "product_promo_strip_tqEm4C",
+    "background_video_h37Gjq",
+    "product_promo_gallery_PDKJDe",
+    "product_testimonial_BUrRiD",
+    "custom_multi_column_tb6Dea",
+    "custom_multi_column_MB6MeA",
+    "custom_image_text_rDQLYM",
+    "custom_image_text_8MY9g7",
+    "product_testimonial_hzeXfp",
+    "custom_multi_column_q8TVXy",
+    "slideshow_TgHBPy",
+    "review_source_note",
+    "1726717200db5c7e8b",
+    "related-products"
+  ]
+}

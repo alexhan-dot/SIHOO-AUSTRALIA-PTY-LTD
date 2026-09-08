@@ -1,0 +1,275 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_VXghXc": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "Customer Service will be closed Apr 2–6 (resumes Apr 7); Warehouse closed Apr 3 & 6.",
+            "show_countdown": false,
+            "hide_on_end": false,
+            "end_date": "2024-12-31",
+            "end_time": "23:59",
+            "number_font": "base",
+            "countdown_separator": "space",
+            "use_custom_colors": true,
+            "bg_color": "#f4f6f8",
+            "bg_gradient": "linear-gradient(54deg, rgba(114, 255, 179, 1) 14%, rgba(255, 250, 99, 1) 85%)",
+            "text_color": "#4c4c4b"
+          }
+        },
+        "announcement_rwVXKy": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "Announce <a href=\"#\">something</a> here",
+            "show_countdown": false,
+            "hide_on_end": false,
+            "end_date": "",
+            "end_time": "",
+            "number_font": "base",
+            "countdown_separator": "box",
+            "use_custom_colors": false,
+            "bg_color": "#4a4a4a",
+            "bg_gradient": "",
+            "text_color": "#ffffff"
+          }
+        },
+        "announcement-2": {
+          "type": "announcement",
+          "settings": {
+            "text": "Father’s Day Sale Australia: Save up to $320 on Doro C300 Pro V2 and pay with Afterpay.",
+            "show_countdown": false,
+            "hide_on_end": false,
+            "end_date": "",
+            "end_time": "",
+            "number_font": "base",
+            "countdown_separator": "space",
+            "use_custom_colors": true,
+            "bg_color": "#f4f6f8",
+            "bg_gradient": "linear-gradient(54deg, rgba(114, 255, 179, 1) 14%, rgba(255, 250, 99, 1) 85%)",
+            "text_color": "#4c4c4b"
+          }
+        },
+        "announcement-1": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "Shop Now and Enjoy Free Shipping on All Orders for Huge Savings!",
+            "show_countdown": false,
+            "hide_on_end": false,
+            "end_date": "",
+            "end_time": "",
+            "number_font": "base",
+            "countdown_separator": "box",
+            "use_custom_colors": true,
+            "bg_color": "#202020",
+            "bg_gradient": "linear-gradient(40deg, rgba(251, 97, 92, 1), rgba(249, 208, 163, 1) 100%)",
+            "text_color": "#232323"
+          }
+        },
+        "announcement_6tfXK6": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "Customer Service will be closed Apr 2–6 (resumes Apr 7); Warehouse closed Apr 3 & 6.",
+            "show_countdown": false,
+            "hide_on_end": false,
+            "end_date": "",
+            "end_time": "",
+            "number_font": "base",
+            "countdown_separator": "box",
+            "use_custom_colors": false,
+            "bg_color": "#4a4a4a",
+            "bg_gradient": "",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_VXghXc",
+        "announcement_rwVXKy",
+        "announcement-2",
+        "announcement-1",
+        "announcement_6tfXK6"
+      ],
+      "settings": {
+        "message_font_size": 14,
+        "announcement_bar_col": "#4c4948",
+        "announcement_bar_gradient": "",
+        "announcement_text_col": "#ffffff",
+        "show_social_icons": true,
+        "menu": "",
+        "enable_country_selector": true,
+        "enable_language_selector": true
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "menu_featured_products_bmmpke": {
+          "type": "menu-featured-products",
+          "settings": {
+            "dropdown_link_title": "shop",
+            "title": "Collections",
+            "collection": "doro-series",
+            "collection_label": "Doro Series",
+            "collection_2": "ergonomic-chairs",
+            "collection_2_label": "Ergonomic Chairs",
+            "collection_3": "office-chairs",
+            "collection_3_label": "Office Chairs",
+            "collection_4": "xallking-gaming-chairs",
+            "collection_4_label": "Gaming Chairs",
+            "product_limit": 4,
+            "products_per_row": 4,
+            "show_view_all": true,
+            "view_all_label": "View all",
+            "view_all_url": ""
+          }
+        },
+        "menu_promotion_large_iiFjHG": {
+          "type": "menu-promotion-large",
+          "settings": {
+            "dropdown_link_title": "Doro Series",
+            "desktop_image": "shopify://shop_images/321_1.png",
+            "enable_fade": true,
+            "image_position": "right",
+            "subheading": "SIHOO Doro Series",
+            "title": "Sit Well, Think Better",
+            "text": "<p>Stay supported and comfortable no matter how you sit, and enjoy a better working, gaming, or creative experience.</p>",
+            "button_1_label": "Why Sihoo Doro Series?",
+            "button_1_link": "shopify://collections/doro-series",
+            "button_1_style": "link",
+            "button_2_label": "Shop My Doro",
+            "button_2_link": "shopify://collections/doro-series",
+            "button_2_style": "secondary",
+            "text_alignment": "center",
+            "show_countdown": false,
+            "countdown_position": "under-heading",
+            "end_date": "",
+            "end_time": "",
+            "end_text": "",
+            "hide_on_end": false,
+            "number_size": 40,
+            "number_font": "heading",
+            "divider_type": "colon",
+            "show_timer_labels": true
+          }
+        },
+        "menu_promotion_small_cjrbn7": {
+          "type": "menu-promotion-small",
+          "disabled": true,
+          "settings": {
+            "dropdown_link_title": "Shop",
+            "image": "shopify://shop_images/bec85ce4a9cb471abf7f630bd3c9de3b.jpg",
+            "title": "All Time Best Seller",
+            "link_url": "shopify://products/sihoo-m57-ergonomic-office-chair"
+          }
+        },
+        "menu_promotion_small_gmPCzT": {
+          "type": "menu-promotion-small",
+          "disabled": true,
+          "settings": {
+            "dropdown_link_title": "Shop",
+            "image": "shopify://shop_images/2_3109847d-de85-4619-b3d0-92bd95c2a492.png",
+            "title": "New Arrivals",
+            "link_url": "shopify://collections/doro-series"
+          }
+        }
+      },
+      "block_order": [
+        "menu_featured_products_bmmpke",
+        "menu_promotion_large_iiFjHG",
+        "menu_promotion_small_cjrbn7",
+        "menu_promotion_small_gmPCzT"
+      ],
+      "custom_css": [],
+      "settings": {
+        "logo": "shopify://shop_images/SIHOO_AU_Logo.png",
+        "logo_img_width_int": 150,
+        "mobile_logo_img_width_int": 105,
+        "logo_h1": false,
+        "enable_sticky": true,
+        "enable_transparent": false,
+        "transparent_color": "#ffffff",
+        "transparent_logo": "shopify://shop_images/20230911-174400_eb56c433-917c-424e-b7b6-0b98739eb145.png",
+        "menu_linklist": "wide-manu",
+        "menu_layout": "inline-menu-center",
+        "nav_featured_link": "Doro Series, Commercial",
+        "menu_linklist_mobile": "",
+        "mobile_expand_with_entire_link": true,
+        "enable_mobile_promo_carousel": true,
+        "enable_nav_mob_products": false,
+        "nav_mob_products_title": "Best Sellers",
+        "nav_mob_products_collection": "",
+        "enable_search": true,
+        "search_recommendations_title": "",
+        "search_recommendations_menu": "",
+        "icon_strategy": "icons_only",
+        "cart_icon": "cart"
+      }
+    },
+    "store-messages": {
+      "type": "store-messages",
+      "blocks": {
+        "1601308104445": {
+          "type": "message",
+          "settings": {
+            "heading": "",
+            "subheading": "Free shipping Australia",
+            "link_url": ""
+          }
+        },
+        "1601308125690": {
+          "type": "message",
+          "settings": {
+            "heading": "",
+            "subheading": "Free Click & Collect Sydney & Melbourne",
+            "link_url": ""
+          }
+        },
+        "1601308127822": {
+          "type": "message",
+          "settings": {
+            "heading": "",
+            "subheading": "Free and easy domestic returns",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "1601308104445",
+        "1601308125690",
+        "1601308127822"
+      ],
+      "disabled": true,
+      "settings": {
+        "head_not_home_only": false,
+        "head_not_col_bg": "#f4f6f8",
+        "head_not_col_txt1": "#171717",
+        "head_not_col_txt2": "#4c4c4b",
+        "head_not_mob_show": true,
+        "head_not_mob_text": "Free shipping on orders over $100",
+        "head_not_mob_url": ""
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "store-messages"
+  ]
+}

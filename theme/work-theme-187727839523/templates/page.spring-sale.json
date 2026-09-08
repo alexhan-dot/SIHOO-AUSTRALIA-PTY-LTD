@@ -1,0 +1,978 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "full_width": false
+      }
+    },
+    "custom_liquid_KnGGGU": {
+      "type": "custom-liquid",
+      "custom_css": [],
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "show_space": false,
+        "code": "<section class=\"spring-sale-hero\">\n  <div class=\"spring-sale-hero__content\">\n    <h1 class=\"spring-sale-hero__heading\">\n      <span class=\"spring-sale-hero__heading-primary\">Bloom</span>\n      <span class=\"spring-sale-hero__heading-secondary\">where you sit.</span>\n    </h1>\n\n    <div class=\"spring-sale-hero__divider\"></div>\n\n    <p class=\"spring-sale-hero__text\">\n      Let comfort blossom this spring<br>\n      and make way for a better everyday.\n    </p>\n\n    <a href=\"#featured-products\" class=\"spring-sale-hero__button\">\n      Shop the Spring Sale\n    </a>\n  </div>\n</section>\n\n<style>\n  html {\n    scroll-behavior: smooth;\n  }\n\n  .spring-sale-section-wrapper,\n  .spring-sale-section-wrapper .section,\n  .spring-sale-section-wrapper .page-width,\n  .spring-sale-section-wrapper .custom-liquid,\n  .spring-sale-section-wrapper .custom-liquid__content {\n    max-width: none !important;\n    margin-top: 0 !important;\n    margin-bottom: 0 !important;\n    padding-top: 0 !important;\n    padding-bottom: 0 !important;\n  }\n\n  .spring-sale-hero {\n    position: relative;\n    display: block;\n    width: 100%;\n    aspect-ratio: 2000 / 800;\n    margin: 0 !important;\n    padding: 0 !important;\n    overflow: hidden;\n    background-color: #f1f1ef;\n    background-image: url(\"https://cdn.shopify.com/s/files/1/0509/7819/3602/files/Landing_Page_Banner_Desktop.png?v=1788692400\");\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    line-height: 1;\n  }\n\n  .spring-sale-hero__content {\n    position: absolute;\n    top: 50%;\n    left: 16%;\n    z-index: 2;\n    width: 38%;\n    max-width: 650px;\n    margin: 0 !important;\n    padding: 0 !important;\n    transform: translateY(-50%);\n    text-align: left;\n  }\n\n  .spring-sale-hero__heading {\n    margin: 0 0 30px !important;\n    padding: 0 !important;\n    font-family: Didot, \"Bodoni 72\", \"Bodoni MT\", Georgia, serif;\n    font-weight: 400;\n    line-height: 0.84;\n    letter-spacing: -0.055em;\n  }\n\n  .spring-sale-hero__heading span {\n    display: block;\n  }\n\n  .spring-sale-hero__heading-primary {\n    color: #c35e60;\n    font-size: clamp(82px, 7.3vw, 146px);\n  }\n\n  .spring-sale-hero__heading-secondary {\n    color: #393236;\n    font-size: clamp(54px, 4.6vw, 92px);\n  }\n\n  .spring-sale-hero__divider {\n    width: 62%;\n    max-width: 410px;\n    height: 3px;\n    margin: 0 0 32px;\n    background-color: #c35e60;\n  }\n\n  .spring-sale-hero__text {\n    margin: 0 0 32px !important;\n    padding: 0 !important;\n    color: #393236;\n    font-family: Arial, Helvetica, sans-serif;\n    font-size: clamp(20px, 1.5vw, 30px);\n    font-weight: 400;\n    line-height: 1.28;\n    letter-spacing: -0.025em;\n  }\n\n  .spring-sale-hero__button {\n    display: inline-flex;\n    min-height: 68px;\n    margin: 0 !important;\n    padding: 0 44px;\n    align-items: center;\n    justify-content: center;\n    border: 2px solid #c35e60;\n    border-radius: 10px;\n    background-color: #c35e60;\n    color: #ffffff !important;\n    font-family: Arial, Helvetica, sans-serif;\n    font-size: clamp(18px, 1.35vw, 27px);\n    font-weight: 400;\n    line-height: 1;\n    text-align: center;\n    text-decoration: none;\n    white-space: nowrap;\n    transition:\n      background-color 0.2s ease,\n      border-color 0.2s ease,\n      transform 0.2s ease;\n  }\n\n  .spring-sale-hero__button:hover {\n    border-color: #393236;\n    background-color: #393236;\n    color: #ffffff !important;\n    transform: translateY(-2px);\n  }\n\n  @media screen and (max-width: 1100px) and (min-width: 768px) {\n    .spring-sale-hero__content {\n      left: 14%;\n      width: 40%;\n      max-width: 480px;\n    }\n\n    .spring-sale-hero__heading {\n      margin-bottom: 18px !important;\n    }\n\n    .spring-sale-hero__heading-primary {\n      font-size: clamp(58px, 7vw, 80px);\n    }\n\n    .spring-sale-hero__heading-secondary {\n      font-size: clamp(38px, 4.5vw, 52px);\n    }\n\n    .spring-sale-hero__divider {\n      width: 62%;\n      margin-bottom: 20px;\n    }\n\n    .spring-sale-hero__text {\n      margin-bottom: 22px !important;\n      font-size: clamp(15px, 1.8vw, 20px);\n    }\n\n    .spring-sale-hero__button {\n      min-height: 48px;\n      padding: 0 24px;\n      font-size: clamp(14px, 1.5vw, 17px);\n    }\n  }\n\n  @media screen and (max-width: 767px) {\n    .spring-sale-hero {\n      aspect-ratio: 751 / 1351;\n      background-image: url(\"https://cdn.shopify.com/s/files/1/0509/7819/3602/files/Landing_Page_Banner_Mobile.png?v=1788692400\");\n      background-position: center top;\n      background-size: cover;\n    }\n\n    .spring-sale-hero__content {\n      top: 8%;\n      left: 50%;\n      width: 74%;\n      max-width: none;\n      transform: translateX(-50%);\n    }\n\n    .spring-sale-hero__heading {\n      margin-bottom: 26px !important;\n      line-height: 0.84;\n    }\n\n    .spring-sale-hero__heading-primary {\n      font-size: clamp(70px, 18vw, 135px);\n    }\n\n    .spring-sale-hero__heading-secondary {\n      font-size: clamp(43px, 11.5vw, 86px);\n    }\n\n    .spring-sale-hero__divider {\n      width: 62%;\n      max-width: none;\n      height: 2px;\n      margin-bottom: 32px;\n    }\n\n    .spring-sale-hero__text {\n      margin-bottom: 30px !important;\n      font-size: clamp(17px, 4.25vw, 32px);\n      line-height: 1.28;\n    }\n\n    .spring-sale-hero__button {\n      min-height: clamp(56px, 8.5vw, 66px);\n      padding: 0 clamp(24px, 5.5vw, 42px);\n      border-radius: 9px;\n      font-size: clamp(17px, 4vw, 30px);\n    }\n  }\n\n  @media screen and (max-width: 420px) {\n    .spring-sale-hero__content {\n      top: 8%;\n      left: 50%;\n      width: 74%;\n      transform: translateX(-50%);\n    }\n\n    .spring-sale-hero__heading {\n      margin-bottom: 20px !important;\n    }\n\n    .spring-sale-hero__heading-primary {\n      font-size: 70px;\n    }\n\n    .spring-sale-hero__heading-secondary {\n      font-size: 43px;\n    }\n\n    .spring-sale-hero__divider {\n      width: 62%;\n      margin-bottom: 25px;\n    }\n\n    .spring-sale-hero__text {\n      margin-bottom: 24px !important;\n      font-size: 16px;\n    }\n\n    .spring-sale-hero__button {\n      min-height: 48px;\n      padding: 0 22px;\n      font-size: 16px;\n    }\n  }\n</style>\n\n<script>\n  (function () {\n    document.currentScript\n      .closest(\".shopify-section\")\n      ?.classList.add(\"spring-sale-section-wrapper\");\n\n    function setProductGridTarget() {\n      const productGrid = document.querySelector(\"section.product-grid\");\n\n      if (productGrid) {\n        productGrid.id = \"featured-products\";\n        productGrid.style.scrollMarginTop = \"100px\";\n      }\n    }\n\n    if (document.readyState === \"loading\") {\n      document.addEventListener(\"DOMContentLoaded\", setProductGridTarget);\n    } else {\n      setProductGridTarget();\n    }\n  })();\n</script>"
+      }
+    },
+    "icon_with_text_t7bTj9": {
+      "type": "icon-with-text",
+      "blocks": {
+        "icon_item_MqjpU3": {
+          "type": "icon_item",
+          "settings": {
+            "icon_type": "tag",
+            "title": "Spring Sale offers",
+            "description": "on selected models"
+          }
+        },
+        "icon_item_GJGCQA": {
+          "type": "icon_item",
+          "settings": {
+            "icon_type": "dollar_sign",
+            "title": "4 Fortnightly Payments",
+            "description": "with Afterpay"
+          }
+        },
+        "icon_item_bkMEgT": {
+          "type": "icon_item",
+          "settings": {
+            "icon_type": "shipping",
+            "title": "Free shipping",
+            "description": "Australia-wide"
+          }
+        },
+        "icon_item_Xm6CHf": {
+          "type": "icon_item",
+          "settings": {
+            "icon_type": "clock",
+            "title": "Spring Sale Ends",
+            "description": "on 21 September 2026"
+          }
+        }
+      },
+      "block_order": [
+        "icon_item_MqjpU3",
+        "icon_item_GJGCQA",
+        "icon_item_bkMEgT",
+        "icon_item_Xm6CHf"
+      ],
+      "name": "Icon with Text",
+      "settings": {
+        "title": "",
+        "background_color": "#393236",
+        "text_color": "#ffffff"
+      }
+    },
+    "custom_liquid_rHd8ci": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "show_space": false,
+        "code": "<section class=\"sihoo-support-hero\">\n  <div class=\"sihoo-support-hero__image\"></div>\n  <div class=\"sihoo-support-hero__overlay\"></div>\n\n  <div class=\"sihoo-support-hero__inner\">\n    <div class=\"sihoo-support-hero__content\">\n      <h2>A Better Seat for Every Season of Life</h2>\n\n      <p>\n        Work longer. Study smarter. Play harder. Switch off in comfort. Sihoo\n        ergonomic chairs are built to support the way you spend your day, with\n        thoughtful adjustments, reliable ergonomic support, and lasting comfort\n        from morning to night.\n      </p>\n\n      <p>\n        Whether you are working through a busy schedule, focusing on your\n        studies, settling in for a gaming session, or simply taking time to\n        unwind, every detail is designed to help you sit comfortably and feel\n        supported throughout the day.\n      </p>\n    </div>\n  </div>\n\n  <div id=\"support-section\" class=\"sihoo-support-anchor\"></div>\n</section>\n\n<style>\n  html {\n    scroll-behavior: smooth;\n  }\n\n  .sihoo-support-hero {\n    position: relative;\n    width: 100%;\n    min-height: 520px;\n    overflow: hidden;\n    background: #D4D7D9;\n    font-family: Inter, sans-serif;\n  }\n\n  .sihoo-support-anchor {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    width: 1px;\n    height: 1px;\n    pointer-events: none;\n    scroll-margin-top: 90px;\n  }\n\n  .sihoo-support-hero__image {\n    position: absolute;\n    inset: 0;\n    z-index: 1;\n    width: 100%;\n    height: 100%;\n    background-image: url(\"https://cdn.shopify.com/s/files/1/0509/7819/3602/files/spring_sale_landing_page.png?v=1788693095\");\n    background-repeat: no-repeat;\n    background-position: right top;\n    background-size: auto 135%;\n  }\n\n  .sihoo-support-hero__overlay {\n    position: absolute;\n    inset: 0;\n    z-index: 2;\n    background: linear-gradient(\n      90deg,\n      rgba(245, 248, 248, 0.98) 0%,\n      rgba(245, 248, 248, 0.96) 28%,\n      rgba(245, 248, 248, 0.76) 45%,\n      rgba(245, 248, 248, 0.18) 58%,\n      rgba(245, 248, 248, 0) 70%\n    );\n  }\n\n  .sihoo-support-hero__inner {\n    position: relative;\n    z-index: 3;\n    display: flex;\n    min-height: 520px;\n    max-width: 1240px;\n    margin: 0 auto;\n    padding: 68px 24px;\n    align-items: center;\n  }\n\n  .sihoo-support-hero__content {\n    max-width: 470px;\n  }\n\n  .sihoo-support-hero h2 {\n    margin: 0 0 26px;\n    color: #c35e60;\n    font-family: Inter, sans-serif;\n    font-size: 42px;\n    font-weight: 700;\n    line-height: 48px;\n  }\n\n  .sihoo-support-hero p {\n    margin: 0 0 22px;\n    color: #393236;\n    font-family: Inter, sans-serif;\n    font-size: 17px;\n    font-weight: 500;\n    line-height: 25px;\n  }\n\n  .sihoo-support-hero p:last-child {\n    margin-bottom: 0;\n  }\n\n  @media screen and (max-width: 989px) {\n    .sihoo-support-hero__image {\n      inset: 0;\n      width: 100%;\n      height: 100%;\n      opacity: 0.28;\n      background-position: right top;\n      background-size: auto 125%;\n    }\n\n    .sihoo-support-hero__overlay {\n      background: rgba(245, 248, 248, 0.84);\n    }\n\n    .sihoo-support-hero__inner {\n      min-height: auto;\n      padding: 56px 20px;\n    }\n\n    .sihoo-support-hero__content {\n      max-width: 620px;\n    }\n\n    .sihoo-support-hero h2 {\n      font-size: 36px;\n      line-height: 42px;\n    }\n  }\n\n  @media screen and (max-width: 549px) {\n    .sihoo-support-hero {\n      min-height: 580px;\n    }\n\n    .sihoo-support-hero__image {\n      background-position: right top;\n      background-size: auto 115%;\n    }\n\n    .sihoo-support-hero__inner {\n      padding: 44px 18px;\n    }\n\n    .sihoo-support-hero h2 {\n      font-size: 31px;\n      line-height: 37px;\n    }\n\n    .sihoo-support-hero p {\n      font-size: 15px;\n      line-height: 23px;\n    }\n  }\n</style>"
+      }
+    },
+    "custom_liquid_RQNpaR": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "show_space": false,
+        "code": "<section id=\"afterpay-section\" class=\"sihoo-c300pro-feature\">\n  <div class=\"sihoo-c300pro-feature__inner\">\n\n    <div class=\"sihoo-c300pro-feature__media\">\n      <div class=\"sihoo-c300pro-feature__glow\"></div>\n\n      <img\n        src=\"https://cdn.shopify.com/s/files/1/0509/7819/3602/files/Afterpay-app.png?v=1788694691\"\n        alt=\"Shop Sihoo ergonomic chairs with Afterpay\"\n        class=\"sihoo-c300pro-feature__chair\"\n      >\n\n      <a href=\"#featured-products\" class=\"sihoo-c300pro-feature__button\">\n        Shop Our Spring Sale\n      </a>\n    </div>\n\n    <div class=\"sihoo-c300pro-feature__content\">\n      <h2>Get Your Chair Now.<br>Pay Your Way.</h2>\n\n      <p class=\"sihoo-c300pro-feature__lead\">\n        Enjoy greater flexibility with Afterpay when you purchase your new\n        Sihoo ergonomic chair.\n      </p>\n\n      <div class=\"sihoo-c300pro-feature__list\">\n\n        <div class=\"sihoo-c300pro-feature__item\">\n          <span class=\"sihoo-c300pro-feature__icon\">\n            <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n              <path d=\"M13 2L5 14h7l-1 8 8-12h-7l1-8Z\"/>\n              <path d=\"M16.5 17.5l1.5 1.5 3-3\"/>\n            </svg>\n          </span>\n\n          <p>Get approved in seconds during checkout.</p>\n        </div>\n\n        <div class=\"sihoo-c300pro-feature__item\">\n          <span class=\"sihoo-c300pro-feature__icon\">\n            <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n              <circle cx=\"12\" cy=\"12\" r=\"9\"/>\n              <path d=\"M8 12h8M12 8v8\"/>\n            </svg>\n          </span>\n\n          <p>Pay in four interest-free instalments over six weeks.</p>\n        </div>\n\n        <div class=\"sihoo-c300pro-feature__item\">\n          <span class=\"sihoo-c300pro-feature__icon\">\n            <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n              <path d=\"M12 3l7 4v5c0 4.5-2.8 7.5-7 9-4.2-1.5-7-4.5-7-9V7l7-4Z\"/>\n              <path d=\"M9 12l2 2 4-5\"/>\n            </svg>\n          </span>\n\n          <p>\n            Pay no hidden charges or interest when payments are made on time.\n          </p>\n        </div>\n\n        <div class=\"sihoo-c300pro-feature__item\">\n          <span class=\"sihoo-c300pro-feature__icon\">\n            <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n              <path d=\"M8 4h8v9H8zM6 13h12v4H6zM12 17v4M8 21h8\"/>\n              <path d=\"M6 10H4v6h2M18 10h2v6h-2\"/>\n            </svg>\n          </span>\n\n          <p>Available on every Sihoo chair model.</p>\n        </div>\n\n        <div class=\"sihoo-c300pro-feature__item\">\n          <span class=\"sihoo-c300pro-feature__icon\">\n            <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n              <rect x=\"2\" y=\"5\" width=\"20\" height=\"14\" rx=\"2\"/>\n              <path d=\"M2 9h20M6 15h4\"/>\n              <path d=\"M15 14l1.5 1.5L19 13\"/>\n            </svg>\n          </span>\n\n          <p>Shop normally and select Afterpay at payment.</p>\n        </div>\n\n        <div class=\"sihoo-c300pro-feature__item\">\n          <span class=\"sihoo-c300pro-feature__icon\">\n            <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n              <path d=\"M3 12h18M12 3v18\"/>\n              <path d=\"M5 7h14v10H5z\"/>\n            </svg>\n          </span>\n\n          <p>Get your chair today and pay fortnightly.</p>\n        </div>\n\n      </div>\n    </div>\n\n    <div class=\"sihoo-c300pro-feature__notice\">\n      <strong class=\"sihoo-c300pro-feature__notice-heading\">\n        SIHOO Doro C300 Pro V2 Pre-order Notice\n      </strong>\n\n      <p>\n        Our SIHOO Doro C300 Pro V2 chairs are currently sold out due to high demand.\n        New stock is expected to arrive during the second or third week of September 2026.\n    \n        We are accepting pre-orders through Afterpay. To arrange your pre-order,\n        email our customer service team at\n        <a href=\"mailto:support@sihoo.com.au?subject=Doro%20C300%20Pro%20V2%20Pre-order\">\n          support@sihoo.com.au\n        </a>.\n      </p>\n    </div>\n\n  </div>\n</section>\n\n<style>\n  html {\n    scroll-behavior: smooth;\n  }\n\n  #afterpay-section {\n    scroll-margin-top: 100px;\n  }\n\n  .sihoo-c300pro-feature {\n    width: 100%;\n    padding: 70px 20px;\n    overflow: hidden;\n    background: #f5f8f8;\n    font-family: Inter, Arial, sans-serif;\n  }\n\n  .sihoo-c300pro-feature__inner {\n    display: grid;\n    grid-template-columns: 46% 54%;\n    align-items: center;\n    column-gap: 48px;\n    row-gap: 42px;\n    max-width: 1180px;\n    margin: 0 auto;\n  }\n\n  .sihoo-c300pro-feature__media {\n    position: relative;\n    display: flex;\n    min-height: 520px;\n    align-items: center;\n    justify-content: center;\n  }\n\n  .sihoo-c300pro-feature__glow {\n    position: absolute;\n    z-index: 1;\n    width: 390px;\n    height: 390px;\n    border-radius: 50%;\n    background: radial-gradient(\n      circle,\n      rgba(195, 94, 96, 0.2) 0%,\n      rgba(195, 94, 96, 0.08) 38%,\n      rgba(195, 94, 96, 0) 70%\n    );\n    filter: blur(8px);\n  }\n\n  .sihoo-c300pro-feature__chair {\n    position: relative;\n    z-index: 2;\n    display: block;\n    width: 92%;\n    max-width: 430px;\n    height: auto;\n    object-fit: contain;\n    filter: drop-shadow(0 22px 28px rgba(57, 50, 54, 0.22));\n  }\n\n  .sihoo-c300pro-feature__button {\n    position: absolute;\n    bottom: 8px;\n    left: 50%;\n    z-index: 3;\n    display: inline-flex;\n    min-width: 250px;\n    min-height: 54px;\n    padding: 0 26px;\n    align-items: center;\n    justify-content: center;\n    transform: translateX(-50%);\n    border: 2px solid #c35e60;\n    border-radius: 6px;\n    background: #c35e60;\n    color: #ffffff !important;\n    font-family: Inter, Arial, sans-serif;\n    font-size: 15px;\n    font-weight: 800;\n    line-height: 1;\n    text-decoration: none;\n    box-shadow:\n      0 3px 0 rgba(255, 255, 255, 0.2) inset,\n      0 6px 14px rgba(57, 50, 54, 0.16);\n    transition:\n      background-color 0.2s ease,\n      border-color 0.2s ease,\n      color 0.2s ease,\n      transform 0.2s ease;\n  }\n\n  .sihoo-c300pro-feature__button:hover {\n    border-color: #393236;\n    background: #393236;\n    color: #ffffff !important;\n    transform: translateX(-50%) translateY(-2px);\n  }\n\n  .sihoo-c300pro-feature__content {\n    color: #393236;\n  }\n\n  .sihoo-c300pro-feature h2 {\n    margin: 0 0 20px !important;\n    color: #c35e60 !important;\n    font-family: Inter, Arial, sans-serif;\n    font-size: 52px;\n    font-weight: 700;\n    line-height: 56px;\n  }\n\n  .sihoo-c300pro-feature__lead {\n    max-width: 620px;\n    margin: 0 0 30px !important;\n    color: #393236 !important;\n    font-family: Inter, Arial, sans-serif;\n    font-size: 19px;\n    font-weight: 700;\n    line-height: 29px;\n  }\n\n  .sihoo-c300pro-feature__list {\n    display: grid;\n    gap: 18px;\n  }\n\n  .sihoo-c300pro-feature__item {\n    display: grid;\n    grid-template-columns: 38px 1fr;\n    align-items: center;\n    gap: 14px;\n  }\n\n  .sihoo-c300pro-feature__icon {\n    display: flex;\n    width: 36px;\n    height: 36px;\n    align-items: center;\n    justify-content: center;\n    border-radius: 50%;\n    background: rgba(195, 94, 96, 0.14);\n    color: #c35e60;\n  }\n\n  .sihoo-c300pro-feature__icon svg {\n    width: 19px;\n    height: 19px;\n    fill: none;\n    stroke: currentColor;\n    stroke-width: 1.8;\n    stroke-linecap: round;\n    stroke-linejoin: round;\n  }\n\n  .sihoo-c300pro-feature__item p {\n    max-width: 640px;\n    margin: 0 !important;\n    color: #393236 !important;\n    font-family: Inter, Arial, sans-serif;\n    font-size: 15px;\n    font-weight: 500;\n    line-height: 23px;\n  }\n\n  .sihoo-c300pro-feature__notice {\n    grid-column: 1 / -1;\n    width: 100%;\n    margin: 0;\n    padding: 24px 28px;\n    border: 1px solid rgba(195, 94, 96, 0.35);\n    border-left: 5px solid #c35e60;\n    border-radius: 8px;\n    background: #ffffff;\n    color: #393236;\n    box-shadow: 0 8px 24px rgba(57, 50, 54, 0.07);\n  }\n\n  .sihoo-c300pro-feature__notice-heading {\n    display: block;\n    margin-bottom: 12px;\n    color: #c35e60;\n    font-family: Inter, Arial, sans-serif;\n    font-size: 18px;\n    font-weight: 800;\n    line-height: 24px;\n  }\n\n  .sihoo-c300pro-feature__notice p {\n    margin: 0 0 10px !important;\n    color: #393236 !important;\n    font-family: Inter, Arial, sans-serif;\n    font-size: 15px;\n    font-weight: 500;\n    line-height: 24px;\n  }\n\n  .sihoo-c300pro-feature__notice p:last-child {\n    margin-bottom: 0 !important;\n  }\n\n  .sihoo-c300pro-feature__notice a {\n    color: #c35e60 !important;\n    font-weight: 800;\n    text-decoration: underline;\n    text-underline-offset: 3px;\n  }\n\n  @media screen and (max-width: 989px) {\n    .sihoo-c300pro-feature {\n      padding: 56px 18px;\n    }\n\n    .sihoo-c300pro-feature__inner {\n      grid-template-columns: 1fr;\n      gap: 36px;\n    }\n\n    .sihoo-c300pro-feature__media {\n      min-height: 480px;\n    }\n\n    .sihoo-c300pro-feature h2 {\n      font-size: 42px;\n      line-height: 48px;\n    }\n\n    .sihoo-c300pro-feature__notice {\n      grid-column: 1;\n    }\n  }\n\n  @media screen and (max-width: 549px) {\n    .sihoo-c300pro-feature {\n      padding: 46px 16px;\n    }\n\n    .sihoo-c300pro-feature__media {\n      min-height: 420px;\n    }\n\n    .sihoo-c300pro-feature__chair {\n      width: 100%;\n      max-width: 390px;\n    }\n\n    .sihoo-c300pro-feature__button {\n      min-width: 220px;\n      min-height: 48px;\n      padding: 0 20px;\n      font-size: 13px;\n    }\n\n    .sihoo-c300pro-feature h2 {\n      font-size: 34px;\n      line-height: 39px;\n    }\n\n    .sihoo-c300pro-feature__lead {\n      font-size: 17px;\n      line-height: 26px;\n    }\n\n    .sihoo-c300pro-feature__item {\n      grid-template-columns: 34px 1fr;\n      gap: 12px;\n    }\n\n    .sihoo-c300pro-feature__icon {\n      width: 32px;\n      height: 32px;\n    }\n\n    .sihoo-c300pro-feature__icon svg {\n      width: 17px;\n      height: 17px;\n    }\n\n    .sihoo-c300pro-feature__notice {\n      padding: 20px 18px;\n    }\n\n    .sihoo-c300pro-feature__notice-heading {\n      font-size: 16px;\n      line-height: 22px;\n    }\n\n    .sihoo-c300pro-feature__notice p {\n      font-size: 14px;\n      line-height: 22px;\n    }\n  }\n</style>\n\n<script>\n  (function () {\n    function setProductGridTarget() {\n      const productGrid = document.querySelector(\"section.product-grid\");\n\n      if (productGrid) {\n        productGrid.id = \"featured-products\";\n        productGrid.style.scrollMarginTop = \"100px\";\n      }\n    }\n\n    if (document.readyState === \"loading\") {\n      document.addEventListener(\"DOMContentLoaded\", setProductGridTarget);\n    } else {\n      setProductGridTarget();\n    }\n  })();\n</script>"
+      }
+    },
+    "custom_liquid_BEHz8t": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "show_space": false,
+        "code": "<section id=\"featured-gift\" class=\"sihoo-c300pro-feature\">\n  <div class=\"sihoo-c300pro-feature__inner\">\n\n    <div class=\"sihoo-c300pro-feature__media\">\n      <div class=\"sihoo-c300pro-feature__glow\"></div>\n\n      <div class=\"sihoo-c300pro-feature__badge\">\n        Save Up To $320\n      </div>\n\n      <img\n        src=\"https://sihoo.com.au/cdn/shop/files/1_002e6277-aee5-4828-801a-23426eafc18e.png?v=1781242876&width=5000\"\n        alt=\"Sihoo Doro C300 Pro V2 ergonomic office chair\"\n        class=\"sihoo-c300pro-feature__chair\"\n      >\n\n      <a\n        href=\"https://sihoo.com.au/products/sihoo-a3-doro-c300-pro-v2-ergonomic-office-chair\"\n        class=\"sihoo-c300pro-feature__button\"\n      >\n        Shop Doro C300 Pro V2\n      </a>\n    </div>\n\n    <div class=\"sihoo-c300pro-feature__content\">\n      <div class=\"sihoo-c300pro-feature__featured-badge\">\n        Featured Gift\n      </div>\n\n      <p class=\"sihoo-c300pro-feature__eyebrow\">\n        This Year's Father's Day Picks\n      </p>\n\n      <h2>\n        SIHOO Doro C300 Pro V2\n      </h2>\n\n      <p class=\"sihoo-c300pro-feature__lead\">\n        Split the cost into 4 fortnightly interest-free payments with Afterpay.\n      </p>\n\n      <div class=\"sihoo-c300pro-feature__list\">\n\n        <div class=\"sihoo-c300pro-feature__item\">\n          <span class=\"sihoo-c300pro-feature__icon\">\n            <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n              <path d=\"M12 3l7 4v5c0 4.5-2.8 7.5-7 9-4.2-1.5-7-4.5-7-9V7l7-4Z\"/>\n              <path d=\"M9 12l2 2 4-5\"/>\n            </svg>\n          </span>\n\n          <p>\n            No impact if paid on time, no hidden fees.\n          </p>\n        </div>\n\n        <div class=\"sihoo-c300pro-feature__item\">\n          <span class=\"sihoo-c300pro-feature__icon\">\n            <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n              <path d=\"M13 2L5 14h7l-1 8 8-12h-7l1-8Z\"/>\n              <path d=\"M16.5 17.5l1.5 1.5 3-3\"/>\n            </svg>\n          </span>\n\n          <p>\n            Instant approval at checkout.\n          </p>\n        </div>\n\n        <div class=\"sihoo-c300pro-feature__item\">\n          <span class=\"sihoo-c300pro-feature__icon\">\n            <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n              <rect x=\"3\" y=\"9\" width=\"18\" height=\"12\" rx=\"1\"/>\n              <path d=\"M2 6h20v5H2zM12 6v15\"/>\n              <path d=\"M12 6H8.5A2.5 2.5 0 1 1 11 3.5L12 6ZM12 6h3.5A2.5 2.5 0 1 0 13 3.5L12 6Z\"/>\n            </svg>\n          </span>\n\n          <p>\n            Gift now, spread the cost over 6 weeks.\n          </p>\n        </div>\n\n        <div class=\"sihoo-c300pro-feature__item\">\n          <span class=\"sihoo-c300pro-feature__icon\">\n            <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n              <path d=\"M8 4h8v9H8zM6 13h12v4H6zM12 17v4M8 21h8\"/>\n              <path d=\"M6 10H4v6h2M18 10h2v6h-2\"/>\n            </svg>\n          </span>\n\n          <p>\n            Available on the full Doro C300 Pro V2 range.\n          </p>\n        </div>\n\n        <div class=\"sihoo-c300pro-feature__item\">\n          <span class=\"sihoo-c300pro-feature__icon\">\n            <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n              <rect x=\"2\" y=\"5\" width=\"20\" height=\"14\" rx=\"2\"/>\n              <path d=\"M2 9h20M6 15h4\"/>\n              <path d=\"M15 14l1.5 1.5L19 13\"/>\n            </svg>\n          </span>\n\n          <p>\n            Checkout normally, select Afterpay at payment.\n          </p>\n        </div>\n\n      </div>\n    </div>\n\n  </div>\n</section>\n\n<style>\n  #featured-gift {\n    scroll-margin-top: 100px;\n  }\n\n  .sihoo-c300pro-feature {\n    width: 100%;\n    padding: 70px 20px;\n    overflow: hidden;\n    background:\n      radial-gradient(\n        circle at 26% 50%,\n        rgba(255, 213, 2, 0.3) 0%,\n        rgba(255, 213, 2, 0.1) 22%,\n        rgba(164, 0, 0, 0) 43%\n      ),\n      #a40000;\n    font-family: Inter, sans-serif;\n  }\n\n  .sihoo-c300pro-feature__inner {\n    display: grid;\n    grid-template-columns: 46% 54%;\n    align-items: center;\n    gap: 48px;\n    max-width: 1180px;\n    margin: 0 auto;\n  }\n\n  .sihoo-c300pro-feature__media {\n    position: relative;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    min-height: 520px;\n  }\n\n  .sihoo-c300pro-feature__glow {\n    position: absolute;\n    z-index: 1;\n    width: 390px;\n    height: 390px;\n    border-radius: 50%;\n    background: radial-gradient(\n      circle,\n      rgba(255, 213, 2, 0.5) 0%,\n      rgba(255, 213, 2, 0.15) 36%,\n      rgba(255, 213, 2, 0) 68%\n    );\n    filter: blur(8px);\n  }\n\n  .sihoo-c300pro-feature__badge {\n    position: absolute;\n    top: 46px;\n    left: 26px;\n    z-index: 4;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    min-width: 96px;\n    min-height: 54px;\n    padding: 10px 18px;\n    border: 3px solid #ffffff;\n    border-radius: 8px;\n    background: #c90002;\n    color: #ffd502;\n    font-family: Inter, Arial, sans-serif;\n    font-size: 20px;\n    line-height: 1;\n    font-weight: 900;\n    letter-spacing: 0.06em;\n    text-transform: uppercase;\n    transform: rotate(-7deg);\n    box-shadow:\n      0 4px 0 rgba(73, 0, 2, 0.45),\n      0 10px 22px rgba(0, 0, 0, 0.28);\n    text-shadow:\n      1px 1px 0 rgba(73, 0, 2, 0.85),\n      -1px -1px 0 rgba(73, 0, 2, 0.35);\n  }\n\n  .sihoo-c300pro-feature__badge::before,\n  .sihoo-c300pro-feature__badge::after {\n    content: \"\";\n    position: absolute;\n    background: #ffd502;\n    border-radius: 999px;\n  }\n\n  .sihoo-c300pro-feature__badge::before {\n    top: -15px;\n    left: 50%;\n    width: 4px;\n    height: 10px;\n    transform: translateX(-50%);\n  }\n\n  .sihoo-c300pro-feature__badge::after {\n    top: 50%;\n    right: -16px;\n    width: 10px;\n    height: 4px;\n    transform: translateY(-50%);\n  }\n\n  .sihoo-c300pro-feature__chair {\n    position: relative;\n    z-index: 2;\n    display: block;\n    width: 92%;\n    max-width: 430px;\n    height: auto;\n    object-fit: contain;\n    filter: drop-shadow(0 22px 28px rgba(0, 0, 0, 0.45));\n  }\n\n  .sihoo-c300pro-feature__button {\n    position: absolute;\n    bottom: 8px;\n    left: 50%;\n    z-index: 3;\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    min-width: 250px;\n    min-height: 54px;\n    padding: 0 26px;\n    transform: translateX(-50%);\n    border: 2px solid #090909;\n    border-radius: 6px;\n    background: #090909;\n    color: #ffffff !important;\n    font-family: Inter, sans-serif;\n    font-size: 15px;\n    line-height: 1;\n    font-weight: 800;\n    text-decoration: none;\n    box-shadow:\n      0 3px 0 rgba(255, 255, 255, 0.25) inset,\n      0 6px 14px rgba(0, 0, 0, 0.28);\n    transition:\n      background-color 0.2s ease,\n      color 0.2s ease,\n      transform 0.2s ease;\n  }\n\n  .sihoo-c300pro-feature__button:hover {\n    transform: translateX(-50%) translateY(-2px);\n    background: #ffffff;\n    border-color: #ffffff;\n    color: #a40000 !important;\n  }\n\n  .sihoo-c300pro-feature__content {\n    color: #ffffff;\n  }\n\n  .sihoo-c300pro-feature__featured-badge {\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    min-height: 34px;\n    margin: 0 0 14px;\n    padding: 7px 16px;\n    border: 1px solid rgba(255, 255, 255, 0.7);\n    border-radius: 999px;\n    background: #B58B3B;\n    color: #ffffff;\n    font-family: Inter, sans-serif;\n    font-size: 13px;\n    line-height: 1;\n    font-weight: 800;\n    letter-spacing: 1.2px;\n    text-transform: uppercase;\n    box-shadow: 0 5px 14px rgba(73, 0, 2, 0.22);\n  }\n\n  .sihoo-c300pro-feature__eyebrow {\n    margin: 0 0 12px !important;\n    font-family: Inter, sans-serif;\n    font-size: 15px;\n    line-height: 20px;\n    font-weight: 800;\n    letter-spacing: 1.8px;\n    text-transform: uppercase;\n    color: #F5F1BA !important;\n  }\n\n  .sihoo-c300pro-feature h2 {\n    margin: 0 0 22px !important;\n    font-family: Inter, sans-serif;\n    font-size: 52px;\n    line-height: 56px;\n    font-weight: 700;\n    color: #ffffff !important;\n  }\n\n  .sihoo-c300pro-feature__lead {\n    max-width: 620px;\n    margin: 0 0 30px !important;\n    font-family: Inter, sans-serif;\n    font-size: 19px;\n    line-height: 29px;\n    font-weight: 700;\n    color: #ffffff !important;\n  }\n\n  .sihoo-c300pro-feature__list {\n    display: grid;\n    gap: 22px;\n  }\n\n  .sihoo-c300pro-feature__item {\n    display: grid;\n    grid-template-columns: 38px 1fr;\n    align-items: center;\n    gap: 14px;\n  }\n\n  .sihoo-c300pro-feature__icon {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    width: 36px;\n    height: 36px;\n    border-radius: 50%;\n    background: #fff2a8;\n    color: #490002;\n  }\n\n  .sihoo-c300pro-feature__icon svg {\n    width: 19px;\n    height: 19px;\n    fill: none;\n    stroke: currentColor;\n    stroke-width: 1.8;\n    stroke-linecap: round;\n    stroke-linejoin: round;\n  }\n\n  .sihoo-c300pro-feature__item p {\n    max-width: 640px;\n    margin: 0 !important;\n    font-family: Inter, sans-serif;\n    font-size: 15px;\n    line-height: 23px;\n    font-weight: 500;\n    color: #ffffff !important;\n  }\n\n  .sihoo-c300pro-feature__item strong {\n    font-weight: 800;\n    color: #ffffff !important;\n  }\n\n  @media screen and (max-width: 989px) {\n    .sihoo-c300pro-feature {\n      padding: 56px 18px;\n    }\n\n    .sihoo-c300pro-feature__inner {\n      grid-template-columns: 1fr;\n      gap: 36px;\n    }\n\n    .sihoo-c300pro-feature__media {\n      min-height: 480px;\n    }\n\n    .sihoo-c300pro-feature__badge {\n      top: 38px;\n      left: calc(50% - 210px);\n    }\n\n    .sihoo-c300pro-feature__content {\n      text-align: left;\n    }\n\n    .sihoo-c300pro-feature__featured-badge {\n      margin-bottom: 12px;\n    }\n\n    .sihoo-c300pro-feature h2 {\n      font-size: 42px;\n      line-height: 48px;\n    }\n  }\n\n  @media screen and (max-width: 549px) {\n    .sihoo-c300pro-feature {\n      padding: 46px 16px;\n    }\n\n    .sihoo-c300pro-feature__media {\n      min-height: 420px;\n    }\n\n    .sihoo-c300pro-feature__chair {\n      width: 100%;\n    }\n\n    .sihoo-c300pro-feature__badge {\n      top: 24px;\n      left: 8px;\n      min-width: 80px;\n      min-height: 46px;\n      padding: 8px 14px;\n      border-width: 2px;\n      font-size: 17px;\n    }\n\n    .sihoo-c300pro-feature__button {\n      min-width: 220px;\n      min-height: 48px;\n      padding: 0 20px;\n      font-size: 13px;\n    }\n\n    .sihoo-c300pro-feature h2 {\n      font-size: 34px;\n      line-height: 39px;\n    }\n\n    .sihoo-c300pro-feature__lead {\n      font-size: 17px;\n      line-height: 26px;\n    }\n\n    .sihoo-c300pro-feature__featured-badge {\n      min-height: 30px;\n      padding: 6px 13px;\n      font-size: 11px;\n    }\n\n    .sihoo-c300pro-feature__item {\n      grid-template-columns: 34px 1fr;\n      gap: 12px;\n    }\n\n    .sihoo-c300pro-feature__icon {\n      width: 32px;\n      height: 32px;\n    }\n\n    .sihoo-c300pro-feature__icon svg {\n      width: 17px;\n      height: 17px;\n    }\n  }\n</style>"
+      }
+    },
+    "rich_text_NHHdcD": {
+      "type": "rich-text",
+      "blocks": {
+        "text_xDJqMX": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><strong>BUILT FOR HOW HE LIVE</strong></p>",
+            "enlarge_text": true
+          }
+        },
+        "subheading_kczRVG": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "BUILT FOR HOW YOU LIVE"
+          }
+        },
+        "heading_FUrWPX": {
+          "type": "heading",
+          "settings": {
+            "title": "What's your spring season personality?",
+            "use_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "text_xDJqMX",
+        "subheading_kczRVG",
+        "heading_FUrWPX"
+      ],
+      "custom_css": [
+        "h2 {font-weight: 700; color: #c35e60; margin: 0px; padding-bottom: 0px;}",
+        ".fully-spaced-row--medium {background-color: #f5f8f8; margin: 0px; padding-top: 80px;}",
+        "p {font-weight: 400; color: #b58b3b !important; font-size: 1.1rem;}",
+        "a {background-color: #f9e7d9; color: #fff; border-radius: 8px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "custom_liquid_iLY6gf": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "show_space": false,
+        "code": "<section class=\"sihoo-usecase-section\">\n  <div class=\"sihoo-usecase-inner\">\n\n    <div class=\"sihoo-usecase-card\">\n      <div class=\"sihoo-usecase-head\">\n        <div class=\"sihoo-usecase-icon\">\n          <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n            <rect x=\"3\" y=\"5\" width=\"18\" height=\"13\" rx=\"2\"/>\n            <path d=\"M8 21h8\"/>\n            <path d=\"M12 18v3\"/>\n            <path d=\"M8 10h8\"/>\n            <path d=\"M10 13h4\"/>\n          </svg>\n        </div>\n\n        <h3>The Minimalist</h3>\n      </div>\n\n      <p>\n        Keep your setup clean, considered, and distraction-free. Choose a chair\n        that fits seamlessly into your space while giving you the support you\n        need to stay focused.\n      </p>\n    </div>\n\n    <div class=\"sihoo-usecase-card\">\n      <div class=\"sihoo-usecase-head\">\n        <div class=\"sihoo-usecase-icon\">\n          <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n            <path d=\"M14.5 5.5l4 4\"/>\n            <path d=\"M12.5 7.5l4 4\"/>\n            <path d=\"M4 20l8.5-8.5\"/>\n            <path d=\"M15.5 4.5l4 4L17 11l-4-4 2.5-2.5Z\"/>\n            <path d=\"M4 20l1-4 3 3-4 1Z\"/>\n          </svg>\n        </div>\n\n        <h3>The Creative</h3>\n      </div>\n\n      <p>\n        From sketches to edits, concepts to finished work, your setup is where\n        ideas come to life. Get comfortable and let your creativity take the\n        lead.\n      </p>\n    </div>\n\n    <div class=\"sihoo-usecase-card\">\n      <div class=\"sihoo-usecase-head\">\n        <div class=\"sihoo-usecase-icon\">\n          <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n            <path d=\"M7.5 8h9a5 5 0 0 1 4.7 6.7l-1 2.8a2.2 2.2 0 0 1-3.7.8L14.8 16H9.2l-1.7 2.3a2.2 2.2 0 0 1-3.7-.8l-1-2.8A5 5 0 0 1 7.5 8Z\"/>\n            <path d=\"M7 12v4\"/>\n            <path d=\"M5 14h4\"/>\n            <circle cx=\"16.5\" cy=\"12.5\" r=\".7\"/>\n            <circle cx=\"18.5\" cy=\"14.5\" r=\".7\"/>\n          </svg>\n        </div>\n\n        <h3>The Gamer</h3>\n      </div>\n\n      <p>\n        Chasing the next win or settling into a long session? Get the ergonomic\n        support you need to stay comfortable when the game gets serious.\n      </p>\n    </div>\n\n    <div class=\"sihoo-usecase-card\">\n      <div class=\"sihoo-usecase-head\">\n        <div class=\"sihoo-usecase-icon\">\n          <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n            <path d=\"M6 13V9a6 6 0 0 1 12 0v4\"/>\n            <path d=\"M5 12h2a2 2 0 0 1 2 2v4H7a2 2 0 0 1-2-2v-4Z\"/>\n            <path d=\"M19 12h-2a2 2 0 0 0-2 2v4h2a2 2 0 0 0 2-2v-4Z\"/>\n            <path d=\"M9 18h6\"/>\n            <path d=\"M8 21h8\"/>\n          </svg>\n        </div>\n\n        <h3>The Cozy Achiever</h3>\n      </div>\n\n      <p>\n        You like your productivity with a little comfort on the side. Create a\n        setup that works hard, feels good, and makes it easier to settle in for\n        the day.\n      </p>\n    </div>\n\n  </div>\n</section>\n\n<style>\n  .sihoo-usecase-section {\n    padding: 28px 20px 80px;\n    background: #f5f8f8;\n    font-family: Inter, Arial, sans-serif;\n  }\n\n  .sihoo-usecase-inner {\n    display: grid;\n    max-width: 1120px;\n    margin: 0 auto;\n    grid-template-columns: repeat(4, 1fr);\n    gap: 16px;\n  }\n\n  .sihoo-usecase-card {\n    min-height: 260px;\n    padding: 28px 24px;\n    border: 1px solid rgba(195, 94, 96, 0.18);\n    border-radius: 10px;\n    background: #ffffff;\n    font-family: Inter, Arial, sans-serif;\n    text-align: left;\n    box-shadow: 0 8px 24px rgba(57, 50, 54, 0.06);\n    transition:\n      border-color 0.2s ease,\n      box-shadow 0.2s ease,\n      transform 0.2s ease;\n  }\n\n  .sihoo-usecase-card:hover {\n    border-color: rgba(195, 94, 96, 0.45);\n    box-shadow: 0 12px 30px rgba(57, 50, 54, 0.1);\n    transform: translateY(-3px);\n  }\n\n  .sihoo-usecase-head {\n    display: flex;\n    min-height: 72px;\n    margin-bottom: 18px;\n    align-items: center;\n    gap: 16px;\n  }\n\n  .sihoo-usecase-icon {\n    display: flex;\n    width: 58px;\n    height: 58px;\n    flex: 0 0 58px;\n    align-items: center;\n    justify-content: center;\n    border-radius: 50%;\n    background: rgba(195, 94, 96, 0.12);\n    color: #c35e60;\n  }\n\n  .sihoo-usecase-icon svg {\n    width: 34px;\n    height: 34px;\n    fill: none;\n    stroke: currentColor;\n    stroke-width: 1.55;\n    stroke-linecap: round;\n    stroke-linejoin: round;\n  }\n\n  .sihoo-usecase-card h3 {\n    margin: 0;\n    color: #c35e60;\n    font-family: Inter, Arial, sans-serif;\n    font-size: 20px;\n    font-weight: 700;\n    line-height: 25px;\n  }\n\n  .sihoo-usecase-card p {\n    margin: 0;\n    color: #393236;\n    font-family: Inter, Arial, sans-serif;\n    font-size: 15px;\n    font-weight: 500;\n    line-height: 23px;\n  }\n\n  @media screen and (max-width: 989px) {\n    .sihoo-usecase-inner {\n      grid-template-columns: repeat(2, 1fr);\n    }\n\n    .sihoo-usecase-card {\n      min-height: 230px;\n    }\n  }\n\n  @media screen and (max-width: 549px) {\n    .sihoo-usecase-section {\n      padding: 24px 16px 56px;\n    }\n\n    .sihoo-usecase-inner {\n      grid-template-columns: 1fr;\n    }\n\n    .sihoo-usecase-card {\n      min-height: auto;\n      padding: 24px 20px;\n    }\n\n    .sihoo-usecase-head {\n      min-height: auto;\n      margin-bottom: 16px;\n    }\n\n    .sihoo-usecase-icon {\n      width: 52px;\n      height: 52px;\n      flex-basis: 52px;\n    }\n\n    .sihoo-usecase-icon svg {\n      width: 30px;\n      height: 30px;\n    }\n  }\n</style>"
+      }
+    },
+    "product_static_grid_Lz9QfW": {
+      "type": "sihoo-spring-grid",
+      "custom_css": [
+        "section.product-grid {background-color: #393236;}",
+        ".product-grid .swiper-slide {width: 288px !important;}",
+        ".product-grid-item-title {min-height: 0px; margin-bottom: 0px;}",
+        "select.product-grid-item-variation-dropdown {background-color: #fff; border: 0px; height: 35px; border-radius: 4px;}",
+        ".product-grid h2 {color: #ffffff;}",
+        ".product-grid-item {background-color: #ffffff; border: 1px solid #ffffff; border-radius: 12px;}",
+        ".product-grid-item-rating {display: none;}",
+        ".product-grid-item-button-link {background-color: #c35e60; color: #fff;}"
+      ],
+      "name": "I WFH Every Day",
+      "settings": {
+        "title": "Find your next ergonomic chair in the Spring Sale.",
+        "subheading": "Explore the SIHOO range and compare current sale prices. Afterpay available at checkout.",
+        "collection": "",
+        "products": [
+          "sihoo-a3-doro-c300-ergonomic-office-chair",
+          "sihoo-m57-ergonomic-office-chair",
+          "sihoo-m57-ergonomic-office-chair-with-built-in-footrest",
+          "sihoo-m18-ergonomics-task-office-chair",
+          "sihoo-doro-s100-ergonomic-office-chair",
+          "sihoo-m57-pro-ergonomic-office-chair",
+          "sihoo-m57-pro-ergonomic-office-chair-with-built-in-footrest",
+          "sihoo-vito-m90-ergonomic-office-chair"
+        ],
+        "show_variation_dropdown": true,
+        "products_to_show": 8,
+        "section_background": "#063f27",
+        "heading_color": "#ffffff",
+        "subheading_color": "#ffffff",
+        "card_background": "#ffffff",
+        "product_title_color": "#1a1a1a",
+        "variant_label_color": "#666666",
+        "variant_value_color": "#1a1a1a",
+        "price_current_color": "#393236",
+        "price_compare_color": "#888888",
+        "sale_badge_background": "#C35E60",
+        "sale_badge_text": "#ffffff",
+        "button_background": "#ffffff",
+        "button_text": "#ffffff",
+        "button_disabled_background": "#cccccc",
+        "button_disabled_text": "#666666",
+        "dropdown_background": "#ffffff",
+        "dropdown_text": "#1a1a1a",
+        "dropdown_border_color": "#dddddd"
+      }
+    },
+    "custom_liquid_JxTgLH": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "show_space": false,
+        "code": "<section class=\"sihoo-proof-strip\">\n  <div class=\"sihoo-proof-strip__inner\">\n\n    <div class=\"sihoo-proof-item\">\n      <div class=\"sihoo-proof-icon\">\n        <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n          <path d=\"M12 2l2 2 2.8-.6 1 2.7 2.7 1-1 2.8 2 2-2 2 .6 2.8-2.7 1-1 2.7-2.8-.6-2 2-2-2-2.8.6-1-2.7-2.7-1 .6-2.8-2-2 2-2-.6-2.8 2.7-1 1-2.7 2.8.6 2-2Z\"/>\n          <circle cx=\"12\" cy=\"12\" r=\"3.2\"/>\n          <path d=\"M9 19l-1.5 3 4.5-1 4.5 1L15 19\"/>\n        </svg>\n      </div>\n\n      <div class=\"sihoo-proof-text\">\n        <h3>300+</h3>\n        <p>precision-tested<br>components</p>\n      </div>\n    </div>\n\n    <div class=\"sihoo-proof-divider\"></div>\n\n    <div class=\"sihoo-proof-item\">\n      <div class=\"sihoo-proof-icon\">\n        <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n          <rect x=\"2\" y=\"5\" width=\"20\" height=\"14\" rx=\"2\"/>\n          <path d=\"M2 9h20\"/>\n          <path d=\"M6 15h4\"/>\n          <path d=\"M15 14l1.5 1.5L19 13\"/>\n        </svg>\n      </div>\n\n      <div class=\"sihoo-proof-text\">\n        <h3>Afterpay</h3>\n        <p>Split your<br>purchase</p>\n      </div>\n    </div>\n\n    <div class=\"sihoo-proof-divider\"></div>\n\n    <div class=\"sihoo-proof-item\">\n      <div class=\"sihoo-proof-icon\">\n        <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n          <path d=\"M9 3h6l1.5 3L15 9l1.5 3L15 15l1.5 3L15 21H9l-1.5-3L9 15l-1.5-3L9 9 7.5 6 9 3Z\"/>\n          <path d=\"M10 6h4\"/>\n          <path d=\"M10 12h4\"/>\n          <path d=\"M10 18h4\"/>\n        </svg>\n      </div>\n\n      <div class=\"sihoo-proof-text\">\n        <h3>Dynamic</h3>\n        <p>adaptive lumbar<br>support</p>\n      </div>\n    </div>\n\n    <div class=\"sihoo-proof-divider\"></div>\n\n    <div class=\"sihoo-proof-item\">\n      <div class=\"sihoo-proof-icon\">\n        <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\">\n          <path d=\"M12 3l7 4v6c0 4-3 7-7 8-4-1-7-4-7-8V7l7-4Z\"/>\n          <path d=\"M9 12l2 2 4-5\"/>\n        </svg>\n      </div>\n\n      <div class=\"sihoo-proof-text\">\n        <h3>Built for</h3>\n        <p>everyday<br>performance</p>\n      </div>\n    </div>\n\n  </div>\n</section>\n\n<style>\n  .sihoo-proof-strip {\n    width: 100%;\n    padding: 24px 20px;\n    background: #f5f8f8;\n    font-family: Inter, Arial, sans-serif;\n  }\n\n  .sihoo-proof-strip__inner {\n    display: grid;\n    max-width: 1120px;\n    margin: 0 auto;\n    grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;\n    align-items: center;\n    gap: 30px;\n  }\n\n  .sihoo-proof-item {\n    display: flex;\n    min-width: 0;\n    align-items: center;\n    gap: 18px;\n  }\n\n  .sihoo-proof-icon {\n    width: 58px;\n    height: 58px;\n    flex: 0 0 58px;\n    color: #c35e60;\n  }\n\n  .sihoo-proof-icon svg {\n    width: 100%;\n    height: 100%;\n    fill: none;\n    stroke: currentColor;\n    stroke-width: 1.65;\n    stroke-linecap: round;\n    stroke-linejoin: round;\n  }\n\n  .sihoo-proof-text h3 {\n    margin: 0 0 4px;\n    color: #c35e60;\n    font-family: Inter, Arial, sans-serif;\n    font-size: 25px;\n    font-weight: 800;\n    line-height: 29px;\n  }\n\n  .sihoo-proof-text p {\n    margin: 0;\n    color: #393236;\n    font-family: Inter, Arial, sans-serif;\n    font-size: 15px;\n    font-weight: 600;\n    line-height: 20px;\n  }\n\n  .sihoo-proof-divider {\n    width: 1px;\n    height: 58px;\n    background: rgba(195, 94, 96, 0.32);\n  }\n\n  @media screen and (max-width: 989px) {\n    .sihoo-proof-strip__inner {\n      grid-template-columns: 1fr 1fr;\n      gap: 28px 24px;\n    }\n\n    .sihoo-proof-divider {\n      display: none;\n    }\n  }\n\n  @media screen and (max-width: 549px) {\n    .sihoo-proof-strip {\n      padding: 28px 18px;\n    }\n\n    .sihoo-proof-strip__inner {\n      grid-template-columns: 1fr;\n      gap: 24px;\n    }\n\n    .sihoo-proof-item {\n      justify-content: flex-start;\n    }\n\n    .sihoo-proof-icon {\n      width: 52px;\n      height: 52px;\n      flex-basis: 52px;\n    }\n\n    .sihoo-proof-text h3 {\n      font-size: 23px;\n      line-height: 27px;\n    }\n\n    .sihoo-proof-text p {\n      font-size: 14px;\n      line-height: 19px;\n    }\n  }\n</style>"
+      }
+    },
+    "sihoo_countdown_j3EWT6": {
+      "type": "sihoo-countdown",
+      "name": "Countdown Banner",
+      "settings": {
+        "heading": "Spring Sale Is Here! Explore Current Offers.",
+        "subtext": "No code needed. Sale prices are already applied, with four interest-free fortnightly payments available through Afterpay. Offer ends 21 September 2026.",
+        "background_image": "shopify://shop_images/spring_sale_landing_page_fea30499-b5a7-443f-a2c9-be934170ee37.png",
+        "end_date": "2026-09-21",
+        "end_time": "23:59:59",
+        "timezone": "+10:00",
+        "heading_color": "#FFFFFF",
+        "subtext_color": "#FFFFFF",
+        "timer_background": "#fff6ea",
+        "timer_text_color": "#C35E60"
+      }
+    },
+    "product_static_grid_xA49G6": {
+      "type": "sihoo-spring-grid",
+      "custom_css": [
+        "section.product-grid {background-color: #f5f8f8;}",
+        ".product-grid .swiper-slide {width: 288px !important;}",
+        ".product-grid-item-title {min-height: 36px; margin-bottom: 10px;}",
+        "select.product-grid-item-variation-dropdown {background-color: #fff; border: 0px; height: 35px; border-radius: 4px;}",
+        ".product-grid h2 {color: #c35e60;}",
+        ".product-grid-item {background-color: #ffffff; border: 1px solid #ffffff; border-radius: 12px;}",
+        ".product-grid-item-rating {display: none;}",
+        ".product-grid-item-button-link {background-color: #c35e60; color: #fff;}"
+      ],
+      "name": "Gaming and Streaming",
+      "settings": {
+        "title": "For Work",
+        "subheading": "Ergonomic office chairs for all-around support",
+        "collection": "",
+        "products": [
+          "sihoo-a3-doro-c300-ergonomic-office-chair",
+          "sihoo-m57-ergonomic-office-chair",
+          "sihoo-m57-ergonomic-office-chair-with-built-in-footrest",
+          "sihoo-m57-pro-ergonomic-office-chair"
+        ],
+        "show_variation_dropdown": true,
+        "products_to_show": 8,
+        "section_background": "#063f27",
+        "heading_color": "#ffffff",
+        "subheading_color": "#1d1a20",
+        "card_background": "#ffffff",
+        "product_title_color": "#1a1a1a",
+        "variant_label_color": "#666666",
+        "variant_value_color": "#1a1a1a",
+        "price_current_color": "#393236",
+        "price_compare_color": "#888888",
+        "sale_badge_background": "#C35E60",
+        "sale_badge_text": "#ffffff",
+        "button_background": "#991011",
+        "button_text": "#ffffff",
+        "button_disabled_background": "#cccccc",
+        "button_disabled_text": "#666666",
+        "dropdown_background": "#ffffff",
+        "dropdown_text": "#1a1a1a",
+        "dropdown_border_color": "#dddddd"
+      }
+    },
+    "product_static_grid_CEhgWp": {
+      "type": "sihoo-spring-grid",
+      "custom_css": [
+        "section.product-grid {background-color: #f5f8f8;}",
+        ".product-grid .swiper-slide {width: 288px !important;}",
+        ".product-grid-item-title {min-height: 36px; margin-bottom: 10px;}",
+        "select.product-grid-item-variation-dropdown {background-color: #fff; border: 0px; height: 35px; border-radius: 4px;}",
+        ".product-grid h2 {color: #c35e60;}",
+        ".product-grid-item {background-color: #ffffff; border: 1px solid #ffffff; border-radius: 12px;}",
+        ".product-grid-item-rating {display: none;}",
+        ".product-grid-item-button-link {background-color: #c35e60; color: #fff;}"
+      ],
+      "name": "I have Lower Back Pain",
+      "settings": {
+        "title": "For Study",
+        "subheading": "Recommended ergonomic chairs for comfortable and durable support while studying.",
+        "collection": "",
+        "products": [
+          "sihoo-a3-doro-c300-ergonomic-office-chair",
+          "sihoo-m57-ergonomic-office-chair-with-built-in-footrest",
+          "sihoo-m18-pro-ergonomic-office-chair",
+          "sihoo-m16-ergonomics-office-chair"
+        ],
+        "show_variation_dropdown": true,
+        "products_to_show": 8,
+        "section_background": "#063f27",
+        "heading_color": "#ffffff",
+        "subheading_color": "#1d1a20",
+        "card_background": "#ffffff",
+        "product_title_color": "#1a1a1a",
+        "variant_label_color": "#666666",
+        "variant_value_color": "#1a1a1a",
+        "price_current_color": "#393236",
+        "price_compare_color": "#888888",
+        "sale_badge_background": "#C35E60",
+        "sale_badge_text": "#ffffff",
+        "button_background": "#991011",
+        "button_text": "#ffffff",
+        "button_disabled_background": "#cccccc",
+        "button_disabled_text": "#666666",
+        "dropdown_background": "#ffffff",
+        "dropdown_text": "#1a1a1a",
+        "dropdown_border_color": "#dddddd"
+      }
+    },
+    "product_static_grid_DGiW3X": {
+      "type": "sihoo-spring-grid",
+      "custom_css": [
+        "section.product-grid {background-color: #f5f8f8;}",
+        ".product-grid .swiper-slide {width: 288px !important;}",
+        ".product-grid-item-title {min-height: 36px; margin-bottom: 10px;}",
+        "select.product-grid-item-variation-dropdown {background-color: #fff; border: 0px; height: 35px; border-radius: 4px;}",
+        ".product-grid h2 {color: #c35e60;}",
+        ".product-grid-item {background-color: #ffffff; border: 1px solid #ffffff; border-radius: 12px;}",
+        ".product-grid-item-rating {display: none;}",
+        ".product-grid-item-button-link {background-color: #c35e60; color: #fff;}"
+      ],
+      "name": "I Sit for 10+ Hours a Day",
+      "settings": {
+        "title": "For Movie Marathon",
+        "subheading": "Ergonomic chairs designed for movie viewing day in, day out.",
+        "collection": "",
+        "products": [
+          "sihoo-v1-ergonomic-office-chair",
+          "sihoo-doro-s300-ergonomic-office-chair",
+          "sihoo-a3-doro-c300-ergonomic-office-chair",
+          "sihoo-doro-s100-ergonomic-office-chair"
+        ],
+        "show_variation_dropdown": true,
+        "products_to_show": 8,
+        "section_background": "#063f27",
+        "heading_color": "#ffffff",
+        "subheading_color": "#1d1a20",
+        "card_background": "#ffffff",
+        "product_title_color": "#1a1a1a",
+        "variant_label_color": "#666666",
+        "variant_value_color": "#1a1a1a",
+        "price_current_color": "#393236",
+        "price_compare_color": "#888888",
+        "sale_badge_background": "#C35E60",
+        "sale_badge_text": "#ffffff",
+        "button_background": "#991011",
+        "button_text": "#ffffff",
+        "button_disabled_background": "#cccccc",
+        "button_disabled_text": "#666666",
+        "dropdown_background": "#ffffff",
+        "dropdown_text": "#1a1a1a",
+        "dropdown_border_color": "#dddddd"
+      }
+    },
+    "product_static_grid_e34N4a": {
+      "type": "sihoo-spring-grid",
+      "custom_css": [
+        "section.product-grid {background-color: #393236;}",
+        ".product-grid .swiper-slide {width: 288px !important;}",
+        ".product-grid-item-title {min-height: 36px; margin-bottom: 10px;}",
+        "select.product-grid-item-variation-dropdown {background-color: #fff; border: 0px; height: 35px; border-radius: 4px;}",
+        ".product-grid h2 {color: #ffffff;}",
+        ".product-grid-item {background-color: #ffffff; border: 1px solid #ffffff; border-radius: 12px;}",
+        ".product-grid-item-rating {display: none;}",
+        ".product-grid-item-button-link {background-color: #c35e60; color: #fff;}"
+      ],
+      "name": "Gaming and Streaming",
+      "settings": {
+        "title": "For Play",
+        "subheading": "Ergonomic chairs for reducing back pain during play.",
+        "collection": "",
+        "products": [
+          "xallking-x3pro-premium-ergonomic-gaming-chair",
+          "xallking-x5pro-ergonomic-gaming-chair",
+          "xallking-x5c-ergonomic-gaming-chair",
+          "xallking-x5f-ergonomic-gaming-chair",
+          "sihoo-a3-doro-c300-ergonomic-office-chair",
+          "sihoo-doro-c500-ergonomic-office-chair",
+          "sihoo-doro-s100-ergonomic-office-chair",
+          "sihoo-doro-s300-ergonomic-office-chair"
+        ],
+        "show_variation_dropdown": true,
+        "products_to_show": 8,
+        "section_background": "#ffffff",
+        "heading_color": "#a70d11",
+        "subheading_color": "#FFFFFF",
+        "card_background": "#ffffff",
+        "product_title_color": "#1a1a1a",
+        "variant_label_color": "#666666",
+        "variant_value_color": "#1a1a1a",
+        "price_current_color": "#393236",
+        "price_compare_color": "#888888",
+        "sale_badge_background": "#C35E60",
+        "sale_badge_text": "#ffffff",
+        "button_background": "#a70d11",
+        "button_text": "#ffffff",
+        "button_disabled_background": "#cccccc",
+        "button_disabled_text": "#333333",
+        "dropdown_background": "#ffffff",
+        "dropdown_text": "#1a1a1a",
+        "dropdown_border_color": "#dddddd"
+      }
+    },
+    "product_static_grid_WnNbG7": {
+      "type": "sihoo-spring-grid",
+      "custom_css": [
+        "section.product-grid {background-color: #f5f8f8;}",
+        ".product-grid .swiper-slide {width: 288px !important;}",
+        ".product-grid-item-title {min-height: 36px; margin-bottom: 10px;}",
+        "select.product-grid-item-variation-dropdown {background-color: #fff; border: 0px; height: 35px; border-radius: 4px;}",
+        ".product-grid h2 {color: #c35e60;}",
+        ".product-grid-item {background-color: #ffffff; border: 1px solid #ffffff; border-radius: 12px;}",
+        ".product-grid-item-rating {display: none;}",
+        ".product-grid-item-button-link {background-color: #c35e60; color: #fff;}"
+      ],
+      "name": "I Sit for 10+ Hours a Day",
+      "settings": {
+        "title": "Upgrade Your Chair and Save More",
+        "subheading": "Compare premium ergonomic chairs and enjoy bigger savings this Spring Sale.",
+        "collection": "",
+        "products": [
+          "sihoo-m18-ergonomics-task-office-chair",
+          "sihoo-m59as-ergonomic-office-chair",
+          "sihoo-m59-ergonomic-office-chair",
+          "sihoo-m57-ergonomic-office-chair"
+        ],
+        "show_variation_dropdown": true,
+        "products_to_show": 8,
+        "section_background": "#063f27",
+        "heading_color": "#ffffff",
+        "subheading_color": "#090909",
+        "card_background": "#ffffff",
+        "product_title_color": "#1a1a1a",
+        "variant_label_color": "#666666",
+        "variant_value_color": "#1a1a1a",
+        "price_current_color": "#393236",
+        "price_compare_color": "#888888",
+        "sale_badge_background": "#C35E60",
+        "sale_badge_text": "#ffffff",
+        "button_background": "#991011",
+        "button_text": "#ffffff",
+        "button_disabled_background": "#cccccc",
+        "button_disabled_text": "#666666",
+        "dropdown_background": "#ffffff",
+        "dropdown_text": "#1a1a1a",
+        "dropdown_border_color": "#dddddd"
+      }
+    },
+    "custom_liquid_DApKEV": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "show_space": false,
+        "code": "<section class=\"sihoo-why-section\">\n  <div class=\"sihoo-why-inner\">\n\n    <p class=\"sihoo-why-eyebrow\">\n      Office Chair Buying Guide\n    </p>\n\n    <h2 class=\"sihoo-why-heading\">\n      5 Tips for Choosing Your Office Chair This Spring Sale\n    </h2>\n\n    <p class=\"sihoo-why-description\">\n      Choosing the wrong chair can leave you with discomfort, limited\n      adjustability, and a purchase you regret. Here are 5 practical tips to\n      help you find an ergonomic office chair that suits both your needs and\n      your budget this Spring Sale.\n    </p>\n\n    <div class=\"sihoo-why-grid\">\n\n      <div class=\"sihoo-why-card\">\n        <div class=\"sihoo-why-icon\">\n          <svg viewBox=\"0 0 96 96\" aria-hidden=\"true\">\n            <path d=\"M20 28h56\"/>\n            <circle cx=\"38\" cy=\"28\" r=\"7\"/>\n            <path d=\"M20 48h56\"/>\n            <circle cx=\"60\" cy=\"48\" r=\"7\"/>\n            <path d=\"M20 68h56\"/>\n            <circle cx=\"44\" cy=\"68\" r=\"7\"/>\n          </svg>\n        </div>\n\n        <h3>Tip 1</h3>\n\n        <p>\n          Match the chair’s adjustments to how you work, study, game, or relax.\n        </p>\n      </div>\n\n      <div class=\"sihoo-why-card\">\n        <div class=\"sihoo-why-icon\">\n          <svg viewBox=\"0 0 96 96\" aria-hidden=\"true\">\n            <circle cx=\"48\" cy=\"30\" r=\"14\"/>\n            <path d=\"M22 76c3-18 13-28 26-28s23 10 26 28\"/>\n          </svg>\n        </div>\n\n        <h3>Tip 2</h3>\n\n        <p>\n          Choose ergonomic features that adapt to your body shape, height, and\n          preferred sitting position.\n        </p>\n      </div>\n\n      <div class=\"sihoo-why-card\">\n        <div class=\"sihoo-why-icon\">\n          <svg viewBox=\"0 0 96 96\" aria-hidden=\"true\">\n            <path d=\"M31 20h22c5 0 8 3 8 8v25H29V22c0-1 1-2 2-2z\"/>\n            <path d=\"M27 53h39c5 0 8 4 8 9v4H24v-5c0-5 1-8 3-8z\"/>\n            <path d=\"M48 66v14\"/>\n            <path d=\"M30 84h36\"/>\n            <path d=\"M67 25c7 6 10 13 10 22\"/>\n            <path d=\"M69 20l-2 5 6 2\"/>\n          </svg>\n        </div>\n\n        <h3>Tip 3</h3>\n\n        <p>\n          Pick a chair that allows you to recline, stretch, and shift positions\n          naturally throughout the day.\n        </p>\n      </div>\n\n      <div class=\"sihoo-why-card\">\n        <div class=\"sihoo-why-icon\">\n          <svg viewBox=\"0 0 96 96\" aria-hidden=\"true\">\n            <path d=\"M48 12l28 15v22c0 18-11 29-28 36-17-7-28-18-28-36V27l28-15z\"/>\n            <path d=\"M34 48l10 10 19-23\"/>\n          </svg>\n        </div>\n\n        <h3>Tip 4</h3>\n\n        <p>\n          Look for BIFMA and SGS safety and durability certifications for\n          greater confidence in the chair’s quality.\n        </p>\n      </div>\n\n      <div class=\"sihoo-why-card\">\n        <div class=\"sihoo-why-icon\">\n          <svg viewBox=\"0 0 96 96\" aria-hidden=\"true\">\n            <rect x=\"15\" y=\"25\" width=\"66\" height=\"48\" rx=\"7\"/>\n            <path d=\"M15 39h66\"/>\n            <path d=\"M61 49h20v15H61c-5 0-8-3-8-7.5S56 49 61 49z\"/>\n            <circle cx=\"63\" cy=\"56.5\" r=\"2\"/>\n            <path d=\"M25 25v-7h42v7\"/>\n          </svg>\n        </div>\n\n        <h3>Tip 5</h3>\n\n        <p>\n          Set a realistic budget and compare comfort, adjustments, warranty,\n          and long-term value, not just the lowest price.\n        </p>\n      </div>\n\n    </div>\n  </div>\n</section>\n\n<style>\n  .sihoo-why-section {\n    width: 100%;\n    padding: 90px 20px 100px;\n    background: #f5f8f8;\n    font-family: Inter, Arial, sans-serif;\n  }\n\n  .sihoo-why-inner {\n    max-width: 1280px;\n    margin: 0 auto;\n    text-align: center;\n  }\n\n  .sihoo-why-eyebrow {\n    margin: 0 0 10px;\n    color: #393236 !important;\n    font-family: Inter, Arial, sans-serif;\n    font-size: 14px;\n    font-weight: 800;\n    line-height: 18px;\n    letter-spacing: 1.8px;\n    text-transform: uppercase;\n  }\n\n  .sihoo-why-heading {\n    margin: 0 0 18px;\n    color: #c35e60 !important;\n    font-family: Inter, Arial, sans-serif;\n    font-size: 37px;\n    font-weight: 700;\n    line-height: 44px;\n  }\n\n  .sihoo-why-description {\n    max-width: 780px;\n    margin: 0 auto 38px;\n    color: #393236 !important;\n    font-family: Inter, Arial, sans-serif;\n    font-size: 16px;\n    font-weight: 500;\n    line-height: 25px;\n  }\n\n  .sihoo-why-grid {\n    display: grid;\n    grid-template-columns: repeat(5, minmax(0, 1fr));\n    gap: 18px;\n  }\n\n  .sihoo-why-card {\n    min-height: 310px;\n    padding: 30px 20px 28px;\n    border: 1px solid rgba(195, 94, 96, 0.18);\n    border-radius: 10px;\n    background: #ffffff;\n    box-shadow: 0 6px 18px rgba(57, 50, 54, 0.07);\n    transition:\n      border-color 0.2s ease,\n      box-shadow 0.2s ease,\n      transform 0.2s ease;\n  }\n\n  .sihoo-why-card:hover {\n    border-color: rgba(195, 94, 96, 0.45);\n    box-shadow: 0 10px 26px rgba(57, 50, 54, 0.1);\n    transform: translateY(-3px);\n  }\n\n  .sihoo-why-icon {\n    width: 82px;\n    height: 82px;\n    margin: 0 auto 18px;\n    color: #c35e60;\n  }\n\n  .sihoo-why-icon svg {\n    width: 100%;\n    height: 100%;\n    fill: none;\n    stroke: currentColor;\n    stroke-width: 3.4;\n    stroke-linecap: round;\n    stroke-linejoin: round;\n  }\n\n  .sihoo-why-card h3 {\n    margin: 0 0 14px;\n    color: #c35e60 !important;\n    font-family: Inter, Arial, sans-serif;\n    font-size: 21px;\n    font-weight: 700;\n    line-height: 27px;\n  }\n\n  .sihoo-why-card p {\n    margin: 0;\n    color: #393236 !important;\n    font-family: Inter, Arial, sans-serif;\n    font-size: 15px;\n    font-weight: 500;\n    line-height: 23px;\n  }\n\n  @media screen and (max-width: 1100px) {\n    .sihoo-why-grid {\n      grid-template-columns: repeat(3, 1fr);\n    }\n  }\n\n  @media screen and (max-width: 767px) {\n    .sihoo-why-grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  @media screen and (max-width: 549px) {\n    .sihoo-why-section {\n      padding: 64px 16px 72px;\n    }\n\n    .sihoo-why-heading {\n      font-size: 30px;\n      line-height: 36px;\n    }\n\n    .sihoo-why-description {\n      margin-bottom: 30px;\n      font-size: 15px;\n      line-height: 23px;\n    }\n\n    .sihoo-why-grid {\n      grid-template-columns: 1fr;\n    }\n\n    .sihoo-why-card {\n      min-height: auto;\n      padding: 30px 24px 28px;\n    }\n\n    .sihoo-why-icon {\n      width: 76px;\n      height: 76px;\n    }\n  }\n</style>"
+      }
+    },
+    "comparison_b6NLRF": {
+      "type": "comparison",
+      "blocks": {
+        "feature_RngJnB": {
+          "type": "feature",
+          "settings": {
+            "text": "Real Ergonomic Design"
+          }
+        },
+        "feature_WpV6Gb": {
+          "type": "feature",
+          "settings": {
+            "text": "Comfortable & Breathable"
+          }
+        },
+        "feature_yX89n6": {
+          "type": "feature",
+          "settings": {
+            "text": "Reliable Support"
+          }
+        },
+        "feature_4zcF7D": {
+          "type": "feature",
+          "settings": {
+            "text": "Built to Last"
+          }
+        },
+        "row_yqrJcF": {
+          "type": "row",
+          "settings": {
+            "feature_name": "Lumbar support",
+            "s_type": "check",
+            "s_text": "Adjustable or dynamic support, depending on the model",
+            "o_type": "cross",
+            "o_text": "Often fixed or basic",
+            "o_text_is_red": true
+          }
+        },
+        "row_pM6wB9": {
+          "type": "row",
+          "settings": {
+            "feature_name": "Armrest adjustability",
+            "s_type": "check",
+            "s_text": "Multi-directional adjustments available on selected models",
+            "o_type": "cross",
+            "o_text": "Usually fixed or limited",
+            "o_text_is_red": false
+          }
+        },
+        "row_BqhtbK": {
+          "type": "row",
+          "settings": {
+            "feature_name": "Breathable design",
+            "s_type": "check",
+            "s_text": "Mesh options designed for airflow and longer sitting sessions",
+            "o_type": "check",
+            "o_text": "Materials and breathability vary",
+            "o_text_is_red": false
+          }
+        },
+        "row_xAJgwt": {
+          "type": "row",
+          "settings": {
+            "feature_name": "Afterpay",
+            "s_type": "check",
+            "s_text": "Four interest-free fortnightly payments available",
+            "o_type": "check",
+            "o_text": "Availability varies",
+            "o_text_is_red": false
+          }
+        },
+        "row_iWLkrG": {
+          "type": "row",
+          "settings": {
+            "feature_name": "Warranty",
+            "s_type": "check",
+            "s_text": "Up to a 3-year warranty, depending on the model",
+            "o_type": "cross",
+            "o_text": "Often one year or less",
+            "o_text_is_red": false
+          }
+        },
+        "row_TFgLXe": {
+          "type": "row",
+          "settings": {
+            "feature_name": "Range of options",
+            "s_type": "check",
+            "s_text": "Multiple models for work, study, gaming, and everyday comfort",
+            "o_type": "cross",
+            "o_text": "Usually limited ergonomic options",
+            "o_text_is_red": false
+          }
+        }
+      },
+      "block_order": [
+        "feature_RngJnB",
+        "feature_WpV6Gb",
+        "feature_yX89n6",
+        "feature_4zcF7D",
+        "row_yqrJcF",
+        "row_pM6wB9",
+        "row_BqhtbK",
+        "row_xAJgwt",
+        "row_iWLkrG",
+        "row_TFgLXe"
+      ],
+      "custom_css": [
+        ".comparison-table {padding: 40px 0; background: #393236;}",
+        ".sihoo-cell {background: #393236 !important; color: #fff !important;}",
+        "h2,p,span,.checkmark,.red-text,.feature-name,.cross,.comparison-table th:last-child {color: #fff !important;}",
+        ".feature-checkmark {color: #fff; border-color: #fff;}",
+        ".cta-button {border: 2px solid #c35e60 !important; border-radius: 25px; background: #c35e60 !important; color: #fff !important;}",
+        ".cta-button:hover {background: #fff !important; color: #393236 !important; border-color: #fff !important;}"
+      ],
+      "name": "Comparison Table",
+      "settings": {
+        "enable_section": true,
+        "title": "Sihoo vs Others",
+        "intro": "Why Sihoo offers the ultimate Spring workspace upgrade",
+        "sahoo_label": "Sihoo",
+        "other_label": "Typical Office Chair",
+        "show_cta": true,
+        "cta_text": "Compare Our Sihoo Chairs",
+        "cta_url": "shopify://pages/compare-products"
+      }
+    },
+    "socials_carousel_cDntmW": {
+      "type": "socials-carousel",
+      "blocks": {
+        "testimonial_PabcHm": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/kol-4.webp",
+            "rating": 5,
+            "description": "Love them, they give the perfect luxury touch to any room",
+            "customer_name": "@Nicholas"
+          }
+        },
+        "testimonial_6VrYAY": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/m18-kol-working.webp",
+            "rating": 5,
+            "description": "The lumbar support and adjustable features have greatly alleviated my lower back and neck pain.",
+            "customer_name": "@yingzhuchen"
+          }
+        },
+        "testimonial_7Py8gU": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/kol-5_24322724-5976-428d-8c4e-1e0b564f990e.webp",
+            "rating": 5,
+            "description": "So far no neck or back pain this week or last.",
+            "customer_name": "@Shay"
+          }
+        },
+        "testimonial_6ifxap": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/S100-kol-gaming_1d061a67-2db3-4699-a4a2-434fcd8e9101.webp",
+            "rating": 5,
+            "description": "It is a game-changer for anyone who spends long hours at a desk.",
+            "customer_name": "@Jay L."
+          }
+        },
+        "testimonial_xMYTpk": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/working-kol-s300.webp",
+            "rating": 5,
+            "description": "The mesh factor (vs other chair materials) makes a world of difference.",
+            "customer_name": "@ERIC B."
+          }
+        },
+        "testimonial_tjBHej": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/kol-4.webp",
+            "rating": 5,
+            "description": "Love them, they give the perfect luxury touch to any room",
+            "customer_name": "@Nicholas"
+          }
+        },
+        "testimonial_QqgraQ": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/m18-kol-working.webp",
+            "rating": 5,
+            "description": "The lumbar support and adjustable features have greatly alleviated my lower back and neck pain.",
+            "customer_name": "@yingzhuchen"
+          }
+        },
+        "testimonial_AJacze": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/kol-5_24322724-5976-428d-8c4e-1e0b564f990e.webp",
+            "rating": 5,
+            "description": "So far no neck or back pain this week or last.",
+            "customer_name": "@Shay"
+          }
+        },
+        "testimonial_NGHfFr": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/S100-kol-gaming_1d061a67-2db3-4699-a4a2-434fcd8e9101.webp",
+            "rating": 5,
+            "description": "It is a game-changer for anyone who spends long hours at a desk.",
+            "customer_name": "@Jay L."
+          }
+        },
+        "testimonial_RLPArz": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify://shop_images/working-kol-s300.webp",
+            "rating": 5,
+            "description": "The mesh factor (vs other chair materials) makes a world of difference.",
+            "customer_name": "@ERIC B."
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_PabcHm",
+        "testimonial_6VrYAY",
+        "testimonial_7Py8gU",
+        "testimonial_6ifxap",
+        "testimonial_xMYTpk",
+        "testimonial_tjBHej",
+        "testimonial_QqgraQ",
+        "testimonial_AJacze",
+        "testimonial_NGHfFr",
+        "testimonial_RLPArz"
+      ],
+      "custom_css": [
+        "h2 {color: #c35e60; padding-top: 20px;}"
+      ],
+      "name": "Socials Carousel",
+      "settings": {
+        "title": "What Our Australian Customers are Saying",
+        "background_color": "#F5F8F8",
+        "title_color": "#ffffff",
+        "accent_color": "#86c123",
+        "enable_loop": true,
+        "enable_autoplay": true,
+        "autoplay_delay": 3
+      }
+    },
+    "logo_carousel_gEEiGw": {
+      "type": "logo-carousel",
+      "blocks": {
+        "logo_p67fFU": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/cnet.avif",
+            "logo_alt": "",
+            "logo_link": ""
+          }
+        },
+        "logo_QcFKPV": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/techradar.webp",
+            "logo_alt": "",
+            "logo_link": ""
+          }
+        },
+        "logo_kpQ4Kf": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/gadgeteer.webp",
+            "logo_alt": "",
+            "logo_link": ""
+          }
+        },
+        "logo_n3e3PC": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/forbes.webp",
+            "logo_alt": "",
+            "logo_link": ""
+          }
+        },
+        "logo_gE4fDi": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/cnet.avif",
+            "logo_alt": "",
+            "logo_link": ""
+          }
+        },
+        "logo_UWmLKx": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/techradar.webp",
+            "logo_alt": "",
+            "logo_link": ""
+          }
+        },
+        "logo_Yj7t6G": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/gadgeteer.webp",
+            "logo_alt": "",
+            "logo_link": ""
+          }
+        },
+        "logo_7eB4Xp": {
+          "type": "logo",
+          "settings": {
+            "logo_image": "shopify://shop_images/forbes.webp",
+            "logo_alt": "",
+            "logo_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_p67fFU",
+        "logo_QcFKPV",
+        "logo_kpQ4Kf",
+        "logo_n3e3PC",
+        "logo_gE4fDi",
+        "logo_UWmLKx",
+        "logo_Yj7t6G",
+        "logo_7eB4Xp"
+      ],
+      "custom_css": [
+        ".logo-carousel {background-color: #f5f8f8;}",
+        ".logo-card {border: 0px solid #f5f8f8;}",
+        ".logo-carousel-container::after {right: 0px; background: linear-gradient(270deg, #f5f8f8 0%, rgba(254, 233, 193, 0) 100%);}",
+        ".logo-carousel-container::before {left: 0px; background: linear-gradient(90deg, #f5f8f8 0%, rgba(254, 233, 193, 0) 100%);}",
+        ".comparison-table-wrapper table tbody td.sihoo-cell {color: #fff !important;}"
+      ],
+      "name": "Logo Carousel",
+      "settings": {
+        "section_title": "",
+        "autoplay_speed": 3500,
+        "pause_on_hover": true,
+        "logo_height": 100,
+        "border_color": "#F5F8F8",
+        "border_width": 5
+      }
+    },
+    "17607140439b4c8907": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_agg_section_9GnRFX": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-agg-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "reviews_to_display": "",
+            "default_tab": "automatic",
+            "only_photos": false,
+            "hide_thumbnails": false,
+            "product_handle": "",
+            "aggregated": true,
+            "data-limit": 4,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_agg_section_9GnRFX"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "show_space": true
+      }
+    },
+    "faq_p3HKPi": {
+      "type": "faq",
+      "blocks": {
+        "faq_item_YWtTgU": {
+          "type": "faq_item",
+          "settings": {
+            "question": "FAQ: 🍂 Autumn Home Office Refresh Refresh Sale Is Now Live- Upgrade Your Workspace, Sitewide",
+            "answer": "<p><strong>Q1: When does the 🍂 Autumn Home Office Refresh Sale 2026 take place?</strong><br/><br/>The Sihoo Australia <strong>🍂 Autumn Home Office Refresh Sale </strong>2026 runs from 11  to 27 April only.</p><p><strong>Q2: Who can join the  🍂 Autumn Home Office Refresh Sale 2026?</strong><br/><br/>All customers shopping on the <strong>Sihoo official website</strong> during the event period can enjoy the discounts.</p><p><strong>Q3: Do I need a coupon code?</strong><br/><br/>No! Discount is applied upon checkout. </p><p><strong>Q4: Which products are included in the sale?</strong><br/><br/>All Sihoo's  ergonomic chairs are part of the <strong> 🍂 Autumn Home Office Refresh Sale</strong>. Check each product page for the discounted price tag.</p><p><strong>Q5: Can I combine this offer with other promotions or coupons?</strong><br/><br/>No. The <strong> 🍂 Autumn Home Office Refresh Sale </strong>discount cannot be combined with other offers or discount codes.</p><p><strong>Q6: Do I still enjoy return and warranty services?</strong><br/><br/>Yes! All Australia <strong> 🍂 Autumn Home Office Refresh Sale</strong>  purchases include <strong>30-day free returns & exchanges</strong> and a <strong>3-year warranty</strong>, just like regular orders.</p><p><strong>Q7: Where is this offer available?</strong><br/><br/>The <strong> 🍂 Autumn Home Office Refresh Sale</strong> is <strong>available to customers in Australia</strong> only.</p>"
+          }
+        },
+        "faq_item_yDnDPA": {
+          "type": "faq_item",
+          "settings": {
+            "question": "🌟 Spend and Save Sitewide — Autumn Comfort Starts Here",
+            "answer": "<h2>🍂 Autumn Home Office Refresh Is Now Live — Upgrade Your Workspace, Sitewide</h2><p>The Autumn Home Office Refresh has officially begun, giving you a limited time opportunity to upgrade comfort, focus, and wellbeing across the entire SIHOO range.</p><p>As the cooler months settle in, now is the perfect time to refresh your workspace with comfort that supports the way you work every day. Designed for long hours, hybrid routines, and productive workdays, SIHOO ergonomic chairs help reduce fatigue, improve posture, and keep you comfortable from morning through to late afternoon.</p><p>Whether you are upgrading to the advanced support of the Doro Series, choosing the dependable performance of the M Series, or refining your home office for better daily comfort, this is your opportunity to create a workspace built for the season ahead.</p><p>For a limited time, enjoy Spend and Save sitewide, delivering exceptional value on ergonomic chairs designed to support healthier posture, better focus, and long lasting productivity.</p><p>A refreshed workspace can change the way you work every day.</p><h2>🌟 Spend and Save Sitewide — Comfort Built for Better Workdays</h2><p>The Autumn Home Office Refresh makes it easier than ever to experience SIHOO’s ergonomic innovation at outstanding value.</p><p>Every SIHOO chair is engineered to support comfort, health, and productivity throughout long work sessions:</p><p>Adaptive lumbar support that encourages healthier posture<br/><br/>Smooth reclining systems that move naturally with your body<br/><br/>Breathable mesh backrests for lasting all day comfort<br/><br/>Precision adjustability designed to suit different workspaces and body types</p><p>Whether you are working from home, returning to the office, or balancing both, SIHOO chairs are designed to support your workflow and wellbeing every day.</p><p>Better posture supports better focus.<br/><br/>Better comfort supports better productivity.<br/><br/>The Autumn Home Office Refresh delivers both.</p><h2>⏰ Limited Time Only — Autumn Home Office Refresh Won’t Last</h2><p>Demand is rising, and stock is moving quickly.</p><p>With limited availability across our most popular ergonomic models, the Autumn Home Office Refresh offers a short opportunity to secure premium comfort before stock runs low.</p><p>Once the event ends, Spend and Save sitewide will disappear, along with your chance to upgrade your workspace at this value.</p><p>Do not head into the cooler months with the same old discomfort.</p><p>Upgrade comfort.<br/><br/>Support your posture.<br/><br/>Refresh the way you work.</p><p><strong>Shop the Autumn Home Office Refresh now before it is gone.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_YWtTgU",
+        "faq_item_yDnDPA"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".faq-section {padding: 0px 0 108px;}"
+      ],
+      "name": "FAQ Accordion",
+      "settings": {
+        "title": "At Sihoo, we believe that comfort is the foundation of productivity",
+        "background_color": "",
+        "text_color": ""
+      }
+    },
+    "custom_liquid_rcwNRH": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "show_space": false,
+        "code": "<section class=\"sihoo-faq-section\">\n  <div class=\"sihoo-faq-inner\">\n\n    <div class=\"sihoo-faq-header\">\n      <p class=\"sihoo-faq-eyebrow\">Spring Sale FAQs</p>\n\n      <h2>Everything You Need to Know Before You Upgrade</h2>\n    </div>\n\n    <div class=\"sihoo-faq-accordion\">\n\n      <div class=\"sihoo-faq-item\">\n        <button\n          class=\"sihoo-faq-question\"\n          type=\"button\"\n          aria-expanded=\"false\"\n        >\n          <span>Why is the Spring Sale a good time to upgrade my chair?</span>\n        </button>\n\n        <div class=\"sihoo-faq-answer\">\n          <div>\n            <p>\n              Spring is a natural time to refresh your workspace and improve\n              the way you sit. During the Sihoo Spring Sale, you can save on selected ergonomic chairs, making it easier to upgrade\n              your comfort and support for less.\n            </p>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"sihoo-faq-item\">\n        <button\n          class=\"sihoo-faq-question\"\n          type=\"button\"\n          aria-expanded=\"false\"\n        >\n          <span>Which Sihoo chair is right for my spring setup?</span>\n        </button>\n\n        <div class=\"sihoo-faq-answer\">\n          <div>\n            <p>\n              It depends on how you use your chair. Consider the Doro S100 for\n              premium ergonomic support, the M57 for versatile everyday\n              comfort, or the M18 for a practical work and study setup. The\n              Doro C300 Pro V2 is currently sold out, but pre-orders are\n              available through our customer service team.\n            </p>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"sihoo-faq-item\">\n        <button\n          class=\"sihoo-faq-question\"\n          type=\"button\"\n          aria-expanded=\"false\"\n        >\n          <span>How can I create a more comfortable spring workspace?</span>\n        </button>\n\n        <div class=\"sihoo-faq-answer\">\n          <div>\n            <p>\n              Start with an ergonomic chair that suits your body, routine, and\n              preferred sitting position. Then adjust your desk height, monitor\n              position, and accessories to help maintain a comfortable and\n              supported posture throughout the day.\n            </p>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"sihoo-faq-item\">\n        <button\n          class=\"sihoo-faq-question\"\n          type=\"button\"\n          aria-expanded=\"false\"\n        >\n          <span>Can I use Afterpay during the Spring Sale?</span>\n        </button>\n\n        <div class=\"sihoo-faq-answer\">\n          <div>\n            <p>\n              Yes. Afterpay is available on eligible purchases, allowing you to\n              split your Sihoo chair purchase into four interest-free\n              fortnightly payments. Afterpay eligibility, fees, and terms\n              apply.\n            </p>\n          </div>\n        </div>\n      </div>\n\n    </div>\n  </div>\n</section>\n\n<style>\n  .sihoo-faq-section {\n    width: 100%;\n    margin: 0 !important;\n    padding: 72px 20px;\n    box-sizing: border-box;\n    background: #f5f8f8;\n    font-family: inherit;\n  }\n\n  .sihoo-faq-inner {\n    width: 100%;\n    max-width: 980px;\n    margin: 0 auto;\n  }\n\n  .sihoo-faq-header {\n    max-width: 760px;\n    margin: 0 auto 34px;\n    text-align: center;\n  }\n\n  .sihoo-faq-eyebrow {\n    margin: 0 0 12px !important;\n    padding: 0 !important;\n    color: #393236 !important;\n    font-size: 13px;\n    font-weight: 700;\n    line-height: 1;\n    letter-spacing: 0.16em;\n    text-transform: uppercase;\n  }\n\n  .sihoo-faq-header h2 {\n    margin: 0 !important;\n    padding: 0 !important;\n    color: #c35e60 !important;\n    font-size: clamp(30px, 3vw, 48px);\n    font-weight: 700;\n    line-height: 1.08;\n    letter-spacing: -0.03em;\n  }\n\n  .sihoo-faq-accordion {\n    width: 100%;\n    overflow: hidden;\n    border: 1px solid rgba(195, 94, 96, 0.2);\n    border-radius: 18px;\n    background: #ffffff;\n    box-shadow: 0 18px 45px rgba(57, 50, 54, 0.08);\n  }\n\n  .sihoo-faq-item {\n    border-bottom: 1px solid rgba(195, 94, 96, 0.16);\n    background: #ffffff;\n  }\n\n  .sihoo-faq-item:last-child {\n    border-bottom: 0;\n  }\n\n  .sihoo-faq-question {\n    position: relative;\n    width: 100%;\n    margin: 0;\n    padding: 22px 62px 22px 26px;\n    box-sizing: border-box;\n    border: 0;\n    outline: none;\n    appearance: none;\n    -webkit-appearance: none;\n    background: #ffffff;\n    color: #393236 !important;\n    font: inherit;\n    font-size: 16px;\n    font-weight: 700;\n    line-height: 1.45;\n    text-align: left;\n    cursor: pointer;\n    transition:\n      background-color 0.2s ease,\n      color 0.2s ease;\n  }\n\n  .sihoo-faq-question:hover,\n  .sihoo-faq-question:focus-visible {\n    outline: none;\n    background: rgba(195, 94, 96, 0.06);\n    color: #c35e60 !important;\n  }\n\n  .sihoo-faq-question::after {\n    content: \"+\";\n    position: absolute;\n    top: 50%;\n    right: 26px;\n    color: #c35e60;\n    font-size: 28px;\n    font-weight: 400;\n    line-height: 1;\n    transform: translateY(-50%);\n  }\n\n  .sihoo-faq-item.is-open .sihoo-faq-question {\n    background: rgba(195, 94, 96, 0.06);\n    color: #c35e60 !important;\n  }\n\n  .sihoo-faq-item.is-open .sihoo-faq-question::after {\n    content: \"−\";\n  }\n\n  .sihoo-faq-answer {\n    max-height: 0;\n    overflow: hidden;\n    background: #ffffff;\n    transition: max-height 0.32s ease;\n  }\n\n  .sihoo-faq-answer > div {\n    padding: 0 26px 24px;\n  }\n\n  .sihoo-faq-answer p {\n    margin: 0 !important;\n    padding: 0 !important;\n    color: #393236 !important;\n    font-size: 15px;\n    font-weight: 400;\n    line-height: 1.65;\n  }\n\n  @media screen and (max-width: 768px) {\n    .sihoo-faq-section {\n      padding: 54px 16px;\n    }\n\n    .sihoo-faq-header {\n      margin-bottom: 24px;\n    }\n\n    .sihoo-faq-header h2 {\n      font-size: 27px;\n      line-height: 1.12;\n    }\n\n    .sihoo-faq-accordion {\n      border-radius: 14px;\n    }\n\n    .sihoo-faq-question {\n      padding: 18px 50px 18px 18px;\n      font-size: 15px;\n    }\n\n    .sihoo-faq-question::after {\n      right: 18px;\n      font-size: 24px;\n    }\n\n    .sihoo-faq-answer > div {\n      padding: 0 18px 20px;\n    }\n\n    .sihoo-faq-answer p {\n      font-size: 14px;\n      line-height: 1.6;\n    }\n  }\n\n  @media screen and (max-width: 420px) {\n    .sihoo-faq-section {\n      padding: 48px 14px;\n    }\n\n    .sihoo-faq-header h2 {\n      font-size: 24px;\n    }\n\n    .sihoo-faq-question {\n      padding-right: 44px;\n      font-size: 14px;\n    }\n  }\n</style>\n\n<script>\n  (function () {\n    const scripts = document.querySelectorAll(\"script\");\n    const currentScript = scripts[scripts.length - 1];\n    const section = currentScript?.previousElementSibling?.matches(\"style\")\n      ? currentScript.previousElementSibling.previousElementSibling\n      : document.querySelector(\".sihoo-faq-section\");\n\n    if (!section) return;\n\n    const accordion = section.querySelector(\".sihoo-faq-accordion\");\n\n    if (!accordion) return;\n\n    const items = accordion.querySelectorAll(\".sihoo-faq-item\");\n\n    items.forEach(function (item) {\n      const button = item.querySelector(\".sihoo-faq-question\");\n      const answer = item.querySelector(\".sihoo-faq-answer\");\n\n      if (!button || !answer) return;\n\n      button.addEventListener(\"click\", function () {\n        const isOpen = item.classList.contains(\"is-open\");\n\n        items.forEach(function (otherItem) {\n          const otherButton =\n            otherItem.querySelector(\".sihoo-faq-question\");\n          const otherAnswer =\n            otherItem.querySelector(\".sihoo-faq-answer\");\n\n          otherItem.classList.remove(\"is-open\");\n\n          if (otherButton) {\n            otherButton.setAttribute(\"aria-expanded\", \"false\");\n          }\n\n          if (otherAnswer) {\n            otherAnswer.style.maxHeight = null;\n          }\n        });\n\n        if (!isOpen) {\n          item.classList.add(\"is-open\");\n          button.setAttribute(\"aria-expanded\", \"true\");\n          answer.style.maxHeight = answer.scrollHeight + \"px\";\n        }\n      });\n    });\n  })();\n</script>"
+      }
+    },
+    "sihoo_cta_KqiyWB": {
+      "type": "sihoo-cta",
+      "name": "Promo CTA Banner",
+      "settings": {
+        "heading": "Spring Sale ends 21 September",
+        "subtext": "<p>A better chair can change the way your whole day feels. Explore current offers across selected Sihoo ergonomic chairs.<br/></p>",
+        "background_image": "shopify://shop_images/spring_sale_landing_page.png",
+        "primary_button_label": "Get the best deals",
+        "primary_button_link": "#featured-products",
+        "secondary_button_label": "Compare All Chair Models",
+        "secondary_button_link": "https://sihoo.com.au/pages/compare-products",
+        "background_color": "#393236",
+        "highlight_color": "#C35E60",
+        "heading_color": "#ffffff",
+        "subtext_color": "#f5e8d2",
+        "accent_color": "#e33b2f",
+        "primary_button_background": "#C35E60",
+        "primary_button_text": "#ffffff",
+        "secondary_button_text": "#f5e8d2"
+      }
+    },
+    "rich_text_NDpFkE": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fNdHkP": {
+          "type": "heading",
+          "settings": {
+            "title": "Same Chairs. Same EOFY Prices. While Stock Holds.",
+            "use_h1": false
+          }
+        },
+        "text_VCkLa7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Stock at these prices is limited. When a model sells out, it goes back to full price. Free shipping across Australia on every order. Most metro areas receive delivery within 3–5 business days.</p>",
+            "enlarge_text": true
+          }
+        },
+        "button_REDT6B": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Doro Series",
+            "button_link": "https://sihoo.com.au/collections/doro-series",
+            "button_style": "primary"
+          }
+        },
+        "button_dmhrw9": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop All EOFY Extended Deals",
+            "button_link": "https://sihoo.com.au/collections/all",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fNdHkP",
+        "text_VCkLa7",
+        "button_REDT6B",
+        "button_dmhrw9"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-weight: 600;}",
+        "p {font-weight: 400; color: #000; font-size: 1rem;}",
+        "a {background-color: #2a2b2a; color: #fff; border-radius: 8px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_KnGGGU",
+    "icon_with_text_t7bTj9",
+    "custom_liquid_rHd8ci",
+    "custom_liquid_RQNpaR",
+    "custom_liquid_BEHz8t",
+    "rich_text_NHHdcD",
+    "custom_liquid_iLY6gf",
+    "product_static_grid_Lz9QfW",
+    "custom_liquid_JxTgLH",
+    "sihoo_countdown_j3EWT6",
+    "product_static_grid_xA49G6",
+    "product_static_grid_CEhgWp",
+    "product_static_grid_DGiW3X",
+    "product_static_grid_e34N4a",
+    "product_static_grid_WnNbG7",
+    "custom_liquid_DApKEV",
+    "comparison_b6NLRF",
+    "socials_carousel_cDntmW",
+    "logo_carousel_gEEiGw",
+    "17607140439b4c8907",
+    "faq_p3HKPi",
+    "custom_liquid_rcwNRH",
+    "sihoo_cta_KqiyWB",
+    "rich_text_NDpFkE"
+  ]
+}

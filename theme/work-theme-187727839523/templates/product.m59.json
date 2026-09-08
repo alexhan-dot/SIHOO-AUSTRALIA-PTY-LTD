@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -103,10 +94,15 @@
             "app_block_custom_max_width": 800,
             "append_parent_target_selector": ""
           }
+        },
+        "sihoo_reviews": {
+          "type": "sihoo-reviews",
+          "settings": {}
         }
       },
       "block_order": [
         "title",
+        "sihoo_reviews",
         "price",
         "vendor",
         "divider",
@@ -605,7 +601,7 @@
       }
     },
     "1726717200db5c7e8b": {
-      "type": "apps",
+      "type": "sihoo-product-reviews",
       "blocks": {
         "loox_reviews_loox_dynamic_section_fyKK8z": {
           "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
@@ -614,10 +610,10 @@
             "default_tab": "automatic",
             "only_photos": false,
             "aggregated": false,
-            "limit": 20,
+            "limit": 10,
             "hide_thumbnails": false,
-            "maxwidth": 1080,
-            "is_sample": true
+            "maxwidth": 1160,
+            "is_sample": false
           }
         }
       },
@@ -625,8 +621,8 @@
         "loox_reviews_loox_dynamic_section_fyKK8z"
       ],
       "settings": {
-        "full_width": false,
-        "show_space": true
+        "heading": "Customer reviews",
+        "show_source_note": false
       }
     },
     "related-products": {
@@ -637,17 +633,45 @@
         "grid": 3
       }
     },
-    "review_source_note": {
-      "type": "review-source-note",
+    "sihoo_highlights": {
+      "type": "sihoo-product-highlights",
+      "blocks": {
+        "benefit_0": {
+          "type": "feature",
+          "settings": {
+            "heading": "Flip-up armrests",
+            "text": "Lift the arms when you need more space. Check your desk clearance for a suitable fit."
+          }
+        },
+        "benefit_1": {
+          "type": "feature",
+          "settings": {
+            "heading": "Split back support",
+            "text": "Separate upper-back and lumbar sections support different areas of your back."
+          }
+        },
+        "benefit_2": {
+          "type": "feature",
+          "settings": {
+            "heading": "Mesh seat and back",
+            "text": "Mesh seating surfaces allow airflow around your body."
+          }
+        }
+      },
+      "block_order": [
+        "benefit_0",
+        "benefit_1",
+        "benefit_2"
+      ],
       "settings": {
-        "heading": "About these reviews",
-        "text_alignment": "center",
-        "height": "small"
+        "heading": "Find your fit",
+        "fit_note": "Check your desk clearance and chosen chair options before ordering. Contact our Australian team if you need help choosing."
       }
     }
   },
   "order": [
     "main",
+    "sihoo_highlights",
     "custom_multi_column_WWXqNc",
     "17724749789aac8752",
     "product_promo_strip_tqEm4C",
@@ -661,7 +685,6 @@
     "product_testimonial_hzeXfp",
     "custom_multi_column_q8TVXy",
     "slideshow_TgHBPy",
-    "review_source_note",
     "1726717200db5c7e8b",
     "related-products"
   ]

@@ -1,9 +1,11 @@
 # 변경 리포트 3 — P3 전 상품 콘텐츠 이관 + FAQ·블로그 연결 + 수정 요청 반영 (2026-09-08 저녁)
 
+> 2026-09-09 후속 정정: 아래는 9월 8일 저녁의 콘텐츠 이관 기록이다. DRAFT 테마 게시 여부와 공유 상품 데이터의 공개 여부는 다르다. 상품 설명/SEO/메타필드/관련 글 연결은 기존 LIVE가 참조하면 이미 고객에게 노출된다. 리뷰·비교표·정책 안내 후속 수정 및 실제 검수 범위는 [9월 9일 수정 리포트](sihoo-au-fix-report-2026-09-09.md)를 따른다.
+
 > 모바일 3줄 요약
 > 1. 활성 상품 27개 전부 새 템플릿(Doro/M/X/Desk)용 콘텐츠 이관 완료. 프리뷰 27개 모두 Liquid 오류 0.
 > 2. 요청 반영: 리뷰 출처 문구 삭제, Doro 5년 워런티(데스크 10년), 익일 발송·1–3일, C300 V2 영상 Shopify 호스팅(21:9·560px)·아이콘 복구, FAQ 12문항 추가, 블로그↔상품 양방향 연결.
-> 3. 아직 라이브 아님. 드래프트 테마 프리뷰 링크는 §4. 게시(P5)는 Alex 확인 후.
+> 3. 새 가족 템플릿은 아직 LIVE에 게시/배정하지 않음. 공유 데이터 변경은 LIVE에도 영향을 줄 수 있음. 드래프트 테마 프리뷰 링크는 §4. 게시(P5)는 Alex 확인 후.
 
 ---
 
@@ -94,7 +96,7 @@
 | X3 Pro | https://sihoo.com.au/products/xallking-x3pro-premium-ergonomic-gaming-chair?view=x&preview_theme_id=187727839523 |
 | Desker 화이트 | https://sihoo.com.au/products/desker-height-adjustable-dual-motor-sit-stand-desk?view=desk&preview_theme_id=187727839523 |
 | Carbon Fibre 블랙 | https://sihoo.com.au/products/desker-motion-desk-control-switch-black?view=desk&preview_theme_id=187727839523 |
-| B100 (DRAFT, Admin 로그인 필요) | https://sihoo.com.au/products/sihoo-b100-ergonomic-office-chair?view=m&preview_theme_id=187727839523 |
+| B100 (DRAFT) | [관리자에서 Preview 키 발급](https://admin.shopify.com/store/sihoo/products/10362607862051) 후 [비공개 DRAFT 프리뷰 절차](sihoo-au-fix-report-2026-09-09.md#b100-비공개-프리뷰-절차) 사용. 일반 상품 URL은 비공개 상품을 열지 못함 |
 | FAQ 페이지 | https://sihoo.com.au/pages/faq?preview_theme_id=187727839523 |
 | 블로그 초안 | Admin → Blog posts → "Four Australian warehouses…" (비공개, 관련 상품 8개 연결) |
 

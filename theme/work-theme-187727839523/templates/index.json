@@ -1,0 +1,995 @@
+{
+  "sections": {
+    "16359276425da8ce46": {
+      "type": "sihoo-spring-banner",
+      "blocks": {
+        "image_AxmqXx": {
+          "type": "image",
+          "name": "Campaign Banner",
+          "settings": {
+            "image": "shopify://shop_images/Homepage_Banner_2000_x_800_V2_be29f2ea-62f4-46ae-a2bf-3b5a99790e1b.jpg",
+            "mobile_image": "shopify://shop_images/Homepage_Web_Banner_751_x_1362.jpg",
+            "slide_link": "shopify://pages/spring-sale-ergonomic-office-chairs",
+            "subheading": "",
+            "title": "",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        },
+        "image_haRgaM": {
+          "type": "image",
+          "name": "S100 New Product",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/homepage-banner-3.webp",
+            "mobile_image": "shopify://shop_images/Homepage_Web_Banner_751_x_1350.webp",
+            "slide_link": "shopify://products/sihoo-doro-s100-ergonomic-office-chair",
+            "subheading": "",
+            "title": "",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "Shop this",
+            "button_url_1": "shopify://products/sihoo-doro-c500-ergonomic-office-chair",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "16359276425da8ce46-1": {
+          "type": "image",
+          "name": "M59AS New Product",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/homepage-banner-2.webp",
+            "mobile_image": "shopify://shop_images/Homepage_Web_Banner_751_x_1351.webp",
+            "slide_link": "shopify://products/sihoo-m59as-ergonomic-office-chair",
+            "subheading": "",
+            "title": "",
+            "heading_max_width": 11,
+            "title_size": 60,
+            "title_size_mobile": 36,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "Shop this",
+            "button_url_1": "shopify://products/sihoo-doro-s300-ergonomic-office-chair",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "image_AxmqXx",
+        "image_haRgaM",
+        "16359276425da8ce46-1"
+      ],
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 700,
+        "height_mobile": 260,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "full image-overlay--bg-shadow",
+        "transition": "fade",
+        "navigation": "dots",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "accessibility_info": "SIHOO Spring Sale: Bloom where you sit. Shop the Spring Sale."
+      }
+    },
+    "icon_with_text_rLzaDJ": {
+      "type": "icon-with-text",
+      "blocks": {
+        "icon_item_imFGRP": {
+          "type": "icon_item",
+          "settings": {
+            "icon_type": "pin",
+            "title": "3-Year Warranty",
+            "description": "for peace of mind"
+          }
+        },
+        "icon_item_jzkYyQ": {
+          "type": "icon_item",
+          "settings": {
+            "icon_type": "box",
+            "title": "30-Day Free Returns",
+            "description": "for worry-free shopping"
+          }
+        },
+        "icon_item_gjyWDY": {
+          "type": "icon_item",
+          "settings": {
+            "icon_type": "checkmark",
+            "title": "Fast shipping",
+            "description": "within 5-7 days AU wide"
+          }
+        },
+        "icon_item_yR64qr": {
+          "type": "icon_item",
+          "settings": {
+            "icon_type": "award",
+            "title": "Prompt Chat",
+            "description": "24/7 online customer service"
+          }
+        }
+      },
+      "block_order": [
+        "icon_item_imFGRP",
+        "icon_item_jzkYyQ",
+        "icon_item_gjyWDY",
+        "icon_item_yR64qr"
+      ],
+      "name": "Icon with Text",
+      "settings": {
+        "title": "",
+        "background_color": "#4c4948",
+        "text_color": "#ffffff"
+      }
+    },
+    "rich_text_UbykMV": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_8M7eT9": {
+          "type": "heading",
+          "settings": {
+            "title": "Ergonomic Chairs in Australia for Work, Gaming and Everyday Comfort",
+            "use_h1": true
+          }
+        },
+        "text_ajjerB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>SIHOO Australia designs ergonomic chairs built for modern workspaces, home offices, gaming setups, and long sitting hours. Explore ergonomic office chairs and ergonomic gaming chairs designed with adjustable lumbar support, breathable mesh materials, and posture-focused comfort for everyday use.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_8M7eT9",
+        "text_ajjerB"
+      ],
+      "custom_css": [
+        "h1 {font-weight: bold !important;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "ergonomic_chairs_hero_gzD39j": {
+      "type": "ergonomic-chairs-hero",
+      "name": "Ergonomic Chairs Hero",
+      "settings": {
+        "heading": "Ergonomic Chairs (M57, M18 and M90)",
+        "subheading": "Sit beyond the limits of the ordinary.",
+        "primary_button_text": "Shop Now",
+        "primary_button_link": "https://sihoo.com.au/collections/ergonomic-chairs",
+        "secondary_button_text": "",
+        "secondary_button_link": "",
+        "background_image": "shopify://shop_images/Ergonomic_Chairs_M57_M18_and_M90_1920_x_692.jpg",
+        "background_position": "center center",
+        "background_position_mobile": "center center",
+        "margin_top": 12,
+        "margin_bottom": 12,
+        "background_color_top": "#ffffff",
+        "background_color_bottom": "#f5f0e0",
+        "heading_color": "#1a1a1a",
+        "text_color": "#666666",
+        "button_color": "#c20000",
+        "button_hover_color": "#c20000",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "ergonomic_chairs_hero_cwYELA": {
+      "type": "ergonomic-chairs-hero",
+      "name": "Ergonomic Chairs Hero",
+      "settings": {
+        "heading": "Sihoo M57 Ergonomic Office Chair",
+        "subheading": "Comfort that feels naturally yours.",
+        "primary_button_text": "Shop Now",
+        "primary_button_link": "shopify://products/sihoo-m57-ergonomic-office-chair",
+        "secondary_button_text": "",
+        "secondary_button_link": "",
+        "background_image": "shopify://shop_images/Hero_2__M57_1920_x_692.jpg",
+        "background_position": "center center",
+        "background_position_mobile": "center center",
+        "margin_top": 0,
+        "margin_bottom": 12,
+        "background_color_top": "#ffffff",
+        "background_color_bottom": "#f5f0e0",
+        "heading_color": "#1a1a1a",
+        "text_color": "#666666",
+        "button_color": "#c20000",
+        "button_hover_color": "#c20000",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "section_promo_ExV7qY": {
+      "type": "section-promo",
+      "blocks": {
+        "promo_HVRYaD": {
+          "type": "promo",
+          "settings": {
+            "heading": "DORO -S300",
+            "subheading": "Born from sheer weightlessness.",
+            "button_label": "Show Now",
+            "button_url": "shopify://products/sihoo-doro-s300-ergonomic-office-chair",
+            "background_image": "shopify://shop_images/Box_1__S300_942_x_668.jpg",
+            "background_position": "center center",
+            "background_position_mobile": "center center",
+            "background_color": "#000000",
+            "heading_color": "#ffffff",
+            "text_color": "#f5f5f7"
+          }
+        },
+        "promo_My4Xwa": {
+          "type": "promo",
+          "settings": {
+            "heading": "DORO-C500",
+            "subheading": "Anti-gravity comfort from another dimension.",
+            "button_label": "Show Now",
+            "button_url": "shopify://products/sihoo-doro-c500-ergonomic-office-chair",
+            "background_image": "shopify://shop_images/Box_2__C500_942_x_669.jpg",
+            "background_position": "center center",
+            "background_position_mobile": "center center",
+            "background_color": "#000000",
+            "heading_color": "#171717",
+            "text_color": "#171717"
+          }
+        }
+      },
+      "block_order": [
+        "promo_HVRYaD",
+        "promo_My4Xwa"
+      ],
+      "name": "Promo Tiles",
+      "settings": {
+        "column_gap": 12,
+        "margin_top": 0,
+        "margin_bottom": 12,
+        "margin_left": 12,
+        "margin_right": 12,
+        "button_color": "#c20000",
+        "button_hover_color": "#a01830",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "section_promo_HmUpVz": {
+      "type": "section-promo",
+      "blocks": {
+        "promo_fkpQNN": {
+          "type": "promo",
+          "settings": {
+            "heading": "XALLKING X5 Pro",
+            "subheading": "Every move closer to victory.",
+            "button_label": "Show Now",
+            "button_url": "shopify://products/xallking-x5pro-ergonomic-gaming-chair",
+            "background_image": "shopify://shop_images/Box_3__Xallking_X5_Pro_942_x_670.jpg",
+            "background_position": "center center",
+            "background_position_mobile": "center center",
+            "background_color": "#000000",
+            "heading_color": "#171717",
+            "text_color": "#171717"
+          }
+        },
+        "promo_Lm34GU": {
+          "type": "promo",
+          "settings": {
+            "heading": "XALLKING X3 Pro",
+            "subheading": "For the pursuit of greatness.",
+            "button_label": "Show Now",
+            "button_url": "shopify://products/xallking-x3pro-premium-ergonomic-gaming-chair",
+            "background_image": "shopify://shop_images/Box_4__Xallking_X3_Pro_942_x_669.jpg",
+            "background_position": "center center",
+            "background_position_mobile": "center center",
+            "background_color": "#000000",
+            "heading_color": "#ffffff",
+            "text_color": "#f5f5f7"
+          }
+        }
+      },
+      "block_order": [
+        "promo_fkpQNN",
+        "promo_Lm34GU"
+      ],
+      "name": "Promo Tiles",
+      "settings": {
+        "column_gap": 12,
+        "margin_top": 0,
+        "margin_bottom": 12,
+        "margin_left": 12,
+        "margin_right": 12,
+        "button_color": "#c20000",
+        "button_hover_color": "#a01830",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "product_grid_QLBrT9": {
+      "type": "product-grid",
+      "disabled": true,
+      "custom_css": [],
+      "name": "Product Grid",
+      "settings": {
+        "title": "Our Best-Selling Ergonomic Chairs",
+        "collection": "sihoo-ergonomic-office-chair",
+        "products_to_show": 6
+      }
+    },
+    "rich_text_H7tLNG": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Qgkiza": {
+          "type": "heading",
+          "settings": {
+            "title": "Trusted by Thousands of Australians",
+            "use_h1": false
+          }
+        },
+        "text_rachi8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At SIHOO Australia, we provide ergonomic chairs designed to support posture, comfort, and productivity for daily work and long sitting hours. Thousands of Australians, from remote workers and gamers to professional office teams, use our ergonomic chairs to create more comfortable workspaces at home and in the office.</p><p>Our ergonomic chairs are designed with adjustable support features, breathable materials, and modern ergonomic systems that help improve comfort throughout the workday.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Qgkiza",
+        "text_rachi8"
+      ],
+      "custom_css": [
+        "h2 {font-weight: 600;}",
+        "p {font-weight: 400; color: #000; font-size: 1.333rem;}",
+        "a {background-color: #2a2b2a; color: #fff; border-radius: 8px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "background_video_8T9QpF": {
+      "type": "background-video",
+      "blocks": {
+        "button_NRWpPw": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn Doro C Series",
+            "button_link": "https://sihoo.com.au/collections/doro-series",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "button_NRWpPw"
+      ],
+      "custom_css": [
+        "a {border-radius: 8px; background-color: #fff;}"
+      ],
+      "name": "Background video",
+      "settings": {
+        "video_shopify": "shopify://files/videos/583c8001781941cab9ca65eb3a4e10a4 (2)_4111b4bc-d54a-4e76-8b3d-81db13c6c0f3.mp4",
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_description": "",
+        "text_alignment": "bottom center",
+        "height_desktop": 800,
+        "height_mobile": 240,
+        "full_width": true,
+        "overlay_style": "shadow"
+      }
+    },
+    "rich_text_kyk7VM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_YnbnBt": {
+          "type": "heading",
+          "settings": {
+            "title": "Perfect Support in Any Workplace",
+            "use_h1": false
+          }
+        },
+        "text_f74tKe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Transform your workspace with ergonomic chairs designed for comfort, posture support, and productivity. Whether for home offices, professional workspaces, or gaming setups, SIHOO ergonomic chairs are built to support long sitting hours with adjustable ergonomic features and breathable materials.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_GBKnXH": {
+          "type": "button",
+          "settings": {
+            "button_label": "Doro Series",
+            "button_link": "https://sihoo.com.au/collections/doro-series",
+            "button_style": "primary"
+          }
+        },
+        "button_YBFNQr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Ergonomic Chairs",
+            "button_link": "https://sihoo.com.au/collections/ergonomic-chairs",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_YnbnBt",
+        "text_f74tKe",
+        "button_GBKnXH",
+        "button_YBFNQr"
+      ],
+      "custom_css": [
+        "h2 {font-weight: 600;}",
+        "p {font-weight: 400; color: #000; font-size: 1.333rem;}",
+        "a {background-color: #2a2b2a; color: #fff; border-radius: 8px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "slideshow_W383YK": {
+      "type": "slideshow",
+      "blocks": {
+        "image_egBTxY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/s300_a35330d8-e8bb-4391-898e-3a6e98cdb37c.webp",
+            "mobile_image": "shopify://shop_images/sihoo-slideshow-1.webp",
+            "slide_link": "",
+            "subheading": "",
+            "title": "CREATING",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        },
+        "image_8PCVzp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/s100-working.webp",
+            "mobile_image": "shopify://shop_images/sihoo-slideshow-4.webp",
+            "slide_link": "",
+            "subheading": "",
+            "title": "WORKING",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        },
+        "image_EUwjXy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/gaming.webp",
+            "mobile_image": "shopify://shop_images/sihoo-slideshow-3.webp",
+            "slide_link": "",
+            "subheading": "",
+            "title": "GAMING",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        },
+        "image_b4pFTt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/relaxing.webp",
+            "mobile_image": "shopify://shop_images/sihoo-slideshow-2.webp",
+            "slide_link": "",
+            "subheading": "",
+            "title": "RELAXING",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_egBTxY",
+        "image_8PCVzp",
+        "image_EUwjXy",
+        "image_b4pFTt"
+      ],
+      "custom_css": [
+        "h2 {font-weight: 700; font-size: 4.209rem !important;}"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 800,
+        "height_mobile": 460,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "transition": "fade",
+        "navigation": "none",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "accessibility_info": ""
+      }
+    },
+    "icon_with_text_THR9kU": {
+      "type": "icon-with-text",
+      "blocks": {
+        "icon_item_WUWFbt": {
+          "type": "icon_item",
+          "settings": {
+            "icon_type": "pin",
+            "title": "85+ Countries",
+            "description": "Delivery to 85+ Countries"
+          }
+        },
+        "icon_item_DWU9nX": {
+          "type": "icon_item",
+          "settings": {
+            "icon_type": "box",
+            "title": "2.6 Million+",
+            "description": "Over 2.6 Million Products Sold Worldwide Per Year"
+          }
+        },
+        "icon_item_JRtnfm": {
+          "type": "icon_item",
+          "settings": {
+            "icon_type": "checkmark",
+            "title": "14 Years Innovation",
+            "description": "Pioneering in ergonomic tech for 14 Years"
+          }
+        },
+        "icon_item_XKg9a3": {
+          "type": "icon_item",
+          "settings": {
+            "icon_type": "award",
+            "title": "2000+ Media",
+            "description": "Products are featured in over 2,000 media outlets annually"
+          }
+        }
+      },
+      "block_order": [
+        "icon_item_WUWFbt",
+        "icon_item_DWU9nX",
+        "icon_item_JRtnfm",
+        "icon_item_XKg9a3"
+      ],
+      "custom_css": [
+        "section.icons-with-text {border-bottom: 1px solid #e1e1e1;}"
+      ],
+      "name": "Icon with Text",
+      "settings": {
+        "title": "World's Leading Ergonomic Chair Brand in Australia",
+        "background_color": "#f4f4f4",
+        "text_color": "#000000"
+      }
+    },
+    "image_with_text_taRQJU": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_NkFMtL": {
+          "type": "heading",
+          "settings": {
+            "title": "Our cutting-edge technology and innovation have been featured in major media outlets",
+            "use_h1": false
+          }
+        },
+        "text_LeFBcb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>More than 2,000 media outlets worldwide have reviewed and praised SIHOO for its ergonomic technology, modern design, and practical comfort. Our ergonomic chairs are designed for long-term daily use with features such as adjustable lumbar support, reclining systems, breathable mesh backrests, and flexible ergonomic adjustments for home offices and professional workspaces across Australia.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_RdLxCe": {
+          "type": "button",
+          "settings": {
+            "button_label": "Media Recognition & Approval",
+            "button_link": "shopify://pages/media-shoutouts-approval",
+            "button_style": "primary",
+            "open_loox_modal": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_NkFMtL",
+        "text_LeFBcb",
+        "button_RdLxCe"
+      ],
+      "custom_css": [
+        ".use-color-scheme {background-color: #f4f4f4;}",
+        "@media (min-width: 768px) {.use-color-scheme {padding: 54px; }}",
+        ".feature-text-paired {margin: 0px;}",
+        ".feature-text-paired h2 {font-size: 1.777rem; font-weight: 600;}",
+        ".container {max-width: 1200px;}",
+        ".flexible-layout,.fixed-layout {flex-wrap: nowrap; gap: 40px;}",
+        ".feature-text-paired h2 {font-size: 1.777rem; font-weight: 600;}",
+        ".flexible-layout .column,.fixed-layout .column {padding-left: 0px;}",
+        "a {border-radius: 8px;}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/Media_Recognition_and_Approval.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "1",
+        "background_color": ""
+      }
+    },
+    "image_with_text_zjt87n": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_VArR4q": {
+          "type": "heading",
+          "settings": {
+            "title": "513K Happy Customers Worldwide with a Sihoo Chair",
+            "use_h1": false
+          }
+        },
+        "text_3mC6cw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>So far,over 513,000 users have shared their love for Sihoo by leaving reviews on trusted platforms such as Forbes, GameRant, Creative Bloq and many more.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_MTTNEY": {
+          "type": "button",
+          "settings": {
+            "button_label": "Checkout Their Reviews",
+            "button_link": "",
+            "button_style": "primary",
+            "open_loox_modal": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_VArR4q",
+        "text_3mC6cw",
+        "button_MTTNEY"
+      ],
+      "custom_css": [
+        ".use-color-scheme {background-color: #f4f4f4; padding: 0px 0px 80px;}",
+        ".container {max-width: 1200px;}",
+        ".feature-text-paired {margin: 0px;}",
+        ".feature-text-paired h2 {font-size: 1.777rem; font-weight: 600;}",
+        ".flexible-layout,.fixed-layout {flex-wrap: nowrap; gap: 40px;}",
+        ".feature-text-paired h2 {font-size: 1.777rem; font-weight: 600;}",
+        ".flexible-layout .column,.fixed-layout .column {padding-left: 0px;}",
+        "a,button {border-radius: 8px;}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/reivews-img.webp",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "1",
+        "background_color": ""
+      }
+    },
+    "rich_text_KGKypz": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wxHx9i": {
+          "type": "heading",
+          "settings": {
+            "title": "Sihoo is crafting and creating ergonomic furniture...",
+            "use_h1": false
+          }
+        },
+        "text_VdNyaW": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"/pages/about-us-1\" title=\"About Us\">Learn Our Story</a></p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_wxHx9i",
+        "text_VdNyaW"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-weight: 600; line-height: 1.6em;}",
+        "p {font-weight: 400; color: #000;}",
+        ".fully-spaced-row--medium.cc-animate-init.cc-animate-in {margin-bottom: 0px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "info_grid_Ba79nJ": {
+      "type": "info-grid",
+      "blocks": {
+        "info_item_Lw4bEU": {
+          "type": "info_item",
+          "settings": {
+            "media_type": "video",
+            "image": "shopify://shop_images/home-office-design-ideas.jpg",
+            "video": "shopify://files/videos/28cc7322a45b406da4462c121441c06b.HD-720p-4.5Mbps-25235623.mp4",
+            "title": "Ergonomic Design",
+            "description": "<p>Our ergonomic chairs are designed to support posture, reduce strain, and improve comfort during long sitting hours. Adjustable ergonomic features help create better support for daily work, study, gaming, and office use.</p>"
+          }
+        },
+        "info_item_rjFnKH": {
+          "type": "info_item",
+          "settings": {
+            "media_type": "video",
+            "image": "shopify://shop_images/relaxing.webp",
+            "video": "shopify://files/videos/3b35a4fb57254f5798bd2ebf407ec0e8.HD-1080p-2.5Mbps-25244392.mp4",
+            "title": "Modern Aesthetic",
+            "description": "<p>SIHOO ergonomic chairs combine modern design with practical ergonomic support for home offices and professional workspaces. Clean designs, breathable materials, and adjustable comfort features help create a workspace that feels comfortable and functional.</p>"
+          }
+        },
+        "info_item_BzitC9": {
+          "type": "info_item",
+          "settings": {
+            "media_type": "video",
+            "image": "shopify://shop_images/built-to-last.webp",
+            "video": "shopify://files/videos/ad237ae8408b43a48238864a5faaabb8.HD-720p-4.5Mbps-25235604.mp4",
+            "title": "Built to Last",
+            "description": "<p>Crafted with top-quality, eco-friendly materials designed for durability, reliability, and long-term comfort in home offices and professional workspaces.</p>"
+          }
+        },
+        "info_item_W8DRCb": {
+          "type": "info_item",
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/map.webp",
+            "title": "Global Trust",
+            "description": "<p>Trusted in more than 100 countries, with over 1.6 million ergonomic chairs sold annually since 2023 for home offices, professional workspaces, and long daily sitting hours.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "info_item_Lw4bEU",
+        "info_item_rjFnKH",
+        "info_item_BzitC9",
+        "info_item_W8DRCb"
+      ],
+      "disabled": true,
+      "name": "Info Grid",
+      "settings": {
+        "title": ""
+      }
+    },
+    "blog_grid_AKFtNi": {
+      "type": "blog-grid",
+      "name": "Blog Grid",
+      "settings": {
+        "title": "Ergonomic Guide",
+        "view_all_url": "shopify://pages/blogs",
+        "blog": "all-about-ergonomic-chair",
+        "post_limit": 4
+      }
+    },
+    "faq_PWGiDc": {
+      "type": "faq",
+      "blocks": {
+        "faq_item_aC4Ddy": {
+          "type": "faq_item",
+          "settings": {
+            "question": "About Sihoo",
+            "answer": "<p>Founded with a mission to redefine the modern workspace, Sihoo is a leading global brand specializing in ergonomic furniture solutions. We design and manufacture cutting-edge ergonomic chairs and height-adjustable desks that empower professionals, gamers, designers, students, and remote workers to perform at their best—without compromising on health or comfort. With a customer-first philosophy and a dedication to research and innovation, Sihoo products are crafted with precision, tested for durability, and recognized for their outstanding ergonomic design. Our products are trusted by millions of users in over 100 countries, and we are proud recipients of international accolades including the German Design Award. Whether you're building a home office or outfitting a corporate workspace, Sihoo is your partner in creating a healthier, more productive environment.<br/><br/></p>"
+          }
+        },
+        "faq_item_HzkkzH": {
+          "type": "faq_item",
+          "settings": {
+            "question": "About Sihoo Chairs",
+            "answer": "<p>Sihoo ergonomic chairs are designed with your body in mind. Our chair lineup—including the award-winning Sihoo Doro Series—features state-of-the-art ergonomic innovations like dynamic lumbar support, anti-gravity recline mechanisms, 6D coordinated armrests, seat depth adjustment, and breathable mesh backrests. Each Sihoo chair is developed using advanced biomechanics research to support natural posture, reduce spinal pressure, and enhance comfort during long hours of sitting. Whether you're working, studying, gaming, or relaxing, Sihoo chairs adapt to your movements and provide full-body support from head to toe. With sleek aesthetics, durable materials, and customizable adjustments, Sihoo chairs are ideal for anyone seeking a balance of design, function, and wellness. Transform your workspace and invest in your health with a Sihoo chair that supports every move you make.<br/><br/></p>"
+          }
+        },
+        "faq_item_mWjTHY": {
+          "type": "faq_item",
+          "settings": {
+            "question": "About Sihoo Desks",
+            "answer": "<p>Sihoo standing desks are engineered for flexibility, stability, and long-term performance. With a strong focus on ergonomic design, our electric height-adjustable desks help you alternate between sitting and standing seamlessly, promoting better posture, reduced fatigue, and improved circulation throughout your workday. Every Sihoo desk features a solid steel frame, whisper-quiet motor technology, and intelligent features like anti-collision detection and memory height settings. Whether you're a student, a remote worker, or a professional in a dynamic office environment, Sihoo desks support your workflow with customizable height ranges and intuitive controls. From sleek modern designs to robust performance, our desks are built to accommodate every task and every body. Experience the freedom to move, focus, and thrive with a Sihoo ergonomic desk that fits your lifestyle.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_aC4Ddy",
+        "faq_item_HzkkzH",
+        "faq_item_mWjTHY"
+      ],
+      "disabled": true,
+      "name": "FAQ Accordion",
+      "settings": {
+        "title": "At Sihoo, we believe that comfort is the foundation of productivity",
+        "background_color": "",
+        "text_color": ""
+      }
+    },
+    "image_grid_bbDD99": {
+      "type": "image-grid",
+      "blocks": {
+        "image_item_pbJPpJ": {
+          "type": "image_item",
+          "settings": {
+            "image": "shopify://shop_images/sihoo-a3-doro-c100-ergonomic-office-chair-710935.jpg",
+            "title": "Ergonomic Chairs for Professionals",
+            "link": "shopify://collections/doro-series"
+          }
+        },
+        "image_item_AR8pKV": {
+          "type": "image_item",
+          "settings": {
+            "image": "shopify://shop_images/M57-Ergonomic-Chair-2.png",
+            "title": "Ergonomic Chairs for Study and Productivity",
+            "link": "shopify://collections/ergonomic-chairs"
+          }
+        },
+        "image_item_keL8jq": {
+          "type": "image_item",
+          "settings": {
+            "image": "shopify://shop_images/Why-The-Sihoo-Series-M18-4.png",
+            "title": "Ergonomic Chairs for Remote Workers",
+            "link": "shopify://collections/office-chairs"
+          }
+        },
+        "image_item_N7PtX9": {
+          "type": "image_item",
+          "settings": {
+            "image": "shopify://shop_images/gaming-setup-for-pc.jpg",
+            "title": "Ergonomic Chairs for Gaming",
+            "link": "shopify://collections/ergonomic-gaming-chair"
+          }
+        }
+      },
+      "block_order": [
+        "image_item_pbJPpJ",
+        "image_item_AR8pKV",
+        "image_item_keL8jq",
+        "image_item_N7PtX9"
+      ],
+      "name": "Image Grid",
+      "settings": {
+        "title": "Choose the Right Ergonomic Chair in Australia"
+      }
+    },
+    "faq_7H4Rqw": {
+      "type": "faq",
+      "blocks": {
+        "faq_item_K7KfW9": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What makes an ergonomic chair different from a standard office chair?",
+            "answer": "<p>Ergonomic chairs are designed with adjustable support features that help improve posture, comfort, and sitting position during long work hours. Standard office chairs typically offer less adjustability and limited ergonomic support.</p>"
+          }
+        },
+        "faq_item_rMLJh4": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Why are ergonomic chairs important for daily work?",
+            "answer": "<p>Ergonomic chairs help support the back, neck, and shoulders during extended sitting periods. Proper ergonomic support can improve comfort and help reduce strain caused by long hours at a desk.</p>"
+          }
+        },
+        "faq_item_WYizLF": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Are ergonomic chairs suitable for home offices?",
+            "answer": "<p>Yes. Ergonomic chairs are commonly used in home office setups because they provide adjustable comfort and posture support for remote work, study, and daily desk use.</p>"
+          }
+        },
+        "faq_item_9jV6TR": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How can ergonomic chairs improve workplace comfort?",
+            "answer": "<p>Features such as lumbar support, breathable mesh materials, reclining systems, and adjustable armrests help create a more comfortable sitting experience throughout the workday.</p>"
+          }
+        },
+        "faq_item_MyQpPh": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Are mesh ergonomic chairs good for Australian conditions?",
+            "answer": "<p>Mesh ergonomic chairs are popular in Australia because they provide better airflow and breathability, helping improve comfort during long sitting hours and warmer conditions.</p>"
+          }
+        },
+        "faq_item_ExJBfP": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What should I consider when choosing an ergonomic chair in Australia?",
+            "answer": "<p>When choosing an ergonomic chair, consider factors such as lumbar support, adjustability, breathable materials, workspace size, and daily sitting duration to find a chair that suits your comfort needs.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_K7KfW9",
+        "faq_item_rMLJh4",
+        "faq_item_WYizLF",
+        "faq_item_9jV6TR",
+        "faq_item_MyQpPh",
+        "faq_item_ExJBfP"
+      ],
+      "name": "FAQ Accordion",
+      "settings": {
+        "title": "Frequently Asked Questions About Ergonomic Chairs",
+        "background_color": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "16359276425da8ce46",
+    "icon_with_text_rLzaDJ",
+    "rich_text_UbykMV",
+    "ergonomic_chairs_hero_gzD39j",
+    "ergonomic_chairs_hero_cwYELA",
+    "section_promo_ExV7qY",
+    "section_promo_HmUpVz",
+    "product_grid_QLBrT9",
+    "rich_text_H7tLNG",
+    "background_video_8T9QpF",
+    "rich_text_kyk7VM",
+    "slideshow_W383YK",
+    "icon_with_text_THR9kU",
+    "image_with_text_taRQJU",
+    "image_with_text_zjt87n",
+    "rich_text_KGKypz",
+    "info_grid_Ba79nJ",
+    "blog_grid_AKFtNi",
+    "faq_PWGiDc",
+    "image_grid_bbDD99",
+    "faq_7H4Rqw"
+  ]
+}

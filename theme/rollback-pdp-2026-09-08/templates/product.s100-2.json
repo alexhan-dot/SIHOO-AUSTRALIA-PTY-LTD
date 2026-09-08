@@ -1,0 +1,797 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "divider": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "variant-picker": {
+          "type": "variant-picker",
+          "settings": {
+            "show_single": false,
+            "selector_style": "listed",
+            "dynamic_availability": "show",
+            "enable_size_chart": false,
+            "size_chart_label": "Size guide",
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "buy-buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_backorder_text": false,
+            "show_pickup_availability": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "show_in_tab": true,
+            "open_tab": false,
+            "icon": "",
+            "show_in_quickbuy": false
+          }
+        },
+        "accordion_EE6Ypn": {
+          "type": "accordion",
+          "settings": {
+            "title": "Features",
+            "icon": "",
+            "content": "<p><strong>Dual lumbar support</strong>: Adapts to your movements for all-day lower back comfort.</p><p><strong>Adjustable backrest and headrest</strong>: Raise the headrest for neck support while relaxing, or lower it to focus on back and lumbar support while working—your choice for personalized comfort.</p><p><strong>Recline up to 135°</strong>: Lean back with lumbar support that moves with you for easy relaxation.</p><p><strong>Pressure-free seat</strong>: Waterfall-shaped cushion relieves pressure on your thighs and hips.</p><p><strong>Breathable mesh</strong>: Stay cool and comfortable with durable, airflow-promoting mesh.</p><p><strong>Easy seat depth adjustment</strong>: Adjust the seat depth to fit your height for better leg support.</p><p><strong>4D armrests</strong>: Move them up, down, back, forth, and sideways for personalized comfort.</p><p><strong>Built to last</strong>: Certified by BIFMA and SGS for safety and quality.</p>",
+            "page": "",
+            "custom_liquid": "",
+            "open": false,
+            "show_in_quickbuy": false
+          }
+        },
+        "accordion_PQkFaa": {
+          "type": "accordion",
+          "settings": {
+            "title": "Benefits",
+            "icon": "",
+            "content": "<ul><li>Supports up to 330 lbs</li><li>Endorsed by Gamerant, GeekDad, Gamezebo, Designboom and more than 800 media approvals</li><li>4D adjustable armrests and multi-adjustable headrest for personalized comfort</li><li>Dual dynamic lumbar support for consistent lower back support</li><li>Breathable mesh and waterfall-shaped seat for ergonomic comfort</li><li>Reclines up to 135° for effortless relaxation</li><li>Certified by BIFMA and SGS for quality and durability</li></ul>",
+            "page": "",
+            "custom_liquid": "",
+            "open": false,
+            "show_in_quickbuy": false
+          }
+        },
+        "spec_compare_specification_table_hCWNKg": {
+          "type": "shopify://apps/specs-compare/blocks/specification-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
+          "disabled": true,
+          "settings": {
+            "product": "sihoo-vito-m90-ergonomic-office-chair",
+            "show_group_names": true,
+            "maximum_rows": 10,
+            "app_block_margin": 0,
+            "app_block_max_width": "full_width",
+            "app_block_custom_max_width": 800,
+            "append_parent_target_selector": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "vendor",
+        "divider",
+        "variant-picker",
+        "buy-buttons",
+        "description",
+        "accordion_EE6Ypn",
+        "accordion_PQkFaa",
+        "spec_compare_specification_table_hCWNKg"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".product-title {margin: 0 0 0.5em; font-size: 2.18rem; font-weight: 500; line-height: 1.2em;}",
+        ".price__default {font-size: 1.4rem !important; color: #000;}",
+        "span.with-icon__beside {color: #000;}",
+        ".product-description {margin-top: 0px;}",
+        ".product-form .label {color: #000;}",
+        ".media-gallery {border-right: 1px solid #e1e1e1;}",
+        "ul.slider__grid {justify-content: center; align-items: center;}",
+        ".product-description {color: #000;}"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "select_first_variant": true,
+        "show_location_underneath": false,
+        "inventory_transfers_enable": true,
+        "enable_sticky_columns": false,
+        "enable_sticky_atc": true,
+        "sticky_atc_position": "center",
+        "sticky_atc_mobile": false,
+        "sticky_atc_behavior": "add_to_cart",
+        "sticky_atc_button_style": "secondary",
+        "gallery_size": "large",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "show_alt_text": false,
+        "alt_text_icon": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_media_grouping": false,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe"
+      }
+    },
+    "custom_main_product_Jkb3zp": {
+      "type": "custom-main-product",
+      "blocks": {
+        "reviews_9XzTh4": {
+          "type": "reviews",
+          "settings": {
+            "label": "reviews",
+            "show_when_empty": false,
+            "empty_label": "reviews"
+          }
+        },
+        "title_C6PnGM": {
+          "type": "title",
+          "settings": {}
+        },
+        "price_bhNgMH": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "show_save_badge": true,
+            "save_label": "Save",
+            "show_low_stock_badge": true,
+            "low_stock_label": "LOW ON STOCK"
+          }
+        },
+        "demand_alert_NFxemk": {
+          "type": "demand-alert",
+          "settings": {
+            "title": "HIGH DEMAND",
+            "text": "Extended dispatch: Please allow an additional 5–7 business days before your order is shipped.",
+            "show_for": "specific",
+            "variants": "Dark Grey"
+          }
+        },
+        "shipping_note_6xwLMR": {
+          "type": "shipping-note",
+          "settings": {
+            "text": "Free shipping with delivery in 1-5 days"
+          }
+        },
+        "variant_picker_PGdwDL": {
+          "type": "variant-picker",
+          "settings": {
+            "show_single": false,
+            "selector_style": "listed",
+            "dynamic_availability": "show",
+            "enable_size_chart": false,
+            "size_chart_label": "Size guide",
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "buy_buttons_AJDtwj": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": false,
+            "show_buy_it_now": true,
+            "buy_it_now_label": "Buy it now",
+            "show_backorder_text": false,
+            "show_pickup_availability": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "trust_badges_qeWtK8": {
+          "type": "trust-badges",
+          "settings": {
+            "badge_1_icon": "award",
+            "badge_1_text": "3-Year Warranty",
+            "badge_2_icon": "return",
+            "badge_2_text": "30-Day Returns",
+            "badge_3_icon": "truck",
+            "badge_3_text": "Free Shipping"
+          }
+        },
+        "accordion_fBFBKr": {
+          "type": "accordion",
+          "settings": {
+            "title": "Features",
+            "icon": "",
+            "content": "<p><strong>Dual lumbar support</strong>: Adapts to your movements for all-day lower back comfort.</p><p><strong>Adjustable backrest and headrest</strong>: Raise the headrest for neck support while relaxing, or lower it to focus on back and lumbar support while working—your choice for personalized comfort.</p><p><strong>Recline up to 135°</strong>: Lean back with lumbar support that moves with you for easy relaxation.</p><p><strong>Pressure-free seat</strong>: Waterfall-shaped cushion relieves pressure on your thighs and hips.</p><p><strong>Breathable mesh</strong>: Stay cool and comfortable with durable, airflow-promoting mesh.</p><p><strong>Easy seat depth adjustment</strong>: Adjust the seat depth to fit your height for better leg support.</p><p><strong>4D armrests</strong>: Move them up, down, back, forth, and sideways for personalized comfort.</p><p><strong>Built to last</strong>: Certified by BIFMA and SGS for safety and quality.</p>",
+            "page": "",
+            "custom_liquid": "",
+            "open": false,
+            "show_in_quickbuy": false
+          }
+        },
+        "accordion_GxXei8": {
+          "type": "accordion",
+          "settings": {
+            "title": "Benefits",
+            "icon": "",
+            "content": "<ul><li>Supports up to 330 lbs</li><li>Endorsed by Gamerant, GeekDad, Gamezebo, Designboom and more than 800 media approvals</li><li>4D adjustable armrests and multi-adjustable headrest for personalized comfort</li><li>Dual dynamic lumbar support for consistent lower back support</li><li>Breathable mesh and waterfall-shaped seat for ergonomic comfort</li><li>Reclines up to 135° for effortless relaxation</li><li>Certified by BIFMA and SGS for quality and durability</li></ul>",
+            "page": "",
+            "custom_liquid": "",
+            "open": false,
+            "show_in_quickbuy": false
+          }
+        }
+      },
+      "block_order": [
+        "reviews_9XzTh4",
+        "title_C6PnGM",
+        "price_bhNgMH",
+        "demand_alert_NFxemk",
+        "shipping_note_6xwLMR",
+        "variant_picker_PGdwDL",
+        "buy_buttons_AJDtwj",
+        "trust_badges_qeWtK8",
+        "accordion_fBFBKr",
+        "accordion_GxXei8"
+      ],
+      "name": "Custom product",
+      "settings": {
+        "accent_color": "#c20000",
+        "low_stock_threshold": 10,
+        "demand_bg": "#fff8e8",
+        "demand_border": "#e8c46a",
+        "shipping_color": "#1f9d55",
+        "trust_color": "#6b7c8a",
+        "show_breadcrumbs": false,
+        "select_first_variant": true,
+        "show_location_underneath": false,
+        "inventory_transfers_enable": true,
+        "enable_sticky_columns": true,
+        "enable_sticky_atc": true,
+        "sticky_atc_position": "center",
+        "sticky_atc_mobile": true,
+        "sticky_atc_behavior": "add_to_cart",
+        "sticky_atc_button_style": "secondary",
+        "gallery_size": "medium",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "show_alt_text": false,
+        "alt_text_icon": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_media_grouping": false,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe"
+      }
+    },
+    "custom_multi_column_WWXqNc": {
+      "type": "custom-multi-column",
+      "blocks": {
+        "column_HhQzUb": {
+          "type": "column",
+          "settings": {
+            "hide_image": true,
+            "title": "",
+            "description": "<h3>Overview</h3><p>Doro S100 moves with you, offering gentle, personalized lower back support and comfort in any position, with easy adjustments to fit your needs.</p><p><strong>Name</strong>: Doro-S100 Ergonomic Chair</p><p><strong>General Dimensions</strong>: 67 cm W x 70 cm D x 111 cm -126 cm H</p><p><strong>Product Weight</strong>: 22.3 kg</p><p><strong>Assembly</strong>: Requires assembly</p><p><strong>Materials</strong>: Mesh back and seat, soft PU coated armrests</p><p><strong>Maximum load</strong>: 150 kg</p><p><strong>Warranty</strong>: (3) years warranty</p>",
+            "note": ""
+          }
+        },
+        "column_UkeDxJ": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/S100-white-2.png",
+            "title": "",
+            "description": "<p><strong>Chair back lifting height</strong>: 46.0 cm - 54.0 cm</p><p><strong>Seat depth</strong>: 38.5 cm - 43.5 cm</p><p><strong>Max hip width</strong>: 51.0 cm</p><p><strong>Maximum load</strong>: 150 kg</p><p><strong>Armrests</strong>: 4D coordinated armrests (Up and down, left, right, forward and backward, tilt linkage)</p>",
+            "note": ""
+          }
+        },
+        "column_mJUJWG": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/S100-white.png",
+            "title": "",
+            "description": "<h3>Ergonomic Tech</h3><p><a href=\"https://youtu.be/d3BINOBo7Qs\" target=\"_blank\" title=\"https://youtu.be/d3BINOBo7Qs\">Installation Guide</a></p><p><a href=\"https://youtu.be/nnSIia7XDSA\" target=\"_blank\" title=\"https://youtu.be/nnSIia7XDSA\">Adjustment Guide</a></p><p><a href=\"https://cdn.shopify.com/s/files/1/0509/7819/3602/files/S100_c211194c-b449-45e0-92ef-7f337fcc575c.pdf?v=1776940592\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0509/7819/3602/files/S100_c211194c-b449-45e0-92ef-7f337fcc575c.pdf?v=1776940592\">Download Manual</a></p>",
+            "note": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_HhQzUb",
+        "column_UkeDxJ",
+        "column_mJUJWG"
+      ],
+      "custom_css": [
+        ".multi-column-card {background: #f9f9f9;}"
+      ],
+      "name": "Custom Multi-Column",
+      "settings": {
+        "heading": "Ergonomic Chair Specifications",
+        "background_color": "#ffffff",
+        "heading_color": "#1a1a1a",
+        "card_background_color": "#f5f5f5",
+        "image_background_color": "#e8e8e8",
+        "card_heading_color": "#1a1a1a",
+        "card_text_color": "#555555",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "17724749789aac8752": {
+      "type": "apps",
+      "blocks": {
+        "spec_compare_specification_table_ydPKRQ": {
+          "type": "shopify://apps/specs-compare/blocks/specification-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
+          "disabled": true,
+          "settings": {
+            "product": "sihoo-a3-doro-c300-ergonomic-office-chair",
+            "show_group_names": true,
+            "maximum_rows": 10,
+            "app_block_margin": 0,
+            "app_block_max_width": "full_width",
+            "app_block_custom_max_width": 800,
+            "append_parent_target_selector": ""
+          }
+        }
+      },
+      "block_order": [
+        "spec_compare_specification_table_ydPKRQ"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "show_space": true
+      }
+    },
+    "product_promo_strip_tqEm4C": {
+      "type": "product-promo-strip",
+      "custom_css": [
+        ".product-promo-strip {margin-bottom: 0px;}"
+      ],
+      "name": "Product promo strip",
+      "settings": {
+        "promo_text": "\"Relax and let inspiration flow—sit well and think better.\"",
+        "background_color": "#171717",
+        "text_color": "#f0f0f0"
+      }
+    },
+    "background_video_h37Gjq": {
+      "type": "background-video",
+      "name": "Background video",
+      "settings": {
+        "video_external": "https://youtu.be/552SU6d0c6E",
+        "video_description": "",
+        "text_alignment": "center center",
+        "height_desktop": 700,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style": "shadow"
+      }
+    },
+    "product_promo_gallery_PDKJDe": {
+      "type": "product-promo-gallery",
+      "blocks": {
+        "feature_GKNPQE": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/dual-dynamic.png",
+            "label": "Dual Dynamic Lumbar Support"
+          }
+        },
+        "feature_aeHDTM": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/backrest.png",
+            "label": "Independent Backrest"
+          }
+        },
+        "feature_ztX9nK": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/222.png",
+            "label": "4D Coordinated Armrest"
+          }
+        },
+        "feature_q663PK": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/444.png",
+            "label": "Premium Elastic Mesh"
+          }
+        }
+      },
+      "block_order": [
+        "feature_GKNPQE",
+        "feature_aeHDTM",
+        "feature_ztX9nK",
+        "feature_q663PK"
+      ],
+      "custom_css": [
+        ".product-promo-gallery .gallery-item-image {aspect-ratio: 0 !important;}",
+        ".product-promo-gallery .gallery-item-image img {height: 150px !important; object-fit: contain !important;}"
+      ],
+      "name": "Product promo gallery",
+      "settings": {
+        "heading": "Sihoo S100 Ergonomic Chair Features",
+        "background_color": "#ffffff",
+        "heading_color": "#2a2a2a",
+        "text_color": "#2a2a2a",
+        "image_background_color": "#f5f5f5"
+      }
+    },
+    "product_testimonial_BUrRiD": {
+      "type": "product-testimonial",
+      "blocks": {
+        "testimonial_payBD6": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "The most noticeable aspect of the S100 is its split lower lumbar support, which flexes along with body movements.",
+            "author": "Adam Corsetti",
+            "source": "from gamerant, doro S100 review"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_payBD6"
+      ],
+      "name": "Product testimonial",
+      "settings": {
+        "background_color": "#171717",
+        "quote_icon_color": "#6b6b6b",
+        "quote_text_color": "#ffffff",
+        "author_color": "#ffffff",
+        "source_color": "#9a9a9a",
+        "avatar_background_color": "#2a3a4a"
+      }
+    },
+    "custom_image_text_rDQLYM": {
+      "type": "custom-image-text",
+      "disabled": true,
+      "name": "Custom Image Text",
+      "settings": {
+        "image": "shopify://shop_images/20240115-164855.webp",
+        "image_fit": "contain",
+        "image_position": "left",
+        "heading": "Adjustable seat depth for custom comfort",
+        "description": "Doro C300 Pro’s expanded seat cushion provides a more spacious seating area for larger individuals, enhancing comfort. The adjustable seat depth allows for personalized positioning to suit your needs.",
+        "button_label": "",
+        "button_link": "",
+        "background_color": "#ffffff",
+        "image_background_color": "#e8e8e8",
+        "heading_color": "#1a1a1a",
+        "text_color": "#555555",
+        "button_text_color": "#ffffff",
+        "button_background_color": "#1a1a1a",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "custom_image_text_8MY9g7": {
+      "type": "custom-image-text",
+      "disabled": true,
+      "name": "Custom Image Text",
+      "settings": {
+        "image": "shopify://shop_images/c300_03_2480_1080.webp",
+        "image_fit": "cover",
+        "image_position": "right",
+        "heading": "Adjustable anti-spine lumbar support",
+        "description": "The BM (Body Movement) Tracking System ensures the lumbar support automatically conforms to your spine to keep your back comfortable and supported during different postures without the need for manual adjustment.",
+        "button_label": "",
+        "button_link": "",
+        "background_color": "#ffffff",
+        "image_background_color": "#e8e8e8",
+        "heading_color": "#1a1a1a",
+        "text_color": "#555555",
+        "button_text_color": "#ffffff",
+        "button_background_color": "#1a1a1a",
+        "padding_top": 0,
+        "padding_bottom": 80
+      }
+    },
+    "custom_multi_column_q8TVXy": {
+      "type": "custom-multi-column",
+      "blocks": {
+        "column_YxNdyi": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/3.webp",
+            "title": "",
+            "description": "<h3>Wide spacious headrest</h3><p>Doro S100 provides a 5cm (1.97 in) seat<br/>depth adjustment range, ensuring<br/>comfortable support for your thighs and<br/>hips, regardless of your size.</p>",
+            "note": ""
+          }
+        },
+        "column_qdwD8x": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/4.webp",
+            "title": "",
+            "description": "<h3>Full-back comfort for any size</h3><p>The headrest perfectly contours to the curve of your neck while providing a generously sized surface. You can comfortably rest your head on the side and relax during your work.</p>",
+            "note": ""
+          }
+        },
+        "column_gzCtJy": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/5.webp",
+            "title": "",
+            "description": "<h3>4D arm support</h3><p>Whether you're working, reclining, or relaxing, Doro S100 takes the pressure off your shoulders with 4-way adjustable armrests. Move them up and down (2.76 in), forward and back (1.18 in), side to side, and rotate 72°, all while staying in sync with the backrest.</p>",
+            "note": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_YxNdyi",
+        "column_qdwD8x",
+        "column_gzCtJy"
+      ],
+      "name": "Custom Multi-Column",
+      "settings": {
+        "heading": "How S100 Chair Helps?",
+        "background_color": "#ffffff",
+        "heading_color": "#1a1a1a",
+        "card_background_color": "#f5f5f5",
+        "image_background_color": "#e8e8e8",
+        "card_heading_color": "#1a1a1a",
+        "card_text_color": "#555555",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "product_testimonial_hzeXfp": {
+      "type": "product-testimonial",
+      "blocks": {
+        "testimonial_Y6wR4d": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "Doro S100 is like a work of a minimalist art, with thin, lightweight mesh upholstery, clean lines, visible springs, and a general sense of austere elegance.",
+            "author": "Maria Alexander",
+            "source": "from GAMEZEBO, S100 is the best gaming chair"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_Y6wR4d"
+      ],
+      "name": "Product testimonial",
+      "settings": {
+        "background_color": "#171717",
+        "quote_icon_color": "#6b6b6b",
+        "quote_text_color": "#ffffff",
+        "author_color": "#ffffff",
+        "source_color": "#9a9a9a",
+        "avatar_background_color": "#2a3a4a"
+      }
+    },
+    "custom_multi_column_MB6MeA": {
+      "type": "custom-multi-column",
+      "blocks": {
+        "column_DWqU6X": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/1_54fc5a51-998d-4b0d-ae34-8c53c000e7c5.webp",
+            "title": "",
+            "description": "",
+            "note": ""
+          }
+        },
+        "column_KNxTLJ": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/20231223-114502.webp",
+            "title": "",
+            "description": "",
+            "note": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_DWqU6X",
+        "column_KNxTLJ"
+      ],
+      "name": "Custom Multi-Column",
+      "settings": {
+        "heading": "Dual dynamic lumbar support adjusts with your movements, offering personalized lower back comfort and wider support that suits any body type.",
+        "background_color": "#ffffff",
+        "heading_color": "#1a1a1a",
+        "card_background_color": "#ffffff",
+        "image_background_color": "#ffffff",
+        "card_heading_color": "#1a1a1a",
+        "card_text_color": "#555555",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "custom_multi_column_tb6Dea": {
+      "type": "custom-multi-column",
+      "blocks": {
+        "column_iEqhY3": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/c300_19703e7a-9786-488c-a325-cddd4f8aeb7f.jpg",
+            "title": "",
+            "description": "<h3>Breathable Mesh Design</h3>",
+            "note": ""
+          }
+        },
+        "column_BFFGYK": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/20240112-101353.webp",
+            "title": "",
+            "description": "<h3>Pressure-free BM Tracking System</h3>",
+            "note": ""
+          }
+        },
+        "column_TLmNTa": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/20240112-101347_77ef1710-f4c9-4f23-ae8f-d33bb644ae0d.jpg",
+            "title": "",
+            "description": "<h3>Built for Last (BIFMA & SGS)</h3>",
+            "note": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_iEqhY3",
+        "column_BFFGYK",
+        "column_TLmNTa"
+      ],
+      "disabled": true,
+      "name": "Custom Multi-Column",
+      "settings": {
+        "heading": "",
+        "background_color": "#ffffff",
+        "heading_color": "#1a1a1a",
+        "card_background_color": "#f5f5f5",
+        "image_background_color": "#e8e8e8",
+        "card_heading_color": "#1a1a1a",
+        "card_text_color": "#555555",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "slideshow_TgHBPy": {
+      "type": "slideshow",
+      "blocks": {
+        "image_rjeqq6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/C300_pro.webp",
+            "slide_link": "",
+            "subheading": "",
+            "title": "For every part of you",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": false,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_rjeqq6"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2.44rem; font-weight: 500; margin-bottom: 10px; font-family: inherit;}"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "full image-overlay--bg-shadow",
+        "transition": "fade",
+        "navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "accessibility_info": ""
+      }
+    },
+    "1726717200db5c7e8b": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_fyKK8z": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "reviews_to_display": "",
+            "default_tab": "automatic",
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_fyKK8z"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_space": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "title": "You may also like",
+        "show_vendor": false,
+        "grid": 3
+      }
+    },
+    "review_source_note": {
+      "type": "review-source-note",
+      "settings": {
+        "heading": "About these reviews",
+        "text_alignment": "center",
+        "height": "small"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_main_product_Jkb3zp",
+    "custom_multi_column_WWXqNc",
+    "17724749789aac8752",
+    "product_promo_strip_tqEm4C",
+    "background_video_h37Gjq",
+    "product_promo_gallery_PDKJDe",
+    "product_testimonial_BUrRiD",
+    "custom_image_text_rDQLYM",
+    "custom_image_text_8MY9g7",
+    "custom_multi_column_q8TVXy",
+    "product_testimonial_hzeXfp",
+    "custom_multi_column_MB6MeA",
+    "custom_multi_column_tb6Dea",
+    "slideshow_TgHBPy",
+    "review_source_note",
+    "1726717200db5c7e8b",
+    "related-products"
+  ]
+}

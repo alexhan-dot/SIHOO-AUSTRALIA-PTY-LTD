@@ -1,0 +1,649 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "heading": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Customer Help",
+            "heading_max_width": 15,
+            "title_size": 52,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>If talking to a real-life human is more your thing, you can reach our Customer Happiness Team via email (below).</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/20190907034341765_c5157893-30eb-4c56-bc77-da6ad415.webp",
+        "height": "adapt",
+        "height_desktop": 400,
+        "height_mobile": 300,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "main": {
+      "type": "faq-header",
+      "settings": {
+        "title": "FAQ",
+        "use_h1": true,
+        "text": "<p>Welcome to the SIHOO Australia FAQ page! Here, we’ve compiled the most frequently asked questions about our products, services, and policies to help you find the information you need. If you have further questions, feel free to contact us anytime.</p>",
+        "show_search": true,
+        "show_index": true,
+        "index_heading": "How can we help?"
+      }
+    },
+    "faq-content-1": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Who is SIHOO?",
+            "answer": "<p>SIHOO is a leading brand specialising in ergonomic office furniture. We focus on designing and manufacturing high-quality office chairs and standing desks that support healthy posture and long-term comfort, helping people work more productively.</p>"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "title": "Where is SIHOO based?",
+            "answer": "<p>SIHOO is a global company with its products available across various markets, including Australia. Our Australian headquarters is located at 11 Ferndell Street, South Granville, NSW 2142.</p>"
+          }
+        },
+        "question_NNpVBP": {
+          "type": "question",
+          "settings": {
+            "title": "What products does SIHOO offer?",
+            "answer": "<p>SIHOO offers a range of ergonomic office chairs, standing desks, and office furniture accessories. Our ergonomic chairs are designed with adjustable features, such as lumbar support, armrests, breathable mesh backs, and recline functions, tailored for both home and office use.</p>"
+          }
+        },
+        "question_BpxQGN": {
+          "type": "question",
+          "settings": {
+            "title": "What sets SIHOO apart from other brands?",
+            "answer": "<p>SIHOO stands out with its dedication to ergonomics, innovation, and durability. Our chairs are certified by international standards, and we focus on creating products that prioritise user comfort and health. SIHOO chairs are ideal for extended periods of sitting, whether for work, study, or gaming.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question-1",
+        "question-2",
+        "question_NNpVBP",
+        "question_BpxQGN"
+      ],
+      "settings": {
+        "title": "1. What is SIHOO?"
+      }
+    },
+    "faq-content-2": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "What makes a SIHOO chair ergonomic?",
+            "answer": "<p>SIHOO chairs are designed to promote good posture by offering features such as adjustable lumbar support, seat height, recline angles, and adjustable armrests. These features ensure that the chair adapts to the user’s body, providing personalised comfort and reducing strain on the back, neck, and shoulders.</p>"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "title": "Can an ergonomic chair really help with back pain?",
+            "answer": "<p>Yes, SIHOO ergonomic chairs are specifically designed to provide proper support to the spine, encouraging good posture and reducing back pain. The lumbar support helps maintain the natural curve of the spine, while adjustable features allow you to sit comfortably for long periods.</p>"
+          }
+        },
+        "question_7aFgLr": {
+          "type": "question",
+          "settings": {
+            "title": "Are SIHOO chairs good for gaming?",
+            "answer": "<p>Absolutely! Our chairs, like the M57 and M18 models, are popular among gamers because of their comfort and customisable features. The adjustable recline and lumbar support help reduce fatigue during long gaming sessions, making them a great choice for gamers.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question-1",
+        "question-2",
+        "question_7aFgLr"
+      ],
+      "settings": {
+        "title": "2. Why Choose a SIHOO Ergonomic Chair?"
+      }
+    },
+    "collapsible_tabs_wjV8tm": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_8Q6Hhz": {
+          "type": "question",
+          "settings": {
+            "title": "How do I adjust the seat height?",
+            "answer": "<p>To adjust the seat height, use the lever under the seat. Raise or lower the seat so that your feet are flat on the floor and your knees are at a 90-degree angle. This position helps reduce pressure on your thighs and improves circulation.</p>"
+          }
+        },
+        "question_hH4maP": {
+          "type": "question",
+          "settings": {
+            "title": "How do I adjust the lumbar support?",
+            "answer": "<p>SIHOO chairs feature dual-adjustable lumbar support. You can move the support vertically and horizontally to match the natural curve of your spine, providing continuous lower back comfort. Adjust the lumbar support until it fits snugly against your lower back.</p>"
+          }
+        },
+        "question_3eUC8X": {
+          "type": "question",
+          "settings": {
+            "title": "What is the best recline angle for working?",
+            "answer": "<p>SIHOO chairs offer recline angles up to 126°. For work, a slight recline of 90° to 110° is recommended as it helps you stay focused while maintaining good posture. For relaxation or breaks, a deeper recline can help relieve tension.</p>"
+          }
+        },
+        "question_clean": {
+          "type": "question",
+          "settings": {
+            "title": "How do I clean a mesh office chair?",
+            "answer": "<p>Vacuum the mesh with a brush attachment, then wipe with a cloth dampened in warm water and a little mild detergent. Avoid bleach and solvents, which weaken the mesh. Wipe the frame and armrests with a damp cloth and let everything air-dry. See our <a href=\"/blogs/all-about-ergonomic-chair/how-to-clean-and-maintain-your-ergonomic-chair\">mesh chair care guide</a>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_8Q6Hhz",
+        "question_hH4maP",
+        "question_3eUC8X",
+        "question_clean"
+      ],
+      "settings": {
+        "title": "3. How to Adjust a SIHOO Chair"
+      }
+    },
+    "collapsible_tabs_DAwCYY": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_JwPJDR": {
+          "type": "question",
+          "settings": {
+            "title": "Where do you deliver?",
+            "answer": "<p>We deliver free to every address in Australia. Stock is held in four SIHOO Australia warehouses – Sydney, Melbourne, Brisbane and Perth – so your order ships from the one nearest you, usually the next business day.</p>"
+          }
+        },
+        "question_iPiNdX": {
+          "type": "question",
+          "settings": {
+            "title": "How long does delivery take?",
+            "answer": "<p>Orders are dispatched the next business day from the SIHOO Australia warehouse nearest you and usually arrive within 1–3 business days. Regional and remote addresses can take a little longer. You receive tracking by email and SMS as soon as the courier collects your order.</p>"
+          }
+        },
+        "question_646tKV": {
+          "type": "question",
+          "settings": {
+            "title": "How much does shipping cost?",
+            "answer": "<p>Delivery is free Australia-wide on every chair, with no minimum order and no surcharge for regional or remote postcodes.</p>"
+          }
+        },
+        "question_warehouses": {
+          "type": "question",
+          "settings": {
+            "title": "Where do you ship from?",
+            "answer": "<p>From the SIHOO Australia warehouse closest to you: Sydney (NSW, ACT), Melbourne (VIC, TAS), Brisbane (QLD, northern NSW) or Perth (WA). South Australia and the Northern Territory are served from the nearest warehouse with stock. If your item is only available in another state we tell you on the product page before you order.</p>"
+          }
+        },
+        "question_tracking": {
+          "type": "question",
+          "settings": {
+            "title": "Can I track my order?",
+            "answer": "<p>Yes. A tracking link is emailed and texted to you as soon as the courier scans your carton at the warehouse. You can also find the tracking number in your SIHOO Australia account under Orders.</p>"
+          }
+        },
+        "question_damaged": {
+          "type": "question",
+          "settings": {
+            "title": "What if my carton arrives damaged?",
+            "answer": "<p>Photograph the carton before opening it and email the photos to <a href=\"mailto:support@sihoo.com.au\">support@sihoo.com.au</a> with your order number. Replacement parts are dispatched from the nearest warehouse, usually within two business days, at no cost to you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_warehouses",
+        "question_tracking",
+        "question_damaged",
+        "question_JwPJDR",
+        "question_iPiNdX",
+        "question_646tKV"
+      ],
+      "settings": {
+        "title": "4. Shipping and Delivery Information"
+      }
+    },
+    "collapsible_tabs_JVtXrV": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_j9XdX7": {
+          "type": "question",
+          "settings": {
+            "title": "Do SIHOO products come with a warranty?",
+            "answer": "<p>Yes. Every SIHOO chair sold by SIHOO Australia is covered by an Australian warranty serviced from our Sydney head office. Doro series chairs (Doro C300 Pro V2, C300 Pro, C500, C100, S300 and S100) come with a 5-year warranty. M series, V series and XALLKING gaming chairs come with a 3-year warranty. The warranty covers defects in materials and workmanship, and replacement parts are sent from the nearest warehouse. The exact term is shown on each product page.</p>"
+          }
+        },
+        "question_WPAAPK": {
+          "type": "question",
+          "settings": {
+            "title": "How do I claim a warranty?",
+            "answer": "<p>If you experience any issues with your SIHOO product, please contact our support team at <a>support@sihoo.com.au</a> or call 1300 002 580. Provide your proof of purchase and details about the issue, and we’ll guide you through the warranty process.</p>"
+          }
+        },
+        "question_KwFjYc": {
+          "type": "question",
+          "settings": {
+            "title": "Can I return my SIHOO chair if I’m not satisfied?",
+            "answer": "<p>Yes, we offer a hassle-free return policy. If you’re not satisfied with your purchase, you can return the product within 30 days of receipt for a full refund or exchange. Please note, a restocking fee may apply for certain returns. The item must be in its original packaging and condition. For more details, please refer to our return policy.</p>"
+          }
+        },
+        "question_warranty_doro": {
+          "type": "question",
+          "settings": {
+            "title": "How long is the warranty on Doro chairs?",
+            "answer": "<p>Five years. The Doro range – C300 Pro V2, C300 Pro, C500, C100, S300 and S100 – is covered for 5 years from the date of delivery, which is two years longer than our M and X series chairs. Keep your order confirmation as proof of purchase; no registration is needed.</p>"
+          }
+        },
+        "question_warranty_acl": {
+          "type": "question",
+          "settings": {
+            "title": "Is the warranty in addition to my Australian Consumer Law rights?",
+            "answer": "<p>Yes. The SIHOO warranty is provided in addition to the consumer guarantees under the Australian Consumer Law, which cannot be excluded. If a product has a major failure you are entitled to a replacement or refund, and to compensation for any other reasonably foreseeable loss or damage.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_j9XdX7",
+        "question_warranty_doro",
+        "question_warranty_acl",
+        "question_WPAAPK",
+        "question_KwFjYc"
+      ],
+      "settings": {
+        "title": "5. Warranty and Returns"
+      }
+    },
+    "collapsible_tabs_bCC4Ri": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_JpFj3h": {
+          "type": "question",
+          "settings": {
+            "title": "Is assembly required for SIHOO chairs?",
+            "answer": "<p>Yes, our chairs come with easy-to-follow assembly instructions. Most SIHOO chairs require minimal assembly, and all the necessary tools and parts are included in the package.</p>"
+          }
+        },
+        "question_PHATrn": {
+          "type": "question",
+          "settings": {
+            "title": "How long does it take to assemble a SIHOO chair?",
+            "answer": "<p>Assembly typically takes 15-30 minutes. If you have any trouble during assembly, feel free to contact our support team for assistance.</p>"
+          }
+        },
+        "question_3Uk4xV": {
+          "type": "question",
+          "settings": {
+            "title": "Can I request professional assembly?",
+            "answer": "<p>Currently, we do not offer professional assembly services. However, the included manual provides clear instructions, and our support team is always available if you have questions.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_JpFj3h",
+        "question_PHATrn",
+        "question_3Uk4xV"
+      ],
+      "settings": {
+        "title": "6. Assembly Instructions"
+      }
+    },
+    "collapsible_tabs_jhbqfM": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_mWQNxJ": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer bulk orders for businesses?",
+            "answer": "<p>Yes, we provide bulk order solutions for offices, schools, and other organisations. For large quantities, we can offer special pricing and delivery options. Contact us at <a>support@sihoo.com.au</a> or call 1300 002 580 to discuss your requirements.</p>"
+          }
+        },
+        "question_ib9kDL": {
+          "type": "question",
+          "settings": {
+            "title": "Can I customise chairs for my business?",
+            "answer": "<p>For bulk orders, we can discuss customisation options, such as logo branding or specific colours to match your office aesthetic. Get in touch with our team to explore available options.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_mWQNxJ",
+        "question_ib9kDL"
+      ],
+      "settings": {
+        "title": "7. Bulk Orders and B2B Solutions"
+      }
+    },
+    "collapsible_tabs_8DGPj7": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_7agWJk": {
+          "type": "question",
+          "settings": {
+            "title": "How can I contact SIHOO Australia?",
+            "answer": "<p>You can reach us by phone at 1300 002 580 or by email at <a>support@sihoo.com.au</a>. We’re here to assist you with any questions, product information, or support you may need.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_7agWJk"
+      ],
+      "settings": {
+        "title": "8. Contact Us for Further Assistance"
+      }
+    },
+    "collapsible_tabs_GGVNnM": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_pypBPT": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer a showroom where I can test the chairs?",
+            "answer": "<p>Currently, SIHOO Australia operates primarily as an online store. However, we do have a showroom available for customers who want to experience our products firsthand. For more details or to arrange a visit, please contact us directly.</p>"
+          }
+        },
+        "question_FjCQgF": {
+          "type": "question",
+          "settings": {
+            "title": "Can I order samples or trial products?",
+            "answer": "<p>We don’t offer samples or trial products at this time.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_pypBPT",
+        "question_FjCQgF"
+      ],
+      "settings": {
+        "title": "9. Can I try a SIHOO chair before purchasing?"
+      }
+    },
+    "collapsible_tabs_G7jT6N": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_7JcbVB": {
+          "type": "question",
+          "settings": {
+            "title": "What should I consider when buying an ergonomic chair?",
+            "answer": "<p>When choosing an ergonomic chair, consider factors such as adjustability (seat height, lumbar support, armrests), the material (mesh for breathability, padding for comfort), and your personal needs (office work, gaming, or study). You can use our comparison tables to see the key differences between SIHOO models.</p>"
+          }
+        },
+        "question_WKEGzF": {
+          "type": "question",
+          "settings": {
+            "title": "Which SIHOO chair is best for long working hours?",
+            "answer": "<p>For extended sitting periods, we recommend models like the SIHOO M18, M57, C300, or S300. These chairs feature breathable mesh backs, W-shaped cushions, and fully adjustable lumbar support, ensuring you stay comfortable and supported throughout the day.</p>"
+          }
+        },
+        "question_back_pain": {
+          "type": "question",
+          "settings": {
+            "title": "Which SIHOO chair is best for back pain?",
+            "answer": "<p>Chairs with dynamic, self-adjusting lumbar support work best for lower-back pain because the support follows you as you move. In the Doro range, the Doro C300 Pro V2 and Doro S300 have the most advanced lumbar systems; in the M series the M57 Pro and M18 offer adjustable lumbar support at a lower price. If your pain is mostly in the neck and shoulders, choose a model with an adjustable headrest such as the M57, M18 Pro or any Doro chair. Read our guide to the <a href=\"/blogs/reviews/best-ergonomic-chair-for-lower-back-pain-in-australia-2026-guide\">best ergonomic chair for lower back pain in Australia</a>.</p>"
+          }
+        },
+        "question_doro_vs_m": {
+          "type": "question",
+          "settings": {
+            "title": "What is the difference between the Doro series and the M series?",
+            "answer": "<p>The Doro series is SIHOO's premium range: self-adjusting dynamic lumbar support, a weight-sensing or self-adaptive recline mechanism, a longer 5-year warranty and design awards such as the German Design Award and Red Dot. The M series (M18, M57, M59, M90 and others) covers the essentials – breathable mesh, adjustable lumbar, headrest and armrests, 150 kg rating – at a lower price with a 3-year warranty. If you sit for six or more hours a day, the Doro chairs are worth the step up; for a home office or study desk the M series is excellent value.</p>"
+          }
+        },
+        "question_gaming_vs_office": {
+          "type": "question",
+          "settings": {
+            "title": "Should I buy a gaming chair or an ergonomic office chair?",
+            "answer": "<p>For long sessions an ergonomic mesh office chair usually wins: it breathes better in the Australian climate and supports a neutral posture. Our XALLKING X5 and X3 gaming chairs combine the racing-style look with proper ergonomics – adjustable lumbar, 4D armrests and a full recline – so you do not have to choose. See <a href=\"/blogs/all-about-ergonomic-chair/gaming-chair-vs-ergonomic-office-chair-for-spine-health\">gaming chair vs ergonomic office chair for spine health</a>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_7JcbVB",
+        "question_WKEGzF",
+        "question_back_pain",
+        "question_doro_vs_m",
+        "question_gaming_vs_office"
+      ],
+      "settings": {
+        "title": "10. How do I choose the right chair for me?"
+      }
+    },
+    "collapsible_tabs_jVVnzT": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_cVq8Bg": {
+          "type": "question",
+          "settings": {
+            "title": "What is the maximum weight limit?",
+            "answer": "<p>Most SIHOO chairs – including the M18, M18 Pro, M57, M57 Pro, the XALLKING X5S and X5F, and the whole Doro range – are rated to 150 kg. Some models, including the V1, M56, M59, M76, M90, X5 Pro and X5C, are rated to 136 kg. Doro chairs use an SGS Class 4 gas lift. The exact rating is listed under Specifications on every product page and in the comparison table when you compare models.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_cVq8Bg"
+      ],
+      "settings": {
+        "title": "11. What is the weight capacity of SIHOO chairs?"
+      }
+    },
+    "collapsible_tabs_gigEUt": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_R7zTxk": {
+          "type": "question",
+          "settings": {
+            "title": "Do you sell replacement parts?",
+            "answer": "<p>Yes, we offer replacement parts for SIHOO chairs, including armrests, casters, and gas lifts. If you need to replace a specific part, please contact our support team at <a>support@sihoo.com.au</a> or call 1300 002 580 for assistance.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_R7zTxk"
+      ],
+      "settings": {
+        "title": "12. Can I purchase replacement parts for my SIHOO chair?"
+      }
+    },
+    "collapsible_tabs_6VUQnz": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_6q8RY3": {
+          "type": "question",
+          "settings": {
+            "title": "Do you run sales or offer discount codes?",
+            "answer": "<p>Yes, we frequently offer promotions, including discounts on select products, free shipping, and special offers during key sales events like Black Friday. To stay informed, subscribe to our newsletter or check our website for the latest deals.</p>"
+          }
+        },
+        "question_9MCmDA": {
+          "type": "question",
+          "settings": {
+            "title": "Can I get a discount for bulk purchases?",
+            "answer": "<p>Yes, we offer discounts for bulk orders. If you're looking to furnish an office or need a large quantity of chairs, please get in touch with our team for pricing and customisation options.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_6q8RY3",
+        "question_9MCmDA"
+      ],
+      "settings": {
+        "title": "13. Does SIHOO offer discounts or promotions?"
+      }
+    },
+    "collapsible_tabs_AUEBka": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_zbFaDG": {
+          "type": "question",
+          "settings": {
+            "title": "Are SIHOO chairs suitable for taller or shorter individuals?",
+            "answer": "<p>Yes, SIHOO chairs are designed to accommodate a wide range of body types. With adjustable seat height, depth, and lumbar support, our chairs can be tailored to fit people of various heights. For specific measurements, please check the product dimensions listed in the descriptions.</p>"
+          }
+        },
+        "question_tall": {
+          "type": "question",
+          "settings": {
+            "title": "Which SIHOO chair is best for tall people?",
+            "answer": "<p>If you are over 185 cm, look for a taller backrest, a longer seat-depth range and a headrest that lifts high: the Doro C300 Pro V2, Doro S300, Doro C500, M57 Pro and M18 Pro all suit users up to 190 cm. Each product page lists the recommended user height range under Specifications. Our guide to the <a href=\"/blogs/reviews/ergonomic-chair-for-tall-people\">best office chair for tall people in Australia</a> compares the options.</p>"
+          }
+        },
+        "question_short": {
+          "type": "question",
+          "settings": {
+            "title": "Which SIHOO chair suits shorter users?",
+            "answer": "<p>Users under about 160 cm should choose a chair with a low minimum seat height (around 40–43 cm) and adjustable seat depth so the front edge does not press behind the knees. The M76, M57 Pro, M59 and M18 have the lowest seat heights in our range. A footrest can also help if your feet do not sit flat on the floor.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_zbFaDG",
+        "question_tall",
+        "question_short"
+      ],
+      "settings": {
+        "title": "14. Can SIHOO chairs be used for people of all heights?"
+      }
+    },
+    "collapsible_tabs_yg8nNF": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_LnKbtH": {
+          "type": "question",
+          "settings": {
+            "title": "Which payment options are available?",
+            "answer": "<p>We accept Visa, Mastercard, American Express, PayPal, Apple Pay, Google Pay, Shop Pay, Afterpay and Zip. All prices are in Australian dollars and include GST.</p>"
+          }
+        },
+        "question_afterpay": {
+          "type": "question",
+          "settings": {
+            "title": "Can I pay with Afterpay or Zip?",
+            "answer": "<p>Yes. Choose Afterpay or Zip at checkout to split your order into interest-free instalments. There is no extra cost from SIHOO Australia; the provider's own terms apply. The instalment amount is shown under the price on every product page.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_LnKbtH",
+        "question_afterpay"
+      ],
+      "settings": {
+        "title": "15. What payment methods do you accept?"
+      }
+    },
+    "collapsible_tabs_gEn9aY": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_ackc8t": {
+          "type": "question",
+          "settings": {
+            "title": "Does SIHOO support NDIS purchases?",
+            "answer": "<p>Yes, SIHOO Australia supports purchases through the National Disability Insurance Scheme (NDIS). We can issue an invoice for your purchase, and payment can be made via bank transfer. For more information or assistance with your NDIS purchase, please contact us directly.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_ackc8t"
+      ],
+      "settings": {
+        "title": "16. Can I purchase SIHOO products through NDIS?"
+      }
+    },
+    "contact": {
+      "type": "rich-text",
+      "blocks": {
+        "icon": {
+          "type": "icon",
+          "settings": {
+            "icon": "chat_bubble"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Get in touch",
+            "use_h1": false
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Have questions about your order, or a general enquiry?</p>",
+            "enlarge_text": true
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact us",
+            "button_link": "shopify://pages/contact-us",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "icon",
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    }
+  },
+  "order": [
+    "heading",
+    "main",
+    "faq-content-1",
+    "faq-content-2",
+    "collapsible_tabs_wjV8tm",
+    "collapsible_tabs_DAwCYY",
+    "collapsible_tabs_JVtXrV",
+    "collapsible_tabs_bCC4Ri",
+    "collapsible_tabs_jhbqfM",
+    "collapsible_tabs_8DGPj7",
+    "collapsible_tabs_GGVNnM",
+    "collapsible_tabs_G7jT6N",
+    "collapsible_tabs_jVVnzT",
+    "collapsible_tabs_gigEUt",
+    "collapsible_tabs_6VUQnz",
+    "collapsible_tabs_AUEBka",
+    "collapsible_tabs_yg8nNF",
+    "collapsible_tabs_gEn9aY",
+    "contact"
+  ]
+}

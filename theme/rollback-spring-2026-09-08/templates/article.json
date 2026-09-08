@@ -1,0 +1,71 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "article_header_yekCtc": {
+      "type": "article-header",
+      "name": "Article Header",
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_date": true,
+        "date_format": "%B %d, %Y",
+        "show_facebook": true,
+        "show_twitter": true,
+        "show_line": true,
+        "show_whatsapp": true,
+        "show_email": true
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "custom_css": [
+        ".sidebar-ad-banner {background: transparent; padding: 0; border: 0; box-shadow: none;}",
+        ".sidebar-ad-image {display: block; width: 100%; height: auto;}",
+        ".ad-content {background: #f9f9f9; padding: 16px;}"
+      ],
+      "settings": {
+        "show_table_of_contents": true,
+        "toc_title": "Table of Contents",
+        "toc_include_h2": true,
+        "toc_include_h3": false,
+        "toc_include_h4": false,
+        "show_date": false,
+        "show_author": false,
+        "show_article_tags": false,
+        "show_featured_image": true,
+        "image_width": 1200,
+        "image_height": 800,
+        "show_sharing_icons": false,
+        "show_twitter": false,
+        "show_facebook": false,
+        "show_pinterest": false,
+        "show_sidebar_ad": true,
+        "ad_heading": "Save big on the Doro C300 Pro V2 this Father’s Day. Pay in 4 interest-free instalments with Afterpay.",
+        "ad_image": "shopify://shop_images/father_s_day_sale_australia_banner.jpg",
+        "ad_button_text": "SHOP NOW",
+        "ad_button_link": "shopify://pages/fathers-day-office-chair-sale-australia",
+        "show_recommended_posts": true,
+        "recommended_title": "Recommended Posts",
+        "posts_to_show": 4,
+        "show_products_section_title": true,
+        "products_section_title": "Shop products from this article",
+        "show_products_section_description": false,
+        "products_section_description": "",
+        "comments_per_page": 50,
+        "show_comment_author": true,
+        "show_comment_date": false
+      }
+    }
+  },
+  "order": [
+    "article_header_yekCtc",
+    "main"
+  ]
+}

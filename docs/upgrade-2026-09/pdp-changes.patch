@@ -1,0 +1,787 @@
+--- before/templates/product.c100.json
++++ after/templates/product.c100.json
+@@ -369 +369,2 @@
+-        "media_grouping_option": "Color,Colour,Couleur,Farbe"
++        "media_grouping_option": "Color,Colour,Couleur,Farbe",
++        "sihoo_unified_reviews": true
+@@ -1073 +1074 @@
+-      "type": "apps",
++      "type": "sihoo-product-reviews",
+@@ -1078 +1079 @@
+-            "reviews_to_display": "",
++            "reviews_to_display": "product_reviews_only",
+@@ -1085 +1086 @@
+-            "is_sample": true
++            "is_sample": false
+@@ -1093,2 +1094,2 @@
+-        "full_width": false,
+-        "show_space": true
++        "heading": "Customer reviews",
++        "show_source_note": false
+--- before/templates/product.c300-pro-2.json
++++ after/templates/product.c300-pro-2.json
+@@ -308 +308,2 @@
+-        "media_grouping_option": "Color,Colour,Couleur,Farbe"
++        "media_grouping_option": "Color,Colour,Couleur,Farbe",
++        "sihoo_unified_reviews": true
+@@ -765 +766 @@
+-      "type": "apps",
++      "type": "sihoo-product-reviews",
+@@ -770 +771 @@
+-            "reviews_to_display": "",
++            "reviews_to_display": "product_reviews_only",
+@@ -774 +775 @@
+-            "limit": 20,
++            "limit": 10,
+@@ -776,2 +777,2 @@
+-            "maxwidth": 1080,
+-            "is_sample": true
++            "maxwidth": 1160,
++            "is_sample": false
+@@ -785,2 +786,2 @@
+-        "full_width": false,
+-        "show_space": true
++        "heading": "Customer reviews",
++        "show_source_note": false
+@@ -857,6 +858,33 @@
+-    "review_source_note": {
+-      "type": "review-source-note",
+-      "settings": {
+-        "heading": "About these reviews",
+-        "text_alignment": "center",
+-        "height": "small"
++    "sihoo_highlights": {
++      "type": "sihoo-product-highlights",
++      "blocks": {
++        "benefit_0": {
++          "type": "feature",
++          "settings": {
++            "heading": "Coordinated support",
++            "text": "The DynaCore system coordinates support as you change sitting position."
++          }
++        },
++        "benefit_1": {
++          "type": "feature",
++          "settings": {
++            "heading": "Adjustable seat depth",
++            "text": "Adjust the seat position to suit your leg length."
++          }
++        },
++        "benefit_2": {
++          "type": "feature",
++          "settings": {
++            "heading": "Flexible arm positioning",
++            "text": "Multi-directional armrest adjustment supports different desk activities."
++          }
++        }
++      },
++      "block_order": [
++        "benefit_0",
++        "benefit_1",
++        "benefit_2"
++      ],
++      "settings": {
++        "heading": "Find your fit",
++        "fit_note": "Check your desk clearance and chosen chair options before ordering. Contact our Australian team if you need help choosing."
+@@ -868,0 +897 @@
++    "sihoo_highlights",
+@@ -884 +912,0 @@
+-    "review_source_note",
+--- before/templates/product.c500.json
++++ after/templates/product.c500.json
+@@ -108,0 +109,4 @@
++        },
++        "sihoo_reviews": {
++          "type": "sihoo-reviews",
++          "settings": {}
+@@ -113,0 +118 @@
++        "sihoo_reviews",
+@@ -151 +156 @@
+-          "type": "shopify://apps/spec-compare/blocks/specification-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
++          "type": "shopify://apps/specs-compare/blocks/specification-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
+@@ -1025 +1030 @@
+-          "type": "shopify://apps/spec-compare/blocks/comparison-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
++          "type": "shopify://apps/specs-compare/blocks/comparison-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
+@@ -1069 +1074 @@
+-      "type": "apps",
++      "type": "sihoo-product-reviews",
+@@ -1074 +1079 @@
+-            "reviews_to_display": "",
++            "reviews_to_display": "product_reviews_only",
+@@ -1081 +1086 @@
+-            "is_sample": true
++            "is_sample": false
+@@ -1089,2 +1094,2 @@
+-        "full_width": false,
+-        "show_space": true
++        "heading": "Customer reviews",
++        "show_source_note": false
+--- before/templates/product.doro-series-template.json
++++ after/templates/product.doro-series-template.json
+@@ -84,0 +85,4 @@
++        },
++        "sihoo_reviews": {
++          "type": "sihoo-reviews",
++          "settings": {}
+@@ -88,0 +93 @@
++        "sihoo_reviews",
+@@ -621 +626 @@
+-      "type": "apps",
++      "type": "sihoo-product-reviews",
+@@ -626 +631 @@
+-            "reviews_to_display": "",
++            "reviews_to_display": "product_reviews_only",
+@@ -630 +635 @@
+-            "limit": 20,
++            "limit": 10,
+@@ -632,2 +637,2 @@
+-            "maxwidth": 1080,
+-            "is_sample": true
++            "maxwidth": 1160,
++            "is_sample": false
+@@ -641,2 +646,2 @@
+-        "full_width": false,
+-        "show_space": true
++        "heading": "Customer reviews",
++        "show_source_note": false
+--- before/templates/product.json
++++ after/templates/product.json
+@@ -70,0 +71,4 @@
++        },
++        "sihoo_reviews": {
++          "type": "sihoo-reviews",
++          "settings": {}
+@@ -74,0 +79 @@
++        "sihoo_reviews",
+@@ -594 +599 @@
+-      "type": "apps",
++      "type": "sihoo-product-reviews",
+@@ -597,2 +602,11 @@
+-          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+-          "settings": {}
++          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
++          "settings": {
++            "reviews_to_display": "product_reviews_only",
++            "default_tab": "automatic",
++            "only_photos": false,
++            "aggregated": false,
++            "limit": 10,
++            "hide_thumbnails": false,
++            "maxwidth": 1160,
++            "is_sample": false
++          }
+@@ -605,2 +619,2 @@
+-        "full_width": false,
+-        "show_space": true
++        "heading": "Customer reviews",
++        "show_source_note": false
+--- before/templates/product.m-16.json
++++ after/templates/product.m-16.json
+@@ -70,0 +71,4 @@
++        },
++        "sihoo_reviews": {
++          "type": "sihoo-reviews",
++          "settings": {}
+@@ -74,0 +79 @@
++        "sihoo_reviews",
+@@ -592 +597 @@
+-      "type": "apps",
++      "type": "sihoo-product-reviews",
+@@ -595,2 +600,11 @@
+-          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+-          "settings": {}
++          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
++          "settings": {
++            "reviews_to_display": "product_reviews_only",
++            "default_tab": "automatic",
++            "only_photos": false,
++            "aggregated": false,
++            "limit": 10,
++            "hide_thumbnails": false,
++            "maxwidth": 1160,
++            "is_sample": false
++          }
+@@ -603,2 +617,2 @@
+-        "full_width": false,
+-        "show_space": true
++        "heading": "Customer reviews",
++        "show_source_note": false
+--- before/templates/product.m-18.json
++++ after/templates/product.m-18.json
+@@ -219 +219,2 @@
+-        "media_grouping_option": "Color,Colour,Couleur,Farbe"
++        "media_grouping_option": "Color,Colour,Couleur,Farbe",
++        "sihoo_unified_reviews": true
+@@ -749 +750 @@
+-      "type": "apps",
++      "type": "sihoo-product-reviews",
+@@ -752,2 +753,11 @@
+-          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+-          "settings": {}
++          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
++          "settings": {
++            "reviews_to_display": "product_reviews_only",
++            "default_tab": "automatic",
++            "only_photos": false,
++            "aggregated": false,
++            "limit": 10,
++            "hide_thumbnails": false,
++            "maxwidth": 1160,
++            "is_sample": false
++          }
+@@ -760,2 +770,2 @@
+-        "full_width": false,
+-        "show_space": true
++        "heading": "Customer reviews",
++        "show_source_note": false
+@@ -776,0 +787,35 @@
++      }
++    },
++    "sihoo_highlights": {
++      "type": "sihoo-product-highlights",
++      "blocks": {
++        "benefit_0": {
++          "type": "feature",
++          "settings": {
++            "heading": "Cushioned seat",
++            "text": "A padded seat pairs with a mesh backrest for a different feel from a full-mesh chair."
++          }
++        },
++        "benefit_1": {
++          "type": "feature",
++          "settings": {
++            "heading": "Adjustable lumbar support",
++            "text": "Adjust the lumbar support to suit your sitting position."
++          }
++        },
++        "benefit_2": {
++          "type": "feature",
++          "settings": {
++            "heading": "Choose your footrest option",
++            "text": "A footrest is included only with the Black with Leg Rest option. Check availability before ordering."
++          }
++        }
++      },
++      "block_order": [
++        "benefit_0",
++        "benefit_1",
++        "benefit_2"
++      ],
++      "settings": {
++        "heading": "Find your fit",
++        "fit_note": "Check your desk clearance and chosen chair options before ordering. Contact our Australian team if you need help choosing."
+@@ -782,0 +828 @@
++    "sihoo_highlights",
+--- before/templates/product.m18-pro.json
++++ after/templates/product.m18-pro.json
+@@ -112,0 +113,4 @@
++        },
++        "sihoo_reviews": {
++          "type": "sihoo-reviews",
++          "settings": {}
+@@ -117,0 +122 @@
++        "sihoo_reviews",
+@@ -1160 +1165 @@
+-      "type": "apps",
++      "type": "sihoo-product-reviews",
+@@ -1165 +1170 @@
+-            "reviews_to_display": "",
++            "reviews_to_display": "product_reviews_only",
+@@ -1172 +1177 @@
+-            "is_sample": true
++            "is_sample": false
+@@ -1180,2 +1185,2 @@
+-        "full_width": false,
+-        "show_space": true
++        "heading": "Customer reviews",
++        "show_source_note": false
+--- before/templates/product.m56-v1.json
++++ after/templates/product.m56-v1.json
+@@ -108,0 +109,4 @@
++        },
++        "sihoo_reviews": {
++          "type": "sihoo-reviews",
++          "settings": {}
+@@ -113,0 +118 @@
++        "sihoo_reviews",
+@@ -823 +828 @@
+-      "type": "apps",
++      "type": "sihoo-product-reviews",
+@@ -828 +833 @@
+-            "reviews_to_display": "",
++            "reviews_to_display": "product_reviews_only",
+@@ -835 +840 @@
+-            "is_sample": true
++            "is_sample": false
+@@ -843,2 +848,2 @@
+-        "full_width": false,
+-        "show_space": true
++        "heading": "Customer reviews",
++        "show_source_note": false
+--- before/templates/product.m57-pro.json
++++ after/templates/product.m57-pro.json
+@@ -112,0 +113,4 @@
++        },
++        "sihoo_reviews": {
++          "type": "sihoo-reviews",
++          "settings": {}
+@@ -117,0 +122 @@
++        "sihoo_reviews",
+@@ -1022 +1027 @@
+-      "type": "apps",
++      "type": "sihoo-product-reviews",
+@@ -1027 +1032 @@
+-            "reviews_to_display": "",
++            "reviews_to_display": "product_reviews_only",
+@@ -1034 +1039 @@
+-            "is_sample": true
++            "is_sample": false
+@@ -1042,2 +1047,2 @@
+-        "full_width": false,
+-        "show_space": true
++        "heading": "Customer reviews",
++        "show_source_note": false
+--- before/templates/product.m57.json
++++ after/templates/product.m57.json
+@@ -253 +253,2 @@
+-        "media_grouping_option": "Color,Colour,Couleur,Farbe"
++        "media_grouping_option": "Color,Colour,Couleur,Farbe",
++        "sihoo_unified_reviews": true
+@@ -738 +739 @@
+-      "type": "apps",
++      "type": "sihoo-product-reviews",
+@@ -743 +744 @@
+-            "reviews_to_display": "",
++            "reviews_to_display": "product_reviews_only",
+@@ -750 +751 @@
+-            "is_sample": true
++            "is_sample": false
+@@ -758,2 +759,2 @@
+-        "full_width": false,
+-        "show_space": true
++        "heading": "Customer reviews",
++        "show_source_note": false
+@@ -804,0 +806,35 @@
++      }
++    },
++    "sihoo_highlights": {
++      "type": "sihoo-product-highlights",
++      "blocks": {
++        "benefit_0": {
++          "type": "feature",
++          "settings": {
++            "heading": "Mesh seat and back",
++            "text": "An open mesh seat and backrest allow airflow around your body."
++          }
++        },
++        "benefit_1": {
++          "type": "feature",
++          "settings": {
++            "heading": "Adjustable lumbar support",
++            "text": "Position the lumbar support to suit your lower back."
++          }
++        },
++        "benefit_2": {
++          "type": "feature",
++          "settings": {
++            "heading": "Adjustable arm support",
++            "text": "Move the armrests to support your forearms at your desk."
++          }
++        }
++      },
++      "block_order": [
++        "benefit_0",
++        "benefit_1",
++        "benefit_2"
++      ],
++      "settings": {
++        "heading": "Find your fit",
++        "fit_note": "Check your desk clearance and chosen chair options before ordering. Contact our Australian team if you need help choosing."
+@@ -810,0 +847 @@
++    "sihoo_highlights",
+--- before/templates/product.m59.json
++++ after/templates/product.m59.json
+@@ -96,0 +97,4 @@
++        },
++        "sihoo_reviews": {
++          "type": "sihoo-reviews",
++          "settings": {}
+@@ -100,0 +105 @@
++        "sihoo_reviews",
+@@ -599 +604 @@
+-      "type": "apps",
++      "type": "sihoo-product-reviews",
+@@ -608 +613 @@
+-            "limit": 20,
++            "limit": 10,
+@@ -610,2 +615,2 @@
+-            "maxwidth": 1080,
+-            "is_sample": true
++            "maxwidth": 1160,
++            "is_sample": false
+@@ -619,2 +624,2 @@
+-        "full_width": false,
+-        "show_space": true
++        "heading": "Customer reviews",
++        "show_source_note": false
+@@ -631,6 +636,33 @@
+-    "review_source_note": {
+-      "type": "review-source-note",
+-      "settings": {
+-        "heading": "About these reviews",
+-        "text_alignment": "center",
+-        "height": "small"
++    "sihoo_highlights": {
++      "type": "sihoo-product-highlights",
++      "blocks": {
++        "benefit_0": {
++          "type": "feature",
++          "settings": {
++            "heading": "Flip-up armrests",
++            "text": "Lift the arms when you need more space. Check your desk clearance for a suitable fit."
++          }
++        },
++        "benefit_1": {
++          "type": "feature",
++          "settings": {
++            "heading": "Split back support",
++            "text": "Separate upper-back and lumbar sections support different areas of your back."
++          }
++        },
++        "benefit_2": {
++          "type": "feature",
++          "settings": {
++            "heading": "Mesh seat and back",
++            "text": "Mesh seating surfaces allow airflow around your body."
++          }
++        }
++      },
++      "block_order": [
++        "benefit_0",
++        "benefit_1",
++        "benefit_2"
++      ],
++      "settings": {
++        "heading": "Find your fit",
++        "fit_note": "Check your desk clearance and chosen chair options before ordering. Contact our Australian team if you need help choosing."
+@@ -641,0 +674 @@
++    "sihoo_highlights",
+@@ -655 +687,0 @@
+-    "review_source_note",
+--- before/templates/product.s100-2.json
++++ after/templates/product.s100-2.json
+@@ -282 +282,2 @@
+-        "media_grouping_option": "Color,Colour,Couleur,Farbe"
++        "media_grouping_option": "Color,Colour,Couleur,Farbe",
++        "sihoo_unified_reviews": true
+@@ -727 +728 @@
+-      "type": "apps",
++      "type": "sihoo-product-reviews",
+@@ -732 +733 @@
+-            "reviews_to_display": "",
++            "reviews_to_display": "product_reviews_only",
+@@ -736 +737 @@
+-            "limit": 20,
++            "limit": 10,
+@@ -738,2 +739,2 @@
+-            "maxwidth": 1080,
+-            "is_sample": true
++            "maxwidth": 1160,
++            "is_sample": false
+@@ -747,2 +748,2 @@
+-        "full_width": false,
+-        "show_space": true
++        "heading": "Customer reviews",
++        "show_source_note": false
+@@ -757,8 +757,0 @@
+-      }
+-    },
+-    "review_source_note": {
+-      "type": "review-source-note",
+-      "settings": {
+-        "heading": "About these reviews",
+-        "text_alignment": "center",
+-        "height": "small"
+@@ -784 +776,0 @@
+-    "review_source_note",
+--- before/templates/product.s300.json
++++ after/templates/product.s300.json
+@@ -108,0 +109,4 @@
++        },
++        "sihoo_reviews": {
++          "type": "sihoo-reviews",
++          "settings": {}
+@@ -113,0 +118 @@
++        "sihoo_reviews",
+@@ -929 +934 @@
+-      "type": "apps",
++      "type": "sihoo-product-reviews",
+@@ -934 +939 @@
+-            "reviews_to_display": "",
++            "reviews_to_display": "product_reviews_only",
+@@ -941 +946 @@
+-            "is_sample": true
++            "is_sample": false
+@@ -949,2 +954,2 @@
+-        "full_width": false,
+-        "show_space": true
++        "heading": "Customer reviews",
++        "show_source_note": false
+--- before/templates/product.v1.json
++++ after/templates/product.v1.json
+@@ -219 +219,2 @@
+-        "media_grouping_option": "Color,Colour,Couleur,Farbe"
++        "media_grouping_option": "Color,Colour,Couleur,Farbe",
++        "sihoo_unified_reviews": true
+@@ -748 +749 @@
+-      "type": "apps",
++      "type": "sihoo-product-reviews",
+@@ -751,2 +752,11 @@
+-          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews/db20e365-d984-4ac4-9655-e1588d951ca9",
+-          "settings": {}
++          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
++          "settings": {
++            "reviews_to_display": "product_reviews_only",
++            "default_tab": "automatic",
++            "only_photos": false,
++            "aggregated": false,
++            "limit": 10,
++            "hide_thumbnails": false,
++            "maxwidth": 1160,
++            "is_sample": false
++          }
+@@ -759,2 +769,2 @@
+-        "full_width": false,
+-        "show_space": true
++        "heading": "Customer reviews",
++        "show_source_note": false
+--- before/sections/custom-main-product.liquid
++++ after/sections/custom-main-product.liquid
+@@ -705,0 +706,3 @@
++            {% if section.settings.sihoo_unified_reviews %}
++              <div {{ block.shopify_attributes }}>{% render 'sihoo-review-summary', product: product %}</div>
++            {% else %}
+@@ -744,0 +748,2 @@
++
++            {% endif %}
+@@ -2150,0 +2156,7 @@
++    },
++    {
++      "type": "checkbox",
++      "id": "sihoo_unified_reviews",
++      "label": "Use SIHOO unified Loox summary",
++      "default": false,
++      "info": "Enable only with the SIHOO Product reviews section on this template."
+@@ -2289,6 +2301,24 @@
+-            { "value": "award", "label": "Award" },
+-            { "value": "check_mark_in_circle", "label": "Check mark in circle" },
+-            { "value": "return", "label": "Return" },
+-            { "value": "truck", "label": "Truck" },
+-            { "value": "lock", "label": "Lock" },
+-            { "value": "star", "label": "Star" }
++            {
++              "value": "award",
++              "label": "Award"
++            },
++            {
++              "value": "check_mark_in_circle",
++              "label": "Check mark in circle"
++            },
++            {
++              "value": "return",
++              "label": "Return"
++            },
++            {
++              "value": "truck",
++              "label": "Truck"
++            },
++            {
++              "value": "lock",
++              "label": "Lock"
++            },
++            {
++              "value": "star",
++              "label": "Star"
++            }
+@@ -2309,6 +2339,24 @@
+-            { "value": "award", "label": "Award" },
+-            { "value": "check_mark_in_circle", "label": "Check mark in circle" },
+-            { "value": "return", "label": "Return" },
+-            { "value": "truck", "label": "Truck" },
+-            { "value": "lock", "label": "Lock" },
+-            { "value": "star", "label": "Star" }
++            {
++              "value": "award",
++              "label": "Award"
++            },
++            {
++              "value": "check_mark_in_circle",
++              "label": "Check mark in circle"
++            },
++            {
++              "value": "return",
++              "label": "Return"
++            },
++            {
++              "value": "truck",
++              "label": "Truck"
++            },
++            {
++              "value": "lock",
++              "label": "Lock"
++            },
++            {
++              "value": "star",
++              "label": "Star"
++            }
+@@ -2329,6 +2377,24 @@
+-            { "value": "award", "label": "Award" },
+-            { "value": "check_mark_in_circle", "label": "Check mark in circle" },
+-            { "value": "return", "label": "Return" },
+-            { "value": "truck", "label": "Truck" },
+-            { "value": "lock", "label": "Lock" },
+-            { "value": "star", "label": "Star" }
++            {
++              "value": "award",
++              "label": "Award"
++            },
++            {
++              "value": "check_mark_in_circle",
++              "label": "Check mark in circle"
++            },
++            {
++              "value": "return",
++              "label": "Return"
++            },
++            {
++              "value": "truck",
++              "label": "Truck"
++            },
++            {
++              "value": "lock",
++              "label": "Lock"
++            },
++            {
++              "value": "star",
++              "label": "Star"
++            }
+@@ -3818 +3884,3 @@
+-    "templates": ["product"]
++    "templates": [
++      "product"
++    ]
+--- before/sections/main-product.liquid
++++ after/sections/main-product.liquid
+@@ -637,0 +638,3 @@
++          {% when 'sihoo-reviews' %}
++            <div {{ block.shopify_attributes }}>{% render 'sihoo-review-summary', product: product %}</div>
++
+@@ -2774,0 +2778,6 @@
++    },
++    {
++      "type": "sihoo-reviews",
++      "name": "SIHOO Review summary",
++      "limit": 1,
++      "settings": []
+--- before/sections/sihoo-product-reviews.liquid
++++ after/sections/sihoo-product-reviews.liquid
+@@ -0,0 +1,31 @@
++<section id="sihoo-product-reviews" class="container fully-spaced-row--medium" aria-labelledby="sihoo-reviews-heading-{{ section.id }}">
++  <h2 id="sihoo-reviews-heading-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
++  <p>Customer feedback for {{ product.title | escape }}.</p>
++  {%- if section.settings.show_source_note and product.metafields.custom.review_source_note != blank -%}
++    <div class="rte sihoo-review-source">
++      <p><strong>About these reviews</strong></p>
++      {{ product.metafields.custom.review_source_note.value | escape | newline_to_br }}
++    </div>
++  {%- endif -%}
++  {%- for block in section.blocks -%}
++    {% render block %}
++  {%- endfor -%}
++</section>
++{% stylesheet %}
++  #sihoo-product-reviews { scroll-margin-top: 140px; }
++  #sihoo-product-reviews h2 { margin-bottom: 12px; }
++  .sihoo-review-source { padding: 16px; margin-bottom: 24px; border: 1px solid #d8d8d8; border-radius: 8px; }
++{% endstylesheet %}
++{% schema %}
++{
++  "name": "SIHOO Product reviews",
++  "enabled_on": { "templates": ["product"] },
++  "settings": [
++    { "type": "text", "id": "heading", "label": "Heading", "default": "Customer reviews" },
++    { "type": "checkbox", "id": "show_source_note", "label": "Show approved import disclosure", "default": false },
++    { "type": "paragraph", "content": "Use one Loox Reviews Widget. Keep product reviews only, all ratings and text reviews. Do not enable all-product aggregation. Imported reviews require an approved source note on the product." }
++  ],
++  "blocks": [{ "type": "@app" }],
++  "presets": [{ "name": "SIHOO Product reviews" }]
++}
++{% endschema %}
+--- before/sections/sihoo-product-highlights.liquid
++++ after/sections/sihoo-product-highlights.liquid
+@@ -0,0 +1,43 @@
++<section class="container fully-spaced-row--medium sihoo-product-highlights" aria-labelledby="sihoo-highlights-{{ section.id }}">
++  <h2 id="sihoo-highlights-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
++  <div class="sihoo-product-highlights__grid">
++    {%- for block in section.blocks -%}
++      <div class="sihoo-product-highlights__card" {{ block.shopify_attributes }}>
++        <h3>{{ block.settings.heading | escape }}</h3>
++        <p>{{ block.settings.text | escape }}</p>
++      </div>
++    {%- endfor -%}
++  </div>
++  <p>{{ section.settings.fit_note | escape }}</p>
++  <nav aria-label="Product information">
++    <a href="#sihoo-product-reviews">Read customer reviews</a>
++    <a href="{{ routes.root_url }}pages/contact-us">Get help choosing</a>
++    <a href="{{ routes.root_url }}pages/shipping-policy">Delivery information</a>
++  </nav>
++</section>
++{% stylesheet %}
++  .sihoo-product-highlights__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; margin: 24px 0; }
++  .sihoo-product-highlights__card { padding: 24px; border: 1px solid #d8d8d8; border-radius: 12px; }
++  .sihoo-product-highlights__card h3 { font-size: 1.2em; margin: 0 0 12px; }
++  .sihoo-product-highlights__card p { margin: 0; }
++  .sihoo-product-highlights nav { display: flex; flex-wrap: wrap; gap: 12px 24px; }
++  .sihoo-product-highlights a { text-decoration: underline; text-underline-offset: 3px; }
++  .sihoo-product-highlights a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
++  @media (max-width: 767px) { .sihoo-product-highlights__grid { grid-template-columns: 1fr; gap: 12px; } }
++{% endstylesheet %}
++{% schema %}
++{
++  "name": "SIHOO Product highlights",
++  "enabled_on": { "templates": ["product"] },
++  "max_blocks": 3,
++  "settings": [
++    { "type": "text", "id": "heading", "label": "Heading", "default": "Find your fit" },
++    { "type": "text", "id": "fit_note", "label": "Fit and variant guidance", "default": "Check your desk clearance and chosen chair options before ordering. Contact our Australian team if you need help choosing." }
++  ],
++  "blocks": [{ "type": "feature", "name": "Product benefit", "settings": [
++    { "type": "text", "id": "heading", "label": "Heading" },
++    { "type": "textarea", "id": "text", "label": "Verified product benefit" }
++  ] }],
++  "presets": [{ "name": "SIHOO Product highlights" }]
++}
++{% endschema %}
+--- before/snippets/sihoo-review-summary.liquid
++++ after/snippets/sihoo-review-summary.liquid
+@@ -0,0 +1,19 @@
++{%- comment -%}The summary and full widget both use this product's Loox data.{%- endcomment -%}
++{%- liquid
++  assign review_count = product.metafields.loox.num_reviews | plus: 0
++  assign review_average = product.metafields.loox.avg_rating | plus: 0
++-%}
++<div class="sihoo-review-summary">
++  <a href="#sihoo-product-reviews">
++    {%- if review_count > 0 and review_average > 0 -%}
++      <div class="loox-rating" data-id="{{ product.id }}" data-rating="{{ review_average }}" data-raters="{{ review_count }}" data-pattern="[rating]/5 · [count] reviews"></div>
++      <noscript>{{ review_average | round: 1 }} / 5 · {{ review_count }} {% if review_count == 1 %}review{% else %}reviews{% endif %}</noscript>
++    {%- else -%}
++      Read or write a review
++    {%- endif -%}
++  </a>
++</div>
++{% stylesheet %}
++  .sihoo-review-summary a { text-decoration: underline; text-underline-offset: 3px; }
++  .sihoo-review-summary a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
++{% endstylesheet %}

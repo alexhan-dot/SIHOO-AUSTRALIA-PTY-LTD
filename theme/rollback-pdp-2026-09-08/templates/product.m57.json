@@ -1,0 +1,838 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "divider": {
+          "type": "divider",
+          "settings": {
+            "show_in_quickbuy": true
+          }
+        },
+        "text_d8qqgx": {
+          "type": "text",
+          "settings": {
+            "text": "Free shipping with delivery in 1-5 days.",
+            "icon": "plane",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#c16452",
+            "show_in_quickbuy": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant-picker",
+          "settings": {
+            "show_single": true,
+            "selector_style": "listed",
+            "dynamic_availability": "show",
+            "enable_size_chart": false,
+            "size_chart_label": "Size guide",
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "5048318b-3d9e-4a57-b9a4-5761293955e9": {
+          "type": "inventory-level",
+          "disabled": true,
+          "settings": {
+            "show_inventory_notice": "low",
+            "show_inventory_count": "low",
+            "inventory_threshold": 10,
+            "enable_box": false,
+            "enable_pulse": true,
+            "show_in_quickbuy": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_backorder_text": true,
+            "show_pickup_availability": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "show_in_tab": false,
+            "open_tab": false,
+            "icon": "",
+            "show_in_quickbuy": false
+          }
+        },
+        "ff72739d-90fa-44b3-896f-ca72e4704c77": {
+          "type": "accordion",
+          "settings": {
+            "title": "",
+            "icon": "",
+            "content": "<p>Stay productive and inspired while the Sihoo M57 <a href=\"https://sihoo.com.au/\" target=\"_blank\">ergonomic office chair</a> keeps you cool and comfortable throughout the day. Its fully breathable mesh design helps prevent sweating and stickiness, even in warmer weather. The Sihoo M57 also offers a variety of features, including a sleek high back seat, adjustable armrests, lumbar support, and more. 825 buyers rate it 4.6 out of 5. Most sit in it eight hours a day and stop noticing it.</p><ul><li>Fully breathable mesh design to keep you cool</li><li>Backrest designed for full back support</li><li>Dual-adjustable lumbar support for tailored comfort</li><li>Max. 126° recline angle for relaxing with ease</li><li>3D armrests to accommodate a range of needs</li></ul>",
+            "page": "",
+            "custom_liquid": "",
+            "open": true,
+            "show_in_quickbuy": false
+          }
+        },
+        "ae5c0b7e-ed16-49ec-a868-6b6e2ba54cc3": {
+          "type": "related-products",
+          "disabled": true,
+          "settings": {
+            "title": "Related products",
+            "product_list": "{{ product.metafields[\"app--31615844353--specifications\"].compare_with.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "divider",
+        "text_d8qqgx",
+        "variant_picker",
+        "5048318b-3d9e-4a57-b9a4-5761293955e9",
+        "buy_buttons",
+        "description",
+        "ff72739d-90fa-44b3-896f-ca72e4704c77",
+        "ae5c0b7e-ed16-49ec-a868-6b6e2ba54cc3"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_breadcrumbs": true,
+        "select_first_variant": true,
+        "show_location_underneath": false,
+        "inventory_transfers_enable": true,
+        "enable_sticky_columns": true,
+        "enable_sticky_atc": true,
+        "sticky_atc_position": "center",
+        "sticky_atc_mobile": false,
+        "sticky_atc_behavior": "add_to_cart",
+        "sticky_atc_button_style": "primary",
+        "gallery_size": "large",
+        "gallery_layout": "carousel-beside",
+        "enable_zoom": true,
+        "show_alt_text": false,
+        "alt_text_icon": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_media_grouping": true,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe"
+      }
+    },
+    "custom_main_product_4gQ939": {
+      "type": "custom-main-product",
+      "blocks": {
+        "reviews_kWqQzt": {
+          "type": "reviews",
+          "settings": {
+            "label": "reviews",
+            "show_when_empty": false,
+            "empty_label": "reviews"
+          }
+        },
+        "title_Ncpb8d": {
+          "type": "title",
+          "settings": {}
+        },
+        "price_9BXdjL": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "show_save_badge": true,
+            "save_label": "Save",
+            "show_low_stock_badge": true,
+            "low_stock_label": "LOW ON STOCK"
+          }
+        },
+        "demand_alert_mCEiN4": {
+          "type": "demand-alert",
+          "disabled": true,
+          "settings": {
+            "title": "HIGH DEMAND",
+            "text": "Extended dispatch: Please allow an additional 5–7 business days before your order is shipped.",
+            "show_for": "all",
+            "variants": ""
+          }
+        },
+        "shipping_note_bdJ6GH": {
+          "type": "shipping-note",
+          "settings": {
+            "text": "Free shipping with delivery in 1-5 days"
+          }
+        },
+        "variant_picker_bHJCME": {
+          "type": "variant-picker",
+          "settings": {
+            "show_single": false,
+            "selector_style": "listed",
+            "dynamic_availability": "show",
+            "enable_size_chart": false,
+            "size_chart_label": "Size guide",
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "buy_buttons_8Nzhpd": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": false,
+            "show_buy_it_now": true,
+            "buy_it_now_label": "Buy it now",
+            "show_backorder_text": false,
+            "show_pickup_availability": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "trust_badges_Y9JF7Q": {
+          "type": "trust-badges",
+          "settings": {
+            "badge_1_icon": "award",
+            "badge_1_text": "3-Year Warranty",
+            "badge_2_icon": "return",
+            "badge_2_text": "30-Day Returns",
+            "badge_3_icon": "truck",
+            "badge_3_text": "Free Shipping"
+          }
+        }
+      },
+      "block_order": [
+        "reviews_kWqQzt",
+        "title_Ncpb8d",
+        "price_9BXdjL",
+        "demand_alert_mCEiN4",
+        "shipping_note_bdJ6GH",
+        "variant_picker_bHJCME",
+        "buy_buttons_8Nzhpd",
+        "trust_badges_Y9JF7Q"
+      ],
+      "name": "Custom product",
+      "settings": {
+        "accent_color": "#c20000",
+        "low_stock_threshold": 10,
+        "demand_bg": "#fff8e8",
+        "demand_border": "#e8c46a",
+        "shipping_color": "#1f9d55",
+        "trust_color": "#6B7C8A",
+        "show_breadcrumbs": false,
+        "select_first_variant": true,
+        "show_location_underneath": false,
+        "inventory_transfers_enable": true,
+        "enable_sticky_columns": true,
+        "enable_sticky_atc": true,
+        "sticky_atc_position": "end",
+        "sticky_atc_mobile": true,
+        "sticky_atc_behavior": "add_to_cart",
+        "sticky_atc_button_style": "secondary",
+        "gallery_size": "medium",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "show_alt_text": false,
+        "alt_text_icon": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_media_grouping": false,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe"
+      }
+    },
+    "172649452298bf6fcf": {
+      "type": "apps",
+      "blocks": {
+        "specification_compare_specification_table_MNnxw7": {
+          "type": "shopify://apps/specs-compare/blocks/specification-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
+          "settings": {
+            "product": "{{product}}",
+            "show_group_names": true,
+            "maximum_rows": 10,
+            "app_block_margin": 0,
+            "app_block_max_width": "custom",
+            "app_block_custom_max_width": 1000,
+            "append_parent_target_selector": ""
+          }
+        }
+      },
+      "block_order": [
+        "specification_compare_specification_table_MNnxw7"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_space": false
+      },
+      "disabled": true
+    },
+    "rich_text_tiLGxg": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VWaLer": {
+          "type": "heading",
+          "settings": {
+            "title": "Sihoo M57 Ergonomic Office Chair - Stay Cool, Stay Comfortable",
+            "use_h1": false
+          }
+        },
+        "text_TXJ7kj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The SIHOO M57 Ergonomic Office Chair features a breathable full-mesh backrest and seat that promote continuous airflow, helping you stay cool and comfortable during long hours of sitting. Its durable, high-quality mesh resists wear and provides responsive support without trapping heat or moisture, making it ideal for warmer environments. With adjustable ergonomic features and reliable everyday support, the SIHOO M57 is a popular choice for home offices and professional workspaces. Available from $329.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_VWaLer",
+        "text_TXJ7kj"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "image_with_text_overlay_TphAMP": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_TnRGyL": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Tell your story"
+          }
+        },
+        "heading_fYVzid": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Product story",
+            "heading_max_width": 40,
+            "title_size": 70,
+            "title_size_mobile": 40,
+            "use_h1": false
+          }
+        },
+        "text_tmWpaX": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Promote your brand or products with this feature section</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_TnRGyL",
+        "heading_fYVzid",
+        "text_tmWpaX"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/01_9742685c-2cd6-4bcf-a425-03218758c4e0_1.jpg",
+        "height": "adapt",
+        "height_desktop": 560,
+        "height_mobile": 440,
+        "image_link": "",
+        "full_width": false,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "box"
+      }
+    },
+    "logo_list_9APpHe": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_aV3ak6": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/M57-08-01.jpg",
+            "image_width": 280,
+            "link": "",
+            "title": "Full breathable mesh design"
+          }
+        },
+        "logo_XeN3Nj": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/M57-08-02.jpg",
+            "image_width": 280,
+            "link": "",
+            "title": "Contoured backrest 3D"
+          }
+        },
+        "logo_Wndr6i": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/M57-08-03.jpg",
+            "image_width": 280,
+            "link": "",
+            "title": "3D adjustable armrests"
+          }
+        },
+        "logo_BwmCBY": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/M57-08-04.jpg",
+            "image_width": 280,
+            "link": "",
+            "title": "Dual-adjustable lumbar support"
+          }
+        }
+      },
+      "block_order": [
+        "logo_aV3ak6",
+        "logo_XeN3Nj",
+        "logo_Wndr6i",
+        "logo_BwmCBY"
+      ],
+      "settings": {
+        "title": "",
+        "image_opacity": 100,
+        "color_scheme": "1"
+      }
+    },
+    "rich_text_acBdAC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wUm9KC": {
+          "type": "heading",
+          "settings": {
+            "title": "Sihoo M57 Ergonomic Office Chair Features",
+            "use_h1": false
+          }
+        },
+        "text_JeBkVk": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your store with your customers. Describe products, share announcements, or welcome customers to your store.</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_wUm9KC",
+        "text_JeBkVk"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "image_with_text_xNyWdM": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_mhBYtH": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "The Seat Back Contoured to Your Back for Better Ergonomics",
+            "use_h1": false
+          }
+        },
+        "text_BPCQin": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>The Seat Back Contoured to Your Back for Better Ergonomics</h3><p>Crafted to support your entire back from top to bottom, the Sihoo M57 office chair's backrest and the seat are sleek and streamlined. The design contours naturally to the natural curve of your spine, helping you maintain a healthy 'S' shape. This level of comfort and support makes the M57 ideal for home office professionals, creative tasks, or even gaming.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_mhBYtH",
+        "text_BPCQin"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/01_14737d3c-de55-4795-b202-43c9a2a30376.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_mpNwQN": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_zrrim6": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Recline with Ease, Relax in Comfort with an Ergonomic Office Chair",
+            "use_h1": false
+          }
+        },
+        "text_FXrigT": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Recline with Ease, Relax in Comfort with an Ergonomic Office Chair</h3><p>Take a break and lean back in the Sihoo M57, which offers a generous recline angle of up to 126°. The smooth tilt mechanism and adjustable seat height let you customise the chair for different office applications. Versions with footrest included even turn this into an ergonomic office chair with footrest, perfect for relaxing between tasks.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_zrrim6",
+        "text_FXrigT"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/02_6d56920e-1abf-4725-ab84-b9a285e422bb.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_wWpbfD": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_8VEXjN": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Adjustable Lumbar Support for Personalised Back Comfort",
+            "use_h1": false
+          }
+        },
+        "text_MiTJxq": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Adjustable Lumbar Support for Personalised Back Comfort</h3><p>The dual lumbar support adjusts both vertically and horizontally, making it easy to fit your lower back and provide tailored relief. Because the lumbar support adjusts, you stay supported no matter how you move. This feature keeps your posture balanced and your spine aligned, essential for long hours of work.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_8VEXjN",
+        "text_MiTJxq"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/03_270b2832-d87d-437d-bd8e-6fa71816f843.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_EbGTGg": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_egLCx7": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Headrest to Keep Your Head Supported and Aligned",
+            "use_h1": false
+          }
+        },
+        "text_RznRHJ": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Headrest to Keep Your Head Supported and Aligned</h3><p>The adjustable headrest moves up to 8 cm and rotates 45 degrees, fitting the natural curve of your neck. It relieves strain and supports alignment whether upright or reclining. This detail ensures the Sihoo M57 ergonomic chair keeps you comfortable throughout the day, supporting both focus and relaxation.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_egLCx7",
+        "text_RznRHJ"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/04_00293721-9a45-4528-b1b7-ebd026a090ef.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_7cGCc4": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_ib8aLt": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Keep Your Arms Supported in Three Directions with Adjustable Armrests",
+            "use_h1": false
+          }
+        },
+        "text_6DMTGX": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Keep Your Arms Supported in Three Directions with Adjustable Armrests</h3><p>The Sihoo M57 comes with 3D adjustable armrests that move up, down, forward, and rotate. These 3D adjustable options provide support for your arms and shoulders, reducing fatigue and enhancing ergonomics. This feature makes the chair versatile for typing, reading, or even playing mobile games.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ib8aLt",
+        "text_6DMTGX"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/05_a59d0113-d47e-49e6-b5c7-aa42bc5c0fe1.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_nEwAhq": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_UxC94y": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Easy Controls, Effortless Adjustments for the Perfect Ergonomic Chair",
+            "use_h1": false
+          }
+        },
+        "text_cGMzEL": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Easy Controls, Effortless Adjustments for the Perfect Ergonomic Chair</h3><p>Simply reach down and use the handle to adjust the recline angle and seat height. The intuitive controls make fine-tuning effortless, ensuring this is the perfect ergonomic chair for a variety of settings. With parts covered for three years and a straightforward return policy through Sihoo Australia, the Sihoo M57 is a reliable investment that keeps you cool and comfortable while you work.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_UxC94y",
+        "text_cGMzEL"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/06_f5385aed-c179-4563-a561-1ccf455ece01.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_overlay_jNWmiE": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_Vy6Yim": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Tell your story"
+          }
+        },
+        "heading_9JqaAY": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Product story",
+            "heading_max_width": 40,
+            "title_size": 70,
+            "title_size_mobile": 40,
+            "use_h1": false
+          }
+        },
+        "text_KmEPxY": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Promote your brand or products with this feature section</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_Vy6Yim",
+        "heading_9JqaAY",
+        "text_KmEPxY"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/02_1ed5a3ef-a51a-4924-93f7-24fe0240cf15.jpg",
+        "height": "adapt",
+        "height_desktop": 560,
+        "height_mobile": 440,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "box"
+      }
+    },
+    "17264907824a3b621e": {
+      "type": "apps",
+      "blocks": {
+        "specification_compare_comparison_table_EE8bnJ": {
+          "type": "shopify://apps/specs-compare/blocks/comparison-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
+          "settings": {
+            "product": "{{ product }}",
+            "product_list": [
+              "sihoo-m18-ergonomics-task-office-chair",
+              "sihoo-a3-doro-c300-ergonomic-office-chair",
+              "sihoo-doro-s300-ergonomic-office-chair",
+              "sihoo-m57-ergonomic-office-chair",
+              "sihoo-m59-ergonomic-office-chair",
+              "sihoo-m76-ergonomics-office-chair",
+              "sihoo-vito-m90-ergonomic-office-chair",
+              "sihoo-v1-ergonomic-office-chair",
+              "sihoo-a3-doro-c100-ergonomic-office-chair",
+              "sihoo-m16-ergonomics-office-chair",
+              "sihoo-vito-m90-ergonomic-office-chair-with-footrest",
+              "sihoo-m57-ergonomic-office-chair-with-built-in-footrest"
+            ],
+            "fallback_to_related_products": true,
+            "exclude_sold_out_products": true,
+            "enable_show_differences_switch": true,
+            "differences_switch_mode": "highlight_differences",
+            "show_variant_selector": true,
+            "show_group_names": true,
+            "maximum_rows": 15,
+            "maximum_visible_products": 4,
+            "show_in_modal": false,
+            "modal_trigger_button_text": "",
+            "app_block_margin": 0,
+            "app_block_max_width": "full_width",
+            "app_block_custom_max_width": 800,
+            "show_product_image": true,
+            "show_product_vendor": false,
+            "show_product_price": true,
+            "show_product_rating": false,
+            "show_view_details_button": true,
+            "enable_ai_analysis": false,
+            "append_parent_target_selector": ""
+          }
+        }
+      },
+      "block_order": [
+        "specification_compare_comparison_table_EE8bnJ"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_space": true
+      }
+    },
+    "1726495174ce454bc4": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_qfzGna": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "reviews_to_display": "",
+            "default_tab": "automatic",
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 10,
+            "hide_thumbnails": false,
+            "maxwidth": 1160,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_qfzGna"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_space": true
+      }
+    },
+    "rich_text_rUrzDn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_BgjT73": {
+          "type": "heading",
+          "settings": {
+            "title": "Deciding between the M57 and the M18?",
+            "use_h1": false
+          }
+        },
+        "text_LXtL8h": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"https://sihoo.com.au/blogs/all-about-ergonomic-chair/sihoo-m18-vs-m57-choosing-the-perfect-ergonomic-chair-for-your-needs\" title=\"https://sihoo.com.au/blogs/all-about-ergonomic-chair/sihoo-m18-vs-m57-choosing-the-perfect-ergonomic-chair-for-your-needs\">Read the full comparison of the SIHOO M18 vs. M57</a> to find the right ergonomic chair for your needs.</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_BgjT73",
+        "text_LXtL8h"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "recommendations": {
+      "type": "related-products",
+      "settings": {
+        "title": "You may also like",
+        "show_vendor": false,
+        "grid": 4
+      }
+    },
+    "specs_table": {
+      "type": "specs-table",
+      "settings": {
+        "heading": "Specifications",
+        "show_fit_guide": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_main_product_4gQ939",
+    "specs_table",
+    "172649452298bf6fcf",
+    "rich_text_tiLGxg",
+    "image_with_text_overlay_TphAMP",
+    "logo_list_9APpHe",
+    "rich_text_acBdAC",
+    "image_with_text_xNyWdM",
+    "image_with_text_mpNwQN",
+    "image_with_text_wWpbfD",
+    "image_with_text_EbGTGg",
+    "image_with_text_7cGCc4",
+    "image_with_text_nEwAhq",
+    "image_with_text_overlay_jNWmiE",
+    "17264907824a3b621e",
+    "1726495174ce454bc4",
+    "rich_text_rUrzDn",
+    "recommendations"
+  ]
+}

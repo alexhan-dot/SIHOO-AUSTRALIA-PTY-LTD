@@ -1,0 +1,76 @@
+{
+  "theme_id": 187727839523,
+  "live_theme_id": 181013971235,
+  "base_main": "3a15f7f",
+  "files": [
+    {
+      "file": "sections/compare-table.liquid",
+      "before_sha256": "3f371a6ea43cdcd631afe8fe6292cf02b82a40580717ca95fd42a52bdd9d64e2",
+      "candidate_sha256": "68cb58011860eb72e73e123c581fc008f1616748c53a1ae8e1f321fb40687645",
+      "remote_after_sha256": "68cb58011860eb72e73e123c581fc008f1616748c53a1ae8e1f321fb40687645",
+      "rollback_sha256": "fb9aa402a4ce48e73eafb7b47993ec1e8732f215b52b8dd3a2767ba3cc571385"
+    },
+    {
+      "file": "snippets/sihoo-compare-value.liquid",
+      "before_sha256": null,
+      "candidate_sha256": "a76b236db6e76d0a996178b3d1c4a5074e872503fb3736d0268c4c6736927a1d",
+      "remote_after_sha256": "a76b236db6e76d0a996178b3d1c4a5074e872503fb3736d0268c4c6736927a1d"
+    },
+    {
+      "file": "sections/social-proof.liquid",
+      "before_sha256": "53157837e892dac976e2c40959bab1fae4f7b155abac136e7842fa5d1012d149",
+      "candidate_sha256": "ad8b241bbcdc80c4587d6853b7129da8a0f2b62a4096ffcd34fa78b64aa79631",
+      "remote_after_sha256": "ad8b241bbcdc80c4587d6853b7129da8a0f2b62a4096ffcd34fa78b64aa79631",
+      "rollback_sha256": "a2d59944c002a1d8dac3d2907e331f344b585be3fb8eb5791a399e8d3f88844f"
+    },
+    {
+      "file": "sections/delivery-promise.liquid",
+      "before_sha256": "b527f859cd89f6f82bface7692e449a2e0d9cdf4b5951b74f3ab7cdfbbac6094",
+      "candidate_sha256": "411c15928055d6c29d4c3ac4826e2806843869d1bea9dc5082de51b8acf340cd",
+      "remote_after_sha256": "411c15928055d6c29d4c3ac4826e2806843869d1bea9dc5082de51b8acf340cd",
+      "rollback_sha256": "46733a053d4c199c562699a8bde28c124bb6dba3c89abeb9bab1fdaa716e5db0"
+    },
+    {
+      "file": "sections/custom-main-product.liquid",
+      "before_sha256": "416fab9adb6b945b2b5701d44daab61a7f6ff31008f6a55c9de74740ebdb3bb4",
+      "candidate_sha256": "7f71faa95086e19346d28c079469956acc1a249aec99815e500dc50a013ff4a1",
+      "remote_after_sha256": "7f71faa95086e19346d28c079469956acc1a249aec99815e500dc50a013ff4a1",
+      "rollback_sha256": "49eb5a7e60cb5bfbce0b63343eff73f24d1b0dfa1955ec3c3bc71bf8e295c3ce"
+    },
+    {
+      "file": "templates/page.faq.json",
+      "before_sha256": "7fb9c34568beac9d4dd7d966ee9f4990d0c269c2af6eb536e9f2835dfc262db9",
+      "candidate_sha256": "02ec662390c7c84529fe5fdf749ebd741ff13fb7eb85db82ad39cbf620003bf4",
+      "remote_after_sha256": "efff5b9e6a7de07aeb9006c56eddf907da318712026be93c87f278b43f644a7f",
+      "rollback_sha256": "d2f6d2776e6cc06c8edf87cb60f20c19f0b5bfef7e2be3e6a99187ad7a38741b"
+    },
+    {
+      "file": "templates/product.doro.json",
+      "before_sha256": "cd21cdedb77b5fab64117f7c49a8b05c7ed5e5939dc504fdeb6dab43aef97474",
+      "candidate_sha256": "8d946624ed12a60a73028944a9c93a605da68e6b905897c504e5f8ca9addc35a",
+      "remote_after_sha256": "090e57ca706393be5b65e53cb6043f6001ae2bb617a8d6105b1878fc83726122",
+      "rollback_sha256": "50449ba0b353bf45bfea4830e983df05ccbc366385915e642df7d57fee8ebb7a"
+    },
+    {
+      "file": "templates/product.m.json",
+      "before_sha256": "f4a9a2fd5e0d86c3c654ccdb9e6d1a372e535e5bb422eb732c73b58e9c23a124",
+      "candidate_sha256": "ade2ab4081bbced9d85ea99a79c6ed1d0f17f9a56d8d236a256a64e7ee24455f",
+      "remote_after_sha256": "86522b996a978690358322c04a2bf92341792dbda30fedf13ed49675b7569470",
+      "rollback_sha256": "843adfc0f4a40dac597dc227507ff30d7495533e3ef1b08f746a03ec5cd3ee4a"
+    },
+    {
+      "file": "templates/product.x.json",
+      "before_sha256": "f8a870663f37da36a348b0593d31d2904e444260673d3d1be6de057477153358",
+      "candidate_sha256": "ff22c03c1dd0581c6a26fded84759d983551b10882423a1e084b9d1b39683b19",
+      "remote_after_sha256": "384e8330ec66e87ba1e18824122e0926520aed9b0fcbb0f1f4e0d97a398aeaa0",
+      "rollback_sha256": "8b9c5bdba8d8d7603ef141716177800d40e9a66348949930791773b33ae6248c"
+    },
+    {
+      "file": "templates/product.desk.json",
+      "before_sha256": "7f1b524323e561afa0ff765af2d014e949f02b264311d43efadb9bbf28e71dcb",
+      "candidate_sha256": "1d396d1169b8d634c22a28c49c76d26a3d360b4658e690cdca1cb83634d0da63",
+      "remote_after_sha256": "272f0c1d6d0347beadfedb2464784bcdc9468be3febee83532d99e105dc84aa6",
+      "rollback_sha256": "e00471c1604a4e176e4c18141c13b4901c550e71408a3601b2bd4e63601b26ff"
+    }
+  ]
+}

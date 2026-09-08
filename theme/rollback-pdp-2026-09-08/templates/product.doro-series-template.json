@@ -1,0 +1,683 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "divider": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "variant-picker": {
+          "type": "variant-picker",
+          "settings": {
+            "show_single": false,
+            "selector_style": "listed",
+            "dynamic_availability": "show",
+            "enable_size_chart": false,
+            "size_chart_label": "Size guide",
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "buy-buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_backorder_text": false,
+            "show_pickup_availability": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "show_in_tab": true,
+            "open_tab": false,
+            "icon": "",
+            "show_in_quickbuy": false
+          }
+        },
+        "accordion_EE6Ypn": {
+          "type": "accordion",
+          "settings": {
+            "title": "Benefits",
+            "icon": "",
+            "content": "<ul><li>Supports up to 330 lbs</li><li>Dynamic lumbar support for all-day back comfort</li><li>Designed to fit users from 5' to 6'3\"</li><li>Spacious cushion with adjustable seat depth</li><li>6D adjustable armrests for versatile support</li><li>Easy adjustments with a single handle</li><li>Certified by BIFMA and SGS for quality and durability</li><li>Endorsed by The Gadgeteer, MMORPG, and loved by thousands of workers for ergonomic excellence</li></ul>",
+            "page": "",
+            "custom_liquid": "",
+            "open": false,
+            "show_in_quickbuy": false
+          }
+        },
+        "spec_compare_specification_table_hCWNKg": {
+          "type": "shopify://apps/specs-compare/blocks/specification-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
+          "disabled": true,
+          "settings": {
+            "product": "sihoo-vito-m90-ergonomic-office-chair",
+            "show_group_names": true,
+            "maximum_rows": 10,
+            "app_block_margin": 0,
+            "app_block_max_width": "full_width",
+            "app_block_custom_max_width": 800,
+            "append_parent_target_selector": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "vendor",
+        "divider",
+        "variant-picker",
+        "buy-buttons",
+        "description",
+        "accordion_EE6Ypn",
+        "spec_compare_specification_table_hCWNKg"
+      ],
+      "custom_css": [
+        ".product-title {margin: 0 0 0.5em; font-size: 2.18rem; font-weight: 500; line-height: 1.2em;}",
+        ".price__default {font-size: 1.4rem !important; color: #000;}",
+        "span.with-icon__beside {color: #000;}",
+        ".product-description {margin-top: 0px;}",
+        ".product-form .label {color: #000;}",
+        ".media-gallery {border-right: 1px solid #e1e1e1;}",
+        "ul.slider__grid {justify-content: center; align-items: center;}",
+        ".product-description {color: #000;}"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "select_first_variant": true,
+        "show_location_underneath": false,
+        "inventory_transfers_enable": true,
+        "enable_sticky_columns": false,
+        "enable_sticky_atc": true,
+        "sticky_atc_position": "center",
+        "sticky_atc_mobile": false,
+        "sticky_atc_behavior": "add_to_cart",
+        "sticky_atc_button_style": "secondary",
+        "gallery_size": "large",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "show_alt_text": false,
+        "alt_text_icon": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_media_grouping": false,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe"
+      }
+    },
+    "custom_liquid_zHjgcc": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "show_space": false,
+        "code": "<style>\n.c300-compare {\n  max-width: 1280px;\n  margin: 0 auto;\n  padding: 40px 20px;\n  font-family: inherit;\n}\n\n.c300-grid {\n  display: grid;\n  grid-template-columns: 1fr 1.15fr 1.15fr;\n  align-items: stretch;\n  background: #fff;\n}\n\n.c300-cell {\n  padding: 28px 24px;\n  border-bottom: 1px solid #e5e5e5;\n}\n\n.c300-heading {\n  display: flex;\n  align-items: center;\n  font-size: 24px;\n  font-weight: 700;\n  color: #111;\n}\n\n.c300-product {\n  text-align: center;\n  position: relative;\n}\n\n.c300-highlight {\n  background: #dff8fb;\n}\n\n.c300-product img {\n  max-width: 220px;\n  width: 100%;\n  height: auto;\n  margin-bottom: 20px;\n}\n\n.c300-product-title {\n  font-size: 20px;\n  font-weight: 700;\n  color: #111;\n}\n\n.c300-product-title.muted {\n  color: #777;\n}\n\n.c300-label {\n  font-weight: 700;\n  color: #111;\n  display: flex;\n  align-items: center;\n}\n\n.c300-text {\n  font-size: 15px;\n  line-height: 1.55;\n  color: #111;\n  text-align: center;\n}\n\n.c300-text strong {\n  font-weight: 700;\n}\n\n.c300-muted {\n  color: #666;\n}\n\n@media screen and (max-width: 768px) {\n  .c300-grid {\n    display: block;\n  }\n\n  .c300-heading {\n    font-size: 22px;\n    padding: 20px 0;\n  }\n\n  .c300-cell {\n    padding: 22px 18px;\n  }\n\n  .c300-product {\n    border-bottom: 1px solid #e5e5e5;\n  }\n\n  .c300-label {\n    background: #f7f7f7;\n    font-size: 16px;\n  }\n\n  .c300-text {\n    text-align: left;\n  }\n\n  .c300-product img {\n    max-width: 180px;\n  }\n}\n</style>\n\n<section class=\"c300-compare\">\n  <div class=\"c300-grid\">\n\n    <div class=\"c300-cell c300-heading\">\n      Compare the Doro C300 Series\n    </div>\n\n    <div class=\"c300-cell c300-product c300-highlight\">\n      <img\n        src=\"https://sihoo.com.au/cdn/shop/files/c300-white-footrest-1.jpg?v=1774886858&width=5000\"\n        alt=\"Doro C300 Pro ergonomic chair\"\n      >\n      <div class=\"c300-product-title\">Doro C300 Pro</div>\n    </div>\n\n    <div class=\"c300-cell c300-product\">\n      <img\n        src=\"https://cdn.shopify.com/s/files/1/0509/7819/3602/files/Untitled_design_1.png?v=1781238603\"\n        alt=\"Doro C300 Pro V2 ergonomic chair\"\n      >\n      <div class=\"c300-product-title muted\">Doro C300 Pro V2</div>\n    </div>\n\n    <div class=\"c300-cell c300-label\">\n      Support System\n    </div>\n\n    <div class=\"c300-cell c300-text c300-highlight\">\n      <strong>Multi-Point Ergonomic Support</strong><br>\n      Provides balanced support across key body zones for everyday comfort while working or studying.\n    </div>\n\n    <div class=\"c300-cell c300-text c300-muted\">\n      <strong>DynaCore™ Full-Body Support</strong><br>\n      Keeps your headrest, backrest, lumbar support and armrests working together to provide consistent ergonomic support as your posture changes.\n    </div>\n\n    <div class=\"c300-cell c300-label\">\n      Lumbar &amp; Sacral Fit\n    </div>\n\n    <div class=\"c300-cell c300-text c300-highlight\">\n      <strong>Self-Adaptive Dynamic Lumbar Support</strong><br>\n      Responsive lumbar support that adjusts to changes in posture for everyday ergonomic comfort.\n    </div>\n\n    <div class=\"c300-cell c300-text c300-muted\">\n      <strong>Domino™ Sacral-Lumbar Support</strong><br>\n      Provides targeted support across the lumbar and sacral regions for improved comfort.\n    </div>\n\n    <div class=\"c300-cell c300-label\">\n      Backrest\n    </div>\n\n    <div class=\"c300-cell c300-text c300-highlight\">\n      <strong>Flexible Ergonomic Backrest</strong><br>\n      Contours to your back to provide comfortable support while sitting upright or reclining.\n    </div>\n\n    <div class=\"c300-cell c300-text c300-muted\">\n      <strong>SyncroFlex™ Back-Glide System</strong><br>\n      Moves naturally with your posture to create a more personalised fit from the moment you sit down.\n    </div>\n\n    <div class=\"c300-cell c300-label\">\n      Armrests\n    </div>\n\n    <div class=\"c300-cell c300-text c300-highlight\">\n      <strong>4D Coordinated Armrests</strong><br>\n      Adjustable armrests designed to support different tasks and sitting positions throughout the day.\n    </div>\n\n    <div class=\"c300-cell c300-text c300-muted\">\n      <strong>8D Bionic Armrests</strong><br>\n      Expanded adjustment options help keep your arms comfortably supported across a wider range of work and relaxation positions.\n    </div>\n\n    <div class=\"c300-cell c300-label\">\n      Seat Fit\n    </div>\n\n    <div class=\"c300-cell c300-text c300-highlight\">\n      <strong>Waterfall Mesh Seat</strong><br>\n      Breathable waterfall mesh seat designed to provide balanced comfort for everyday use.\n    </div>\n\n    <div class=\"c300-cell c300-text c300-muted\">\n      <strong>Pressure-Relief Seat with 1.6&quot; Depth Adjustment</strong><br>\n      Adjustable seat depth helps create a more personalised fit while promoting better leg support during extended sitting.\n    </div>\n\n  </div>\n</section>"
+      }
+    },
+    "17724749789aac8752": {
+      "type": "apps",
+      "blocks": {
+        "spec_compare_specification_table_ydPKRQ": {
+          "type": "shopify://apps/specs-compare/blocks/specification-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
+          "settings": {
+            "product": "sihoo-a3-doro-c300-ergonomic-office-chair",
+            "show_group_names": true,
+            "maximum_rows": 10,
+            "app_block_margin": 0,
+            "app_block_max_width": "full_width",
+            "app_block_custom_max_width": 800,
+            "append_parent_target_selector": ""
+          }
+        }
+      },
+      "block_order": [
+        "spec_compare_specification_table_ydPKRQ"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "show_space": true
+      }
+    },
+    "custom_multi_column_cLXpJq": {
+      "type": "custom-multi-column",
+      "blocks": {
+        "column_ApwJFk": {
+          "type": "column",
+          "settings": {
+            "hide_image": true,
+            "title": "",
+            "description": "<h3>Overview</h3><p>The SIHOO Doro C300 Pro combines adaptive ergonomic support, breathable comfort and flexible adjustability for long hours of work, study or gaming. Its Multi-Point Ergonomic Support System, adaptive lumbar support and linked recline move naturally with your body to support better posture and reduce fatigue.</p><p><strong>Product Name:</strong></p><p>SIHOO Doro C300 Ergonomic Office Chair<br/><strong>Support System:</strong> Multi-Point Ergonomic Support<br/><strong>Materials:</strong> High-elastic wave mesh that is breathable, oil resistant and stain resistant<br/><strong>Assembly:</strong> Simple assembly required</p><p><strong>Product Weight:</strong> 25.1 kg<br/><strong>Net Weight:</strong> 24.2 kg<br/><strong>Maximum Load:</strong> 150 kg<br/><strong>Recommended User Height:</strong> 150–190 cm</p><p></p><p><strong>General Dimensions:</strong></p><p>71 cm W × 71 cm D × 114–130 cm H</p><p><strong>Chair Back Lifting Height:</strong> 113.6–129.3 cm<br/><strong>Seat Height:</strong> 44–54 cm<br/><strong>Seat Depth:</strong> 42.7–45.1 cm<br/><strong>Seat Width:</strong> 51 cm<br/><strong>Maximum Hip Width:</strong> 51.5 cm</p>",
+            "note": ""
+          }
+        },
+        "column_4FUVgY": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/C300_b84f4cd6-6558-4d28-945d-9c48ff990388.webp",
+            "title": "",
+            "description": "<p><strong>Headrest:</strong> Wide adjustable 3D headrest with 5 cm height adjustment, 2.5 cm forward and backward movement, 35° headrest rotation and 45° bracket rotation<br/><strong>Mechanism:</strong> Self-weighting chassis with three-position recline lock<br/><strong>Backrest:</strong> Flexible breathable mesh backrest<br/><strong>Lumbar Support:</strong> Adaptive PA+ fibre lumbar support<br/><strong>Suspension System:</strong> Multi-Point Ergonomic Support<br/></p>",
+            "note": ""
+          }
+        },
+        "column_WNKPgR": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/C300_e1e9ffaa-5125-4e43-a893-9fd5c7fcad6f.webp",
+            "title": "",
+            "description": "<p><strong>Armrests:</strong> 6D adjustable PU armrests with height, angle, forward, backward and rotational adjustments</p><p><strong>Seat:</strong> Waterfall Mesh Seat with up to 4 cm seat-depth adjustment<br/><strong>Linked Recline:</strong> Seat, backrest and armrests move together while reclining<br/><strong>Recline Angles:</strong> 105°, 120° and 135°<br/><strong>Gas Lift:</strong> SGS Class 4 gas lift</p>",
+            "note": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_ApwJFk",
+        "column_4FUVgY",
+        "column_WNKPgR"
+      ],
+      "custom_css": [
+        ".multi-column-card {background: #f9f9f9;}"
+      ],
+      "name": "Custom Multi-Column",
+      "settings": {
+        "heading": "Sihoo Doro C300 Pro Ergonomic Chair Specifications",
+        "background_color": "#ffffff",
+        "heading_color": "#1a1a1a",
+        "card_background_color": "#f5f5f5",
+        "image_background_color": "#e8e8e8",
+        "card_heading_color": "#1a1a1a",
+        "card_text_color": "#555555",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "product_promo_strip_tqEm4C": {
+      "type": "product-promo-strip",
+      "name": "Product promo strip",
+      "settings": {
+        "promo_text": "Relax and let inspiration flow — sit well and think better.",
+        "background_color": "#171717",
+        "text_color": "#f0f0f0"
+      }
+    },
+    "background_video_h37Gjq": {
+      "type": "background-video",
+      "name": "Background video",
+      "settings": {
+        "video_external": "https://youtu.be/4FzlrQcUQCI",
+        "video_description": "",
+        "text_alignment": "center center",
+        "height_desktop": 700,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style": "shadow"
+      }
+    },
+    "product_promo_gallery_PDKJDe": {
+      "type": "product-promo-gallery",
+      "blocks": {
+        "feature_GKNPQE": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/sihoo-img-1.jpg",
+            "label": "Dynamic Lumbar Support"
+          }
+        },
+        "feature_aeHDTM": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/sihoo-img-2.webp",
+            "label": "Flexible Backrest"
+          }
+        },
+        "feature_ztX9nK": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/sihoo-img-3.jpg",
+            "label": "Bigger W-Shaped Cushion"
+          }
+        },
+        "feature_q663PK": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/sihoo-img-4.webp",
+            "label": "Seat depth adjustment"
+          }
+        }
+      },
+      "block_order": [
+        "feature_GKNPQE",
+        "feature_aeHDTM",
+        "feature_ztX9nK",
+        "feature_q663PK"
+      ],
+      "name": "Product promo gallery",
+      "settings": {
+        "heading": "Sihoo A3 DORO-C300 Pro Ergonomic Chair Features",
+        "background_color": "#ffffff",
+        "heading_color": "#2a2a2a",
+        "text_color": "#2a2a2a",
+        "image_background_color": "#f5f5f5"
+      }
+    },
+    "product_testimonial_BUrRiD": {
+      "type": "product-testimonial",
+      "blocks": {
+        "testimonial_payBD6": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "I took the C300 Pro to work, where I sit for eight hours a day. It is way more comfortable than my basic office chair, and its high-tech look gets plenty of attention from everyone else in the office.",
+            "author": "Mitch Gassner",
+            "source": "from mmorpg, Doro C300 Pro Ergonomic Chair Review"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_payBD6"
+      ],
+      "name": "Product testimonial",
+      "settings": {
+        "background_color": "#171717",
+        "quote_icon_color": "#6b6b6b",
+        "quote_text_color": "#ffffff",
+        "author_color": "#ffffff",
+        "source_color": "#9a9a9a",
+        "avatar_background_color": "#2a3a4a"
+      }
+    },
+    "custom_image_text_rDQLYM": {
+      "type": "custom-image-text",
+      "name": "Custom Image Text",
+      "settings": {
+        "image": "shopify://shop_images/20240115-164855.webp",
+        "image_fit": "contain",
+        "image_position": "left",
+        "heading": "Adjustable seat depth for custom comfort",
+        "description": "Doro C300 Pro’s expanded seat cushion provides a more spacious seating area for larger individuals, enhancing comfort. The adjustable seat depth allows for personalized positioning to suit your needs.",
+        "button_label": "",
+        "button_link": "",
+        "background_color": "#ffffff",
+        "image_background_color": "#e8e8e8",
+        "heading_color": "#1a1a1a",
+        "text_color": "#555555",
+        "button_text_color": "#ffffff",
+        "button_background_color": "#1a1a1a",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "custom_image_text_8MY9g7": {
+      "type": "custom-image-text",
+      "name": "Custom Image Text",
+      "settings": {
+        "image": "shopify://shop_images/c300_03_2480_1080.webp",
+        "image_fit": "cover",
+        "image_position": "right",
+        "heading": "Adjustable anti-spine lumbar support",
+        "description": "The BM (Body Movement) Tracking System ensures the lumbar support automatically conforms to your spine to keep your back comfortable and supported during different postures without the need for manual adjustment.",
+        "button_label": "",
+        "button_link": "",
+        "background_color": "#ffffff",
+        "image_background_color": "#e8e8e8",
+        "heading_color": "#1a1a1a",
+        "text_color": "#555555",
+        "button_text_color": "#ffffff",
+        "button_background_color": "#1a1a1a",
+        "padding_top": 0,
+        "padding_bottom": 80
+      }
+    },
+    "product_testimonial_hzeXfp": {
+      "type": "product-testimonial",
+      "blocks": {
+        "testimonial_Y6wR4d": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "The mesh fabric provides plenty of support without all of the sweatiness of a leather gaming chair. All of the adjustability options of the C300 Pro allow you to comfortably sit for hours on end while you game away.",
+            "author": "Mitch Gassner",
+            "source": "from mmorpg, Doro C300 Pro Ergonomic Chair Review"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_Y6wR4d"
+      ],
+      "name": "Product testimonial",
+      "settings": {
+        "background_color": "#171717",
+        "quote_icon_color": "#6b6b6b",
+        "quote_text_color": "#ffffff",
+        "author_color": "#ffffff",
+        "source_color": "#9a9a9a",
+        "avatar_background_color": "#2a3a4a"
+      }
+    },
+    "custom_multi_column_q8TVXy": {
+      "type": "custom-multi-column",
+      "blocks": {
+        "column_YxNdyi": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/1940-1200.webp",
+            "title": "",
+            "description": "<h3>Flexible seat back that contours to your back</h3><p>When you move your upper body around or reach down to the side to pick up a pen you drop, the streamlined backrest with triangular frame flexes and matches your back, providing continuous support.</p>",
+            "note": ""
+          }
+        },
+        "column_qdwD8x": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/1_9a6e7073-22f2-4ba2-8edd-3caf5cae72ba.webp",
+            "title": "",
+            "description": "<h3>Full-back comfort for any size</h3><p>Easily adjust the headrest up and down, back and forth, or rotate it to fit the curve of your neck, giving you the perfect support and comfort. The wide surface also offers enough space to rest your head comfortably on the side.</p>",
+            "note": ""
+          }
+        },
+        "column_gzCtJy": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/2480-1280_b40d9cb4-ddc4-4426-8b1a-eedf9e57e26e.webp",
+            "title": "",
+            "description": "<h3>Designed to elevateyour workspace</h3><p>Doro C300 Pro features a sleek, modern design inspired by ergonomic human spine. It’s comfortable to sit on and looks great, making it a perfect fit for your office, study, or home.</p>",
+            "note": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_YxNdyi",
+        "column_qdwD8x",
+        "column_gzCtJy"
+      ],
+      "name": "Custom Multi-Column",
+      "settings": {
+        "heading": "How C300 Pro Chair Helps?",
+        "background_color": "#ffffff",
+        "heading_color": "#1a1a1a",
+        "card_background_color": "#f5f5f5",
+        "image_background_color": "#e8e8e8",
+        "card_heading_color": "#1a1a1a",
+        "card_text_color": "#555555",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "custom_multi_column_MB6MeA": {
+      "type": "custom-multi-column",
+      "blocks": {
+        "column_DWqU6X": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/2024__08_79d46ac6-84b5-4a11-9148-939e2b93b9d6.webp",
+            "title": "",
+            "description": "<h3>6D Adjustable Armrests</h3>",
+            "note": ""
+          }
+        },
+        "column_KNxTLJ": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/20240115-114800.webp",
+            "title": "",
+            "description": "<h3>All Controls on Right-hand Side</h3>",
+            "note": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_DWqU6X",
+        "column_KNxTLJ"
+      ],
+      "name": "Custom Multi-Column",
+      "settings": {
+        "heading": "Comfort, Control, and Durability",
+        "background_color": "#ffffff",
+        "heading_color": "#1a1a1a",
+        "card_background_color": "#ffffff",
+        "image_background_color": "#ffffff",
+        "card_heading_color": "#1a1a1a",
+        "card_text_color": "#555555",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "custom_multi_column_tb6Dea": {
+      "type": "custom-multi-column",
+      "blocks": {
+        "column_iEqhY3": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/c300_19703e7a-9786-488c-a325-cddd4f8aeb7f.jpg",
+            "title": "",
+            "description": "<h3>Breathable Mesh Design</h3>",
+            "note": ""
+          }
+        },
+        "column_BFFGYK": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/20240112-101353.webp",
+            "title": "",
+            "description": "<h3>Pressure-free BM Tracking System</h3>",
+            "note": ""
+          }
+        },
+        "column_TLmNTa": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/20240112-101347_77ef1710-f4c9-4f23-ae8f-d33bb644ae0d.jpg",
+            "title": "",
+            "description": "<h3>Built for Last (BIFMA & SGS)</h3>",
+            "note": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_iEqhY3",
+        "column_BFFGYK",
+        "column_TLmNTa"
+      ],
+      "name": "Custom Multi-Column",
+      "settings": {
+        "heading": "",
+        "background_color": "#ffffff",
+        "heading_color": "#1a1a1a",
+        "card_background_color": "#f5f5f5",
+        "image_background_color": "#e8e8e8",
+        "card_heading_color": "#1a1a1a",
+        "card_text_color": "#555555",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "custom_multi_column_WWXqNc": {
+      "type": "custom-multi-column",
+      "blocks": {
+        "column_HhQzUb": {
+          "type": "column",
+          "settings": {
+            "hide_image": true,
+            "title": "",
+            "description": "<h3>Overview</h3><p>Designed to enhance your comfort, Sihoo Doro C300 Pro features automatic lumbar support and a spacious seat cushion for all-day ease. Enjoy flexible armrests and a customizable headrest that adapt to your every position, all wrapped in a sleek, modern design.</p><p><strong>Name</strong>: Doro C300 Pro Ergonomic Chair</p><p><strong>General Dimensions</strong>: 28\"W x 28\"D x 45\"-51\"H</p><p><strong>Product Weight</strong>: 55.34 lbs</p><p><strong>Assembly</strong>: Requires assembly</p><p><strong>Materials</strong>: ‎Mesh back and seat with soft PU coated armrests</p><p><strong>Maximum load</strong>: 330 lbs</p><p><strong>Warranty</strong>: (3) years warranty</p>",
+            "note": ""
+          }
+        },
+        "column_UkeDxJ": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/C300_b84f4cd6-6558-4d28-945d-9c48ff990388.webp",
+            "title": "",
+            "description": "<p><strong>Chair back lifting height</strong>: 44.72\" - 50.91\"</p><p><strong>Seat depth</strong>: 16.81\"-17.76\"</p><p><strong>Max hip width</strong>: 20.28\"</p><p><strong>Maximum load</strong>: 330 lbs</p><p><strong>Armrests</strong>: 6D coordinated armrests (up and down, left and right, front and back, inward and outward, with tilt-lock of armrests, and synchronized recline)</p>",
+            "note": ""
+          }
+        },
+        "column_mJUJWG": {
+          "type": "column",
+          "settings": {
+            "hide_image": false,
+            "image": "shopify://shop_images/C300_e1e9ffaa-5125-4e43-a893-9fd5c7fcad6f.webp",
+            "title": "",
+            "description": "<h3>Ergonomic Tech</h3><p><a href=\"https://www.youtube.com/watch?v=CLd-xN1VbKM\" target=\"_blank\" title=\"Installation Guide\">Installation Guide</a></p><p><a href=\"https://www.youtube.com/watch?v=CLd-xN1VbKM&t=225s\" target=\"_blank\" title=\"Adjustment Guide\">Adjustment Guide</a></p><p><a href=\"https://cdn.shopify.com/s/files/1/0632/8192/2264/files/C300_pro.pdf?v=1727255836\" target=\"_blank\" title=\"Download Manual\">Download Manual</a></p>",
+            "note": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_HhQzUb",
+        "column_UkeDxJ",
+        "column_mJUJWG"
+      ],
+      "name": "Custom Multi-Column",
+      "settings": {
+        "heading": "Ergonomic Chair Specifications",
+        "background_color": "#ffffff",
+        "heading_color": "#1a1a1a",
+        "card_background_color": "#f5f5f5",
+        "image_background_color": "#e8e8e8",
+        "card_heading_color": "#1a1a1a",
+        "card_text_color": "#555555",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "slideshow_TgHBPy": {
+      "type": "slideshow",
+      "blocks": {
+        "image_rjeqq6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/C300_pro.webp",
+            "slide_link": "",
+            "subheading": "",
+            "title": "For every part of you",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": false,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_rjeqq6"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2.44rem; font-weight: 500; margin-bottom: 10px; font-family: inherit;}"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "full image-overlay--bg-shadow",
+        "transition": "fade",
+        "navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "accessibility_info": ""
+      }
+    },
+    "1726717200db5c7e8b": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_fyKK8z": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "reviews_to_display": "",
+            "default_tab": "automatic",
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_fyKK8z"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_space": true
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "title": "You may also like",
+        "show_vendor": false,
+        "grid": 3
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_zHjgcc",
+    "17724749789aac8752",
+    "custom_multi_column_cLXpJq",
+    "product_promo_strip_tqEm4C",
+    "background_video_h37Gjq",
+    "product_promo_gallery_PDKJDe",
+    "product_testimonial_BUrRiD",
+    "custom_image_text_rDQLYM",
+    "custom_image_text_8MY9g7",
+    "product_testimonial_hzeXfp",
+    "custom_multi_column_q8TVXy",
+    "custom_multi_column_MB6MeA",
+    "custom_multi_column_tb6Dea",
+    "custom_multi_column_WWXqNc",
+    "slideshow_TgHBPy",
+    "1726717200db5c7e8b",
+    "related-products"
+  ]
+}

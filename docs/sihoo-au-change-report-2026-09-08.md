@@ -1,13 +1,15 @@
 # 변경 리포트 2 — PDP 통일 P1·P2 + 파일럿·B100·배송 콘텐츠 (2026-09-08)
 
+> 2026-09-09 정정: 이 문서는 9월 8일 작업 시점의 기록이다. 아래 신규 콘텐츠 중 상품 설명·메타필드는 LIVE와 DRAFT가 공유한다. V2 설명이 LIVE의 검색·SNS 메타 설명에 노출됨을 9월 9일 익명 요청으로 확인했다. "고객 미노출"이라는 기존 표현은 잘못됐다. 후속 변경·수정·검증 범위는 [9월 9일 수정 리포트](sihoo-au-fix-report-2026-09-09.md)를 따른다.
+
 > 3줄 요약
 > 1. **드래프트 테마(187727839523)**: 전역 버튼 문장형·본문 16px, 메인 섹션 개조(Save 한 줄·배송/Afterpay 두 줄·HIGH DEMAND 규칙·갤러리 배지 숨김·제목 토큰), 새 섹션 11개, 시리즈 템플릿 4개(doro/m/x/desk), 브레드크럼 컬렉션 폴백, FAQ 페이지 배송 답변 갱신. 라이브 테마 무접촉.
-> 2. **라이브 데이터(고객 미노출)**: 메타오브젝트 정의 3종(feature_story·press_quote·product_video) + 메타필드 정의 14개 추가, C300 Pro V2 콘텐츠를 US 페이지 기준으로 메타필드에 재작성(스토리 7·영상 7·이미지 10·FAQ 5), 11개 상품에 유튜브 영상 16개 연결, M57·M18 아마존 평점 입력, **B100 신규 상품 DRAFT 등록**(변형 6·이미지 15·스펙·FAQ·스토리), 배송 블로그 초안(비공개).
-> 3. **파일**: US 리뷰 CSV 2종(M59AS 118건 전달, B100 151건), 레포 `docs/`·`theme/`·`data/` 갱신. 임포트·게시·공개는 아무것도 하지 않음.
+> 2. **공유 스토어 데이터(LIVE에도 노출 가능)**: 메타오브젝트 정의 3종(feature_story·press_quote·product_video) + 메타필드 정의 14개 추가, C300 Pro V2 콘텐츠를 US 페이지 기준으로 메타필드에 재작성(스토리 7·영상 7·이미지 10·FAQ 5), 11개 상품에 유튜브 영상 16개 연결, M57·M18 아마존 평점 입력, **B100 신규 상품 DRAFT 등록**(변형 6·이미지 15·스펙·FAQ·스토리), 배송 블로그 초안(비공개).
+> 3. **파일**: US 리뷰 CSV 2종(M59AS 118건 전달, B100 151건), 레포 `docs/`·`theme/`·`data/` 갱신. 리뷰 임포트·테마 게시·B100 활성화·배송 블로그 공개는 하지 않음. 공유 상품 설명 등의 변경은 LIVE에도 영향을 줄 수 있음.
 
 ---
 
-## 1. 라이브 스토어에 반영된 데이터 (고객 화면에는 드래프트 테마 게시 전까지 미노출)
+## 1. 공유 스토어 데이터 변경 (LIVE 노출 여부는 각 데이터 사용처에 따라 다름)
 
 ### 1.1 정의 (Settings → Custom data)
 
@@ -88,7 +90,7 @@
 | M57 · M 템플릿 | https://sihoo.com.au/products/sihoo-m57-ergonomic-office-chair?view=m&preview_theme_id=187727839523 | 아마존 4.1/5·5,084·Amazon's Choice 타일, 조립 영상 2, 스펙표 |
 | M18 · M 템플릿 | https://sihoo.com.au/products/sihoo-m18-ergonomics-task-office-chair?view=m&preview_theme_id=187727839523 | 아마존 4.2/5·16,727, 영상 3 |
 | X5S · X 템플릿 | https://sihoo.com.au/products/xallking-x5s-ergonomic-gaming-chair?view=x&preview_theme_id=187727839523 | 다크 스킴 (메타필드 없는 섹션은 비표시) |
-| B100 (DRAFT) | https://sihoo.com.au/products/sihoo-b100-ergonomic-office-chair?view=m&preview_theme_id=187727839523 | DRAFT라 로그인 프리뷰에서만 보임; 스토리 5·FAQ 5·스펙 |
+| B100 (DRAFT) | [Shopify 상품 관리자](https://admin.shopify.com/store/sihoo/products/10362607862051) | 기존 일반 URL은 404/컬렉션 이동 확인. 관리자 발급 키로 DRAFT M 프리뷰 검증 완료. [절차](sihoo-au-fix-report-2026-09-09.md#b100-비공개-프리뷰-절차) 참조; 일반 상품 URL로는 열리지 않음 |
 | FAQ 페이지 | https://sihoo.com.au/pages/faq?preview_theme_id=187727839523 | 4번 배송 답변 |
 | 블로그 초안 | Admin → Online Store → Blog posts → "Four Australian warehouses…" (비공개) | 공개 전 검토 |
 

@@ -1,0 +1,31 @@
+<section id="sihoo-product-reviews" class="container fully-spaced-row--medium" aria-labelledby="sihoo-reviews-heading-{{ section.id }}">
+  <h2 id="sihoo-reviews-heading-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
+  <p>Customer feedback for {{ product.title | escape }}.</p>
+  {%- if section.settings.show_source_note and product.metafields.custom.review_source_note != blank -%}
+    <div class="rte sihoo-review-source">
+      <p><strong>About these reviews</strong></p>
+      {{ product.metafields.custom.review_source_note.value | escape | newline_to_br }}
+    </div>
+  {%- endif -%}
+  {%- for block in section.blocks -%}
+    {% render block %}
+  {%- endfor -%}
+</section>
+{% stylesheet %}
+  #sihoo-product-reviews { scroll-margin-top: 140px; }
+  #sihoo-product-reviews h2 { margin-bottom: 12px; }
+  .sihoo-review-source { padding: 16px; margin-bottom: 24px; border: 1px solid #d8d8d8; border-radius: 8px; }
+{% endstylesheet %}
+{% schema %}
+{
+  "name": "SIHOO Product reviews",
+  "enabled_on": { "templates": ["product"] },
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Customer reviews" },
+    { "type": "checkbox", "id": "show_source_note", "label": "Show approved import disclosure", "default": false },
+    { "type": "paragraph", "content": "Use one Loox Reviews Widget. Keep product reviews only, all ratings and text reviews. Do not enable all-product aggregation. Imported reviews require an approved source note on the product." }
+  ],
+  "blocks": [{ "type": "@app" }],
+  "presets": [{ "name": "SIHOO Product reviews" }]
+}
+{% endschema %}

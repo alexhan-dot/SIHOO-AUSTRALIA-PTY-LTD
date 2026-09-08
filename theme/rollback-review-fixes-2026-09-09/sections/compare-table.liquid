@@ -1,0 +1,285 @@
+{%- comment -%}
+  Compare table (SIHOO AU PDP library, 2026-09-08).
+  Columns: this product + product.metafields.custom.compare_products (max 3).
+  Rows: this section's "row" blocks (each picks a specs.* key) or, with no blocks, a default set.
+  Replaces the hard-coded "Why upgrade" custom-liquid tables. Renders nothing when there is
+  no compare product or no comparable value.
+{%- endcomment -%}
+{%- liquid
+  assign others = product.metafields.custom.compare_products.value
+  assign col_count = 0
+  if others != blank
+    assign col_count = others.size | at_most: 3
+  endif
+-%}
+{%- if col_count > 0 -%}
+{%- liquid
+  assign scheme = section.settings.color_scheme
+  if scheme == 'auto'
+    if product.metafields.custom.color_scheme.value == 'dark'
+      assign scheme = 'dark'
+    else
+      assign scheme = 'light'
+    endif
+  endif
+
+  if section.blocks.size > 0
+    assign row_keys = ''
+    assign row_labels = ''
+    for block in section.blocks
+      assign row_keys = row_keys | append: block.settings.spec | append: '|'
+      assign row_labels = row_labels | append: block.settings.label | append: '|'
+    endfor
+    assign row_keys = row_keys | split: '|'
+    assign row_labels = row_labels | split: '|'
+  else
+    assign row_keys = 'user_height,max_load_kg,seat_height,seat_depth,seat_width_cm,overall_height,recline_positions_deg,armrest_type,lumbar_detail,headrest_detail,mechanism,mesh_material,suspension,warranty_years' | split: ','
+    assign row_labels = 'Recommended user height,Maximum load,Seat height,Seat depth,Seat width,Overall height,Recline positions,Armrests,Lumbar support,Headrest,Mechanism,Mesh,Suspension,Warranty' | split: ','
+  endif
+-%}
+<div class="compare-table compare-table--{{ scheme }} fully-spaced-row--{{ section.settings.height }}" data-cc-animate>
+  <div class="container">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="compare-table__heading majortitle in-content h1 align-center">{{ section.settings.heading | escape }}</h2>
+    {%- endif -%}
+    {%- liquid
+      assign compare_intro = product.metafields.custom.compare_intro.value
+    -%}
+    {%- if compare_intro != blank -%}
+      <div class="compare-table__intro rte align-center"><p>{{ compare_intro | escape | newline_to_br }}</p></div>
+    {%- elsif section.settings.intro != blank -%}
+      <div class="compare-table__intro rte align-center">{{ section.settings.intro }}</div>
+    {%- endif -%}
+
+    <div class="compare-table__scroll">
+      <table class="compare-table__table">
+        <thead>
+          <tr>
+            <th scope="col" class="compare-table__corner"><span class="visually-hidden">Specification</span></th>
+            <th scope="col" class="compare-table__product compare-table__product--current">
+              {%- if product.featured_image -%}{{ product.featured_image | image_url: width: 400 | image_tag: loading: 'lazy', widths: '200, 400', sizes: '200px', alt: product.title }}{%- endif -%}
+              <span class="compare-table__name">{{ product.title | escape }}</span>
+              <span class="compare-table__tag">{{ section.settings.current_label | default: 'This chair' | escape }}</span>
+              <span class="compare-table__price">{{ product.price_min | money }}</span>
+            </th>
+            {%- for other in others limit: 3 -%}
+              <th scope="col" class="compare-table__product">
+                <a href="{{ other.url }}">
+                  {%- if other.featured_image -%}{{ other.featured_image | image_url: width: 400 | image_tag: loading: 'lazy', widths: '200, 400', sizes: '200px', alt: other.title }}{%- endif -%}
+                  <span class="compare-table__name">{{ other.title | escape }}</span>
+                </a>
+                <span class="compare-table__price">{{ other.price_min | money }}</span>
+              </th>
+            {%- endfor -%}
+          </tr>
+        </thead>
+        <tbody>
+          {%- for key in row_keys -%}
+            {%- liquid
+              assign key_s = key | strip
+              if key_s == blank
+                continue
+              endif
+              assign label = row_labels[forloop.index0] | strip
+              if label == blank
+                assign label = key_s | replace: '_', ' ' | capitalize
+              endif
+
+              comment
+                Build the row values (current product first) and detect whether all values are equal.
+              endcomment
+              assign all_same = true
+              assign first_val = ''
+              assign any_val = false
+            -%}
+            {%- capture row_cells -%}
+              {%- for i in (0..col_count) -%}
+                {%- liquid
+                  if i == 0
+                    assign cp = product
+                  else
+                    assign oi = i | minus: 1
+                    assign cp = others[oi]
+                  endif
+                  assign sp = cp.metafields.specs
+                  assign val = ''
+                  case key_s
+                    when 'user_height'
+                      if sp.user_height_min_cm != blank and sp.user_height_max_cm != blank
+                        assign val = sp.user_height_min_cm.value | append: '–' | append: sp.user_height_max_cm.value | append: ' cm'
+                      endif
+                    when 'seat_height'
+                      if sp.seat_height_min_cm != blank and sp.seat_height_max_cm != blank
+                        capture a
+                          render 'spec-num', value: sp.seat_height_min_cm.value
+                        endcapture
+                        capture b
+                          render 'spec-num', value: sp.seat_height_max_cm.value
+                        endcapture
+                        assign val = a | append: '–' | append: b | append: ' cm'
+                      endif
+                    when 'seat_depth'
+                      if sp.seat_depth_min_cm != blank and sp.seat_depth_max_cm != blank
+                        capture a
+                          render 'spec-num', value: sp.seat_depth_min_cm.value
+                        endcapture
+                        capture b
+                          render 'spec-num', value: sp.seat_depth_max_cm.value
+                        endcapture
+                        assign val = a | append: '–' | append: b | append: ' cm'
+                      elsif sp.seat_depth_min_cm != blank
+                        capture a
+                          render 'spec-num', value: sp.seat_depth_min_cm.value
+                        endcapture
+                        assign val = a | append: ' cm'
+                      endif
+                    when 'overall_height'
+                      if sp.overall_height_min_cm != blank and sp.overall_height_max_cm != blank
+                        capture a
+                          render 'spec-num', value: sp.overall_height_min_cm.value
+                        endcapture
+                        capture b
+                          render 'spec-num', value: sp.overall_height_max_cm.value
+                        endcapture
+                        assign val = a | append: '–' | append: b | append: ' cm'
+                      endif
+                    when 'max_load_kg'
+                      if sp.max_load_kg != blank
+                        assign val = sp.max_load_kg.value | append: ' kg'
+                      endif
+                    when 'seat_width_cm'
+                      if sp.seat_width_cm != blank
+                        capture a
+                          render 'spec-num', value: sp.seat_width_cm.value
+                        endcapture
+                        assign val = a | append: ' cm'
+                      endif
+                    when 'net_weight_kg'
+                      if sp.net_weight_kg != blank
+                        capture a
+                          render 'spec-num', value: sp.net_weight_kg.value
+                        endcapture
+                        assign val = a | append: ' kg'
+                      endif
+                    when 'recline_positions_deg'
+                      if sp.recline_positions_deg.value != blank
+                        assign val = sp.recline_positions_deg.value | join: '° / ' | append: '°'
+                      endif
+                    when 'suspension'
+                      if sp.suspension.value == true
+                        assign val = 'Yes'
+                      elsif sp.suspension.value == false
+                        assign val = 'No'
+                      endif
+                    when 'certifications'
+                      if sp.certifications.value != blank
+                        assign val = sp.certifications.value | join: ', '
+                      endif
+                    when 'warranty_years'
+                      if sp.warranty_years != blank
+                        assign val = sp.warranty_years.value | append: '-year'
+                      endif
+                    else
+                      assign val = sp[key_s].value
+                  endcase
+                  assign val = val | strip
+                  if val != blank
+                    assign any_val = true
+                  endif
+                  if i == 0
+                    assign first_val = val
+                  elsif val != first_val
+                    assign all_same = false
+                  endif
+                -%}
+                <td class="compare-table__cell{% if i == 0 %} compare-table__cell--current{% endif %}">{% if val != blank %}{{ val | newline_to_br }}{% else %}<span class="compare-table__na">—</span>{% endif %}</td>
+              {%- endfor -%}
+            {%- endcapture -%}
+            {%- if any_val -%}
+              {%- unless section.settings.differences_only and all_same -%}
+                <tr>
+                  <th scope="row" class="compare-table__label">{{ label | escape }}</th>
+                  {{ row_cells }}
+                </tr>
+              {%- endunless -%}
+            {%- endif -%}
+          {%- endfor -%}
+        </tbody>
+      </table>
+    </div>
+    {%- if section.settings.footnote != blank -%}
+      <p class="compare-table__footnote">{{ section.settings.footnote | escape }}</p>
+    {%- endif -%}
+  </div>
+</div>
+
+{% style %}
+  #shopify-section-{{ section.id }} .compare-table { --ct-bg: #fff; --ct-text: #171717; --ct-muted: #5c5c5c; --ct-line: #e6e6e6; --ct-current: #fff5f5; --ct-accent: #c20000; }
+  #shopify-section-{{ section.id }} .compare-table--dark { --ct-bg: #111; --ct-text: #fff; --ct-muted: #c9c9c9; --ct-line: #2a2a2a; --ct-current: #2a1414; }
+  #shopify-section-{{ section.id }} .compare-table { background: var(--ct-bg); color: var(--ct-text); }
+  #shopify-section-{{ section.id }} .compare-table__intro { max-width: 720px; margin: 0 auto 1.5rem; color: var(--ct-muted); }
+  #shopify-section-{{ section.id }} .compare-table__scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  #shopify-section-{{ section.id }} .compare-table__table { width: 100%; min-width: 640px; border-collapse: collapse; font-size: 0.95rem; }
+  #shopify-section-{{ section.id }} .compare-table__table th, #shopify-section-{{ section.id }} .compare-table__table td { padding: 0.85rem 1rem; border-bottom: 1px solid var(--ct-line); text-align: center; vertical-align: top; }
+  #shopify-section-{{ section.id }} .compare-table__label { text-align: left; font-weight: 600; width: 22%; }
+  #shopify-section-{{ section.id }} .compare-table__product { vertical-align: bottom; }
+  #shopify-section-{{ section.id }} .compare-table__product img { width: 140px; height: auto; margin: 0 auto 0.5rem; display: block; }
+  #shopify-section-{{ section.id }} .compare-table__product a { color: inherit; text-decoration: none; }
+  #shopify-section-{{ section.id }} .compare-table__name { display: block; font-weight: 600; line-height: 1.25; }
+  #shopify-section-{{ section.id }} .compare-table__price { display: block; color: var(--ct-muted); margin-top: 0.25rem; }
+  #shopify-section-{{ section.id }} .compare-table__tag { display: inline-block; margin-top: 0.35rem; padding: 0.1rem 0.6rem; border-radius: 999px; background: var(--ct-accent); color: #fff; font-size: 0.75rem; font-weight: 600; }
+  #shopify-section-{{ section.id }} .compare-table__product--current, #shopify-section-{{ section.id }} .compare-table__cell--current { background: var(--ct-current); }
+  #shopify-section-{{ section.id }} .compare-table__na { color: var(--ct-muted); }
+  #shopify-section-{{ section.id }} .compare-table__footnote { margin-top: 1rem; font-size: 0.85rem; color: var(--ct-muted); text-align: center; }
+{% endstyle %}
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Compare (metafields)",
+  "class": "section-compare-table",
+  "disabled_on": { "groups": ["aside", "header", "footer"] },
+  "settings": [
+    { "type": "paragraph", "content": "Compares this product with product.metafields.custom.compare_products (max 3) using specs.* values. Hidden when the metafield is empty." },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Compare the range" },
+    { "type": "richtext", "id": "intro", "label": "Intro text" },
+    { "type": "text", "id": "current_label", "label": "Badge on this product's column", "default": "This chair" },
+    { "type": "checkbox", "id": "differences_only", "label": "Show only rows that differ", "default": false },
+    { "type": "text", "id": "footnote", "label": "Footnote", "default": "All measurements in centimetres and kilograms. Specifications confirmed by SIHOO." },
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "auto", "options": [ { "value": "auto", "label": "Auto (product metafield)" }, { "value": "light", "label": "Light" }, { "value": "dark", "label": "Dark" } ] },
+    { "type": "select", "id": "height", "label": "Section height", "default": "medium", "options": [ { "value": "small", "label": "Small" }, { "value": "medium", "label": "Medium" }, { "value": "large", "label": "Large" } ] }
+  ],
+  "max_blocks": 16,
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Row",
+      "settings": [
+        { "type": "select", "id": "spec", "label": "Specification", "default": "user_height", "options": [
+          { "value": "user_height", "label": "Recommended user height" },
+          { "value": "max_load_kg", "label": "Maximum load" },
+          { "value": "seat_height", "label": "Seat height range" },
+          { "value": "seat_depth", "label": "Seat depth" },
+          { "value": "seat_width_cm", "label": "Seat width" },
+          { "value": "overall_height", "label": "Overall height" },
+          { "value": "recline_positions_deg", "label": "Recline positions" },
+          { "value": "net_weight_kg", "label": "Net weight" },
+          { "value": "armrest_type", "label": "Armrest type (xD)" },
+          { "value": "armrest_detail", "label": "Armrest detail" },
+          { "value": "lumbar_detail", "label": "Lumbar support" },
+          { "value": "headrest_detail", "label": "Headrest" },
+          { "value": "mechanism", "label": "Mechanism" },
+          { "value": "mesh_material", "label": "Mesh / material" },
+          { "value": "seat_cushion", "label": "Seat cushion" },
+          { "value": "suspension", "label": "Suspension" },
+          { "value": "gas_lift_class", "label": "Gas lift class" },
+          { "value": "certifications", "label": "Certifications" },
+          { "value": "warranty_years", "label": "Warranty" }
+        ] },
+        { "type": "text", "id": "label", "label": "Label override" }
+      ]
+    }
+  ],
+  "presets": [ { "name": "Compare (metafields)" } ]
+}
+{% endschema %}
