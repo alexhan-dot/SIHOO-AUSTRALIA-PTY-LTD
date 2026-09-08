@@ -42,7 +42,12 @@
     {%- if section.settings.heading != blank -%}
       <h2 class="compare-table__heading majortitle in-content h1 align-center">{{ section.settings.heading | escape }}</h2>
     {%- endif -%}
-    {%- if section.settings.intro != blank -%}
+    {%- liquid
+      assign compare_intro = product.metafields.custom.compare_intro.value
+    -%}
+    {%- if compare_intro != blank -%}
+      <div class="compare-table__intro rte align-center"><p>{{ compare_intro | escape | newline_to_br }}</p></div>
+    {%- elsif section.settings.intro != blank -%}
       <div class="compare-table__intro rte align-center">{{ section.settings.intro }}</div>
     {%- endif -%}
 

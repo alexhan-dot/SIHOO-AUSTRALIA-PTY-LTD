@@ -39,7 +39,7 @@
           "type": "shipping-note",
           "settings": {
             "text": "Free delivery Australia-wide, 1–5 business days",
-            "subtext": "Afterpay and Zip available at checkout"
+            "subtext": "Dispatched from Sydney, Melbourne, Brisbane or Perth · Afterpay and Zip available at checkout"
           }
         },
         "variant_picker": {
@@ -191,7 +191,7 @@
         "default_layout": "alternate",
         "image_ratio": "3 / 2",
         "color_scheme": "auto",
-        "max_items": 6,
+        "max_items": 8,
         "height": "medium"
       }
     },
@@ -263,17 +263,110 @@
         "show_vendor": false,
         "grid": 4
       }
+    },
+    "social_proof": {
+      "type": "social-proof",
+      "settings": {
+        "heading": "Trusted across Australia",
+        "show_site_reviews": true,
+        "units_sold": "10 million+",
+        "units_sold_label": "SIHOO chairs sold worldwide",
+        "certifications": "BIFMA · SGS · TÜV",
+        "certifications_label": "Independently tested and certified",
+        "warehouses_count": "4",
+        "warehouses": "Australian warehouses: Sydney, Melbourne, Brisbane, Perth",
+        "footnote": "Amazon rating and count are read from the Amazon.com.au listing and updated periodically.",
+        "color_scheme": "auto",
+        "height": "small"
+      }
+    },
+    "video_gallery": {
+      "type": "video-gallery",
+      "settings": {
+        "heading": "See it in action",
+        "text": "Real footage from our Australian team, our customers and independent reviewers.",
+        "show_group_labels": true,
+        "channel_url": "https://www.youtube.com/@SIHOO_AU",
+        "channel_label": "More on the SIHOO Australia YouTube channel",
+        "color_scheme": "auto",
+        "height": "medium"
+      }
+    },
+    "lifestyle_gallery": {
+      "type": "lifestyle-gallery",
+      "settings": {
+        "heading": "Made for the way you work",
+        "show_captions": true,
+        "ratio": "4 / 3",
+        "full_width": false,
+        "height": "medium"
+      }
+    },
+    "delivery_promise": {
+      "type": "delivery-promise",
+      "blocks": {
+        "syd": {
+          "type": "city",
+          "settings": {
+            "city": "Sydney",
+            "serves": "NSW · ACT",
+            "eta": "1–3 business days"
+          }
+        },
+        "mel": {
+          "type": "city",
+          "settings": {
+            "city": "Melbourne",
+            "serves": "VIC · TAS",
+            "eta": "1–3 business days"
+          }
+        },
+        "bne": {
+          "type": "city",
+          "settings": {
+            "city": "Brisbane",
+            "serves": "QLD · northern NSW",
+            "eta": "1–3 business days"
+          }
+        },
+        "per": {
+          "type": "city",
+          "settings": {
+            "city": "Perth",
+            "serves": "WA",
+            "eta": "1–3 business days"
+          }
+        }
+      },
+      "block_order": [
+        "syd",
+        "mel",
+        "bne",
+        "per"
+      ],
+      "settings": {
+        "heading": "Shipped from the warehouse nearest you",
+        "text": "<p>SIHOO Australia holds stock in four warehouses so most orders leave the same or next business day and arrive within 1–5 business days.</p>",
+        "footnote": "Delivery windows are typical courier times after dispatch. Regional and remote addresses can take longer; we will send tracking as soon as your chair ships.",
+        "link_label": "Read our delivery policy",
+        "link_url": "shopify://pages/shipping-policy",
+        "height": "medium"
+      }
     }
   },
   "order": [
     "main",
+    "social_proof",
     "highlights",
     "specs_table",
     "hero_video",
     "feature_story",
+    "video_gallery",
     "compare_table",
+    "lifestyle_gallery",
     "press_quotes",
     "faq_accordion",
+    "delivery_promise",
     "review_source_note",
     "reviews_loox",
     "related_products"
