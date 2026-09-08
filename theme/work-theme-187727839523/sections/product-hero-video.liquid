@@ -1,0 +1,97 @@
+{%- comment -%}
+  Product hero video (SIHOO AU PDP library, 2026-09-08).
+  Reads product.metafields.custom.hero_video (YouTube/Vimeo URL) or the section's own URL setting.
+  Click-to-play: the page loads only a poster image (product featured image or the chosen poster),
+  so no third-party iframe is downloaded until the customer taps play. Renders nothing without a URL.
+{%- endcomment -%}
+{%- liquid
+  assign url = product.metafields.custom.hero_video.value | default: section.settings.video_url
+  assign embed = blank
+  if url != blank
+    assign v = url | strip
+    if v contains 'youtu.be/'
+      assign yid = v | split: 'youtu.be/' | last | split: '?' | first | split: '&' | first
+      assign embed = 'https://www.youtube-nocookie.com/embed/' | append: yid
+    elsif v contains 'youtube.com/shorts/'
+      assign yid = v | split: 'shorts/' | last | split: '?' | first
+      assign embed = 'https://www.youtube-nocookie.com/embed/' | append: yid
+    elsif v contains 'youtube.com'
+      assign yid = v | split: 'v=' | last | split: '&' | first
+      assign embed = 'https://www.youtube-nocookie.com/embed/' | append: yid
+    elsif v contains 'vimeo.com/'
+      assign vid = v | split: 'vimeo.com/' | last | split: '?' | first | split: '/' | last
+      assign embed = 'https://player.vimeo.com/video/' | append: vid
+    endif
+  endif
+  assign poster = section.settings.poster | default: product.featured_image
+-%}
+{%- if embed != blank -%}
+<div class="hero-video{% if section.settings.full_width %} hero-video--full{% endif %} fully-spaced-row--{{ section.settings.height }}" data-cc-animate>
+  <div class="{% unless section.settings.full_width %}container{% endunless %}">
+    <div class="hero-video__frame">
+      {%- if poster != blank -%}
+        {{ poster | image_url: width: 1800 | image_tag: loading: 'lazy', widths: '600, 900, 1200, 1800', sizes: '100vw', alt: product.title, class: 'hero-video__poster' }}
+      {%- endif -%}
+      <button type="button" class="hero-video__play" data-embed="{{ embed }}" aria-label="Play video: {{ section.settings.heading | default: product.title | escape }}">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="rgba(0,0,0,.55)"/><path d="M26 20l18 12-18 12z" fill="#fff"/></svg>
+      </button>
+      {%- if section.settings.heading != blank -%}
+        <div class="hero-video__caption">
+          <h2 class="hero-video__heading">{{ section.settings.heading | escape }}</h2>
+          {%- if section.settings.text != blank -%}<p>{{ section.settings.text | escape }}</p>{%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% style %}
+  #shopify-section-{{ section.id }} .hero-video__frame { position: relative; aspect-ratio: 16 / 9; background: #000; overflow: hidden; border-radius: 8px; }
+  #shopify-section-{{ section.id }} .hero-video--full .hero-video__frame { border-radius: 0; }
+  #shopify-section-{{ section.id }} .hero-video__poster, #shopify-section-{{ section.id }} .hero-video__frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border: 0; }
+  #shopify-section-{{ section.id }} .hero-video__play { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: rgba(0,0,0,.2); cursor: pointer; display: flex; align-items: center; justify-content: center; }
+  #shopify-section-{{ section.id }} .hero-video__play svg { width: 72px; height: 72px; }
+  #shopify-section-{{ section.id }} .hero-video__caption { position: absolute; left: 0; right: 0; bottom: 0; padding: 1.25rem 1.5rem; color: #fff; background: linear-gradient(to top, rgba(0,0,0,.6), rgba(0,0,0,0)); pointer-events: none; }
+  #shopify-section-{{ section.id }} .hero-video__heading { color: #fff; font-size: clamp(1.25rem, 2.5vw, 2rem); margin: 0 0 0.25rem; }
+  #shopify-section-{{ section.id }} .hero-video__caption p { margin: 0; color: #eee; }
+{% endstyle %}
+
+<script>
+  (function () {
+    var root = document.getElementById('shopify-section-{{ section.id }}');
+    if (!root) return;
+    var btn = root.querySelector('.hero-video__play');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var frame = btn.parentNode;
+      var iframe = document.createElement('iframe');
+      iframe.src = btn.dataset.embed + (btn.dataset.embed.indexOf('?') > -1 ? '&' : '?') + 'autoplay=1&rel=0';
+      iframe.allow = 'autoplay; encrypted-media; picture-in-picture';
+      iframe.allowFullscreen = true;
+      iframe.title = btn.getAttribute('aria-label') || 'Video';
+      var caption = frame.querySelector('.hero-video__caption');
+      if (caption) caption.remove();
+      frame.innerHTML = '';
+      frame.appendChild(iframe);
+    });
+  })();
+</script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Product hero video",
+  "class": "section-product-hero-video",
+  "disabled_on": { "groups": ["aside", "header", "footer"] },
+  "settings": [
+    { "type": "paragraph", "content": "Uses product.metafields.custom.hero_video, or the URL below. Poster image loads first; the video player loads on tap. Hidden when there is no URL." },
+    { "type": "url", "id": "video_url", "label": "Video URL (fallback)" },
+    { "type": "image_picker", "id": "poster", "label": "Poster image (default: product image)" },
+    { "type": "text", "id": "heading", "label": "Caption heading" },
+    { "type": "text", "id": "text", "label": "Caption text" },
+    { "type": "checkbox", "id": "full_width", "label": "Full width", "default": false },
+    { "type": "select", "id": "height", "label": "Section height", "default": "small", "options": [ { "value": "small", "label": "Small" }, { "value": "medium", "label": "Medium" } ] }
+  ],
+  "presets": [ { "name": "Product hero video" } ]
+}
+{% endschema %}

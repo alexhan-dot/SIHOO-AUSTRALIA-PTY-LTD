@@ -1,0 +1,96 @@
+{%- comment -%}
+  Press & testimonials (SIHOO AU PDP library, 2026-09-08).
+  Reads product.metafields.custom.press_quotes (press_quote metaobjects: outlet, quote, author, logo, url, date).
+  Falls back to this section's "quote" blocks. Replaces product-testimonial + logo-list on product pages.
+  Only for media / expert quotes — customer reviews stay in Loox.
+{%- endcomment -%}
+{%- liquid
+  assign quotes = blank
+  if section.settings.source != 'blocks' and product.metafields.custom.press_quotes.value != blank
+    assign quotes = product.metafields.custom.press_quotes.value
+  endif
+  assign count = 0
+  if quotes != blank
+    assign count = quotes.size
+  elsif section.blocks.size > 0
+    assign count = section.blocks.size
+  endif
+  assign scheme = section.settings.color_scheme
+  if scheme == 'auto'
+    if product.metafields.custom.color_scheme.value == 'dark'
+      assign scheme = 'dark'
+    else
+      assign scheme = 'light'
+    endif
+  endif
+-%}
+{%- if count > 0 -%}
+<div class="press-quotes press-quotes--{{ scheme }} fully-spaced-row--{{ section.settings.height }}" data-cc-animate>
+  <div class="container">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="press-quotes__heading majortitle in-content h1 align-center">{{ section.settings.heading | escape }}</h2>
+    {%- endif -%}
+    <div class="press-quotes__grid press-quotes__grid--{{ count | at_most: 3 }}">
+      {%- if quotes != blank -%}
+        {%- for q in quotes limit: 6 -%}
+          {%- render 'press-quote-card', outlet: q.outlet.value, quote: q.quote.value, author: q.author.value, logo: q.logo.value, url: q.url.value, date: q.date.value -%}
+        {%- endfor -%}
+      {%- else -%}
+        {%- for block in section.blocks limit: 6 -%}
+          <div {{ block.shopify_attributes }}>
+            {%- render 'press-quote-card', outlet: block.settings.outlet, quote: block.settings.quote, author: block.settings.author, logo: block.settings.logo, url: block.settings.url, date: blank -%}
+          </div>
+        {%- endfor -%}
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% style %}
+  #shopify-section-{{ section.id }} .press-quotes { --pq-bg: #171717; --pq-text: #fff; --pq-muted: #b5b5b5; --pq-card: #232323; --pq-mark: #6b6b6b; }
+  #shopify-section-{{ section.id }} .press-quotes--light { --pq-bg: #f7f7f7; --pq-text: #171717; --pq-muted: #5c5c5c; --pq-card: #fff; --pq-mark: #c20000; }
+  #shopify-section-{{ section.id }} .press-quotes { background: var(--pq-bg); color: var(--pq-text); }
+  #shopify-section-{{ section.id }} .press-quotes__grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+  #shopify-section-{{ section.id }} .pq-card { background: var(--pq-card); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column; gap: 0.9rem; }
+  #shopify-section-{{ section.id }} .pq-card__mark { color: var(--pq-mark); font-size: 2.5rem; line-height: 0.6; font-family: Georgia, serif; }
+  #shopify-section-{{ section.id }} .pq-card__quote { font-size: 1.05rem; line-height: 1.55; margin: 0; }
+  #shopify-section-{{ section.id }} .pq-card__meta { display: flex; align-items: center; gap: 0.75rem; margin-top: auto; color: var(--pq-muted); font-size: 0.9rem; }
+  #shopify-section-{{ section.id }} .pq-card__logo { height: 28px; width: auto; max-width: 120px; object-fit: contain; }
+  #shopify-section-{{ section.id }} .pq-card__outlet { font-weight: 600; color: var(--pq-text); }
+  #shopify-section-{{ section.id }} .pq-card a { color: inherit; }
+  @media (min-width: 768px) {
+    #shopify-section-{{ section.id }} .press-quotes__grid--2 { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+    #shopify-section-{{ section.id }} .press-quotes__grid--3 { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  }
+{% endstyle %}
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Press & testimonials",
+  "class": "section-press-quotes",
+  "disabled_on": { "groups": ["aside", "header", "footer"] },
+  "settings": [
+    { "type": "paragraph", "content": "Reads product.metafields.custom.press_quotes (Press quote metaobjects). Falls back to the blocks below. Hidden when both are empty. Customer reviews belong in Loox, not here." },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "What the experts say" },
+    { "type": "select", "id": "source", "label": "Data source", "default": "auto", "options": [ { "value": "auto", "label": "Metafield first, then blocks" }, { "value": "blocks", "label": "Blocks only" } ] },
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "auto", "options": [ { "value": "auto", "label": "Auto (dark unless product is light)" }, { "value": "light", "label": "Light" }, { "value": "dark", "label": "Dark" } ] },
+    { "type": "select", "id": "height", "label": "Section height", "default": "medium", "options": [ { "value": "small", "label": "Small" }, { "value": "medium", "label": "Medium" }, { "value": "large", "label": "Large" } ] }
+  ],
+  "max_blocks": 6,
+  "blocks": [
+    {
+      "type": "quote",
+      "name": "Quote (manual)",
+      "settings": [
+        { "type": "text", "id": "outlet", "label": "Outlet / reviewer" },
+        { "type": "textarea", "id": "quote", "label": "Quote" },
+        { "type": "text", "id": "author", "label": "Author" },
+        { "type": "image_picker", "id": "logo", "label": "Logo" },
+        { "type": "url", "id": "url", "label": "Source URL" }
+      ]
+    }
+  ],
+  "presets": [ { "name": "Press & testimonials" } ]
+}
+{% endschema %}
