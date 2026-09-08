@@ -1,0 +1,915 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "klaviyo_reviews_average_rating_gckbyV": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "disabled": true,
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "divider": {
+          "type": "divider",
+          "settings": {
+            "show_in_quickbuy": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant-picker",
+          "settings": {
+            "show_single": true,
+            "selector_style": "listed",
+            "dynamic_availability": "show",
+            "enable_size_chart": false,
+            "size_chart_label": "Size guide",
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "5048318b-3d9e-4a57-b9a4-5761293955e9": {
+          "type": "inventory-level",
+          "disabled": true,
+          "settings": {
+            "show_inventory_notice": "low",
+            "show_inventory_count": "low",
+            "inventory_threshold": 10,
+            "enable_box": false,
+            "enable_pulse": true,
+            "show_in_quickbuy": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_backorder_text": true,
+            "show_pickup_availability": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "text_d8qqgx": {
+          "type": "text",
+          "settings": {
+            "text": "Free shipping with delivery in 1-5 days.",
+            "icon": "plane",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#c16452",
+            "show_in_quickbuy": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "show_in_tab": false,
+            "open_tab": false,
+            "icon": "",
+            "show_in_quickbuy": false
+          }
+        },
+        "ff72739d-90fa-44b3-896f-ca72e4704c77": {
+          "type": "accordion",
+          "settings": {
+            "title": "SIHOO M56 Ergonomics Office Chair, Computer Chair Desk Chair, Adjustable Headrests and Chair Backrest Mesh Chair",
+            "icon": "",
+            "content": "<ul><li><strong>Features</strong> two-way adjustable lumbar pillow and headrest allow for complete fine-tuning of support based on personal preferences, 90°-135°degree reclining backrest adjustable for multiple work positions, 10cm (3.9 in.) of seat pad vertical adjustment and 360°-degree swivel capability. Ultra-soft cotton cushion is comfortable and resists sagging and sinking.</li><li><strong>Ergonomic</strong> design recognized by the ergonomics application association for providing ergonomic designs based on extensive research conducted with digital models of the human body. The angles of the backrest have been designed to ensure constant support of back and lumbar. Our products are designed specifically for those who are in an office chair for extended periods of time and require intensive-use seating for comfort.</li><li><strong>Premium materials </strong>for the backrest, we’ve incorporated a specially-selected mesh cloth with high tensile strength and breathability properties. For mobility, thickened PU rubber castors roll and glide smoothly across the floor and won't scrape or scratch flooring surfaces.</li><li><strong>Research</strong> SIHOO is the realization of decades of research conducted by professionals in product design, and mechanical engineering. We do our absolute best to make sure the smallest details are designed with comfort and safety for each customer. Every aspect of our chairs has been assessed with strict safety and quality testing, including but not limited to cushion impact tests, handrail fatigue tests, and chair-frame Static pressure tests, to ensure a product that exceeds expectations.</li><li><strong>Warranty</strong> period is three years. If there are any quality problems, please contact us. After confirming, we will provide a replacement part or product for you. SIHOO provides full parts coverage for the three years of the period, at zero cost for you!</li></ul>",
+            "page": "",
+            "custom_liquid": "",
+            "open": true,
+            "show_in_quickbuy": false
+          }
+        },
+        "ae5c0b7e-ed16-49ec-a868-6b6e2ba54cc3": {
+          "type": "related-products",
+          "disabled": true,
+          "settings": {
+            "title": "Related products",
+            "product_list": "{{ product.metafields[\"app--31615844353--specifications\"].compare_with.value }}"
+          }
+        },
+        "sihoo_reviews": {
+          "type": "sihoo-reviews",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "sihoo_reviews",
+        "price",
+        "klaviyo_reviews_average_rating_gckbyV",
+        "divider",
+        "variant_picker",
+        "5048318b-3d9e-4a57-b9a4-5761293955e9",
+        "buy_buttons",
+        "text_d8qqgx",
+        "description",
+        "ff72739d-90fa-44b3-896f-ca72e4704c77",
+        "ae5c0b7e-ed16-49ec-a868-6b6e2ba54cc3"
+      ],
+      "custom_css": [
+        "h1,h3 {font-weight: 600; font-size: 1.777rem; color: #000;}",
+        "p,li {font-weight: 400; color: #000; font-size: 1rem;}"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "select_first_variant": true,
+        "show_location_underneath": false,
+        "inventory_transfers_enable": true,
+        "enable_sticky_columns": true,
+        "enable_sticky_atc": true,
+        "sticky_atc_position": "center",
+        "sticky_atc_mobile": false,
+        "sticky_atc_behavior": "add_to_cart",
+        "sticky_atc_button_style": "primary",
+        "gallery_size": "large",
+        "gallery_layout": "carousel-beside",
+        "enable_zoom": true,
+        "show_alt_text": false,
+        "alt_text_icon": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_media_grouping": true,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe"
+      }
+    },
+    "custom_content_AcyUG6": {
+      "type": "custom-content",
+      "blocks": {
+        "image_yidBey": {
+          "type": "image",
+          "settings": {
+            "width": "full",
+            "image": "shopify://shop_images/m56-11.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        }
+      },
+      "block_order": [
+        "image_yidBey"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "rich_text_pzAKRR": {
+      "type": "rich-text",
+      "blocks": {
+        "text_AnJ9zM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sitting all day shouldn't leave you feeling sore and worn out. If your lower back aches after hours at your desk or your seat feels flat and unforgiving by mid-afternoon, it’s time for a better solution. The Sihoo M56 <a href=\"https://sihoo.com.au/\">ergonomic chair in Australia</a> is designed to relieve daily pressure with dynamic lumbar support and a soft, contoured seat—so you can sit comfortably, stay focused, and get through your workday without the strain.</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "text_AnJ9zM"
+      ],
+      "custom_css": [
+        ".use-color-scheme.use-color-scheme--1.fully-padded-row--small {background-color: #4c4948;}",
+        "h2 {font-weight: 600;}",
+        "p {font-weight: 400; color: #fff; font-size: 1.333rem;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": true,
+        "color_scheme": "1"
+      }
+    },
+    "slideshow_HaE3hi": {
+      "type": "slideshow",
+      "blocks": {
+        "image_MVyqJi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/m56-1.jpg",
+            "slide_link": "",
+            "subheading": "",
+            "title": "For every part of you",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_MVyqJi"
+      ],
+      "custom_css": [
+        "h2 {font-weight: 700; font-size: 4.209rem !important;}"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "height": "full",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "transition": "fade",
+        "navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "accessibility_info": ""
+      }
+    },
+    "rich_text_EjcAFq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_9daDKh": {
+          "type": "heading",
+          "settings": {
+            "title": "SIHOO M56 Ergonomics Office Chair Features",
+            "use_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9daDKh"
+      ],
+      "custom_css": [
+        "h2 {font-weight: 600; line-height: 1.6em; font-size: 2.777rem;}"
+      ],
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "image_with_text_7QKmW8": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_m8XCBr": {
+          "type": "heading",
+          "settings": {
+            "title": "Ultra-Wide Dynamic Lumbar Support",
+            "use_h1": false
+          }
+        },
+        "text_Pypb8j": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Tired of lower back pain after a long day at your desk? The M56C’s ultra-wide dynamic lumbar support moves with your body to keep your spine properly aligned. Whether you're leaning forward or reclining, it offers real-time support that helps reduce pressure and discomfort.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_m8XCBr",
+        "text_Pypb8j"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".use-color-scheme {padding: 0px 0px 80px;}",
+        ".container {max-width: 1200px;}",
+        ".feature-text-paired {margin: 0px;}",
+        ".feature-text-paired h2 {font-size: 1.777rem; font-weight: 600;}",
+        ".flexible-layout,.fixed-layout {flex-wrap: nowrap; gap: 40px;}",
+        ".feature-text-paired h2 {font-size: 2.777rem; font-weight: 600;}",
+        ".flexible-layout .column,.fixed-layout .column {padding-left: 0px;}",
+        "a,button {border-radius: 8px;}",
+        "img {border-radius: 12px;}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/m56-img-4.webp",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "1",
+        "background_color": ""
+      }
+    },
+    "image_with_text_xHXepF": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_3LdWMq": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Adjustable and Rotatable Headrest",
+            "use_h1": false
+          }
+        },
+        "text_mK8DWF": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Adjustable and Rotatable Headrest</h3><p>30 cm wide headrest, helps support the head and relieve pressure on the cervical spine.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_3LdWMq",
+        "text_mK8DWF"
+      ],
+      "custom_css": [
+        ".use-color-scheme {padding: 0px 0px 80px;}",
+        ".container {max-width: 1200px;}",
+        ".feature-text-paired {margin: 0px;}",
+        ".feature-text-paired h2 {font-size: 1.777rem; font-weight: 600;}",
+        ".flexible-layout,.fixed-layout {flex-wrap: nowrap; gap: 40px;}",
+        ".feature-text-paired h2 {font-size: 2.777rem; font-weight: 600;}",
+        ".flexible-layout .column,.fixed-layout .column {padding-left: 0px;}",
+        "a,button {border-radius: 8px;}",
+        "img {border-radius: 12px;}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/1_3acb47f2-c89b-4a4b-9911-dbf899c4f6ca.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "1",
+        "background_color": ""
+      }
+    },
+    "image_with_text_hNHteT": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_8cjbyt": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Y-shaped Thickening Bracket Design",
+            "use_h1": false
+          }
+        },
+        "text_wF9Rdq": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Y-shaped Thickening Bracket Design</h3><ul><li>Integrated back design </li><li>Mechanical pressure distribution </li><li>Stable support</li></ul>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_8cjbyt",
+        "text_wF9Rdq"
+      ],
+      "custom_css": [
+        ".use-color-scheme {padding: 0px 0px 80px;}",
+        ".container {max-width: 1200px;}",
+        ".feature-text-paired {margin: 0px;}",
+        ".feature-text-paired h2 {font-size: 1.777rem; font-weight: 600;}",
+        ".flexible-layout,.fixed-layout {flex-wrap: nowrap; gap: 40px;}",
+        ".feature-text-paired h2 {font-size: 2.777rem; font-weight: 600;}",
+        ".flexible-layout .column,.fixed-layout .column {padding-left: 0px;}",
+        "a,button {border-radius: 8px;}",
+        "img {border-radius: 12px;}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/2_0c80093a-a6ac-4d1d-a6bf-f118c3f7d91a.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "1",
+        "background_color": ""
+      }
+    },
+    "image_with_text_xAhC4y": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_biQp8T": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "135° tilt-back angle",
+            "use_h1": false
+          }
+        },
+        "text_3eQPEg": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>135° tilt-back angle</h3><p>Recharge your energy with healthy naps</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_biQp8T",
+        "text_3eQPEg"
+      ],
+      "custom_css": [
+        ".use-color-scheme {padding: 0px 0px 80px;}",
+        ".container {max-width: 1200px;}",
+        ".feature-text-paired {margin: 0px;}",
+        ".feature-text-paired h2 {font-size: 1.777rem; font-weight: 600;}",
+        ".flexible-layout,.fixed-layout {flex-wrap: nowrap; gap: 40px;}",
+        ".feature-text-paired h2 {font-size: 2.777rem; font-weight: 600;}",
+        ".flexible-layout .column,.fixed-layout .column {padding-left: 0px;}",
+        "a,button {border-radius: 8px;}",
+        "img {border-radius: 12px;}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/m56-18.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "1",
+        "background_color": ""
+      }
+    },
+    "image_with_text_VYMP6r": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_PmgC89": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Biomimetic Butterfly Lumbar Support",
+            "use_h1": false
+          }
+        },
+        "text_QEd3Ew": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Biomimetic Butterfly Lumbar Support</h3><ul><li>3.5cm up and down adjustment</li><li>Flexibly adjustable for tailored comfort<br/></li></ul>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_PmgC89",
+        "text_QEd3Ew"
+      ],
+      "custom_css": [
+        ".use-color-scheme {padding: 0px 0px 80px;}",
+        ".container {max-width: 1200px;}",
+        ".feature-text-paired {margin: 0px;}",
+        ".feature-text-paired h2 {font-size: 1.777rem; font-weight: 600;}",
+        ".flexible-layout,.fixed-layout {flex-wrap: nowrap; gap: 40px;}",
+        ".feature-text-paired h2 {font-size: 2.777rem; font-weight: 600;}",
+        ".flexible-layout .column,.fixed-layout .column {padding-left: 0px;}",
+        "a,button {border-radius: 8px;}",
+        "img {border-radius: 12px;}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/3_55deb201-cfbd-42ad-9562-7f915c4d1785.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "1",
+        "background_color": ""
+      }
+    },
+    "image_with_text_JcayRf": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_gbnHTd": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Liftable Armrests",
+            "use_h1": false
+          }
+        },
+        "text_Wgy4tJ": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Liftable Armrests</h3><p>Liftable armrests have a height adjustment of 7cm, enabling users to set the desired height to comfortably support their elbows</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_gbnHTd",
+        "text_Wgy4tJ"
+      ],
+      "custom_css": [
+        ".use-color-scheme {padding: 0px 0px 80px;}",
+        ".container {max-width: 1200px;}",
+        ".feature-text-paired {margin: 0px;}",
+        ".feature-text-paired h2 {font-size: 1.777rem; font-weight: 600;}",
+        ".flexible-layout,.fixed-layout {flex-wrap: nowrap; gap: 40px;}",
+        ".feature-text-paired h2 {font-size: 2.777rem; font-weight: 600;}",
+        ".flexible-layout .column,.fixed-layout .column {padding-left: 0px;}",
+        "a,button {border-radius: 8px;}",
+        "img {border-radius: 12px;}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/4_1ef6cc64-4c80-4da1-b500-18d61789cd9a.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "1",
+        "background_color": ""
+      }
+    },
+    "image_with_text_zzbMDc": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_nJNjh4": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "W-Shaped Foam Seat",
+            "use_h1": false
+          }
+        },
+        "text_bFetwe": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>W-Shaped Foam Seat</h3><p>W-Shaped countoured design mimicking human hip curves, with reasonable pressure distribution of the cushion complying with ergonomic standards</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_nJNjh4",
+        "text_bFetwe"
+      ],
+      "custom_css": [
+        ".use-color-scheme {padding: 0px 0px 80px;}",
+        ".container {max-width: 1200px;}",
+        ".feature-text-paired {margin: 0px;}",
+        ".feature-text-paired h2 {font-size: 1.777rem; font-weight: 600;}",
+        ".flexible-layout,.fixed-layout {flex-wrap: nowrap; gap: 40px;}",
+        ".feature-text-paired h2 {font-size: 2.777rem; font-weight: 600;}",
+        ".flexible-layout .column,.fixed-layout .column {padding-left: 0px;}",
+        "a,button {border-radius: 8px;}",
+        "img {border-radius: 12px;}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/5_b6c20d0e-9b42-43b2-a520-7f038d65c5ac.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "1",
+        "background_color": ""
+      }
+    },
+    "image_with_text_9xGetq": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_LMdff6": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Y-shaped Adjustable Backrest",
+            "use_h1": false
+          }
+        },
+        "text_Fg9HXg": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Y-shaped Adjustable Backrest</h3><ul><li>Flexibly adjustable for tailored comfort</li><li>6cm lifting backrest</li><li>Designed for users with heights ranging from 155cm to 185cm</li></ul>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_LMdff6",
+        "text_Fg9HXg"
+      ],
+      "custom_css": [
+        ".use-color-scheme {padding: 0px 0px 80px;}",
+        ".container {max-width: 1200px;}",
+        ".feature-text-paired {margin: 0px;}",
+        ".feature-text-paired h2 {font-size: 1.777rem; font-weight: 600;}",
+        ".flexible-layout,.fixed-layout {flex-wrap: nowrap; gap: 40px;}",
+        ".feature-text-paired h2 {font-size: 2.777rem; font-weight: 600;}",
+        ".flexible-layout .column,.fixed-layout .column {padding-left: 0px;}",
+        "a,button {border-radius: 8px;}",
+        "img {border-radius: 12px;}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/4_1ef6cc64-4c80-4da1-b500-18d61789cd9a.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "1",
+        "background_color": ""
+      }
+    },
+    "rich_text_jRcpkF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6a4ycU": {
+          "type": "heading",
+          "settings": {
+            "title": "Adaptive Lumbar System",
+            "use_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_6a4ycU"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-weight: 600; line-height: 1.6em; font-size: 2.777rem;}"
+      ],
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "info_grid_HKmxyA": {
+      "type": "info-grid",
+      "blocks": {
+        "info_item_4DgtAj": {
+          "type": "info_item",
+          "settings": {
+            "media_type": "video",
+            "image": "shopify://shop_images/home-office-design-ideas.jpg",
+            "video": "shopify://files/videos/m56-v1.mp4",
+            "title": "Support That Moves With You",
+            "description": "<p>Whether you’re leaning forward or reclining back, the dynamic lumbar support adjusts in real time to keep your lower back fully supported.</p>"
+          }
+        },
+        "info_item_AkaVR3": {
+          "type": "info_item",
+          "settings": {
+            "media_type": "video",
+            "image": "shopify://shop_images/relaxing.webp",
+            "video": "shopify://files/videos/m56-v2_06f01c26-5bb1-48a3-885f-c15b40eabdde.mp4",
+            "title": "Comfort for Every Body",
+            "description": "<p>No matter your size or weight, the lumbar support flexes and rebounds to match your body’s shape—giving you tailored support that never quits.</p>"
+          }
+        },
+        "info_item_f3Xi8x": {
+          "type": "info_item",
+          "settings": {
+            "media_type": "video",
+            "image": "shopify://shop_images/built-to-last.webp",
+            "video": "shopify://files/videos/m56-v3.mp4",
+            "title": "Engineered for Real Support",
+            "description": "<p>A side view of the dual-layer lumbar system reveals its built-in flexibility and firm core—designed to cradle your spine where it matters most.</p>"
+          }
+        },
+        "info_item_PEhA6T": {
+          "type": "info_item",
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/map.webp",
+            "title": "Global Trust",
+            "description": "<p>Trusted in 100+ countries, with 1.6 million pieces sold annually (2023).</p>"
+          }
+        }
+      },
+      "block_order": [
+        "info_item_4DgtAj",
+        "info_item_AkaVR3",
+        "info_item_f3Xi8x",
+        "info_item_PEhA6T"
+      ],
+      "disabled": true,
+      "name": "Info Grid",
+      "settings": {
+        "title": ""
+      }
+    },
+    "17264907824a3b621e": {
+      "type": "apps",
+      "blocks": {
+        "specification_compare_comparison_table_EE8bnJ": {
+          "type": "shopify://apps/specs-compare/blocks/comparison-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
+          "settings": {
+            "product": "{{ product }}",
+            "product_list": [
+              "sihoo-m18-ergonomics-task-office-chair",
+              "sihoo-a3-doro-c300-ergonomic-office-chair",
+              "sihoo-doro-s300-ergonomic-office-chair",
+              "sihoo-m57-ergonomic-office-chair",
+              "sihoo-vito-m90-ergonomic-office-chair",
+              "sihoo-v1-ergonomic-office-chair",
+              "sihoo-a3-doro-c100-ergonomic-office-chair"
+            ],
+            "fallback_to_related_products": true,
+            "exclude_sold_out_products": true,
+            "enable_show_differences_switch": true,
+            "differences_switch_mode": "highlight_differences",
+            "show_variant_selector": true,
+            "show_group_names": true,
+            "maximum_rows": 15,
+            "maximum_visible_products": 4,
+            "show_in_modal": false,
+            "modal_trigger_button_text": "",
+            "app_block_margin": 0,
+            "app_block_max_width": "full_width",
+            "app_block_custom_max_width": 800,
+            "show_product_image": false,
+            "show_product_vendor": false,
+            "show_product_price": true,
+            "show_product_rating": false,
+            "show_view_details_button": false,
+            "enable_ai_analysis": false,
+            "append_parent_target_selector": ""
+          }
+        }
+      },
+      "block_order": [
+        "specification_compare_comparison_table_EE8bnJ"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_space": true
+      }
+    },
+    "rich_text_nUWK76": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_zfdezV": {
+          "type": "heading",
+          "settings": {
+            "title": "Deciding between the M56 and M57?",
+            "use_h1": false
+          }
+        },
+        "text_kJPU8e": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our <a href=\"https://sihoo.com.au/blogs/reviews/sihoo-m56-vs-m57-vs-m59as-ergonomic-chair-australia\" title=\"https://sihoo.com.au/blogs/reviews/sihoo-m56-vs-m57-vs-m59as-ergonomic-chair-australia\">M56 vs M57 vs M59AS comparison</a> breaks down lumbar support, recline, and price side by side.</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_zfdezV",
+        "text_kJPU8e"
+      ],
+      "custom_css": [
+        "h2 {font-weight: 600; line-height: 1.6em; font-size: 2.777rem;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "rich_text_gbFm7j": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PpEBDP": {
+          "type": "heading",
+          "settings": {
+            "title": "Customer Reviews",
+            "use_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_PpEBDP"
+      ],
+      "custom_css": [
+        "h2 {font-weight: 600; line-height: 1.6em; font-size: 2.777rem;}"
+      ],
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "1726495174ce454bc4": {
+      "type": "sihoo-product-reviews",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_qfzGna": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "reviews_to_display": "product_reviews_only",
+            "default_tab": "automatic",
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 10,
+            "hide_thumbnails": false,
+            "maxwidth": 1160,
+            "is_sample": false
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_qfzGna"
+      ],
+      "settings": {
+        "heading": "Customer reviews",
+        "show_source_note": false
+      }
+    },
+    "recommendations": {
+      "type": "related-products",
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-weight: 600; line-height: 1.6em; font-size: 2.777rem;}"
+      ],
+      "settings": {
+        "title": "You may also like",
+        "show_vendor": false,
+        "grid": 4
+      }
+    },
+    "faq_accordion_Lq4zQP": {
+      "type": "faq-accordion",
+      "name": "Product FAQs",
+      "settings": {
+        "background_color": "#ffffff",
+        "text_color": "#000000"
+      }
+    },
+    "product_grid_zkbfbR": {
+      "type": "product-grid",
+      "name": "Product Grid",
+      "settings": {
+        "title": "You may also like",
+        "collection": "premium-ergonomic-chairs",
+        "products_to_show": 8
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_content_AcyUG6",
+    "rich_text_pzAKRR",
+    "slideshow_HaE3hi",
+    "rich_text_EjcAFq",
+    "image_with_text_7QKmW8",
+    "image_with_text_xHXepF",
+    "image_with_text_hNHteT",
+    "image_with_text_xAhC4y",
+    "image_with_text_VYMP6r",
+    "image_with_text_JcayRf",
+    "image_with_text_zzbMDc",
+    "image_with_text_9xGetq",
+    "rich_text_jRcpkF",
+    "info_grid_HKmxyA",
+    "17264907824a3b621e",
+    "rich_text_nUWK76",
+    "rich_text_gbFm7j",
+    "1726495174ce454bc4",
+    "recommendations",
+    "faq_accordion_Lq4zQP",
+    "product_grid_zkbfbR"
+  ]
+}

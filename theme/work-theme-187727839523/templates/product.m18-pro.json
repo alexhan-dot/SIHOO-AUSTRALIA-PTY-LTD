@@ -1,0 +1,1234 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "divider": {
+          "type": "divider",
+          "settings": {
+            "show_in_quickbuy": true
+          }
+        },
+        "text_d8qqgx": {
+          "type": "text",
+          "settings": {
+            "text": "Free shipping with delivery in 1-5 days.",
+            "icon": "plane",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#c16452",
+            "show_in_quickbuy": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant-picker",
+          "settings": {
+            "show_single": true,
+            "selector_style": "listed",
+            "dynamic_availability": "show",
+            "enable_size_chart": false,
+            "size_chart_label": "Size guide",
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "5048318b-3d9e-4a57-b9a4-5761293955e9": {
+          "type": "inventory-level",
+          "disabled": true,
+          "settings": {
+            "show_inventory_notice": "low",
+            "show_inventory_count": "low",
+            "inventory_threshold": 10,
+            "enable_box": false,
+            "enable_pulse": true,
+            "show_in_quickbuy": true
+          }
+        },
+        "text_reHQKc": {
+          "type": "text",
+          "settings": {
+            "text": "Rated for 6+ hour desk days. Free delivery, 3-year warranty.",
+            "icon": "award",
+            "icon_size": "small",
+            "enable_box": true,
+            "box_color": "#ffffff",
+            "show_in_quickbuy": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_backorder_text": true,
+            "show_pickup_availability": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "show_in_tab": false,
+            "open_tab": false,
+            "icon": "",
+            "show_in_quickbuy": false
+          }
+        },
+        "ff72739d-90fa-44b3-896f-ca72e4704c77": {
+          "type": "accordion",
+          "settings": {
+            "title": "SIHOO M18 Pro Ergonomic Office Chair: 4D Linked Armrests, High-Back Breathable Mesh, Adaptive Dynamic Lumbar Support",
+            "icon": "",
+            "content": "<p>The M18 Pro builds on the base M18 with seven upgrades: adaptive self-weight sensing recline, 4D linked armrests, moth-shaped elastic lumbar support, a dual-joint three-section headrest, a W-shaped comfort cushion, a multi-function reclining pedestal, and a heavy-duty PA nylon base. It meets BIFMA testing standards.</p><p>Perfect for:</p><ul><li>Home offices & hybrid work setups</li><li>High-performance teams & boardrooms</li><li>Gamers chasing pro-level ergonomics</li><li>Anyone upgrading from the beloved M18 to the ultimate next step</li></ul>",
+            "page": "",
+            "custom_liquid": "",
+            "open": true,
+            "show_in_quickbuy": false
+          }
+        },
+        "ae5c0b7e-ed16-49ec-a868-6b6e2ba54cc3": {
+          "type": "related-products",
+          "disabled": true,
+          "settings": {
+            "title": "Related products",
+            "product_list": "{{ product.metafields[\"app--31615844353--specifications\"].compare_with.value }}"
+          }
+        },
+        "sihoo_reviews": {
+          "type": "sihoo-reviews",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "sihoo_reviews",
+        "price",
+        "divider",
+        "text_d8qqgx",
+        "variant_picker",
+        "5048318b-3d9e-4a57-b9a4-5761293955e9",
+        "text_reHQKc",
+        "buy_buttons",
+        "description",
+        "ff72739d-90fa-44b3-896f-ca72e4704c77",
+        "ae5c0b7e-ed16-49ec-a868-6b6e2ba54cc3"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "select_first_variant": true,
+        "show_location_underneath": false,
+        "inventory_transfers_enable": true,
+        "enable_sticky_columns": true,
+        "enable_sticky_atc": true,
+        "sticky_atc_position": "center",
+        "sticky_atc_mobile": false,
+        "sticky_atc_behavior": "add_to_cart",
+        "sticky_atc_button_style": "primary",
+        "gallery_size": "large",
+        "gallery_layout": "carousel-beside",
+        "enable_zoom": true,
+        "show_alt_text": false,
+        "alt_text_icon": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_media_grouping": true,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe"
+      }
+    },
+    "172649452298bf6fcf": {
+      "type": "apps",
+      "blocks": {
+        "specification_compare_specification_table_MNnxw7": {
+          "type": "shopify://apps/specs-compare/blocks/specification-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
+          "settings": {
+            "product": "sihoo-m18-pro-ergonomic-office-chair",
+            "show_group_names": true,
+            "maximum_rows": 10,
+            "app_block_margin": 0,
+            "app_block_max_width": "custom",
+            "app_block_custom_max_width": 1000,
+            "append_parent_target_selector": ""
+          }
+        }
+      },
+      "block_order": [
+        "specification_compare_specification_table_MNnxw7"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_space": false
+      }
+    },
+    "rich_text_tiLGxg": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VWaLer": {
+          "type": "heading",
+          "settings": {
+            "title": "Why the M18 Pro?",
+            "use_h1": false
+          }
+        },
+        "text_TXJ7kj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Built for desk days past six hours, the M18 Pro adds self-weight sensing recline and 4D linked armrests over the base M18, for $90 more. It carries the same 3-year warranty and 136kg weight rating as every M-series chair.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_VWaLer",
+        "text_TXJ7kj"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "image_with_text_overlay_TphAMP": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_TnRGyL": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Tell your story"
+          }
+        },
+        "heading_fYVzid": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Product story",
+            "heading_max_width": 40,
+            "title_size": 70,
+            "title_size_mobile": 40,
+            "use_h1": false
+          }
+        },
+        "text_tmWpaX": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Promote your brand or products with this feature section</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_TnRGyL",
+        "heading_fYVzid",
+        "text_tmWpaX"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/01_9742685c-2cd6-4bcf-a425-03218758c4e0_1.jpg",
+        "height": "adapt",
+        "height_desktop": 560,
+        "height_mobile": 440,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "box"
+      }
+    },
+    "background_video_nhtcBr": {
+      "type": "background-video",
+      "blocks": {
+        "subheading_46i4aF": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Tell your story"
+          }
+        },
+        "heading_MwGmBy": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Background video",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_haxMP4": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use a video to get a customer's attention</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_46i4aF",
+        "heading_MwGmBy",
+        "text_haxMP4"
+      ],
+      "disabled": true,
+      "name": "Background video",
+      "settings": {
+        "video_shopify": "shopify://files/videos/Sihoo s M57C, takes ergonomic to another level as the  hexagonal God of war. .mp4",
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_description": "SIHOO M57C(PRO) Instruction video",
+        "text_alignment": "center center",
+        "height_desktop": 660,
+        "height_mobile": 200,
+        "full_width": true,
+        "overlay_style": "shadow"
+      }
+    },
+    "image_with_text_overlay_HNcw8i": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_X9PPbm": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Tell your story"
+          }
+        },
+        "heading_CGiJUW": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Image with text overlay",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_TJ6eri": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Promote your brand or products with this feature section</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_X9PPbm",
+        "heading_CGiJUW",
+        "text_TJ6eri"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/M18_750_01.jpg",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": false,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "image_with_text_overlay_73PeQg": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_dUpTj3": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Tell your story"
+          }
+        },
+        "heading_iLY8Q6": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Image with text overlay",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_C7mVq8": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Promote your brand or products with this feature section</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_dUpTj3",
+        "heading_iLY8Q6",
+        "text_C7mVq8"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/M18_750_02.jpg",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": false,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "image_with_text_overlay_PFVVMY": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_KCPcbt": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Tell your story"
+          }
+        },
+        "heading_EVkXhW": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Image with text overlay",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_xCX7Jw": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Promote your brand or products with this feature section</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_KCPcbt",
+        "heading_EVkXhW",
+        "text_xCX7Jw"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/M18_750_03.jpg",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": false,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "image_with_text_overlay_cJxJpN": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_GBpCAE": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Tell your story"
+          }
+        },
+        "heading_JGCyza": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Image with text overlay",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_wNJYqa": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Promote your brand or products with this feature section</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_GBpCAE",
+        "heading_JGCyza",
+        "text_wNJYqa"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/M18_750_04.jpg",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": false,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "image_with_text_overlay_GTr4F8": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_mc6qPw": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Tell your story"
+          }
+        },
+        "heading_NKD7iW": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Image with text overlay",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_zANVwU": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Promote your brand or products with this feature section</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_mc6qPw",
+        "heading_NKD7iW",
+        "text_zANVwU"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/M18_750_05.jpg",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": false,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "image_with_text_overlay_yMeEVr": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_mWizxr": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Tell your story"
+          }
+        },
+        "heading_gjxexr": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Image with text overlay",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_ynemcB": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Promote your brand or products with this feature section</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_mWizxr",
+        "heading_gjxexr",
+        "text_ynemcB"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/M18_750_06.jpg",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": false,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "image_with_text_overlay_CpXzza": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_qnBXrq": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Tell your story"
+          }
+        },
+        "heading_x6mCK9": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Image with text overlay",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_VLWYKi": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Promote your brand or products with this feature section</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_qnBXrq",
+        "heading_x6mCK9",
+        "text_VLWYKi"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/M18_750_07.jpg",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": false,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "image_with_text_overlay_DH9Xxb": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_hVzRx6": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Tell your story"
+          }
+        },
+        "heading_iykBRd": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Image with text overlay",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_N4HTyJ": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Promote your brand or products with this feature section</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_hVzRx6",
+        "heading_iykBRd",
+        "text_N4HTyJ"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/M18_750_08.jpg",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": false,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "image_with_text_overlay_KtqEn3": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_bbazLP": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Tell your story"
+          }
+        },
+        "heading_eAFkAB": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Image with text overlay",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_cNeRkp": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Promote your brand or products with this feature section</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_bbazLP",
+        "heading_eAFkAB",
+        "text_cNeRkp"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/M18_750_09.jpg",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": false,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "image_with_text_overlay_twgwCB": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_BPDwGp": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Tell your story"
+          }
+        },
+        "heading_7EL9eR": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Image with text overlay",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_jHybgT": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Promote your brand or products with this feature section</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_BPDwGp",
+        "heading_7EL9eR",
+        "text_jHybgT"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/M18_750_10.jpg",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": false,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "image_with_text_overlay_4pKypL": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_B9VQze": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Tell your story"
+          }
+        },
+        "heading_LNPBct": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Image with text overlay",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_QAJLYh": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Promote your brand or products with this feature section</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_B9VQze",
+        "heading_LNPBct",
+        "text_QAJLYh"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/M18_750_11.jpg",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "image_with_text_overlay_H6a7Dz": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_EPjd9Y": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Image with text overlay",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_t8HRiG": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Promote your brand or products with this feature section</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_EPjd9Y",
+        "text_t8HRiG"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/M18_750_12.jpg",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": false,
+        "text_alignment": "bottom right",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "image_with_text_overlay_mQDmTD": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_JBErac": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "*The Footrest is not available in Without Built-in Footrest."
+          }
+        },
+        "heading_dnc9BV": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Image with text overlay",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_Uh8Uja": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Promote your brand or products with this feature section</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_JBErac",
+        "heading_dnc9BV",
+        "text_Uh8Uja"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/M18_750_13.jpg",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": false,
+        "text_alignment": "bottom right",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "image_with_text_overlay_zXk7Nz": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_bBnqeb": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "*The Footrest is not available in Without Built-in Footrest."
+          }
+        },
+        "heading_VTyBYD": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Image with text overlay",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_3JRChp": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Promote your brand or products with this feature section</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_bBnqeb",
+        "heading_VTyBYD",
+        "text_3JRChp"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/M18_750_14.jpg",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": false,
+        "text_alignment": "bottom right",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "image_with_text_overlay_AAeHef": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_8mrjED": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "*The Footrest is not available in Without Built-in Footrest."
+          }
+        },
+        "heading_BG349G": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Image with text overlay",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_8GUMmc": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Promote your brand or products with this feature section</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_8mrjED",
+        "heading_BG349G",
+        "text_8GUMmc"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/M18_750_15.jpg",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": false,
+        "text_alignment": "bottom right",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "image_with_text_overlay_fgVRVY": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_QWKLgj": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "*The Footrest is not available in Without Built-in Footrest."
+          }
+        },
+        "heading_P3DwBr": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Image with text overlay",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_hR6UeN": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Promote your brand or products with this feature section</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_QWKLgj",
+        "heading_P3DwBr",
+        "text_hR6UeN"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/M18_750_16.jpg",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": false,
+        "text_alignment": "bottom right",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "image_with_text_overlay_R36MBX": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_7DizPb": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "*The Footrest is not available in Without Built-in Footrest."
+          }
+        },
+        "heading_CdDgnt": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Image with text overlay",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_3HGqki": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Promote your brand or products with this feature section</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_7DizPb",
+        "heading_CdDgnt",
+        "text_3HGqki"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/M18_750_17.jpg",
+        "height": "adapt",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "image_link": "",
+        "full_width": false,
+        "text_alignment": "bottom right",
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow"
+      }
+    },
+    "17264907824a3b621e": {
+      "type": "apps",
+      "blocks": {
+        "specification_compare_comparison_table_EE8bnJ": {
+          "type": "shopify://apps/specs-compare/blocks/comparison-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
+          "settings": {
+            "product": "{{ product }}",
+            "product_list": [
+              "sihoo-m18-ergonomics-task-office-chair",
+              "sihoo-a3-doro-c300-ergonomic-office-chair",
+              "sihoo-doro-s300-ergonomic-office-chair",
+              "sihoo-m57-ergonomic-office-chair",
+              "sihoo-m59-ergonomic-office-chair",
+              "sihoo-m76-ergonomics-office-chair",
+              "sihoo-vito-m90-ergonomic-office-chair",
+              "sihoo-v1-ergonomic-office-chair",
+              "sihoo-a3-doro-c100-ergonomic-office-chair",
+              "sihoo-m16-ergonomics-office-chair",
+              "sihoo-vito-m90-ergonomic-office-chair-with-footrest",
+              "sihoo-m57-ergonomic-office-chair-with-built-in-footrest"
+            ],
+            "fallback_to_related_products": true,
+            "exclude_sold_out_products": true,
+            "enable_show_differences_switch": true,
+            "differences_switch_mode": "highlight_differences",
+            "show_variant_selector": true,
+            "show_group_names": true,
+            "maximum_rows": 15,
+            "maximum_visible_products": 4,
+            "show_in_modal": false,
+            "modal_trigger_button_text": "",
+            "app_block_margin": 0,
+            "app_block_max_width": "full_width",
+            "app_block_custom_max_width": 800,
+            "show_product_image": true,
+            "show_product_vendor": false,
+            "show_product_price": true,
+            "show_product_rating": false,
+            "show_view_details_button": true,
+            "enable_ai_analysis": false,
+            "append_parent_target_selector": ""
+          }
+        }
+      },
+      "block_order": [
+        "specification_compare_comparison_table_EE8bnJ"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_space": true
+      }
+    },
+    "1726495174ce454bc4": {
+      "type": "sihoo-product-reviews",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_qfzGna": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "reviews_to_display": "product_reviews_only",
+            "default_tab": "automatic",
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 10,
+            "hide_thumbnails": false,
+            "maxwidth": 1160,
+            "is_sample": false
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_qfzGna"
+      ],
+      "settings": {
+        "heading": "Customer reviews",
+        "show_source_note": false
+      }
+    },
+    "recommendations": {
+      "type": "related-products",
+      "settings": {
+        "title": "You may also like",
+        "show_vendor": false,
+        "grid": 4
+      }
+    }
+  },
+  "order": [
+    "main",
+    "172649452298bf6fcf",
+    "rich_text_tiLGxg",
+    "image_with_text_overlay_TphAMP",
+    "background_video_nhtcBr",
+    "image_with_text_overlay_HNcw8i",
+    "image_with_text_overlay_73PeQg",
+    "image_with_text_overlay_PFVVMY",
+    "image_with_text_overlay_cJxJpN",
+    "image_with_text_overlay_GTr4F8",
+    "image_with_text_overlay_yMeEVr",
+    "image_with_text_overlay_CpXzza",
+    "image_with_text_overlay_DH9Xxb",
+    "image_with_text_overlay_KtqEn3",
+    "image_with_text_overlay_twgwCB",
+    "image_with_text_overlay_4pKypL",
+    "image_with_text_overlay_H6a7Dz",
+    "image_with_text_overlay_mQDmTD",
+    "image_with_text_overlay_zXk7Nz",
+    "image_with_text_overlay_AAeHef",
+    "image_with_text_overlay_fgVRVY",
+    "image_with_text_overlay_R36MBX",
+    "17264907824a3b621e",
+    "1726495174ce454bc4",
+    "recommendations"
+  ]
+}
