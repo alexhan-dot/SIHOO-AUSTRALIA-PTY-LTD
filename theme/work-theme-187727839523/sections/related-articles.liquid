@@ -1,14 +1,36 @@
 {%- comment -%}
   Related articles (SIHOO AU PDP library, 2026-09-08).
-  Reads product.metafields.custom.related_articles (list of blog articles). Renders nothing when empty.
-  Links the product page to the blog for internal linking / SEO and gives shoppers buying guides.
+  Reads product.metafields.custom.related_article_paths — a list of "blog-handle/article-handle" strings —
+  because Liquid cannot resolve article_reference metafields (custom.related_articles stays as the Admin-side
+  source of truth and is mirrored into the paths list). Unpublished articles are skipped. Renders nothing when empty.
 {%- endcomment -%}
 {%- liquid
-  assign arts = product.metafields.custom.related_articles.value
+  assign paths = product.metafields.custom.related_article_paths.value
   assign n = 0
-  if arts != blank
-    assign n = arts.size
-  endif
+  capture cards
+    if paths != blank
+      for path in paths limit: 4
+        assign a = articles[path]
+        if a == blank or a.published_at == blank
+          continue
+        endif
+        assign n = n | plus: 1
+        echo '<a class="related-articles__card" href="' | append: a.url | append: '">'
+        echo '<div class="related-articles__image">'
+        if a.image
+          echo a.image | image_url: width: 800 | image_tag: loading: 'lazy', widths: '400, 800', sizes: '(min-width: 768px) 25vw, 100vw', alt: a.title
+        endif
+        echo '</div>'
+        echo '<span class="related-articles__blog">' | append: a.blog.title | append: '</span>'
+        echo '<span class="related-articles__title">' | append: a.title | append: '</span>'
+        if section.settings.show_excerpt and a.excerpt_or_content != blank
+          assign ex = a.excerpt_or_content | strip_html | truncatewords: 22
+          echo '<span class="related-articles__excerpt">' | append: ex | append: '</span>'
+        endif
+        echo '</a>'
+      endfor
+    endif
+  endcapture
 -%}
 {%- if n > 0 -%}
 <div class="related-articles fully-spaced-row--{{ section.settings.height }}" data-cc-animate>
@@ -16,20 +38,7 @@
     {%- if section.settings.heading != blank -%}
       <h2 class="related-articles__heading majortitle in-content h1 align-center">{{ section.settings.heading | escape }}</h2>
     {%- endif -%}
-    <div class="related-articles__grid related-articles__grid--{{ n | at_most: 4 }}">
-      {%- for a in arts limit: 4 -%}
-        <a class="related-articles__card" href="{{ a.url }}">
-          <div class="related-articles__image">
-            {%- if a.image -%}{{ a.image | image_url: width: 800 | image_tag: loading: 'lazy', widths: '400, 800', sizes: '(min-width: 768px) 25vw, 100vw', alt: a.title }}{%- endif -%}
-          </div>
-          <span class="related-articles__blog">{{ a.blog.title | escape }}</span>
-          <span class="related-articles__title">{{ a.title | escape }}</span>
-          {%- if section.settings.show_excerpt and a.excerpt_or_content != blank -%}
-            <span class="related-articles__excerpt">{{ a.excerpt_or_content | strip_html | truncatewords: 22 }}</span>
-          {%- endif -%}
-        </a>
-      {%- endfor -%}
-    </div>
+    <div class="related-articles__grid related-articles__grid--{{ n | at_most: 4 }}">{{ cards }}</div>
   </div>
 </div>
 
@@ -56,7 +65,7 @@
   "class": "section-related-articles",
   "disabled_on": { "groups": ["aside", "header", "footer"] },
   "settings": [
-    { "type": "paragraph", "content": "Reads product.metafields.custom.related_articles (up to 4). Hidden when empty." },
+    { "type": "paragraph", "content": "Reads product.metafields.custom.related_article_paths (blog-handle/article-handle, up to 4). Unpublished articles are skipped. Hidden when empty." },
     { "type": "text", "id": "heading", "label": "Heading", "default": "Guides and reviews" },
     { "type": "checkbox", "id": "show_excerpt", "label": "Show excerpt", "default": true },
     { "type": "select", "id": "height", "label": "Section height", "default": "medium", "options": [ { "value": "small", "label": "Small" }, { "value": "medium", "label": "Medium" } ] }
