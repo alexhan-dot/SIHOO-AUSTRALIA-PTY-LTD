@@ -1,0 +1,40 @@
+{%- comment -%}
+  One feature story row. Params: fs_title, fs_body (HTML), fs_image (image/MediaImage or blank),
+  fs_video (URL or blank), fs_layout (image-left | image-right | overlay), fs_index, fs_ratio, section_id, is_block
+{%- endcomment -%}
+{%- liquid
+  assign embed = blank
+  if fs_video != blank
+    assign v = fs_video | strip
+    if v contains 'youtu.be/'
+      assign yid = v | split: 'youtu.be/' | last | split: '?' | first | split: '&' | first
+      assign embed = 'https://www.youtube-nocookie.com/embed/' | append: yid
+    elsif v contains 'youtube.com/shorts/'
+      assign yid = v | split: 'shorts/' | last | split: '?' | first
+      assign embed = 'https://www.youtube-nocookie.com/embed/' | append: yid
+    elsif v contains 'youtube.com'
+      assign yid = v | split: 'v=' | last | split: '&' | first
+      assign embed = 'https://www.youtube-nocookie.com/embed/' | append: yid
+    elsif v contains 'vimeo.com/'
+      assign vid = v | split: 'vimeo.com/' | last | split: '?' | first | split: '/' | last
+      assign embed = 'https://player.vimeo.com/video/' | append: vid
+    endif
+  endif
+  assign img_alt = fs_title | default: product.title | escape
+-%}
+<div class="fs-item fs-item--{{ fs_layout | default: 'image-left' }}">
+  <div class="fs-item__media">
+    {%- if fs_image != blank -%}
+      {{ fs_image | image_url: width: 1600 | image_tag: loading: 'lazy', widths: '480, 768, 1024, 1400, 1600', sizes: '(min-width: 768px) 50vw, 100vw', alt: img_alt }}
+    {%- endif -%}
+    {%- if embed != blank -%}
+      <button type="button" class="fs-play" data-embed="{{ embed }}" aria-label="Play video: {{ img_alt }}">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="rgba(0,0,0,.55)"/><path d="M26 20l18 12-18 12z" fill="#fff"/></svg>
+      </button>
+    {%- endif -%}
+  </div>
+  <div class="fs-item__text">
+    {%- if fs_title != blank -%}<h3 class="fs-item__title">{{ fs_title | escape }}</h3>{%- endif -%}
+    {%- if fs_body != blank -%}<div class="fs-item__body rte">{{ fs_body }}</div>{%- endif -%}
+  </div>
+</div>
