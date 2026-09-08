@@ -39,8 +39,18 @@
               assign h_text = ''
             endif
           -%}
-          {%- assign hl_img = blank -%}
-          {%- if hl_images != blank -%}{%- assign hl_img = hl_images[forloop.index0] -%}{%- endif -%}
+          {%- liquid
+            assign hl_img = blank
+            assign hl_target = forloop.index0
+            if hl_images != blank
+              for candidate in hl_images
+                if forloop.index0 == hl_target
+                  assign hl_img = candidate
+                  break
+                endif
+              endfor
+            endif
+          -%}
           <li class="product-highlights__card{% if hl_img != blank %} product-highlights__card--image{% endif %}">
             {%- if hl_img != blank -%}
               <div class="product-highlights__image">{{ hl_img | image_url: width: 1000 | image_tag: loading: 'lazy', widths: '400, 700, 1000', sizes: '(min-width: 768px) 33vw, 100vw', alt: h_title }}</div>
