@@ -7,6 +7,24 @@
 {%- liquid
   assign az_rating = product.metafields.custom.amazon_rating.value
   assign az_count = product.metafields.custom.amazon_rating_count.value
+  assign az_count_fmt = az_count
+  if az_count != blank
+    assign az_str = az_count | append: ''
+    assign az_len = az_str.size
+    if az_len > 6
+      assign az_a = az_len | minus: 6
+      assign az_b = az_len | minus: 3
+      assign az_p1 = az_str | slice: 0, az_a
+      assign az_p2 = az_str | slice: az_a, 3
+      assign az_p3 = az_str | slice: az_b, 3
+      assign az_count_fmt = az_p1 | append: ',' | append: az_p2 | append: ',' | append: az_p3
+    elsif az_len > 3
+      assign az_a = az_len | minus: 3
+      assign az_head = az_str | slice: 0, az_a
+      assign az_tail = az_str | slice: az_a, 3
+      assign az_count_fmt = az_head | append: ',' | append: az_tail
+    endif
+  endif
   assign az_url = product.metafields.custom.amazon_url.value
   assign az_badge = product.metafields.custom.amazon_badge.value
   assign loox_count = product.metafields.reviews.rating_count.value | default: 0
@@ -47,7 +65,7 @@
         <li class="social-proof__tile">
           <span class="social-proof__big">{{ az_rating }}<span class="social-proof__small">/5</span></span>
           <span class="social-proof__stars" aria-hidden="true">★★★★★</span>
-          <span class="social-proof__label">{{ az_count }} ratings on Amazon.com.au{% if az_badge != blank %} · {{ az_badge | escape }}{% endif %}</span>
+          <span class="social-proof__label">{{ az_count_fmt }} ratings on Amazon.com.au{% if az_badge != blank %} · {{ az_badge | escape }}{% endif %}</span>
           {%- if az_url != blank -%}<a class="social-proof__link" href="{{ az_url }}" target="_blank" rel="noopener nofollow">See Amazon listing</a>{%- endif -%}
         </li>
       {%- endif -%}
