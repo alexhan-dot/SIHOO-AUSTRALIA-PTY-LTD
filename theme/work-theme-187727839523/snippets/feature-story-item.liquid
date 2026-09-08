@@ -24,10 +24,12 @@
 -%}
 <div class="fs-item fs-item--{{ fs_layout | default: 'image-left' }}">
   <div class="fs-item__media">
-    {%- if fs_image != blank -%}
+    {%- if fs_file != blank -%}
+      {{ fs_file | video_tag: autoplay: true, muted: true, loop: true, playsinline: true, controls: false, preload: 'metadata', image_size: '1200x' }}
+    {%- elsif fs_image != blank -%}
       {{ fs_image | image_url: width: 1600 | image_tag: loading: 'lazy', widths: '480, 768, 1024, 1400, 1600', sizes: '(min-width: 768px) 50vw, 100vw', alt: img_alt }}
     {%- endif -%}
-    {%- if embed != blank -%}
+    {%- if embed != blank and fs_file == blank -%}
       <button type="button" class="fs-play" data-embed="{{ embed }}" aria-label="Play video: {{ img_alt }}">
         <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="rgba(0,0,0,.55)"/><path d="M26 20l18 12-18 12z" fill="#fff"/></svg>
       </button>

@@ -38,8 +38,8 @@
         "shipping_note": {
           "type": "shipping-note",
           "settings": {
-            "text": "Free delivery Australia-wide, 1–5 business days",
-            "subtext": "Dispatched from Sydney, Melbourne, Brisbane or Perth · Afterpay and Zip available at checkout"
+            "text": "Free delivery Australia-wide, usually 1–3 business days",
+            "subtext": "Dispatched next business day from Sydney, Melbourne, Brisbane or Perth · Afterpay and Zip available at checkout"
           }
         },
         "variant_picker": {
@@ -70,7 +70,7 @@
           "type": "trust-badges",
           "settings": {
             "badge_1_icon": "award",
-            "badge_1_text": "5-Year Frame Warranty",
+            "badge_1_text": "5-Year Warranty",
             "badge_2_icon": "return",
             "badge_2_text": "30-Day Returns",
             "badge_3_icon": "truck",
@@ -103,7 +103,7 @@
           "settings": {
             "title": "Delivery, returns & warranty",
             "icon": "",
-            "content": "<p><strong>Delivery:</strong> free Australia-wide. Metro orders usually arrive in 1–5 business days; regional and WA/NT addresses can take longer.</p><p><strong>Returns:</strong> 30-day change-of-mind returns in original packaging. See our <a href=\"/pages/returns\">returns policy</a>.</p><p><strong>Warranty:</strong> 3-year Australian warranty, supported by SIHOO Australia in Sydney.</p>",
+            "content": "<p><strong>Delivery:</strong> free Australia-wide. Orders are dispatched the next business day from the warehouse nearest you (Sydney, Melbourne, Brisbane or Perth) and usually arrive within 1–3 business days; regional and remote addresses can take longer.</p><p><strong>Returns:</strong> 30-day change-of-mind returns in original packaging. See our <a href=\"/pages/returns\">returns policy</a>.</p><p><strong>Warranty:</strong> 5-year Australian warranty, supported by SIHOO Australia in Sydney.</p>",
             "page": "",
             "custom_liquid": "",
             "open": false,
@@ -173,7 +173,9 @@
         "heading": "",
         "text": "",
         "full_width": false,
-        "height": "small"
+        "height": "small",
+        "aspect": "21 / 9",
+        "max_height": 560
       }
     },
     "feature_story": {
@@ -202,14 +204,6 @@
       "settings": {
         "background_color": "#ffffff",
         "text_color": "#000000"
-      }
-    },
-    "review_source_note": {
-      "type": "review-source-note",
-      "settings": {
-        "heading": "About these reviews",
-        "text_alignment": "center",
-        "height": "small"
       }
     },
     "reviews_loox": {
@@ -327,10 +321,18 @@
       ],
       "settings": {
         "heading": "Shipped from the warehouse nearest you",
-        "text": "<p>SIHOO Australia holds stock in four warehouses so most orders leave the same or next business day and arrive within 1–5 business days.</p>",
-        "footnote": "Delivery windows are typical courier times after dispatch. Regional and remote addresses can take longer; we will send tracking as soon as your chair ships.",
+        "text": "<p>SIHOO Australia holds stock in four warehouses. Orders are dispatched the next business day from the one nearest you and usually arrive within 1–3 business days.</p>",
+        "footnote": "Delivery windows are typical courier times after dispatch. Regional and remote addresses can take longer; we send tracking as soon as your chair ships.",
         "link_label": "Read our delivery policy",
         "link_url": "shopify://pages/shipping-policy",
+        "height": "medium"
+      }
+    },
+    "related_articles": {
+      "type": "related-articles",
+      "settings": {
+        "heading": "Guides and reviews",
+        "show_excerpt": true,
         "height": "medium"
       }
     }
@@ -345,8 +347,8 @@
     "lifestyle_gallery",
     "press_quotes",
     "faq_accordion",
+    "related_articles",
     "delivery_promise",
-    "review_source_note",
     "reviews_loox",
     "related_products"
   ]

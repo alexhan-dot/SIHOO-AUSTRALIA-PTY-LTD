@@ -43,6 +43,7 @@
           assign fs_body = story.body | metafield_tag
           assign fs_image = story.image.value
           assign fs_video = story.video_url.value
+          assign fs_file = story.video_file.value
           assign fs_layout = story.layout.value
           if fs_layout == blank
             assign fs_layout = section.settings.default_layout
@@ -56,7 +57,7 @@
             endif
           endif
         -%}
-        {%- render 'feature-story-item', fs_title: fs_title, fs_body: fs_body, fs_image: fs_image, fs_video: fs_video, fs_layout: fs_layout, fs_index: forloop.index0, fs_ratio: section.settings.image_ratio, section_id: section.id, is_block: false -%}
+        {%- render 'feature-story-item', fs_title: fs_title, fs_body: fs_body, fs_image: fs_image, fs_video: fs_video, fs_file: fs_file, fs_layout: fs_layout, fs_index: forloop.index0, fs_ratio: section.settings.image_ratio, section_id: section.id, is_block: false -%}
       {%- endfor -%}
     {%- else -%}
       {%- for block in section.blocks limit: max_items -%}
@@ -65,6 +66,7 @@
           assign fs_body = block.settings.text
           assign fs_image = block.settings.image
           assign fs_video = block.settings.video_url
+          assign fs_file = block.settings.video_file
           assign fs_layout = block.settings.layout
           if fs_layout == blank or fs_layout == 'auto'
             assign fs_layout = section.settings.default_layout
@@ -79,7 +81,7 @@
           endif
         -%}
         <div {{ block.shopify_attributes }}>
-          {%- render 'feature-story-item', fs_title: fs_title, fs_body: fs_body, fs_image: fs_image, fs_video: fs_video, fs_layout: fs_layout, fs_index: forloop.index0, fs_ratio: section.settings.image_ratio, section_id: section.id, is_block: true -%}
+          {%- render 'feature-story-item', fs_title: fs_title, fs_body: fs_body, fs_image: fs_image, fs_video: fs_video, fs_file: fs_file, fs_layout: fs_layout, fs_index: forloop.index0, fs_ratio: section.settings.image_ratio, section_id: section.id, is_block: true -%}
         </div>
       {%- endfor -%}
     {%- endif -%}
@@ -157,6 +159,7 @@
         { "type": "richtext", "id": "text", "label": "Text" },
         { "type": "image_picker", "id": "image", "label": "Image" },
         { "type": "url", "id": "video_url", "label": "Video URL (YouTube/Vimeo)", "info": "Shown instead of the image, click to play" },
+        { "type": "video", "id": "video_file", "label": "Video file (Shopify-hosted)", "info": "Plays muted on loop like a GIF, best quality" },
         { "type": "select", "id": "layout", "label": "Layout", "default": "auto", "options": [ { "value": "auto", "label": "Use section default" }, { "value": "image-left", "label": "Image left" }, { "value": "image-right", "label": "Image right" }, { "value": "overlay", "label": "Text over image" } ] }
       ]
     }
