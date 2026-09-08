@@ -1,0 +1,75 @@
+{%- comment -%}
+  Related articles (SIHOO AU PDP library, 2026-09-08).
+  Reads product.metafields.custom.related_article_paths — a list of "blog-handle/article-handle" strings —
+  because Liquid cannot resolve article_reference metafields (custom.related_articles stays as the Admin-side
+  source of truth and is mirrored into the paths list). Unpublished articles are skipped. Renders nothing when empty.
+{%- endcomment -%}
+{%- liquid
+  assign paths = product.metafields.custom.related_article_paths.value
+  assign n = 0
+  capture cards
+    if paths != blank
+      for path in paths limit: 4
+        assign a = articles[path]
+        if a == blank or a.published_at == blank
+          continue
+        endif
+        assign n = n | plus: 1
+        echo '<a class="related-articles__card" href="' | append: a.url | append: '">'
+        echo '<div class="related-articles__image">'
+        if a.image
+          echo a.image | image_url: width: 800 | image_tag: loading: 'lazy', widths: '400, 800', sizes: '(min-width: 768px) 25vw, 100vw', alt: a.title
+        endif
+        echo '</div>'
+        echo '<span class="related-articles__blog">' | append: a.blog.title | append: '</span>'
+        echo '<span class="related-articles__title">' | append: a.title | append: '</span>'
+        if section.settings.show_excerpt and a.excerpt_or_content != blank
+          assign ex = a.excerpt_or_content | strip_html | truncatewords: 22
+          echo '<span class="related-articles__excerpt">' | append: ex | append: '</span>'
+        endif
+        echo '</a>'
+      endfor
+    endif
+  endcapture
+-%}
+{%- if n > 0 -%}
+<div class="related-articles fully-spaced-row--{{ section.settings.height }}" data-cc-animate>
+  <div class="container">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="related-articles__heading majortitle in-content h1 align-center">{{ section.settings.heading | escape }}</h2>
+    {%- endif -%}
+    <div class="related-articles__grid related-articles__grid--{{ n | at_most: 4 }}">{{ cards }}</div>
+  </div>
+</div>
+
+{% style %}
+  #shopify-section-{{ section.id }} .related-articles { background: #fff; color: #171717; }
+  #shopify-section-{{ section.id }} .related-articles__grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+  #shopify-section-{{ section.id }} .related-articles__card { display: flex; flex-direction: column; gap: 0.35rem; text-decoration: none; color: inherit; }
+  #shopify-section-{{ section.id }} .related-articles__image { aspect-ratio: 3 / 2; background: #f4f4f4; border-radius: 8px; overflow: hidden; }
+  #shopify-section-{{ section.id }} .related-articles__image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  #shopify-section-{{ section.id }} .related-articles__blog { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: #5c5c5c; margin-top: 0.4rem; }
+  #shopify-section-{{ section.id }} .related-articles__title { font-weight: 600; line-height: 1.3; }
+  #shopify-section-{{ section.id }} .related-articles__excerpt { font-size: 0.9rem; color: #5c5c5c; line-height: 1.45; }
+  @media (min-width: 768px) {
+    #shopify-section-{{ section.id }} .related-articles__grid--2 { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+    #shopify-section-{{ section.id }} .related-articles__grid--3 { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    #shopify-section-{{ section.id }} .related-articles__grid--4 { grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+  }
+{% endstyle %}
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Related articles",
+  "class": "section-related-articles",
+  "disabled_on": { "groups": ["aside", "header", "footer"] },
+  "settings": [
+    { "type": "paragraph", "content": "Reads product.metafields.custom.related_article_paths (blog-handle/article-handle, up to 4). Unpublished articles are skipped. Hidden when empty." },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Guides and reviews" },
+    { "type": "checkbox", "id": "show_excerpt", "label": "Show excerpt", "default": true },
+    { "type": "select", "id": "height", "label": "Section height", "default": "medium", "options": [ { "value": "small", "label": "Small" }, { "value": "medium", "label": "Medium" } ] }
+  ],
+  "presets": [ { "name": "Related articles" } ]
+}
+{% endschema %}

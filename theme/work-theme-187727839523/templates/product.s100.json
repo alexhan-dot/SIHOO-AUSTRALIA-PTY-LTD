@@ -94,7 +94,7 @@
           "settings": {
             "title": "Find Your Fit",
             "icon": "",
-            "content": "<p><a href=\"https://sihoo.com.au/blogs/all-about-ergonomic-chair/say-goodbye-to-discomfort-how-sihoo-ergonomic-chairs-support-your-body?_pos=7&_sid=d454fa23c&_ss=r\" title=\"https://sihoo.com.au/blogs/all-about-ergonomic-chair/say-goodbye-to-discomfort-how-sihoo-ergonomic-chairs-support-your-body?_pos=7&_sid=d454fa23c&_ss=r\">Say Goodbye to Discomfort: How Sihoo Ergonomic Chairs Support Your Body</a></p><p><a href=\"https://sihoo.com.au/blogs/reviews/sihoo-doro-c300-pro-v2-vs-the-other-doro-ergonomic-chairs-comparison\" title=\"https://sihoo.com.au/blogs/reviews/sihoo-doro-c300-pro-v2-vs-the-other-doro-ergonomic-chairs-comparison\">Comparison of Sihoo Doro Series</a></p><p>Check out our buying guide for you!</p>",
+            "content": "<p><a href=\"https://sihoo.com.au/blogs/all-about-ergonomic-chair/say-goodbye-to-discomfort-how-sihoo-ergonomic-chairs-support-your-body?_pos=7&_sid=d454fa23c&_ss=r\" title=\"https://sihoo.com.au/blogs/all-about-ergonomic-chair/say-goodbye-to-discomfort-how-sihoo-ergonomic-chairs-support-your-body?_pos=7&_sid=d454fa23c&_ss=r\">Say Goodbye to Discomfort: How Sihoo Ergonomic Chairs Support Your Body</a></p><p><a href=\"https://sihoo.com.au/blogs/all-about-ergonomic-chair/comparison-of-sihoo-premium-chairs-doro-c300-vs-doro-s300\" title=\"https://sihoo.com.au/blogs/all-about-ergonomic-chair/comparison-of-sihoo-premium-chairs-doro-c300-vs-doro-s300\">Comparison of Sihoo Premium Chairs: Doro C300 vs. Doro S300</a></p><p>Check out our buying guide for you!</p>",
             "page": "",
             "custom_liquid": "",
             "open": false,
@@ -175,7 +175,6 @@
         "accordion_e36ENy",
         "ae5c0b7e-ed16-49ec-a868-6b6e2ba54cc3"
       ],
-      "disabled": true,
       "settings": {
         "show_breadcrumbs": true,
         "select_first_variant": true,
@@ -196,187 +195,6 @@
         "enable_video_looping": false,
         "enable_media_grouping": true,
         "media_grouping_option": "Color,Colour,Couleur,Farbe"
-      }
-    },
-    "custom_main_product_WpGxgF": {
-      "type": "custom-main-product",
-      "blocks": {
-        "reviews_drm3qr": {
-          "type": "reviews",
-          "settings": {
-            "label": "reviews",
-            "show_when_empty": false,
-            "empty_label": "reviews"
-          }
-        },
-        "title_VEyWMD": {
-          "type": "title",
-          "settings": {}
-        },
-        "price_B3hMqz": {
-          "type": "price",
-          "settings": {
-            "show_tax_and_shipping": false,
-            "show_save_badge": true,
-            "save_label": "Save",
-            "show_low_stock_badge": true,
-            "low_stock_label": "LOW ON STOCK"
-          }
-        },
-        "demand_alert_cyAcFM": {
-          "type": "demand-alert",
-          "settings": {
-            "title": "HIGH DEMAND",
-            "text": "Extended dispatch: Please allow an additional 5–7 business days before your order is shipped.",
-            "show_for": "all",
-            "variants": ""
-          }
-        },
-        "shipping_note_jBtTrC": {
-          "type": "shipping-note",
-          "settings": {
-            "text": "Free shipping with delivery in 1-5 days"
-          }
-        },
-        "variant_picker_7DEzEB": {
-          "type": "variant-picker",
-          "settings": {
-            "show_single": false,
-            "selector_style": "listed",
-            "dynamic_availability": "show",
-            "enable_size_chart": false,
-            "size_chart_label": "Size guide",
-            "size_chart_variant": "Size",
-            "size_chart_page": ""
-          }
-        },
-        "buy_buttons_xYpXHn": {
-          "type": "buy-buttons",
-          "settings": {
-            "show_quantity_selector": true,
-            "enable_payment_button": false,
-            "show_buy_it_now": true,
-            "buy_it_now_label": "Buy it now",
-            "show_backorder_text": false,
-            "show_pickup_availability": true,
-            "show_gift_card_recipient": false
-          }
-        },
-        "trust_badges_77FVDM": {
-          "type": "trust-badges",
-          "settings": {
-            "badge_1_icon": "award",
-            "badge_1_text": "3-Year Warranty",
-            "badge_2_icon": "return",
-            "badge_2_text": "30-Day Returns",
-            "badge_3_icon": "truck",
-            "badge_3_text": "Free Shipping"
-          }
-        },
-        "accordion_BKC47a": {
-          "type": "accordion",
-          "settings": {
-            "title": "Find Your Fit",
-            "icon": "",
-            "content": "<p><a href=\"https://sihoo.com.au/blogs/all-about-ergonomic-chair/say-goodbye-to-discomfort-how-sihoo-ergonomic-chairs-support-your-body?_pos=7&_sid=d454fa23c&_ss=r\" title=\"https://sihoo.com.au/blogs/all-about-ergonomic-chair/say-goodbye-to-discomfort-how-sihoo-ergonomic-chairs-support-your-body?_pos=7&_sid=d454fa23c&_ss=r\">Say Goodbye to Discomfort: How Sihoo Ergonomic Chairs Support Your Body</a></p><p><a href=\"https://sihoo.com.au/blogs/reviews/sihoo-doro-c300-pro-v2-vs-the-other-doro-ergonomic-chairs-comparison\" title=\"https://sihoo.com.au/blogs/reviews/sihoo-doro-c300-pro-v2-vs-the-other-doro-ergonomic-chairs-comparison\">Comparison of Sihoo Doro Series</a></p><p>Check out our buying guide for you!</p>",
-            "page": "",
-            "custom_liquid": "",
-            "open": false,
-            "show_in_quickbuy": false
-          }
-        },
-        "accordion_ArwkPP": {
-          "type": "accordion",
-          "settings": {
-            "title": "Features",
-            "icon": "",
-            "content": "<p><strong>Dynamic Lumbar Support</strong><br/>The advanced lumbar support system automatically adjusts to your spine, providing continuous back comfort without any manual tweaking.</p><p><strong>Adaptive Design</strong><br/>Engineered to fit users from <strong>152 cm</strong> to <strong>191 cm</strong>, ensuring everyone enjoys optimal support.</p><p><strong>Spacious Cushion</strong><br/>A larger seat cushion enhances comfort and offers plenty of room, with an adjustable seat depth for a perfect personalised fit.</p><p><strong>4-Direction Adjustable<br/>Armrests</strong><br/>Armrests move in six directions up/down, forward/back, rotated inwards/outwards—giving you versatile arm positioning throughout long workdays.</p><p><strong>Easy Controls</strong><br/>Effortlessly adjust seat height and recline angle using a single, conveniently placed handle.</p><p><strong>Flexible Backrest</strong><br/>The streamlined backrest flexes with your movements, offering continuous support as you shift position.</p><p><strong>Precision Headrest Adjustment</strong><br/>Fine-tune headrest height, depth or rotation to achieve the ideal neck support and comfort.</p><p><strong>Sleek, Modern Design</strong><br/>With its contemporary aesthetic, the Sihoo DORO C100 complements any workspace—office, home or study.</p><p><strong>Breathable Mesh</strong><br/>Fully breathable mesh is elastic, soft and skin-friendly—durable, easy to clean and perfect for all-day comfort.</p>",
-            "page": "",
-            "custom_liquid": "",
-            "open": false,
-            "show_in_quickbuy": false
-          }
-        },
-        "accordion_gAxHni": {
-          "type": "accordion",
-          "settings": {
-            "title": "Benefits",
-            "icon": "",
-            "content": "<ul><li>Supports up to <strong>136 kg</strong></li><li>Dynamic lumbar support for all-day back comfort</li><li>Designed to suit users from <strong>152 cm</strong> to <strong>190 cm</strong> tall</li><li>Spacious seat cushion with adjustable depth</li><li>4D adjustable armrests for versatile support</li><li>Certified by BIFMA and SGS for quality and durability</li><li>Endorsed by The Gadgeteer, MMORPG, and loved by thousands of workers for ergonomic excellence</li></ul>",
-            "page": "",
-            "custom_liquid": "",
-            "open": false,
-            "show_in_quickbuy": false
-          }
-        },
-        "accordion_JXgNf8": {
-          "type": "accordion",
-          "settings": {
-            "title": "Promises",
-            "icon": "",
-            "content": "<p><strong>30-Day Trial</strong><br/><br/>Experience the chair in your own workspace for 30 days—returns accepted within this period.</p><p><strong>3-Year Warranty</strong><br/><br/>Enjoy lasting comfort and peace of mind with our full 3-year warranty.</p><p><strong>Fast Shipping</strong><br/><br/>Receive your chair in just 5–7 business days anywhere in Australia.</p><p><strong>Satisfaction Guarantee</strong><br/><br/>For any issues, contact <a>support@sihoo.com.au</a> for prompt assistance and guaranteed satisfaction.</p>",
-            "page": "",
-            "custom_liquid": "",
-            "open": false,
-            "show_in_quickbuy": false
-          }
-        },
-        "accordion_QXjnbQ": {
-          "type": "accordion",
-          "settings": {
-            "title": "FAQ",
-            "icon": "",
-            "content": "<p><strong>Frequently Asked Questions – SIHOO Doro C100</strong><br/><strong><br/>1. What makes the SIHOO Doro C100 unique in its class?</strong><br/>The Doro C100 stands out for its high-performance ergonomic design, providing advanced comfort at an accessible price. It’s engineered for all-day support—perfect for office workers, students, and home office setups across Australia.<br/><br/><strong>2. How does the lumbar support work in the Doro C100?</strong><br/>The Doro C100 features a dynamic lumbar support system that automatically responds to your movements, gently supporting your lower back throughout the day. No manual adjustments are needed—just sit back and enjoy continuous comfort.<br/><br/><strong>3. Is the Doro C100 suitable for taller users?</strong><br/>Yes! The Doro C100 is designed to comfortably accommodate users from 152 cm to 190 cm, providing excellent ergonomic alignment for a wide range of heights and body types.<br/><br/><strong>4. Does the Doro C100 have an adjustable headrest?</strong><br/>Absolutely. The independent headrest allows for both height and angle adjustments, giving you tailored neck and head support—whether you’re working, studying, gaming, or simply relaxing.<br/><br/><strong>5. What armrest features does the Doro C100 offer?</strong><br/>The Doro C100 is equipped with multi-directional armrests (4D) that move up and down, forwards and backwards, and inwards/outwards. This flexibility ensures your arms and shoulders stay comfortable no matter how you’re sitting.<br/><br/>⸻<br/><br/><strong>Why choose SIHOO Doro C100?</strong><br/>\t•\tDynamic lumbar support for healthier posture<br/>\t•\tAdjustable headrest for personalised comfort<br/>\t•\tVersatile 4D armrests<br/>\t•\tIdeal for Australian homes and offices<br/><br/>Whether you’re setting up your home workspace or upgrading your office chair, the SIHOO Doro C100 delivers all-day comfort and support for every user.<br/></p>",
-            "page": "",
-            "custom_liquid": "",
-            "open": false,
-            "show_in_quickbuy": false
-          }
-        }
-      },
-      "block_order": [
-        "reviews_drm3qr",
-        "title_VEyWMD",
-        "price_B3hMqz",
-        "demand_alert_cyAcFM",
-        "shipping_note_jBtTrC",
-        "variant_picker_7DEzEB",
-        "buy_buttons_xYpXHn",
-        "trust_badges_77FVDM",
-        "accordion_BKC47a",
-        "accordion_ArwkPP",
-        "accordion_gAxHni",
-        "accordion_JXgNf8",
-        "accordion_QXjnbQ"
-      ],
-      "name": "Custom product",
-      "settings": {
-        "accent_color": "#c20000",
-        "low_stock_threshold": 10,
-        "demand_bg": "#fff8e8",
-        "demand_border": "#e8c46a",
-        "shipping_color": "#1f9d55",
-        "trust_color": "#6B7C8A",
-        "show_breadcrumbs": false,
-        "select_first_variant": true,
-        "show_location_underneath": false,
-        "inventory_transfers_enable": true,
-        "enable_sticky_columns": true,
-        "enable_sticky_atc": true,
-        "sticky_atc_position": "end",
-        "sticky_atc_mobile": true,
-        "sticky_atc_behavior": "add_to_cart",
-        "sticky_atc_button_style": "secondary",
-        "gallery_size": "medium",
-        "gallery_layout": "carousel-under",
-        "enable_zoom": true,
-        "show_alt_text": false,
-        "alt_text_icon": "",
-        "enable_video_autoplay": false,
-        "enable_video_looping": false,
-        "enable_media_grouping": false,
-        "media_grouping_option": "Color,Colour,Couleur,Farbe",
-        "sihoo_unified_reviews": true
       }
     },
     "background_video_QbRE7c": {
@@ -430,7 +248,7 @@
       "type": "apps",
       "blocks": {
         "specification_compare_specification_table_MNnxw7": {
-          "type": "shopify://apps/specs-compare/blocks/specification-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
+          "type": "shopify://apps/spec-compare/blocks/specification-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
           "settings": {
             "product": "sihoo-a3-doro-c100-ergonomic-office-chair",
             "show_group_names": true,
@@ -456,7 +274,7 @@
         "heading_9daDKh": {
           "type": "heading",
           "settings": {
-            "title": "Sihoo A3 DORO-C100 Ergonomic Chair Features",
+            "title": "Key Features",
             "use_h1": false
           }
         }
@@ -483,9 +301,9 @@
             "height_desktop": 500,
             "height_mobile": 300,
             "subheading": "",
-            "title": "",
-            "text": "<p>Self-adaptive lumbar support</p>",
-            "enlarge_text": true,
+            "title": "Self-adaptive lumbar support",
+            "text": "",
+            "enlarge_text": false,
             "button_label": "",
             "button_style": "primary",
             "image_link": "",
@@ -503,9 +321,9 @@
             "height_desktop": 500,
             "height_mobile": 300,
             "subheading": "",
-            "title": "",
-            "text": "<p>Wide multi-adjustable headrest</p>",
-            "enlarge_text": true,
+            "title": "Wide multi-adjustable headrest",
+            "text": "",
+            "enlarge_text": false,
             "button_label": "",
             "button_style": "primary",
             "image_link": "",
@@ -523,9 +341,9 @@
             "height_desktop": 500,
             "height_mobile": 300,
             "subheading": "",
-            "title": "",
-            "text": "<p>Flexible Backrest</p>",
-            "enlarge_text": true,
+            "title": "Flexible Backrest",
+            "text": "",
+            "enlarge_text": false,
             "button_label": "",
             "button_style": "primary",
             "image_link": "",
@@ -543,9 +361,9 @@
             "height_desktop": 500,
             "height_mobile": 300,
             "subheading": "",
-            "title": "",
-            "text": "<p>4D coordinated armrests</p>",
-            "enlarge_text": true,
+            "title": "4D coordinated armrests",
+            "text": "",
+            "enlarge_text": false,
             "button_label": "",
             "button_style": "primary",
             "image_link": "",
@@ -570,7 +388,6 @@
       "blocks": {
         "heading_G6J89G": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "title": "Dynamic lumbar support that moves with you",
             "use_h1": false
@@ -579,8 +396,8 @@
         "text_g8qqFy": {
           "type": "text",
           "settings": {
-            "text": "<h3>Dynamic lumbar support that moves with you</h3><p>The BM (Body Movement) Tracking System of Sihoo Doro C100 guarantees that the lumbar support of this <a href=\"https://sihoo.com.au/\" target=\"_blank\">ergonomic office chair</a> adjusts itself to the contours of your spine, ensuring both comfort and support for your back in various positions, all without requiring any manual adjustments.</p>",
-            "enlarge_text": false
+            "text": "<p>The BM (Body Movement) Tracking System of Sihoo Doro C100 guarantees that the lumbar support adjusts itself to the contours of your spine, ensuring both comfort and support for your back in various positions, all without requiring any manual adjustments.<br/><br/></p>",
+            "enlarge_text": true
           }
         }
       },
@@ -648,7 +465,6 @@
       "blocks": {
         "heading_FBDXh8": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "title": "Streamlined backrest that flexes and comforms",
             "use_h1": false
@@ -657,7 +473,7 @@
         "text_6nRBfz": {
           "type": "text",
           "settings": {
-            "text": "<h4>Streamlined backrest that flexes and comforms</h4><p>Sihoo Doro C100's backrest boasts a streamlined design that naturally aligns with your back. Moreover, as you move your upper body, the backrest smoothly adjusts and conforms to your back, providing continuous support, all thanks to its flexible triangular frame.</p>",
+            "text": "<p>Sihoo Doro C100's backrest boasts a streamlined design that naturally aligns with your back. Moreover, as you move your upper body, the backrest smoothly adjusts and conforms to your back, providing continuous support, all thanks to its flexible triangular frame.</p>",
             "enlarge_text": false
           }
         }
@@ -673,8 +489,7 @@
         "image_link": "",
         "image_position": "left",
         "text_alignment": "left",
-        "color_scheme": "default",
-        "background_color": ""
+        "color_scheme": "default"
       }
     },
     "image_with_text_U4DmfJ": {
@@ -682,7 +497,6 @@
       "blocks": {
         "heading_EWq6bg": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "title": "Wide and precise neck support",
             "use_h1": false
@@ -691,7 +505,7 @@
         "text_xGR8Kt": {
           "type": "text",
           "settings": {
-            "text": "<h4>Wide and precise neck support</h4><p>Utilising an auto-lock mechanism, you have the flexibility to finely tune the headrest's positioning—whether raising, lowering, shifting forward, moving backward, or even rotating—in minor gradations, ensuring a secure and accurate fit around your neck.</p>",
+            "text": "<p>Utilizing an auto-lock mechanism, you have the flexibility to finely tune the headrest's positioning—whether raising, lowering, shifting forward, moving backward, or even rotating—in minor gradations, ensuring a secure and accurate fit around your neck.</p>",
             "enlarge_text": false
           }
         }
@@ -707,8 +521,7 @@
         "image_link": "",
         "image_position": "right",
         "text_alignment": "left",
-        "color_scheme": "default",
-        "background_color": ""
+        "color_scheme": "default"
       }
     },
     "image_with_text_emAkdX": {
@@ -716,7 +529,6 @@
       "blocks": {
         "heading_Ezenpy": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "title": "Recline in comfort and support",
             "use_h1": false
@@ -725,7 +537,7 @@
         "text_zTWjfW": {
           "type": "text",
           "settings": {
-            "text": "<h4>Recline in comfort and support</h4><p>When it's time to unwind from work, Sihoo Doro C100 allows you to recline comfortably, providing a generous amount of tilt along with dynamic lumbar support for your lower back. This ensures you experience the utmost comfort and support during your relaxation breaks.</p>",
+            "text": "<p>When it's time to unwind from work, Sihoo Doro C100 allows you to recline comfortably, providing a generous amount of tilt along with dynamic lumbar support for your lower back. This ensures you experience the utmost comfort and support during your relaxation breaks.</p>",
             "enlarge_text": false
           }
         }
@@ -740,8 +552,7 @@
         "image_link": "",
         "image_position": "left",
         "text_alignment": "left",
-        "color_scheme": "default",
-        "background_color": ""
+        "color_scheme": "default"
       }
     },
     "image_with_text_cgmn3V": {
@@ -749,7 +560,6 @@
       "blocks": {
         "heading_wrwT34": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "title": "Feel weightless when seated in Doro C100",
             "use_h1": false
@@ -758,7 +568,7 @@
         "text_JMmVtJ": {
           "type": "text",
           "settings": {
-            "text": "<h4>Feel weightless when seated in Doro C100</h4><p>Sihoo Doro C100 ensures optimal weight distribution and pressure reduction on your thighs and hips by emulating the graceful shape of a waterfall. This waterfall-shaped seat suspension prevents any discomfort or heaviness while seated, offering a truly comfortable experience.</p>",
+            "text": "<p>Sihoo Doro C100 ensures optimal weight distribution and pressure reduction on your thighs and hips by emulating the graceful shape of a waterfall. This innovative seat suspension prevents any discomfort or heaviness while seated, offering a truly comfortable experience.</p>",
             "enlarge_text": false
           }
         }
@@ -773,8 +583,7 @@
         "image_link": "",
         "image_position": "right",
         "text_alignment": "left",
-        "color_scheme": "default",
-        "background_color": ""
+        "color_scheme": "default"
       }
     },
     "image_with_text_D4TiKX": {
@@ -782,7 +591,6 @@
       "blocks": {
         "heading_mEUwWD": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "title": "Made for comfort, made to last",
             "use_h1": false
@@ -791,7 +599,7 @@
         "text_R4je3R": {
           "type": "text",
           "settings": {
-            "text": "<h4>Made for comfort, made to last</h4><p>Sihoo Doro-C100 features a top-notch mesh design that promotes airflow, preventing any discomfort from sweating or feeling sticky. Additionally, it boasts a stylish and contemporary appearance, effortless cleaning, and exceptional durability for long-lasting use.</p>",
+            "text": "<p>Sihoo Doro-C100 features a top-notch mesh design that promotes airflow, preventing any discomfort from sweating or feeling sticky. Additionally, it boasts a stylish and contemporary appearance, effortless cleaning, and exceptional durability for long-lasting use.<br/><br/></p>",
             "enlarge_text": false
           }
         }
@@ -806,8 +614,7 @@
         "image_link": "",
         "image_position": "left",
         "text_alignment": "left",
-        "color_scheme": "default",
-        "background_color": ""
+        "color_scheme": "default"
       }
     },
     "image_with_text_NTA6Lj": {
@@ -815,7 +622,6 @@
       "blocks": {
         "heading_iEY6gz": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "title": "Adaptable mechanism, comfortable reclining",
             "use_h1": false
@@ -824,7 +630,7 @@
         "text_7jFwg6": {
           "type": "text",
           "settings": {
-            "text": "<h4>Adaptable mechanism, comfortable reclining</h4><p>By utilizing weight-sensing and mechanical conduction advancements, Sihoo Doro-C100's mechanism adapts to your body weight and movements, enabling a seamless and balanced sitting and reclining experience that is both comfortable and effortless.</p>",
+            "text": "<p>By utilizing weight-sensing and mechanical conduction advancements, Sihoo Doro-C100's mechanism adapts to your body weight and movements, enabling a seamless and balanced sitting and reclining experience that is both comfortable and effortless.</p>",
             "enlarge_text": false
           }
         }
@@ -839,8 +645,7 @@
         "image_link": "",
         "image_position": "right",
         "text_alignment": "left",
-        "color_scheme": "default",
-        "background_color": ""
+        "color_scheme": "default"
       }
     },
     "rich_text_Bm6wCn": {
@@ -848,7 +653,6 @@
       "blocks": {
         "heading_xhAKen": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "title": "Rigorously tested for your peace of mind",
             "use_h1": false
@@ -857,7 +661,7 @@
         "text_WniJ4e": {
           "type": "text",
           "settings": {
-            "text": "<h3>Rigorously tested for your peace of mind</h3><p>American BIFMA Testing Standards</p><p>German TUV Product Safety and Quality Certification</p>",
+            "text": "<p>American BIFMA Testing Standards</p><p>German TUV Product Safety and Quality Certification</p>",
             "enlarge_text": false
           }
         }
@@ -894,7 +698,6 @@
       "blocks": {
         "heading_j3yrTp": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "title": "Control Doro C100 with ease",
             "use_h1": false
@@ -903,7 +706,7 @@
         "text_YNDqXr": {
           "type": "text",
           "settings": {
-            "text": "<h4>Control Doro C100 with ease</h4><p>The Doro C100's headrest boasts multi-directional precision: easily raise or lower it, slide it forward or back, and rotate it to mirror the natural curve of your neck. Its generously sized cushion ensures plenty of surface area for side-resting, so whether you’re deep in focus or taking a momentary pause, you’ll enjoy tailored support and lasting comfort.</p>",
+            "text": "<p>The Doro C300 Pro’s headrest boasts multi-directional precision: easily raise or lower it, slide it forward or back, and rotate it to mirror the natural curve of your neck. Its generously sized cushion ensures plenty of surface area for side-resting, so whether you’re deep in focus or taking a momentary pause, you’ll enjoy tailored support and lasting comfort.</p>",
             "enlarge_text": false
           }
         }
@@ -918,8 +721,7 @@
         "image_link": "",
         "image_position": "left",
         "text_alignment": "left",
-        "color_scheme": "default",
-        "background_color": ""
+        "color_scheme": "default"
       }
     },
     "image_with_text_TTHNzM": {
@@ -927,7 +729,6 @@
       "blocks": {
         "heading_ziXLzq": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "title": "Rest your arms in 4 directions and in coordination",
             "use_h1": false
@@ -936,7 +737,7 @@
         "text_GzqmXR": {
           "type": "text",
           "settings": {
-            "text": "<h4>Rest your arms in 4 directions and in coordination</h4><p>Doro C100 comes equipped with cushioned and supple 4-directional armrests that offer versatile adjustments – up and down, back and forth, and even pivot up to 75 degrees. Moreover, these armrests are synchronized with the seatback when reclining, providing an ideal solution for comfortably resting your arms in different positions while you work.</p>",
+            "text": "<p>Doro C100 comes equipped with cushioned and supple 4-directional armrests that offer versatile adjustments – up and down, back and forth, and even pivot up to 75 degrees. Moreover, these armrests are synchronized with the seatback when reclining, providing an ideal solution for comfortably resting your arms in different positions while you work.</p>",
             "enlarge_text": false
           }
         }
@@ -951,8 +752,7 @@
         "image_link": "",
         "image_position": "right",
         "text_alignment": "left",
-        "color_scheme": "default",
-        "background_color": ""
+        "color_scheme": "default"
       }
     },
     "custom_content_AcyUG6": {
@@ -991,7 +791,6 @@
       "blocks": {
         "heading_BQrFJz": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "title": "Designed to elevate your workspace",
             "use_h1": false
@@ -1000,7 +799,7 @@
         "text_fmkXcc": {
           "type": "text",
           "settings": {
-            "text": "<h3>Designed to elevate your workspace</h3><p>With its modern and sleek design, the Sihoo Doro C100 is not only comfortable to sit in but also pleasing to look at. It effortlessly complements various settings, seamlessly fitting into your office, study, or home.<br/></p>",
+            "text": "<p>With its modern and sleek design, the Sihoo Doro C300 Pro is not only comfortable to sit in but also pleasing to look at. It effortlessly complements various settings, seamlessly fitting into your office, study, or home.<br/><br/></p>",
             "enlarge_text": false
           }
         }
@@ -1036,7 +835,7 @@
       "type": "apps",
       "blocks": {
         "specification_compare_comparison_table_EE8bnJ": {
-          "type": "shopify://apps/specs-compare/blocks/comparison-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
+          "type": "shopify://apps/spec-compare/blocks/comparison-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
           "settings": {
             "product": "{{ product }}",
             "product_list": [
@@ -1066,8 +865,7 @@
             "show_product_price": true,
             "show_product_rating": false,
             "show_view_details_button": false,
-            "enable_ai_analysis": false,
-            "append_parent_target_selector": ""
+            "enable_ai_analysis": false
           }
         }
       },
@@ -1080,19 +878,17 @@
       }
     },
     "1726495174ce454bc4": {
-      "type": "sihoo-product-reviews",
+      "type": "apps",
       "blocks": {
         "loox_reviews_loox_dynamic_section_qfzGna": {
           "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
-            "reviews_to_display": "product_reviews_only",
-            "default_tab": "automatic",
             "only_photos": false,
             "aggregated": false,
             "limit": 10,
             "hide_thumbnails": false,
             "maxwidth": 1160,
-            "is_sample": false
+            "is_sample": true
           }
         }
       },
@@ -1100,8 +896,8 @@
         "loox_reviews_loox_dynamic_section_qfzGna"
       ],
       "settings": {
-        "heading": "Customer reviews",
-        "show_source_note": false
+        "full_width": false,
+        "show_space": true
       }
     },
     "recommendations": {
@@ -1115,7 +911,6 @@
   },
   "order": [
     "main",
-    "custom_main_product_WpGxgF",
     "background_video_QbRE7c",
     "172649452298bf6fcf",
     "rich_text_EjcAFq",

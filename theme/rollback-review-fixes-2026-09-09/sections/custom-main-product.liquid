@@ -215,10 +215,6 @@
     color: inherit;
   }
 
-  #shopify-section-{{ section.id }} .cmp-shipping[hidden] {
-    display: none;
-  }
-
   #shopify-section-{{ section.id }} .cmp-shipping__lines {
     display: flex;
     flex-direction: column;
@@ -957,7 +953,7 @@
           {% when 'shipping-note' %}
             {%- if block.settings.text != blank -%}
               {%- comment -%}Q5 (2026-09-08): when the demand alert is showing for the current variant, the standard delivery promise is hidden so the two never contradict each other. `demand_show` is set by the demand-alert block earlier in the loop.{%- endcomment -%}
-              <div class="cmp-shipping js-cmp-shipping" {% if demand_show or current_variant.available == false %}hidden{% endif %} {{ block.shopify_attributes }}>
+              <div class="cmp-shipping js-cmp-shipping" {% if demand_show %}hidden{% endif %} {{ block.shopify_attributes }}>
                 {% render 'icon', icon: 'check_mark_in_circle', size: 'small' %}
                 <div class="cmp-shipping__lines">
                   <span>{{ block.settings.text | escape }}</span>
@@ -1665,7 +1661,6 @@
 
     function updateBadges(variant) {
       if (!variant) {
-        if (shippingNote) shippingNote.hidden = true;
         if (demandAlert && demandAlert.dataset.showFor === 'specific') {
           demandAlert.hidden = true;
         }
@@ -1709,7 +1704,7 @@
       }
 
       if (shippingNote) {
-        shippingNote.hidden = !variant || !variant.available || !!(demandAlert && !demandAlert.hidden);
+        shippingNote.hidden = !!(demandAlert && !demandAlert.hidden);
       }
 
       if (buyItNowBtn) {
@@ -2354,7 +2349,7 @@
           "type": "text",
           "id": "text",
           "label": "Text",
-          "default": "Delivery timing depends on stock and your postcode"
+          "default": "Free delivery Australia-wide, 1–5 business days"
         },
         {
           "type": "text",

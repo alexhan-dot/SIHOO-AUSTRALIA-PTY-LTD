@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-09",
+  "store": "sihoo.myshopify.com",
+  "theme_id": 187727839523,
+  "before": {
+    "error": 120,
+    "warning": 321
+  },
+  "after": {
+    "error": 120,
+    "warning": 321
+  },
+  "new_findings": [],
+  "tests": [
+    "test-series-pdp.mjs",
+    "test-pdp-reviews.mjs",
+    "test-specs-section.mjs",
+    "test-spring-grid.mjs"
+  ],
+  "browser_scope": "27 active products with view=doro/m/x/desk: one review section, no visible Liquid error, no page overflow; not full factual or interactive QA of every section",
+  "mobile_scope": [
+    "M57 variant selection",
+    "C300 Pro V2 comparison and sold-out shipping",
+    "home",
+    "Doro collection"
+  ],
+  "b100": "Admin-issued product preview key; /products_preview on sihoo.com.au with view=m and preview_theme_id=187727839523. DRAFT theme name and one common review section confirmed. Key intentionally excluded.",
+  "product_status_template_check": {
+    "products": 49,
+    "changed": 0,
+    "active": 27,
+    "family_assignments": 0
+  },
+  "b100_status": "DRAFT",
+  "shipping_blog_published": false,
+  "theme_roles": [
+    {
+      "id": 181013971235,
+      "name": "LIVE - SIHOO (Symmetry)",
+      "role": "live"
+    },
+    {
+      "id": 187727839523,
+      "name": "WORK - SIHOO Symmetry 2026-09 fixes DRAFT",
+      "role": "unpublished"
+    }
+  ]
+}

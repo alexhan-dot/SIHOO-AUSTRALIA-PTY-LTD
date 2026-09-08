@@ -1,0 +1,169 @@
+{%- comment -%}
+  Feature story (SIHOO AU PDP library, 2026-09-08).
+  Replaces custom-image-text / image-with-text / image-with-text-overlay on product pages.
+  Data source, in priority order:
+    1. product.metafields.custom.feature_stories (list of "feature_story" metaobjects: title, body, image, video_url, layout)
+    2. this section's own "story" blocks (manual use on non-product pages or overrides)
+  Renders nothing when there is no story, so it is safe to leave in every template.
+{%- endcomment -%}
+{%- liquid
+  assign scheme = section.settings.color_scheme
+  if scheme == 'auto'
+    if product.metafields.custom.color_scheme.value == 'dark'
+      assign scheme = 'dark'
+    else
+      assign scheme = 'light'
+    endif
+  endif
+
+  assign stories = blank
+  if section.settings.source != 'blocks' and product.metafields.custom.feature_stories.value != blank
+    assign stories = product.metafields.custom.feature_stories.value
+  endif
+  assign story_count = 0
+  if stories != blank
+    assign story_count = stories.size
+  elsif section.blocks.size > 0
+    assign story_count = section.blocks.size
+  endif
+  assign max_items = section.settings.max_items | default: 6
+-%}
+
+{%- if story_count > 0 -%}
+<div class="feature-story feature-story--{{ scheme }} fully-spaced-row--{{ section.settings.height }}" data-cc-animate>
+  <div class="container">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="feature-story__heading majortitle in-content h1 align-center">{{ section.settings.heading | escape }}</h2>
+    {%- endif -%}
+
+    {%- if stories != blank -%}
+      {%- for story in stories limit: max_items -%}
+        {%- liquid
+          assign fs_title = story.title.value
+          assign fs_body = story.body | metafield_tag
+          assign fs_image = story.image.value
+          assign fs_video = story.video_url.value
+          assign fs_file = story.video_file.value
+          assign fs_layout = story.layout.value
+          if fs_layout == blank
+            assign fs_layout = section.settings.default_layout
+            if fs_layout == 'alternate'
+              assign fs_mod = forloop.index0 | modulo: 2
+              if fs_mod == 0
+                assign fs_layout = 'image-left'
+              else
+                assign fs_layout = 'image-right'
+              endif
+            endif
+          endif
+        -%}
+        {%- render 'feature-story-item', fs_title: fs_title, fs_body: fs_body, fs_image: fs_image, fs_video: fs_video, fs_file: fs_file, fs_layout: fs_layout, fs_index: forloop.index0, fs_ratio: section.settings.image_ratio, section_id: section.id, is_block: false -%}
+      {%- endfor -%}
+    {%- else -%}
+      {%- for block in section.blocks limit: max_items -%}
+        {%- liquid
+          assign fs_title = block.settings.title
+          assign fs_body = block.settings.text
+          assign fs_image = block.settings.image
+          assign fs_video = block.settings.video_url
+          assign fs_file = block.settings.video_file
+          assign fs_layout = block.settings.layout
+          if fs_layout == blank or fs_layout == 'auto'
+            assign fs_layout = section.settings.default_layout
+            if fs_layout == 'alternate'
+              assign fs_mod = forloop.index0 | modulo: 2
+              if fs_mod == 0
+                assign fs_layout = 'image-left'
+              else
+                assign fs_layout = 'image-right'
+              endif
+            endif
+          endif
+        -%}
+        <div {{ block.shopify_attributes }}>
+          {%- render 'feature-story-item', fs_title: fs_title, fs_body: fs_body, fs_image: fs_image, fs_video: fs_video, fs_file: fs_file, fs_layout: fs_layout, fs_index: forloop.index0, fs_ratio: section.settings.image_ratio, section_id: section.id, is_block: true -%}
+        </div>
+      {%- endfor -%}
+    {%- endif -%}
+  </div>
+</div>
+
+{% style %}
+  #shopify-section-{{ section.id }} .feature-story { --fs-bg: #ffffff; --fs-text: #171717; --fs-muted: #5c5c5c; --fs-line: #e6e6e6; --fs-media-bg: #f4f4f4; }
+  #shopify-section-{{ section.id }} .feature-story--dark { --fs-bg: #111111; --fs-text: #ffffff; --fs-muted: #c9c9c9; --fs-line: #2a2a2a; --fs-media-bg: #1c1c1c; }
+  #shopify-section-{{ section.id }} .feature-story { background: var(--fs-bg); color: var(--fs-text); }
+  #shopify-section-{{ section.id }} .feature-story__heading { margin-bottom: 1.5rem; }
+  #shopify-section-{{ section.id }} .fs-item { display: grid; grid-template-columns: 1fr; gap: 1.25rem; align-items: center; padding: 1.5rem 0; border-top: 1px solid var(--fs-line); }
+  #shopify-section-{{ section.id }} .fs-item:first-of-type { border-top: 0; }
+  #shopify-section-{{ section.id }} .fs-item__media { position: relative; background: var(--fs-media-bg); border-radius: 8px; overflow: hidden; aspect-ratio: {{ section.settings.image_ratio | default: '3 / 2' }}; }
+  #shopify-section-{{ section.id }} .fs-item__media img, #shopify-section-{{ section.id }} .fs-item__media iframe, #shopify-section-{{ section.id }} .fs-item__media video { width: 100%; height: 100%; object-fit: cover; display: block; border: 0; }
+  #shopify-section-{{ section.id }} .fs-item__title { font-size: clamp(1.375rem, 2vw, 1.75rem); font-weight: 600; line-height: 1.2; margin: 0 0 0.6rem; }
+  #shopify-section-{{ section.id }} .fs-item__body { font-size: 1rem; line-height: 1.6; color: var(--fs-muted); }
+  #shopify-section-{{ section.id }} .fs-item__body p:last-child { margin-bottom: 0; }
+  #shopify-section-{{ section.id }} .fs-item--overlay { position: relative; display: block; padding: 0; border: 0; }
+  #shopify-section-{{ section.id }} .fs-item--overlay .fs-item__media { aspect-ratio: 16 / 9; }
+  #shopify-section-{{ section.id }} .fs-item--overlay .fs-item__text { position: absolute; left: 0; right: 0; bottom: 0; padding: 1.5rem; color: #fff; background: linear-gradient(to top, rgba(0,0,0,.65), rgba(0,0,0,0)); }
+  #shopify-section-{{ section.id }} .fs-item--overlay .fs-item__body { color: #f0f0f0; }
+  #shopify-section-{{ section.id }} .fs-play { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: rgba(0,0,0,.25); color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+  #shopify-section-{{ section.id }} .fs-play svg { width: 64px; height: 64px; }
+  @media (min-width: 768px) {
+    #shopify-section-{{ section.id }} .fs-item { grid-template-columns: 1fr 1fr; gap: 3rem; padding: 2.5rem 0; }
+    #shopify-section-{{ section.id }} .fs-item--image-right .fs-item__media { order: 2; }
+    #shopify-section-{{ section.id }} .fs-item--image-right .fs-item__text { order: 1; }
+    #shopify-section-{{ section.id }} .fs-item--overlay .fs-item__text { padding: 2.5rem; max-width: 60%; }
+  }
+{% endstyle %}
+
+<script>
+  (function () {
+    var root = document.getElementById('shopify-section-{{ section.id }}');
+    if (!root) return;
+    root.querySelectorAll('.fs-play').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var wrap = btn.parentNode;
+        var iframe = document.createElement('iframe');
+        iframe.src = btn.dataset.embed + (btn.dataset.embed.indexOf('?') > -1 ? '&' : '?') + 'autoplay=1&rel=0';
+        iframe.allow = 'autoplay; encrypted-media; picture-in-picture';
+        iframe.allowFullscreen = true;
+        iframe.title = btn.getAttribute('aria-label') || 'Video';
+        wrap.innerHTML = '';
+        wrap.appendChild(iframe);
+      });
+    });
+  })();
+</script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Feature story",
+  "class": "section-feature-story",
+  "disabled_on": { "groups": ["aside", "header", "footer"] },
+  "settings": [
+    { "type": "paragraph", "content": "Shows product.metafields.custom.feature_stories (Feature story metaobjects). Falls back to the blocks below. Renders nothing when both are empty." },
+    { "type": "text", "id": "heading", "label": "Heading (optional)" },
+    { "type": "select", "id": "source", "label": "Data source", "default": "auto", "options": [ { "value": "auto", "label": "Metafield first, then blocks" }, { "value": "blocks", "label": "Blocks only" } ] },
+    { "type": "select", "id": "default_layout", "label": "Layout when a story has none", "default": "alternate", "options": [ { "value": "alternate", "label": "Alternate left / right" }, { "value": "image-left", "label": "Image left" }, { "value": "image-right", "label": "Image right" }, { "value": "overlay", "label": "Text over image" } ] },
+    { "type": "select", "id": "image_ratio", "label": "Image shape", "default": "3 / 2", "options": [ { "value": "3 / 2", "label": "Landscape 3:2" }, { "value": "4 / 3", "label": "Landscape 4:3" }, { "value": "1 / 1", "label": "Square" }, { "value": "4 / 5", "label": "Portrait 4:5" } ] },
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "auto", "options": [ { "value": "auto", "label": "Auto (product metafield custom.color_scheme)" }, { "value": "light", "label": "Light" }, { "value": "dark", "label": "Dark" } ] },
+    { "type": "range", "id": "max_items", "label": "Maximum stories", "min": 1, "max": 8, "step": 1, "default": 6 },
+    { "type": "select", "id": "height", "label": "Section height", "default": "medium", "options": [ { "value": "small", "label": "Small" }, { "value": "medium", "label": "Medium" }, { "value": "large", "label": "Large" } ] }
+  ],
+  "max_blocks": 8,
+  "blocks": [
+    {
+      "type": "story",
+      "name": "Story (manual)",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Heading" },
+        { "type": "richtext", "id": "text", "label": "Text" },
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "url", "id": "video_url", "label": "Video URL (YouTube/Vimeo)", "info": "Shown instead of the image, click to play" },
+        { "type": "video", "id": "video_file", "label": "Video file (Shopify-hosted)", "info": "Plays muted on loop like a GIF, best quality" },
+        { "type": "select", "id": "layout", "label": "Layout", "default": "auto", "options": [ { "value": "auto", "label": "Use section default" }, { "value": "image-left", "label": "Image left" }, { "value": "image-right", "label": "Image right" }, { "value": "overlay", "label": "Text over image" } ] }
+      ]
+    }
+  ],
+  "presets": [ { "name": "Feature story" } ]
+}
+{% endschema %}

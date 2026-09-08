@@ -1,0 +1,147 @@
+{%- comment -%}
+  Social proof strip (SIHOO AU PDP library, 2026-09-08).
+  Product-level: custom.amazon_rating / amazon_rating_count / amazon_url / amazon_badge (only rendered when set).
+  Store-level (section settings): certifications, units sold, warehouses. Every claim is a plain factual
+  statement with its source, which keeps it inside ACCC guidance on ratings and endorsements.
+{%- endcomment -%}
+{%- liquid
+  assign az_rating = product.metafields.custom.amazon_rating.value
+  assign az_count = product.metafields.custom.amazon_rating_count.value
+  assign az_count_fmt = az_count
+  if az_count != blank
+    assign az_str = az_count | append: ''
+    assign az_len = az_str.size
+    if az_len > 6
+      assign az_a = az_len | minus: 6
+      assign az_b = az_len | minus: 3
+      assign az_p1 = az_str | slice: 0, az_a
+      assign az_p2 = az_str | slice: az_a, 3
+      assign az_p3 = az_str | slice: az_b, 3
+      assign az_count_fmt = az_p1 | append: ',' | append: az_p2 | append: ',' | append: az_p3
+    elsif az_len > 3
+      assign az_a = az_len | minus: 3
+      assign az_head = az_str | slice: 0, az_a
+      assign az_tail = az_str | slice: az_a, 3
+      assign az_count_fmt = az_head | append: ',' | append: az_tail
+    endif
+  endif
+  assign az_url = product.metafields.custom.amazon_url.value
+  assign az_badge = product.metafields.custom.amazon_badge.value
+  assign loox_count = product.metafields.reviews.rating_count.value | default: 0
+  assign loox_rating = product.metafields.reviews.rating.value.rating
+  assign scheme = section.settings.color_scheme
+  if scheme == 'auto'
+    if product.metafields.custom.color_scheme.value == 'dark'
+      assign scheme = 'dark'
+    else
+      assign scheme = 'light'
+    endif
+  endif
+  assign tiles = 0
+  if az_rating != blank and az_count != blank
+    assign tiles = tiles | plus: 1
+  endif
+  if loox_count > 0 and section.settings.show_site_reviews
+    assign tiles = tiles | plus: 1
+  endif
+  if section.settings.units_sold != blank
+    assign tiles = tiles | plus: 1
+  endif
+  if section.settings.certifications != blank
+    assign tiles = tiles | plus: 1
+  endif
+  if section.settings.warehouses != blank
+    assign tiles = tiles | plus: 1
+  endif
+-%}
+{%- if tiles > 0 -%}
+<div class="social-proof social-proof--{{ scheme }} fully-spaced-row--{{ section.settings.height }}" data-cc-animate>
+  <div class="container">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="social-proof__heading majortitle in-content h1 align-center">{{ section.settings.heading | escape }}</h2>
+    {%- endif -%}
+    <ul class="social-proof__grid social-proof__grid--{{ tiles | at_most: 5 }}">
+      {%- if az_rating != blank and az_count != blank -%}
+        <li class="social-proof__tile">
+          <span class="social-proof__big">{{ az_rating }}<span class="social-proof__small">/5</span></span>
+          <span class="social-proof__stars" aria-hidden="true">★★★★★</span>
+          <span class="social-proof__label">{{ az_count_fmt }} ratings on Amazon.com.au{% if az_badge != blank %} · {{ az_badge | escape }}{% endif %}</span>
+          {%- if az_url != blank -%}<a class="social-proof__link" href="{{ az_url }}" target="_blank" rel="noopener nofollow">See Amazon listing</a>{%- endif -%}
+        </li>
+      {%- endif -%}
+      {%- if loox_count > 0 and section.settings.show_site_reviews -%}
+        <li class="social-proof__tile">
+          <span class="social-proof__big">{{ loox_rating | default: '–' }}<span class="social-proof__small">/5</span></span>
+          <span class="social-proof__stars" aria-hidden="true">★★★★★</span>
+          <span class="social-proof__label">{{ loox_count }} reviews on sihoo.com.au</span>
+          <a class="social-proof__link" href="#looxReviews">Read reviews</a>
+        </li>
+      {%- endif -%}
+      {%- if section.settings.units_sold != blank -%}
+        <li class="social-proof__tile">
+          <span class="social-proof__big">{{ section.settings.units_sold | escape }}</span>
+          <span class="social-proof__label">{{ section.settings.units_sold_label | escape }}</span>
+        </li>
+      {%- endif -%}
+      {%- if section.settings.certifications != blank -%}
+        <li class="social-proof__tile">
+          <span class="social-proof__big social-proof__big--text">{{ section.settings.certifications | escape }}</span>
+          <span class="social-proof__label">{{ section.settings.certifications_label | escape }}</span>
+        </li>
+      {%- endif -%}
+      {%- if section.settings.warehouses != blank -%}
+        <li class="social-proof__tile">
+          <span class="social-proof__big">{{ section.settings.warehouses_count | escape }}</span>
+          <span class="social-proof__label">{{ section.settings.warehouses | escape }}</span>
+        </li>
+      {%- endif -%}
+    </ul>
+    {%- if section.settings.footnote != blank -%}
+      <p class="social-proof__footnote">{{ section.settings.footnote | escape }}</p>
+    {%- endif -%}
+  </div>
+</div>
+
+{% style %}
+  #shopify-section-{{ section.id }} .social-proof { --sp-bg: #f7f7f7; --sp-text: #171717; --sp-muted: #5c5c5c; --sp-accent: #c20000; --sp-card: #fff; }
+  #shopify-section-{{ section.id }} .social-proof--dark { --sp-bg: #111; --sp-text: #fff; --sp-muted: #c9c9c9; --sp-card: #1c1c1c; }
+  #shopify-section-{{ section.id }} .social-proof { background: var(--sp-bg); color: var(--sp-text); }
+  #shopify-section-{{ section.id }} .social-proof__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+  #shopify-section-{{ section.id }} .social-proof__tile { background: var(--sp-card); border-radius: 8px; padding: 1.1rem 1rem; text-align: center; display: flex; flex-direction: column; gap: 0.25rem; align-items: center; }
+  #shopify-section-{{ section.id }} .social-proof__big { font-size: 1.75rem; font-weight: 700; line-height: 1.1; }
+  #shopify-section-{{ section.id }} .social-proof__big--text { font-size: 1.05rem; }
+  #shopify-section-{{ section.id }} .social-proof__small { font-size: 0.9rem; font-weight: 500; color: var(--sp-muted); }
+  #shopify-section-{{ section.id }} .social-proof__stars { color: var(--sp-accent); letter-spacing: 0.1em; font-size: 0.9rem; }
+  #shopify-section-{{ section.id }} .social-proof__label { font-size: 0.85rem; color: var(--sp-muted); line-height: 1.35; }
+  #shopify-section-{{ section.id }} .social-proof__link { font-size: 0.8rem; color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+  #shopify-section-{{ section.id }} .social-proof__footnote { margin: 1rem 0 0; text-align: center; font-size: 0.8rem; color: var(--sp-muted); }
+  @media (min-width: 768px) {
+    #shopify-section-{{ section.id }} .social-proof__grid--3 { grid-template-columns: repeat(3, 1fr); }
+    #shopify-section-{{ section.id }} .social-proof__grid--4 { grid-template-columns: repeat(4, 1fr); }
+    #shopify-section-{{ section.id }} .social-proof__grid--5 { grid-template-columns: repeat(5, 1fr); }
+  }
+{% endstyle %}
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Social proof strip",
+  "class": "section-social-proof",
+  "disabled_on": { "groups": ["aside", "header", "footer"] },
+  "settings": [
+    { "type": "paragraph", "content": "Amazon tile appears only when custom.amazon_rating and custom.amazon_rating_count are set on the product. Keep every figure current and sourced." },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Trusted across Australia" },
+    { "type": "checkbox", "id": "show_site_reviews", "label": "Show sihoo.com.au review tile", "default": true },
+    { "type": "text", "id": "units_sold", "label": "Units sold figure", "default": "10 million+" },
+    { "type": "text", "id": "units_sold_label", "label": "Units sold label", "default": "SIHOO chairs sold worldwide" },
+    { "type": "text", "id": "certifications", "label": "Certifications", "default": "BIFMA · SGS · TÜV" },
+    { "type": "text", "id": "certifications_label", "label": "Certifications label", "default": "Independently tested and certified" },
+    { "type": "text", "id": "warehouses_count", "label": "Warehouse count", "default": "4" },
+    { "type": "text", "id": "warehouses", "label": "Warehouse label", "default": "Australian warehouses: Sydney, Melbourne, Brisbane, Perth" },
+    { "type": "text", "id": "footnote", "label": "Footnote", "default": "Amazon rating and count are read from the Amazon.com.au listing and updated periodically." },
+    { "type": "select", "id": "color_scheme", "label": "Colour scheme", "default": "auto", "options": [ { "value": "auto", "label": "Auto (product metafield)" }, { "value": "light", "label": "Light" }, { "value": "dark", "label": "Dark" } ] },
+    { "type": "select", "id": "height", "label": "Section height", "default": "small", "options": [ { "value": "small", "label": "Small" }, { "value": "medium", "label": "Medium" } ] }
+  ],
+  "presets": [ { "name": "Social proof strip" } ]
+}
+{% endschema %}

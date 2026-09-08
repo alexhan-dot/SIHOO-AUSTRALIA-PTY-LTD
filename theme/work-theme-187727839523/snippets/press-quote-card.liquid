@@ -1,0 +1,17 @@
+{%- comment -%} One press quote card. Params: outlet, quote, author, logo (image), url, date {%- endcomment -%}
+{%- if quote != blank -%}
+<blockquote class="pq-card">
+  <span class="pq-card__mark" aria-hidden="true">&ldquo;</span>
+  <p class="pq-card__quote">{{ quote | strip | escape }}</p>
+  <footer class="pq-card__meta">
+    {%- if logo != blank -%}
+      {{ logo | image_url: width: 240 | image_tag: class: 'pq-card__logo', loading: 'lazy', alt: outlet }}
+    {%- endif -%}
+    <span>
+      {%- if url != blank -%}<a class="pq-card__outlet" href="{{ url }}" target="_blank" rel="noopener">{{ outlet | escape }}</a>{%- else -%}<span class="pq-card__outlet">{{ outlet | escape }}</span>{%- endif -%}
+      {%- if author != blank %} · {{ author | escape }}{% endif -%}
+      {%- if date != blank %} · {{ date | date: '%b %Y' }}{% endif -%}
+    </span>
+  </footer>
+</blockquote>
+{%- endif -%}
