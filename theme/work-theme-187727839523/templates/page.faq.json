@@ -158,12 +158,20 @@
             "title": "What is the best recline angle for working?",
             "answer": "<p>SIHOO chairs offer recline angles up to 126°. For work, a slight recline of 90° to 110° is recommended as it helps you stay focused while maintaining good posture. For relaxation or breaks, a deeper recline can help relieve tension.</p>"
           }
+        },
+        "question_clean": {
+          "type": "question",
+          "settings": {
+            "title": "How do I clean a mesh office chair?",
+            "answer": "<p>Vacuum the mesh with a brush attachment, then wipe with a cloth dampened in warm water and a little mild detergent. Avoid bleach and solvents, which weaken the mesh. Wipe the frame and armrests with a damp cloth and let everything air-dry. See our <a href=\"/blogs/all-about-ergonomic-chair/how-to-clean-and-maintain-your-ergonomic-chair\">mesh chair care guide</a>.</p>"
+          }
         }
       },
       "block_order": [
         "question_8Q6Hhz",
         "question_hH4maP",
-        "question_3eUC8X"
+        "question_3eUC8X",
+        "question_clean"
       ],
       "settings": {
         "title": "3. How to Adjust a SIHOO Chair"
@@ -199,10 +207,26 @@
             "title": "Where do you ship from?",
             "answer": "<p>From the SIHOO Australia warehouse closest to you: Sydney (NSW, ACT), Melbourne (VIC, TAS), Brisbane (QLD, northern NSW) or Perth (WA). South Australia and the Northern Territory are served from the nearest warehouse with stock. If your item is only available in another state we tell you on the product page before you order.</p>"
           }
+        },
+        "question_tracking": {
+          "type": "question",
+          "settings": {
+            "title": "Can I track my order?",
+            "answer": "<p>Yes. A tracking link is emailed and texted to you as soon as the courier scans your carton at the warehouse. You can also find the tracking number in your SIHOO Australia account under Orders.</p>"
+          }
+        },
+        "question_damaged": {
+          "type": "question",
+          "settings": {
+            "title": "What if my carton arrives damaged?",
+            "answer": "<p>Photograph the carton before opening it and email the photos to <a href=\"mailto:support@sihoo.com.au\">support@sihoo.com.au</a> with your order number. Replacement parts are dispatched from the nearest warehouse, usually within two business days, at no cost to you.</p>"
+          }
         }
       },
       "block_order": [
         "question_warehouses",
+        "question_tracking",
+        "question_damaged",
         "question_JwPJDR",
         "question_iPiNdX",
         "question_646tKV"
@@ -218,7 +242,7 @@
           "type": "question",
           "settings": {
             "title": "Do SIHOO products come with a warranty?",
-            "answer": "<p>Yes, all SIHOO products come with a warranty. Our office chairs typically include a 3-year warranty, covering defects in materials and workmanship. You can find more information on warranty details with each product listing.</p>"
+            "answer": "<p>Yes. Every SIHOO chair sold by SIHOO Australia is covered by an Australian warranty serviced from our Sydney head office. Doro series chairs (Doro C300 Pro V2, C300 Pro, C500, C100, S300 and S100) come with a 5-year warranty. M series, V series and XALLKING gaming chairs come with a 3-year warranty. The warranty covers defects in materials and workmanship, and replacement parts are sent from the nearest warehouse. The exact term is shown on each product page.</p>"
           }
         },
         "question_WPAAPK": {
@@ -234,10 +258,26 @@
             "title": "Can I return my SIHOO chair if I’m not satisfied?",
             "answer": "<p>Yes, we offer a hassle-free return policy. If you’re not satisfied with your purchase, you can return the product within 30 days of receipt for a full refund or exchange. Please note, a restocking fee may apply for certain returns. The item must be in its original packaging and condition. For more details, please refer to our return policy.</p>"
           }
+        },
+        "question_warranty_doro": {
+          "type": "question",
+          "settings": {
+            "title": "How long is the warranty on Doro chairs?",
+            "answer": "<p>Five years. The Doro range – C300 Pro V2, C300 Pro, C500, C100, S300 and S100 – is covered for 5 years from the date of delivery, which is two years longer than our M and X series chairs. Keep your order confirmation as proof of purchase; no registration is needed.</p>"
+          }
+        },
+        "question_warranty_acl": {
+          "type": "question",
+          "settings": {
+            "title": "Is the warranty in addition to my Australian Consumer Law rights?",
+            "answer": "<p>Yes. The SIHOO warranty is provided in addition to the consumer guarantees under the Australian Consumer Law, which cannot be excluded. If a product has a major failure you are entitled to a replacement or refund, and to compensation for any other reasonably foreseeable loss or damage.</p>"
+          }
         }
       },
       "block_order": [
         "question_j9XdX7",
+        "question_warranty_doro",
+        "question_warranty_acl",
         "question_WPAAPK",
         "question_KwFjYc"
       ],
@@ -365,11 +405,35 @@
             "title": "Which SIHOO chair is best for long working hours?",
             "answer": "<p>For extended sitting periods, we recommend models like the SIHOO M18, M57, C300, or S300. These chairs feature breathable mesh backs, W-shaped cushions, and fully adjustable lumbar support, ensuring you stay comfortable and supported throughout the day.</p>"
           }
+        },
+        "question_back_pain": {
+          "type": "question",
+          "settings": {
+            "title": "Which SIHOO chair is best for back pain?",
+            "answer": "<p>Chairs with dynamic, self-adjusting lumbar support work best for lower-back pain because the support follows you as you move. In the Doro range, the Doro C300 Pro V2 and Doro S300 have the most advanced lumbar systems; in the M series the M57 Pro and M18 offer adjustable lumbar support at a lower price. If your pain is mostly in the neck and shoulders, choose a model with an adjustable headrest such as the M57, M18 Pro or any Doro chair. Read our guide to the <a href=\"/blogs/reviews/best-ergonomic-chair-for-lower-back-pain-in-australia-2026-guide\">best ergonomic chair for lower back pain in Australia</a>.</p>"
+          }
+        },
+        "question_doro_vs_m": {
+          "type": "question",
+          "settings": {
+            "title": "What is the difference between the Doro series and the M series?",
+            "answer": "<p>The Doro series is SIHOO's premium range: self-adjusting dynamic lumbar support, a weight-sensing or self-adaptive recline mechanism, a longer 5-year warranty and design awards such as the German Design Award and Red Dot. The M series (M18, M57, M59, M90 and others) covers the essentials – breathable mesh, adjustable lumbar, headrest and armrests, 150 kg rating – at a lower price with a 3-year warranty. If you sit for six or more hours a day, the Doro chairs are worth the step up; for a home office or study desk the M series is excellent value.</p>"
+          }
+        },
+        "question_gaming_vs_office": {
+          "type": "question",
+          "settings": {
+            "title": "Should I buy a gaming chair or an ergonomic office chair?",
+            "answer": "<p>For long sessions an ergonomic mesh office chair usually wins: it breathes better in the Australian climate and supports a neutral posture. Our XALLKING X5 and X3 gaming chairs combine the racing-style look with proper ergonomics – adjustable lumbar, 4D armrests and a full recline – so you do not have to choose. See <a href=\"/blogs/all-about-ergonomic-chair/gaming-chair-vs-ergonomic-office-chair-for-spine-health\">gaming chair vs ergonomic office chair for spine health</a>.</p>"
+          }
         }
       },
       "block_order": [
         "question_7JcbVB",
-        "question_WKEGzF"
+        "question_WKEGzF",
+        "question_back_pain",
+        "question_doro_vs_m",
+        "question_gaming_vs_office"
       ],
       "settings": {
         "title": "10. How do I choose the right chair for me?"
@@ -382,7 +446,7 @@
           "type": "question",
           "settings": {
             "title": "What is the maximum weight limit?",
-            "answer": "<p>Most SIHOO chairs, including the M18 and M57 models, support up to 150 kg. Always check the specific product listing for the exact weight capacity, as it can vary between models.</p>"
+            "answer": "<p>Most SIHOO chairs – including the M18, M18 Pro, M57, M57 Pro, the XALLKING X5S and X5F, and the whole Doro range – are rated to 150 kg. Some models, including the V1, M56, M59, M76, M90, X5 Pro and X5C, are rated to 136 kg. Doro chairs use an SGS Class 4 gas lift. The exact rating is listed under Specifications on every product page and in the comparison table when you compare models.</p>"
           }
         }
       },
@@ -446,10 +510,26 @@
             "title": "Are SIHOO chairs suitable for taller or shorter individuals?",
             "answer": "<p>Yes, SIHOO chairs are designed to accommodate a wide range of body types. With adjustable seat height, depth, and lumbar support, our chairs can be tailored to fit people of various heights. For specific measurements, please check the product dimensions listed in the descriptions.</p>"
           }
+        },
+        "question_tall": {
+          "type": "question",
+          "settings": {
+            "title": "Which SIHOO chair is best for tall people?",
+            "answer": "<p>If you are over 185 cm, look for a taller backrest, a longer seat-depth range and a headrest that lifts high: the Doro C300 Pro V2, Doro S300, Doro C500, M57 Pro and M18 Pro all suit users up to 190 cm. Each product page lists the recommended user height range under Specifications. Our guide to the <a href=\"/blogs/reviews/ergonomic-chair-for-tall-people\">best office chair for tall people in Australia</a> compares the options.</p>"
+          }
+        },
+        "question_short": {
+          "type": "question",
+          "settings": {
+            "title": "Which SIHOO chair suits shorter users?",
+            "answer": "<p>Users under about 160 cm should choose a chair with a low minimum seat height (around 40–43 cm) and adjustable seat depth so the front edge does not press behind the knees. The M76, M57 Pro, M59 and M18 have the lowest seat heights in our range. A footrest can also help if your feet do not sit flat on the floor.</p>"
+          }
         }
       },
       "block_order": [
-        "question_zbFaDG"
+        "question_zbFaDG",
+        "question_tall",
+        "question_short"
       ],
       "settings": {
         "title": "14. Can SIHOO chairs be used for people of all heights?"
@@ -462,12 +542,20 @@
           "type": "question",
           "settings": {
             "title": "Which payment options are available?",
-            "answer": "<p>We accept a range of payment methods, including Visa, Mastercard, American Express, PayPal, and Afterpay. For more details on payment options, you can visit our checkout page or contact customer support.</p>"
+            "answer": "<p>We accept Visa, Mastercard, American Express, PayPal, Apple Pay, Google Pay, Shop Pay, Afterpay and Zip. All prices are in Australian dollars and include GST.</p>"
+          }
+        },
+        "question_afterpay": {
+          "type": "question",
+          "settings": {
+            "title": "Can I pay with Afterpay or Zip?",
+            "answer": "<p>Yes. Choose Afterpay or Zip at checkout to split your order into interest-free instalments. There is no extra cost from SIHOO Australia; the provider's own terms apply. The instalment amount is shown under the price on every product page.</p>"
           }
         }
       },
       "block_order": [
-        "question_LnKbtH"
+        "question_LnKbtH",
+        "question_afterpay"
       ],
       "settings": {
         "title": "15. What payment methods do you accept?"
