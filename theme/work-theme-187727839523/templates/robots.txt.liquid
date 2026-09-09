@@ -1,0 +1,31 @@
+{% for group in robots.default_groups %}
+  {{- group.user_agent -}}
+
+  {% for rule in group.rules %}
+    {{- rule -}}
+  {% endfor %}
+
+  {%- if group.user_agent.value == '*' or group.user_agent.value == 'adsbot-google' -%}
+    {{ 'Disallow: /pages/weekly-digest-feed' }}
+  {%- endif -%}
+
+  {%- if group.sitemap != blank -%}
+    {{ group.sitemap }}
+  {%- endif -%}
+{% endfor %}
+
+{%- comment -%} SIHOO AU 2026-09-09: explicitly welcome AI search / answer-engine crawlers (product, collection, blog and page content only; checkout, cart and account paths stay covered by the default disallow rules above). {%- endcomment -%}
+{%- assign ai_bots = 'GPTBot,OAI-SearchBot,ChatGPT-User,ClaudeBot,anthropic-ai,PerplexityBot,Perplexity-User,Google-Extended,Applebot-Extended,Amazonbot,Bytespider,CCBot,DuckAssistBot,YouBot,meta-externalagent' | split: ',' -%}
+{%- for bot in ai_bots %}
+User-agent: {{ bot }}
+Allow: /products/
+Allow: /collections/
+Allow: /blogs/
+Allow: /pages/
+Disallow: /cart
+Disallow: /checkout
+Disallow: /account
+Disallow: /search
+{%- endfor %}
+
+Sitemap: https://sihoo.com.au/sitemap.xml
