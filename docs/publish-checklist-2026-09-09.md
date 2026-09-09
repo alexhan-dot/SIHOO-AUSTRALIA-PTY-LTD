@@ -13,17 +13,20 @@
 |---|---|
 | 새 템플릿 4종 (`product.doro/m/x/desk.json`) | 드래프트 테마에 존재, 27개 프리뷰 Liquid 오류 0 |
 | 레거시 템플릿 20개 (`product.c100.json` … `product.json`) | 새 템플릿 내용으로 덮어씀 → 상품의 templateSuffix를 바꾸지 않아도 게시 즉시 새 페이지 |
-| 데스크 `product.aftership.994c81c7.liquid` | 삭제 후 같은 이름 `.json`(desk 템플릿)으로 교체 |
+| 데스크 `product.aftership.994c81c7.liquid` | **미완료** — API 정책이 테마 파일 삭제를 차단(themeFilesDelete blocked). 게시 직후 데스크 2개의 templateSuffix를 `desk`로 바꾸면 끝(§2 3단계). 라이브 게시 전에는 바꾸지 말 것(라이브에 desk 템플릿이 없어 기본 템플릿으로 떨어짐) |
 | 레거시 템플릿 원본 | `theme/legacy-templates-2026-09-09/` 에 보관(롤백용) |
-| 기존 Specs&Compare 블록·커스텀 리뷰 섹션 | 레거시 템플릿이 사라지면서 자동 제거. `review-source-note.liquid` 삭제. `custom-product-reviews`(컬렉션 2개)·`reviews-grid`(페이지 2개)는 상품 외 템플릿이 쓰므로 유지 |
+| 기존 Specs&Compare 블록·커스텀 리뷰 섹션 | 레거시 템플릿을 덮어쓰면서 자동 제거. `review-source-note.liquid`는 미참조 상태로 남음(삭제 API 차단, 무해). `custom-product-reviews`(컬렉션 2개)·`reviews-grid`(페이지 2개)는 상품 외 템플릿이 쓰므로 유지 |
 | 구조화 데이터 | BreadcrumbList · Organization · ProductGroup(aggregateRating) · FAQPage 4종 출력 확인 |
+| 프리뷰 검증 (view= 없이, 실제 suffix) | 의자 25개 전부 새 템플릿 렌더, Liquid 오류 0, 비교표 15행, FAQ·스토리·관련 글 정상. 데스크 2개는 아직 AfterShip 템플릿 |
+| Lighthouse | 이 환경의 Chromium이 프록시 TLS 인터스티셜에 막혀 실행 불가 → Chrome DevTools에서 프리뷰 URL로 수동 실행 권장 |
+| specs 충돌 | 23개 상품을 페이지 문구 기준으로 메타필드·FAQ·하이라이트·비교 인트로 정렬 완료(`docs/migration/*.md` 의 'Specs alignment 2026-09-09' 절). FAQ 페이지 하중 답변도 갱신 |
 | 폰트 | Inter 단일, 본문 16px |
 
 ## 2. 게시 절차 (Alex)
 
 1. Online Store → Themes → "WORK - SIHOO Symmetry 2026-09 fixes DRAFT" → **Preview** 로 상품 2–3개 최종 확인 (아래 §4 링크).
 2. 같은 카드의 ⋯ → **Publish**. (templateSuffix 변경·상품 편집 불필요.)
-3. 게시 직후 라이브에서 확인: C300 Pro V2, M57, X5S, Desker 데스크 각 1회 열어 섹션 렌더 확인.
+3. 게시 직후 **데스크 2개** Products → Theme template 을 `desk` 로 변경(Desker 화이트 8170139156771, Carbon Fibre 블랙 8860338553123). 그 다음 라이브에서 C300 Pro V2, M57, X5S, Desker 데스크를 열어 섹션 렌더 확인.
 4. Loox → Import reviews 에 `data/reviews/*-au-english.csv` 업로드(선택).
 5. Blog posts → "Four Australian warehouses…" 공개 여부 결정(배송 문구 결정과 함께).
 
