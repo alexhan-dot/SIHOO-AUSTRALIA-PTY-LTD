@@ -51,3 +51,18 @@ Date: 2026-09-08. Title, price, variants, gallery, templateSuffix and status unt
 
 - `custom.faqs` previously pointed at `faq-how-to-reduce-workplace-fatigue-through-office-setup` (264085733667), a 10-item FAQ container that is also referenced by that blog article (workplace-fatigue questions, nothing about the M16). Adding product FAQs there would have changed the article, so a new `faqs-m16` container was created and `custom.faqs` repointed. The article container was not modified.
 - Description/A+ say 90–125° recline; specs say 3 positions 110/116/130°. FAQ follows specs.
+
+## Specs alignment 2026-09-09 (page copy wins — owner decision)
+
+Source of truth: description ("90 to 125 degree reclining backrest", "Fixed Arm Rest") + A+ PNG 4 (125° tilt).
+
+| specs key | old | new |
+|---|---|---|
+| recline_positions_deg | [110,116,130] | [90,125] |
+| mechanism | "… and 3 recline positions" | "… reclines 90°–125°" |
+| armrest_type | 2D | Fixed |
+| armrest_detail | mislabelled "2D non-adjustable lumbar support:" | "Fixed (non-adjustable) armrests:" (same body) |
+| data_source / needs_confirmation | sc_attributes / conflict list | aligned line + open items |
+
+Edited: `custom.highlights[5]` (90–125°), `custom.compare_intro` (M18 now 110–126° tilt-lock, 136 kg), faq_item m16-faq-3, m16-faq-8 (M18 136 kg / 110–126°, M56 155–185 cm), feature_story m16-story-4 (title + body). Description untouched.
+Still open: no lifestyle photos; custom.faqs repoint note kept.

@@ -53,3 +53,15 @@ Date: 2026-09-08. Title, price, variants, gallery, templateSuffix, status and de
 - faqs: faqs-m57 → 316806791459 (ACTIVE)
 - Files uploaded: 43783082279203 (0667.jpg), 43783082311971 (M57-5….jpg) — both READY
 - Metafields set: custom.highlights (6), highlight_images (4), best_for (4), feature_stories (6), faqs, compare_products (M57 Pro, M59AS), compare_intro, lifestyle_images (3); specs.needs_confirmation (new: description says headrest 9.9 cm vs specs 8 cm). hero_video / hero_video_file / whats_in_box: unset (no source on AU page).
+
+## Specs alignment 2026-09-09 (page copy wins — owner decision)
+
+Source of truth: description (headrest "up to 9.9 cm", 126°, 150 kg). Recline and load already matched specs.
+
+| specs key | old | new |
+|---|---|---|
+| headrest_detail | Up and down: 8CM | Up and down: 9.9CM (45° rotation unchanged) |
+| data_source / needs_confirmation | sc_attributes / "9.9 vs 8" | aligned line + open items |
+
+Edited: `custom.highlights[5]` (9.9 cm), `custom.compare_intro` (M57 Pro now 90°–130°), faq_item m57-faq-4 (9.9 cm), m57-faq-8 (M57 Pro 90°–130°), feature_story m57-story-4. Description untouched.
+Still open: template image-with-text still says 8 cm (description used); M57 with built-in footrest record keeps 8 cm (its page gives no figure).

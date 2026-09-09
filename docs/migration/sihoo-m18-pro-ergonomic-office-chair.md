@@ -58,3 +58,19 @@ Date: 2026-09-08. Title, price, variants, gallery, templateSuffix and status unt
 
 - `specs.armrest_type` = 2D but all AU copy/images say 4D linked (armrest_detail already lists height/depth/15.2° swivel/linked recline). Highlights say "linked armrests" with the specs numbers, avoiding the 2D/4D label.
 - Description claims 110 kg (M18 100 kg) and 90–130° vs specs 150 kg and 109/122/134°.
+
+## Specs alignment 2026-09-09 (page copy wins — owner decision)
+
+Source of truth: description (4D linked armrests; 90°–130° with three lockable angles; 110 kg safe working load, also in the M18 vs M18 Pro table).
+
+| specs key | old | new |
+|---|---|---|
+| armrest_type | 2D | 4D |
+| armrest_detail | "2D armrest: …" | "4D linked armrest (height, width, depth, rotation): …" (same 7 cm / 6 cm / 15.2° / linked figures) |
+| max_load_kg | 150 | 110 |
+| recline_positions_deg | [109,122,134] | [90,130] |
+| mechanism | self-weighted, 3 lockable positions | adaptive self-weight sensing, 90°–130°, three lockable angles |
+| data_source / needs_confirmation | sc_attributes / conflict list | aligned line + open items |
+
+Edited: `custom.highlights[2]` (4D linked), `[6]` (90–130°, 110 kg), `custom.compare_intro`, faq_item m18-pro-faq-2, -3, -4, -9, feature_story m18-pro-story-2 (title + body), m18-pro-story-6 (title + body). Description untouched.
+Still open: template rich-text "Why the M18 Pro?" says 136 kg (description 110 kg used); story-6 image M18_750_11 has "134°" baked in; description cites BIFMA & CNAS vs specs.certifications BIFMA/SGS; stray table markup in description.

@@ -60,3 +60,16 @@ Date: 2026-09-08. Title, price, variants, gallery, templateSuffix and status unt
 
 - Template says Y-backrest suits 155–185 cm; specs say 150–190 (used). Description says 90–125° recline; specs 105–135° (template agrees with 135°).
 - Description embeds two cdn videos (e4ecad91…, 82437ab5…) that are not the m56-v1/v2/v3 files.
+
+## Specs alignment 2026-09-09 (page copy wins — owner decision)
+
+Source of truth: template Y-backrest block (155–185 cm), template collapsible "90°-135°" + "135° tilt-back angle" block + image m56-18 (135°); description says 90°-125° (lower bound 90° taken from it).
+
+| specs key | old | new |
+|---|---|---|
+| user_height_min_cm / max | 150 / 190 | 155 / 185 |
+| recline_positions_deg | [105,135] | [90,135] |
+| data_source / needs_confirmation | sc_attributes / conflict list | aligned line + open items |
+
+Edited: `custom.best_for[3]` (Users 155–185 cm), `custom.compare_intro` (M16 90–125°, M56 90–135°, 155–185 cm), faq_item m56-faq-1, -3, -4, -8, feature_story m56-story-6. Cross-references updated on M16 (faq-8). Description untouched (spelling fix from 2026-09-08 stands).
+Still open: pre-existing description still says 90–125° (template/images say 135°); embedded cdn videos not in Files.

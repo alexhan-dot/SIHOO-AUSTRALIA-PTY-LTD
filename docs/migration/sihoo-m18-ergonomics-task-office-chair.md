@@ -65,3 +65,21 @@ Date: 2026-09-08. Title, price, variants, gallery, templateSuffix and status unt
 ## Flags
 
 - specs.* for the M18 (self-weighted mechanism, linked-recline armrests, 109/122/134°, 150 kg) are identical to the M18 Pro record; AU description + template FAQ say 136 kg, 46–55 cm seat, 110–126° tilt-lock. Metafield copy follows specs.*; confirm which is right.
+
+## Specs alignment 2026-09-09 (page copy wins — owner decision)
+
+Source of truth: description (136 kg, 150–190 cm, 110–126° tilt-lock) + template FAQ (seat 46–55 / 51 / 46 cm, overall 107–130 cm, 136 kg, "base M18's 2D armrests").
+
+| specs key | old | new |
+|---|---|---|
+| max_load_kg | 150 | 136 |
+| seat_height_min_cm / max | 43 / 53 | 46 / 55 |
+| seat_depth_min_cm / max | 42 / 42 | 46 / 46 |
+| overall_height_max_cm | 121 | 130 |
+| recline_positions_deg | [109,122,134] | [110,126] |
+| mechanism | self-weighted, 3 lockable positions | tilt-lock, 110–126°, locks in place |
+| armrest_detail | 2D + 15.2° swivel + "Linked Recline" (M18 Pro copy) | 2D: 7 cm up/down, 6 cm front/back |
+| data_source / needs_confirmation | sc_attributes / conflict list | "AU page copy 2026-09-09 (owner decision) + sc_attributes" / open items only |
+
+Edited: `custom.highlights[6]` (tilt-lock 110–126°), `custom.compare_intro` (136 / 110 / 150 kg), faq_item m18-faq-1, -2, -3, -4, -9, feature_story m18-story-5. Description untouched (pre-existing).
+Still open: headrest/lumbar/armrest travel figures remain the M18 Pro numbers (no AU page figure); baked-angle images 7_97d170d1 / M18-14 unused.

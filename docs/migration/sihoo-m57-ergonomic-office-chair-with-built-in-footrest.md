@@ -34,3 +34,16 @@ Date: 2026-09-08. Title, price, variants, gallery, templateSuffix, status and de
 - faqs: faqs-m57-fr → 316806856995 (ACTIVE)
 - Files uploaded: none (reuses M57 upload 43783082279203)
 - Metafields set: custom.highlights (6), highlight_images (4), best_for (4), feature_stories (6), faqs, compare_products (M57, M57 Pro FR), compare_intro, lifestyle_images (3); specs.needs_confirmation appended (description 90°–120° recline + "3. 9 in." vs specs 110/116/126, metric only). hero_video / hero_video_file / whats_in_box: unset. Returns FAQ skipped: AU page states no returns policy.
+
+## Specs alignment 2026-09-09 (page copy wins — owner decision)
+
+Source of truth: description ("90°-120° reclining backrest", 150 kg, 10 cm seat travel — matches 43.5–53.5).
+
+| specs key | old | new |
+|---|---|---|
+| recline_positions_deg | [110,116,126] | [90,120] |
+| mechanism | single-lever, adjustable lift and recline tension | same + "; reclines 90°–120°" |
+| data_source / needs_confirmation | sc_attributes / conflict list | aligned line + open items |
+
+Edited: `custom.highlights[5]` (120°, 90°–120°), `custom.compare_intro` (M57 Pro FR up to 130°), faq_item m57-fr-faq-3, -4, -8, feature_story m57-fr-story-5, m57-fr-story-6. Cross-references updated on M57 Pro FR (compare_intro, faq-8). Description untouched.
+Still open: "3. 9 in." imperial in description; size-chart alt text "M81"; headrest 8 cm kept (page gives no figure; M57 page says 9.9 cm).

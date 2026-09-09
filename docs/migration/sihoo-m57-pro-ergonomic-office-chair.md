@@ -41,3 +41,16 @@ Date: 2026-09-08. Title, price, variants, gallery, templateSuffix, status and de
 - faqs: faqs-m57-pro → 316806824227 (ACTIVE)
 - Files uploaded: none
 - Metafields set: custom.highlights (6), highlight_images (4), best_for (4), feature_stories (6), faqs, compare_products (M57, M57 Pro FR), compare_intro, lifestyle_images (3), hero_video_file; specs.needs_confirmation appended (description recline 90–130° vs specs 109/122/134; "2,000 lb" imperial). hero_video / whats_in_box: unset. Returns FAQ skipped: AU page states no returns policy.
+
+## Specs alignment 2026-09-09 (page copy wins — owner decision)
+
+Source of truth: description ("recline from 90°–130° with three lockable angles", 150 kg, 4D).
+
+| specs key | old | new |
+|---|---|---|
+| recline_positions_deg | [109,122,134] | [90,130] |
+| mechanism | self-weighted, 3 lockable positions | auto-balance self-weight sensing, 90°–130°, three lockable angles |
+| data_source / needs_confirmation | sc_attributes / conflict list | aligned line + open items |
+
+Edited: `custom.highlights[6]` (90°–130°), faq_item m57-pro-faq-3, m57-pro-faq-8, feature_story m57-pro-story-6. Cross-references updated on M57 (compare_intro, faq-8) and M57 FR (compare_intro, faq-8). Description untouched.
+Still open: description says 10 cm seat travel vs specs 42–50 cm (no absolute heights on page); "2,000 lb" imperial in description.
