@@ -71,3 +71,16 @@ Date: 2026-09-08. Title, price, variants, gallery, templateSuffix and status unt
 - whats_in_box written from the description (tools, gloves, instructions documented; chair parts are the standard set).
 - hero_video unset.
 - specs.needs_confirmation appended: Description says users 150–175 cm, 130 kg max load and 120° tilt, gallery says 90° flip-up armrests; specs.* say 150–180 cm, 136 kg, 108–125° recline and 75° armrest lift — specs used in new copy (2026-09-08 migration)
+
+## Specs alignment 2026-09-09 (page copy wins — owner decision)
+
+| specs key | old | new | source |
+|---|---|---|---|
+| user_height_max_cm | 180 | 175 | description "150-175cm" |
+| max_load_kg | 136 | 130 | description "maximum load of 130kg" |
+| recline_positions_deg | [108,125] | [90,120] | description "tilted at 120°", gallery Rocking Function 90°/120° |
+| armrest_detail | Up and down: 75º | Up and down: 90° | gallery "90° flip-up" |
+| data_source | AU sc_attributes 메타필드 | AU page copy 2026-09-09 (owner decision) + sc_attributes | |
+| needs_confirmation | rewritten | open: armrest 1D/2D/3D class, no headrest value, no gallery video | |
+
+Migrated content edited: `custom.highlights` [5] (150–175 cm, 130 kg); `custom.best_for` (150–175 cm); `custom.compare_intro` ("deeper 126° recline for users up to 190 cm" → "deeper recline for taller users", since M90 is now 123° / 188 cm); faq_item m76-faq-1 (150–175 cm), m76-faq-2 (130 kg), m76-faq-4 (90° flip, tilt to 120°), m76-faq-8 (150–175 cm; M57 190 / M90 188 cm). Description pre-existed → untouched. userErrors: none.

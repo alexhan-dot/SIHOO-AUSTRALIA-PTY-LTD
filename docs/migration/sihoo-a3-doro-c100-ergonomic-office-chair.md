@@ -66,3 +66,15 @@ custom.highlights (6), custom.highlight_images (4), custom.best_for (4), custom.
 
 ## Description
 ~100 words, AU English → unchanged.
+
+## Specs alignment 2026-09-09 (page copy wins — owner decision)
+
+| specs key | old | new | source |
+|---|---|---|---|
+| max_load_kg | 150 | 136 | template accordions "Supports up to 136 kg" |
+| user_height_min_cm | 150 | 152 | template accordions "152 cm to 190 cm" (Features accordion says 191 — 190 used) |
+| warranty_years | 5 | 5 (unchanged) | owner decision: Doro 5 years despite template "3-Year Warranty" |
+| data_source | AU sc_attributes 메타필드 | AU page copy 2026-09-09 (owner decision) + sc_attributes | |
+| needs_confirmation | rewritten | open: no gallery video, 190 vs 191 cm in the two accordions, description "3D coordinated armrests" vs template/specs 4D (4D kept), template 3-year warranty vs Doro 5-year policy | |
+
+Migrated content edited: `custom.best_for` (152–190 cm); faq_item c100-faq-1 (152–190 cm), c100-faq-2 (136 kg). c100-faq-6 (5-year warranty) and c100-faq-7 (delivery) unchanged per owner exceptions. Highlights, compare_intro and feature stories carried no load/height figures. Description pre-existed → untouched. userErrors: none.

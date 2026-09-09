@@ -78,3 +78,13 @@ Date: 2026-09-08. Title, price, variants, gallery, templateSuffix and status unt
 - Returns FAQ included because the v1 template shows a '30-Day Returns' trust badge.
 - Template demand-alert (extra 5–7 business days) contradicts the standard delivery FAQ — needs a decision.
 - specs.needs_confirmation appended: Description says 90°–140° reclining backrest and 10 cm seat-height travel; specs.* have no recline value (raw tilt 0/9/18/27°) and 47.5–57 cm — recline degrees omitted from new copy (2026-09-08 migration)
+
+## Specs alignment 2026-09-09 (page copy wins — owner decision)
+
+| specs key | old | new | source |
+|---|---|---|---|
+| recline_positions_deg | (unset; raw sc_attributes tilt 0/9/18/27°) | [90,140] | description "90°-140° reclining backrest" |
+| data_source | AU sc_attributes 메타필드 | AU page copy 2026-09-09 (owner decision) + sc_attributes | |
+| needs_confirmation | rewritten | open: no mechanism value, 1/31 image alt missing, 10 cm vs 9.5 cm seat travel | |
+
+Migrated content edited: `custom.highlights` [3] ("Multi-position recline…" → "90–140° recline with optional leg rest: Lean back to 140°…"); faq_item v1-faq-3 ("backrest recline from 90° to 140°"); feature_story v1-story-4 ("reclines from upright to 140°"). Description pre-existed → untouched. Template demand-alert (extra 5–7 business days) vs delivery FAQ is delivery wording → left as decided by the owner. userErrors: none.

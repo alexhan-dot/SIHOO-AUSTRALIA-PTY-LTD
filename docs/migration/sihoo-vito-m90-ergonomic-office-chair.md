@@ -77,3 +77,18 @@ Date: 2026-09-08. Title, price, variants, gallery, templateSuffix and status unt
 - hero_video set from custom.videos (SIHOO_AU channel, model-specific) — not from a template setting; remove if the strict template-only rule applies.
 - Old description still contains imperial figures (5'5"–6'2", 4", 2504 lb, 330 lb) — only spellings were changed per the brief.
 - specs.needs_confirmation appended: Description/gallery say 150 kg (330 lb) max load, 3D armrests (7 cm / 6 cm / 32°), recline lockable at 103°/113°/123° (banner: 130°) and users 165–188 cm; specs.* say 136 kg, 2D armrests, 110°/116°/126° and 150–190 cm — specs used in new copy (2026-09-08 migration)
+
+## Specs alignment 2026-09-09 (page copy wins — owner decision)
+
+| specs key | old | new | source |
+|---|---|---|---|
+| max_load_kg | 136 | 150 | description "330 lbs" (150 kg) |
+| armrest_type / armrest_detail | 2D / 2D | 3D / "3D armrests, linked to backrest recline (gallery: 7 cm / 6 cm / 32° adjustment)" | description "3D armrests with back linkage", gallery sihoo-m90c_1 |
+| recline_positions_deg | [110,116,126] | [103,113,123] | gallery lock positions (description: 3 positions between 90° and 123°) |
+| user_height_min_cm / user_height_max_cm | 150 / 190 | 165 / 188 | description 5'5"–6'2" |
+| headrest_detail | (unset) | Double-joint elastic headrest (height and angle), stretch mesh | description |
+| mechanism | (unset) | Mechanical steel multifunctional mechanism, 3-position recline lock, adjustable recline tension; 6 cm backrest lift (3 gears) | description MATERIALS + bullets |
+| data_source | AU sc_attributes 메타필드 | AU page copy 2026-09-09 (owner decision) + sc_attributes | |
+| needs_confirmation | rewritten | open: no gallery video, 4" (10 cm) vs 9 cm seat travel, 130° banner vs 123° top lock | |
+
+Migrated content edited: `custom.highlights` [2] (3D linked armrests), [3] (103/113/123°), [5] (150 kg); `custom.best_for` (165–188 cm); faq_item m90-faq-1 (165–188 cm), m90-faq-2 (150 kg), m90-faq-4 (103/113/123°, 3D armrests), m90-faq-8 (M76 now 150–175 cm); feature_story m90-story-2 (3D pads), m90-story-4 (103/113/123°, 165–188 cm). Description pre-existed → untouched (imperial figures remain). userErrors: none.

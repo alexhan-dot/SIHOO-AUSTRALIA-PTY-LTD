@@ -72,3 +72,15 @@ Date: 2026-09-08. Title, price, variants, gallery, templateSuffix and status unt
 - lifestyle_images: gallery angles only — the M59 has no scenario photos on the AU store.
 - whats_in_box: not documented on the AU page → not set.
 - specs.needs_confirmation appended: Description says 150 kg max load, 90° liftable armrests and 18° tilt; specs.* say 136 kg, 80° armrest lift and 100–120° recline — specs used in new copy (2026-09-08 migration)
+
+## Specs alignment 2026-09-09 (page copy wins — owner decision)
+
+| specs key | old | new | source |
+|---|---|---|---|
+| max_load_kg | 136 | 150 | description "up to 150KG" |
+| armrest_detail | Up and down: 80º | Up and down: 90° | description "90° Liftable Armrest" |
+| recline_positions_deg | [100,120] | [90,108] | description "18° back tilt" (90° upright convention used across the AU pages) |
+| data_source | AU sc_attributes 메타필드 | AU page copy 2026-09-09 (owner decision) + sc_attributes | |
+| needs_confirmation | rewritten | resolved conflicts removed; open: armrest 1D/2D/3D class, no headrest value, no gallery video, 8 cm vs 8.5 cm seat travel | |
+
+Migrated content edited: `custom.highlights` [3] (18° tilt) and [5] (150 kg); `custom.compare_intro` (150 kg differentiator dropped, 18° tilt added); faq_item m59-faq-2 (150 kg), m59-faq-4 (90° flip, 18° tilt), m59-faq-8 (18° tilt / 150 kg, M59AS & M57 150 kg "add" removed); feature_story m59-story-4 (18° tilt), m59-story-5 (150 kg). Description pre-existed → untouched. metafieldsSet / metaobjectUpdate userErrors: none.

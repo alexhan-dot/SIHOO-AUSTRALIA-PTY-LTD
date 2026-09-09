@@ -74,3 +74,18 @@ Date: 2026-09-08. Title, price, variants, gallery, templateSuffix and status unt
 - hero_video from custom.videos (flagged).
 - specs.armrest_type is 4D here but 2D on the standard M90 — same chair; worth confirming (already in needs_confirmation).
 - specs.needs_confirmation appended: Description says 150 kg (330 lb) max load, 3D armrests, recline 90°–123° (banner: 130°) and users 165–188 cm; specs.* say 136 kg, 4D armrests, 110°/116°/126° and 150–190 cm — specs used in new copy (2026-09-08 migration)
+
+## Specs alignment 2026-09-09 (page copy wins — owner decision)
+
+| specs key | old | new | source |
+|---|---|---|---|
+| max_load_kg | 136 | 150 | description "330 lbs" |
+| armrest_type / armrest_detail | 4D / 4D | 3D / "3D armrests, linked to backrest recline" | this page's description says 3D (same as M90) — owner rule |
+| recline_positions_deg | [110,116,126] | [103,113,123] | description "3 positions between 90° and 123°"; 103/113 from the standard M90 gallery |
+| user_height_min_cm / user_height_max_cm | 150 / 190 | 165 / 188 | description 5'5"–6'2" |
+| headrest_detail | 3D headrest | Double-joint elastic headrest (height and angle), stretch mesh | description |
+| mechanism | (unset) | Mechanical steel multifunctional mechanism, 3-position recline lock, adjustable recline tension; 6 cm backrest lift (3 gears) | description |
+| data_source | AU sc_attributes 메타필드 | AU page copy 2026-09-09 (owner decision) + sc_attributes | |
+| needs_confirmation | rewritten | open: no gallery video, 10 cm vs 9 cm seat travel, 130° banner, intermediate lock positions borrowed from M90 gallery | |
+
+Migrated content edited: `custom.highlights` [3] (4D → 3D linked armrests), [5] (150 kg); `custom.best_for` (165–188 cm); `custom.compare_intro` (M57-fr "3D armrests at a 150 kg rating" differentiator removed); faq_item m90-fr-faq-1 (165–188 cm), m90-fr-faq-2 (150 kg), m90-fr-faq-5 (103/113/123°, double-jointed headrest, 3D armrests), m90-fr-faq-9 (both chairs 3D / 150 kg); feature_story m90-fr-story-4 (title + body: 4D → 3D). Description pre-existed → untouched. userErrors: none.
