@@ -184,42 +184,42 @@
           "type": "question",
           "settings": {
             "title": "Where do you deliver?",
-            "answer": "<p>We deliver free to every address in Australia. Stock is held in four SIHOO Australia warehouses – Sydney, Melbourne, Brisbane and Perth – so your order ships from the one nearest you, usually the next business day.</p>"
+            "answer": "<p>We offer delivery across Australia, subject to address serviceability. For regional and remote addresses, contact <a href=\"mailto:support@sihoo.com.au\">support@sihoo.com.au</a> with your postcode before ordering. See our <a href=\"/pages/shipping-policy\">shipping policy</a> for coverage and conditions.</p>"
           }
         },
         "question_iPiNdX": {
           "type": "question",
           "settings": {
             "title": "How long does delivery take?",
-            "answer": "<p>Orders are dispatched the next business day from the SIHOO Australia warehouse nearest you and usually arrive within 1–3 business days. Regional and remote addresses can take a little longer. You receive tracking by email and SMS as soon as the courier collects your order.</p>"
+            "answer": "<p>Delivery timing depends on stock availability and your postcode. Check any pre-order or dispatch notice for your selected option. For regional or remote addresses, contact us for delivery availability and a quote before ordering. See our <a href=\"/pages/shipping-policy\">shipping policy</a>.</p>"
           }
         },
         "question_646tKV": {
           "type": "question",
           "settings": {
             "title": "How much does shipping cost?",
-            "answer": "<p>Delivery is free Australia-wide on every chair, with no minimum order and no surcharge for regional or remote postcodes.</p>"
+            "answer": "<p>Free delivery is available in our standard delivery areas. Addresses outside those areas may require a tailored shipping quote. Contact us with your postcode before ordering and check our <a href=\"/pages/shipping-policy\">shipping policy</a>.</p>"
           }
         },
         "question_warehouses": {
           "type": "question",
           "settings": {
             "title": "Where do you ship from?",
-            "answer": "<p>From the SIHOO Australia warehouse closest to you: Sydney (NSW, ACT), Melbourne (VIC, TAS), Brisbane (QLD, northern NSW) or Perth (WA). South Australia and the Northern Territory are served from the nearest warehouse with stock. If your item is only available in another state we tell you on the product page before you order.</p>"
+            "answer": "<p>Orders are dispatched from our Australian warehouse network according to stock availability. Your order may need to travel from another state. See our <a href=\"/pages/shipping-policy\">shipping policy</a> or contact support for advice on your selected product and postcode.</p>"
           }
         },
         "question_tracking": {
           "type": "question",
           "settings": {
             "title": "Can I track my order?",
-            "answer": "<p>Yes. A tracking link is emailed and texted to you as soon as the courier scans your carton at the warehouse. You can also find the tracking number in your SIHOO Australia account under Orders.</p>"
+            "answer": "<p>A shipping confirmation email with tracking information is sent after dispatch. If you need help finding it or your order is delayed, email <a href=\"mailto:support@sihoo.com.au\">support@sihoo.com.au</a> with your order number.</p>"
           }
         },
         "question_damaged": {
           "type": "question",
           "settings": {
             "title": "What if my carton arrives damaged?",
-            "answer": "<p>Photograph the carton before opening it and email the photos to <a href=\"mailto:support@sihoo.com.au\">support@sihoo.com.au</a> with your order number. Replacement parts are dispatched from the nearest warehouse, usually within two business days, at no cost to you.</p>"
+            "answer": "<p>Photograph the carton and any damage, keep the packaging, and email <a href=\"mailto:support@sihoo.com.au\">support@sihoo.com.au</a> with your order number and photos. Our team will assess the issue and explain the next steps. See our <a href=\"/pages/returns\">returns policy</a>.</p>"
           }
         }
       },
@@ -249,14 +249,14 @@
           "type": "question",
           "settings": {
             "title": "How do I claim a warranty?",
-            "answer": "<p>If you experience any issues with your SIHOO product, please contact our support team at <a>support@sihoo.com.au</a> or call 1300 002 580. Provide your proof of purchase and details about the issue, and we’ll guide you through the warranty process.</p>"
+            "answer": "<p>If you experience any issues with your SIHOO product, please contact our support team at <a href=\"mailto:support@sihoo.com.au\">support@sihoo.com.au</a> or call 1300 002 580. Provide your proof of purchase and details about the issue, and we’ll guide you through the warranty process.</p>"
           }
         },
         "question_KwFjYc": {
           "type": "question",
           "settings": {
             "title": "Can I return my SIHOO chair if I’m not satisfied?",
-            "answer": "<p>Yes, we offer a hassle-free return policy. If you’re not satisfied with your purchase, you can return the product within 30 days of receipt for a full refund or exchange. Please note, a restocking fee may apply for certain returns. The item must be in its original packaging and condition. For more details, please refer to our return policy.</p>"
+            "answer": "<p><strong>Returns:</strong> eligibility, item condition, return freight and any change-of-mind charges are set out in our <a href=\"/pages/returns\">returns policy</a>. Contact support before sending an item back.</p>"
           }
         },
         "question_warranty_doro": {
@@ -326,7 +326,7 @@
           "type": "question",
           "settings": {
             "title": "Do you offer bulk orders for businesses?",
-            "answer": "<p>Yes, we provide bulk order solutions for offices, schools, and other organisations. For large quantities, we can offer special pricing and delivery options. Contact us at <a>support@sihoo.com.au</a> or call 1300 002 580 to discuss your requirements.</p>"
+            "answer": "<p>Yes, we provide bulk order solutions for offices, schools, and other organisations. For large quantities, we can offer special pricing and delivery options. Contact us at <a href=\"mailto:support@sihoo.com.au\">support@sihoo.com.au</a> or call 1300 002 580 to discuss your requirements.</p>"
           }
         },
         "question_ib9kDL": {
@@ -352,7 +352,7 @@
           "type": "question",
           "settings": {
             "title": "How can I contact SIHOO Australia?",
-            "answer": "<p>You can reach us by phone at 1300 002 580 or by email at <a>support@sihoo.com.au</a>. We’re here to assist you with any questions, product information, or support you may need.</p>"
+            "answer": "<p>You can reach us by phone at 1300 002 580 or by email at <a href=\"mailto:support@sihoo.com.au\">support@sihoo.com.au</a>. We’re here to assist you with any questions, product information, or support you may need.</p>"
           }
         }
       },
@@ -464,7 +464,7 @@
           "type": "question",
           "settings": {
             "title": "Do you sell replacement parts?",
-            "answer": "<p>Yes, we offer replacement parts for SIHOO chairs, including armrests, casters, and gas lifts. If you need to replace a specific part, please contact our support team at <a>support@sihoo.com.au</a> or call 1300 002 580 for assistance.</p>"
+            "answer": "<p>Yes, we offer replacement parts for SIHOO chairs, including armrests, casters, and gas lifts. If you need to replace a specific part, please contact our support team at <a href=\"mailto:support@sihoo.com.au\">support@sihoo.com.au</a> or call 1300 002 580 for assistance.</p>"
           }
         }
       },

@@ -1,0 +1,851 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "divider": {
+          "type": "divider",
+          "settings": {
+            "show_in_quickbuy": false
+          }
+        },
+        "variant-picker": {
+          "type": "variant-picker",
+          "settings": {
+            "show_single": false,
+            "selector_style": "listed",
+            "dynamic_availability": "show",
+            "enable_size_chart": false,
+            "size_chart_label": "Size guide",
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "buy-buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_backorder_text": false,
+            "show_pickup_availability": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "show_in_tab": false,
+            "open_tab": false,
+            "icon": "",
+            "show_in_quickbuy": false
+          }
+        },
+        "spec_compare_specification_table_hCWNKg": {
+          "type": "shopify://apps/specs-compare/blocks/specification-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
+          "settings": {
+            "product": "sihoo-m18-ergonomics-task-office-chair",
+            "show_group_names": true,
+            "maximum_rows": 10,
+            "app_block_margin": 0,
+            "app_block_max_width": "full_width",
+            "app_block_custom_max_width": 800,
+            "append_parent_target_selector": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "vendor",
+        "divider",
+        "variant-picker",
+        "buy-buttons",
+        "description",
+        "spec_compare_specification_table_hCWNKg"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_breadcrumbs": true,
+        "select_first_variant": true,
+        "show_location_underneath": true,
+        "inventory_transfers_enable": true,
+        "enable_sticky_columns": false,
+        "enable_sticky_atc": true,
+        "sticky_atc_position": "center",
+        "sticky_atc_mobile": false,
+        "sticky_atc_behavior": "add_to_cart",
+        "sticky_atc_button_style": "secondary",
+        "gallery_size": "medium",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "show_alt_text": false,
+        "alt_text_icon": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_media_grouping": false,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe"
+      }
+    },
+    "custom_main_product_JXkkKe": {
+      "type": "custom-main-product",
+      "blocks": {
+        "reviews_TaaVVi": {
+          "type": "reviews",
+          "settings": {
+            "label": "reviews",
+            "show_when_empty": false,
+            "empty_label": "reviews"
+          }
+        },
+        "title_6Qb7Ca": {
+          "type": "title",
+          "settings": {}
+        },
+        "price_fHDpzD": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "show_save_badge": true,
+            "save_label": "Save",
+            "show_low_stock_badge": true,
+            "low_stock_label": "LOW ON STOCK"
+          }
+        },
+        "demand_alert_jXHnNP": {
+          "type": "demand-alert",
+          "disabled": true,
+          "settings": {
+            "title": "HIGH DEMAND",
+            "text": "Extended dispatch: Please allow an additional 5–7 business days before your order is shipped.",
+            "show_for": "all",
+            "variants": ""
+          }
+        },
+        "shipping_note_nnPNer": {
+          "type": "shipping-note",
+          "settings": {
+            "text": "Free shipping with delivery in 1-5 days"
+          }
+        },
+        "variant_picker_mafKB6": {
+          "type": "variant-picker",
+          "settings": {
+            "show_single": false,
+            "selector_style": "listed",
+            "dynamic_availability": "show",
+            "enable_size_chart": false,
+            "size_chart_label": "Size guide",
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "buy_buttons_3mnzKR": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": false,
+            "show_buy_it_now": true,
+            "buy_it_now_label": "Buy it now",
+            "show_backorder_text": false,
+            "show_pickup_availability": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "trust_badges_hyFatF": {
+          "type": "trust-badges",
+          "settings": {
+            "badge_1_icon": "award",
+            "badge_1_text": "3-Year Warranty",
+            "badge_2_icon": "return",
+            "badge_2_text": "30-Day Returns",
+            "badge_3_icon": "truck",
+            "badge_3_text": "Free Shipping"
+          }
+        }
+      },
+      "block_order": [
+        "reviews_TaaVVi",
+        "title_6Qb7Ca",
+        "price_fHDpzD",
+        "demand_alert_jXHnNP",
+        "shipping_note_nnPNer",
+        "variant_picker_mafKB6",
+        "buy_buttons_3mnzKR",
+        "trust_badges_hyFatF"
+      ],
+      "name": "Custom product",
+      "settings": {
+        "accent_color": "#c20000",
+        "low_stock_threshold": 10,
+        "demand_bg": "#fff8e8",
+        "demand_border": "#e8c46a",
+        "shipping_color": "#1f9d55",
+        "trust_color": "#6B7C8A",
+        "show_breadcrumbs": false,
+        "select_first_variant": true,
+        "show_location_underneath": false,
+        "inventory_transfers_enable": true,
+        "enable_sticky_columns": true,
+        "enable_sticky_atc": true,
+        "sticky_atc_position": "end",
+        "sticky_atc_mobile": true,
+        "sticky_atc_behavior": "add_to_cart",
+        "sticky_atc_button_style": "secondary",
+        "gallery_size": "medium",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "show_alt_text": false,
+        "alt_text_icon": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_media_grouping": false,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe",
+        "sihoo_unified_reviews": true
+      }
+    },
+    "1786558889ff94005e": {
+      "type": "apps",
+      "blocks": {
+        "specs_compare_specification_table_DjMJAt": {
+          "type": "shopify://apps/specs-compare/blocks/specification-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
+          "settings": {
+            "product": "{{product}}",
+            "show_group_names": true,
+            "maximum_rows": 10,
+            "app_block_margin": 0,
+            "app_block_max_width": "full_width",
+            "app_block_custom_max_width": 800,
+            "append_parent_target_selector": ""
+          }
+        }
+      },
+      "block_order": [
+        "specs_compare_specification_table_DjMJAt"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_space": true
+      },
+      "disabled": true
+    },
+    "image_with_text_DnMLeR": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_LctnzY": {
+          "type": "heading",
+          "settings": {
+            "title": "Why Choose the SIHOO M18 Ergonomic Office Chair?",
+            "use_h1": false
+          }
+        },
+        "text_nCNiGQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>• Adjustable lumbar support for ergonomic comfort during long work hours  <br/>• Breathable mesh materials designed for airflow and daily sitting comfort  <br/>• Reclining backrest with tilt adjustment for flexible seating positions  <br/>• Adjustable headrest and armrests for ergonomic support  <br/>• W-shaped seat cushion designed for sitting comfort and pressure distribution  <br/>• Durable steel frame and aluminium base for long-term reliability<br/><br/></p>",
+            "enlarge_text": false
+          }
+        },
+        "button_UmLEj6": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button text",
+            "button_link": "",
+            "button_style": "primary",
+            "open_loox_modal": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_LctnzY",
+        "text_nCNiGQ",
+        "button_UmLEj6"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".use-color-scheme {background-color: #f4f4f4;}",
+        "@media (min-width: 768px) {.use-color-scheme {padding: 54px; }}",
+        ".feature-text-paired {margin: 0px;}",
+        ".feature-text-paired h2 {font-size: 1.777rem; font-weight: 600;}",
+        ".container {max-width: 1200px;}",
+        ".flexible-layout,.fixed-layout {flex-wrap: nowrap; gap: 40px;}",
+        ".feature-text-paired h2 {font-size: 1.777rem; font-weight: 600;}",
+        ".flexible-layout .column,.fixed-layout .column {padding-left: 0px;}",
+        "a {border-radius: 8px;}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/02_6d56920e-1abf-4725-ab84-b9a285e422bb.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "key_features_dyBe6t": {
+      "type": "key-features",
+      "blocks": {
+        "feature_LhL9jp": {
+          "type": "feature",
+          "settings": {
+            "bg_color": "#e3e3e3",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "",
+            "text": "<h3>Durable Steel Support Structure for Long-Term Reliability</h3><p>The SIHOO M18 ergonomic office chair is built with a durable steel support structure designed for stability, strength, and long-term daily use in home offices and professional workspaces.<br/><br/></p>",
+            "show_segments": true,
+            "segments": 5,
+            "active_segment": "4",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_KtWiwp": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/4_2f6c4792-3622-452e-8f5d-55d06ac46377.jpg",
+            "bg_color": "#c3c3c3",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "",
+            "text": "<h3>Durable Aluminium Chair Base for Everyday Use</h3><p>The aluminium chair base provides stable support and smooth mobility while maintaining a clean modern ergonomic office chair design suitable for daily work environments.</p>",
+            "show_segments": true,
+            "segments": 5,
+            "active_segment": "2",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_mzV8nf": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/photobank_7.jpg",
+            "bg_color": "#e3e3e3",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "",
+            "text": "<h3>Reclining Comfort for Daily Breaks and Relaxation</h3><p>The reclining system allows users to adjust sitting positions throughout the day, helping improve comfort during work, relaxation, and short break periods.</p>",
+            "show_segments": true,
+            "segments": 5,
+            "active_segment": "3",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_jTmtYU": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/C300-lumbar_support_15e7795a-ed45-4b9c-88cd-264a12448571.webp",
+            "bg_color": "#e3e3e3",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "",
+            "text": "<h3>Ergonomic Lumbar Support for Daily Comfort</h3><p>The SIHOO M18 ergonomic office chair includes adjustable lumbar support designed to help reduce lower back pressure during long sitting sessions. Its ergonomic support system helps improve posture and daily comfort for home offices and professional workspaces.</p>",
+            "show_segments": true,
+            "segments": 5,
+            "active_segment": "4",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_6Qj7aP": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/M18-10.jpg",
+            "bg_color": "#e3e3e3",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "",
+            "text": "<h3>Breathable Mesh Comfort for Long Work Hours</h3><p>The breathable mesh materials used in the SIHOO M18 ergonomic chair help improve airflow and sitting comfort during long work sessions and warmer Australian conditions.</p>",
+            "show_segments": true,
+            "segments": 5,
+            "active_segment": "4",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_deaXzE": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/7_97d170d1-a214-40f3-8231-843fd6b44178.jpg",
+            "bg_color": "#e3e3e3",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "",
+            "text": "<h3>Adjustable Reclining Positions for Flexible Sitting Support</h3><p>The SIHOO M18 ergonomic office chair includes flexible reclining positions designed to support different sitting preferences throughout the day, from focused work sessions to short reclining breaks.</p>",
+            "show_segments": true,
+            "segments": 5,
+            "active_segment": "4",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_RrGHxE": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/04_00293721-9a45-4528-b1b7-ebd026a090ef.jpg",
+            "bg_color": "#e3e3e3",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "",
+            "text": "<h3>Adjustable Headrest Support for Neck Comfort</h3><p>The adjustable headrest is designed to support the neck and upper back during long sitting hours while helping improve ergonomic comfort across different sitting positions.</p>",
+            "show_segments": true,
+            "segments": 5,
+            "active_segment": "4",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_DkhWRa": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/M18-12.jpg",
+            "bg_color": "#e3e3e3",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "",
+            "text": "<h3>Adjustable Armrest Support for Better Ergonomics</h3><p>The SIHOO M18 ergonomic office chair includes adjustable armrests designed to support natural arm positioning and improve comfort during work, study, and daily computer use.</p>",
+            "show_segments": true,
+            "segments": 5,
+            "active_segment": "4",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        }
+      },
+      "block_order": [
+        "feature_LhL9jp",
+        "feature_KtWiwp",
+        "feature_mzV8nf",
+        "feature_jTmtYU",
+        "feature_6Qj7aP",
+        "feature_deaXzE",
+        "feature_RrGHxE",
+        "feature_DkhWRa"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".use-color-scheme {background-color: #f4f4f4;}",
+        "@media (min-width: 768px) {.use-color-scheme {padding: 54px; }}",
+        ".feature-text-paired {margin: 0px;}",
+        ".feature-text-paired h2 {font-size: 1.777rem; font-weight: 600;}",
+        ".container {max-width: 1200px;}",
+        ".flexible-layout,.fixed-layout {flex-wrap: nowrap; gap: 40px;}",
+        ".feature-text-paired h2 {font-size: 1.777rem; font-weight: 600;}",
+        ".flexible-layout .column,.fixed-layout .column {padding-left: 0px;}",
+        "a {border-radius: 8px;}"
+      ],
+      "name": "Key features",
+      "settings": {
+        "heading": "Advanced Ergonomic Features of SIHOO M18 Office Chair",
+        "image_max_width": 700,
+        "media_aspect_ratio": "1",
+        "image_position": "left",
+        "segment_position": "over-text"
+      }
+    },
+    "faq_accordion_CDiF4M": {
+      "type": "faq-accordion",
+      "name": "Product FAQs",
+      "settings": {
+        "background_color": "#ffffff",
+        "text_color": "#000000"
+      }
+    },
+    "faq_Mf8LwQ": {
+      "type": "faq",
+      "blocks": {
+        "faq_item_7xGDKm": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What's the difference between the M18 and M18 Pro?",
+            "answer": "<p>Hours at your desk. Under four hours a day, the base M18's 2D armrests and dual lumbar support are enough. Six hours or more, the M18 Pro's 4D linked armrests and self-weight sensing recline are worth the extra $90.</p>"
+          }
+        },
+        "faq_item_3c9JPG": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is the SIHOO M18 good for home offices?",
+            "answer": "<p>The SIHOO M18 ergonomic chair is suitable for home office setups, study environments, and professional workspaces where ergonomic comfort and posture support are important during daily work.</p>"
+          }
+        },
+        "faq_item_LRyztT": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Does the M18 come with a footrest?",
+            "answer": "<p>Yes. The Black with Leg Rest variant adds a fold-out footrest.</p>"
+          }
+        },
+        "faq_item_Lfz4AP": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Are the armrests adjustable on the SIHOO M18?",
+            "answer": "<p>Yes. The SIHOO M18 includes adjustable armrests that help support different sitting positions and workspace setups.</p>"
+          }
+        },
+        "faq_item_ymbhre": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is the SIHOO M18 breathable for Australian weather?",
+            "answer": "<p>The SIHOO M18 uses breathable mesh materials designed to improve airflow and comfort during long sitting hours and warmer Australian conditions.</p>"
+          }
+        },
+        "faq_item_4zfVMB": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What are the M18's seat dimensions?",
+            "answer": "<p>Seat height 46 to 55cm, seat width 51cm, seat depth 46cm. Overall chair height is 107 to 130cm.</p>"
+          }
+        },
+        "faq_item_kTUF3z": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What's the maximum weight the M18 supports?",
+            "answer": "<p>136kg (300lb), suited to users from 150cm to 190cm tall.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_7xGDKm",
+        "faq_item_3c9JPG",
+        "faq_item_LRyztT",
+        "faq_item_Lfz4AP",
+        "faq_item_ymbhre",
+        "faq_item_4zfVMB",
+        "faq_item_kTUF3z"
+      ],
+      "custom_css": [],
+      "name": "FAQ Accordion",
+      "settings": {
+        "title": "Frequently Asked Questions About the SIHOO M18 Ergonomic Office Chair",
+        "background_color": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_UGQFwh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_9T4UAG": {
+          "type": "heading",
+          "settings": {
+            "title": "Advanced Ergonomic Features of the SIHOO M18 Office Chair",
+            "use_h1": false
+          }
+        },
+        "text_7VxnmT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The SIHOO M18 ergonomic office chair combines ergonomic support, breathable comfort, and adjustable seating features designed for long work hours, home offices, and professional workspaces. From adjustable lumbar support and reclining functions to breathable mesh materials and ergonomic seating adjustments, the M18 is designed to support posture, comfort, and productivity throughout the day.<br/><br/></p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9T4UAG",
+        "text_7VxnmT"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "image_with_text_J9h4Dj": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_b4xXkU": {
+          "type": "heading",
+          "settings": {
+            "title": "Durable Steel Support Structure for Long-Term Reliability",
+            "use_h1": false
+          }
+        },
+        "text_9gfj9b": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The SIHOO M18 ergonomic office chair is built with a durable steel support structure designed for stability, strength, and long-term daily use in home offices and professional workspaces.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_b4xXkU",
+        "text_9gfj9b"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".use-color-scheme {background-color: #f4f4f4;}",
+        "@media (min-width: 768px) {.use-color-scheme {padding: 54px; }}",
+        ".feature-text-paired {margin: 0px;}",
+        ".feature-text-paired h2 {font-size: 1.777rem; font-weight: 600;}",
+        ".container {max-width: 1200px;}",
+        ".flexible-layout,.fixed-layout {flex-wrap: nowrap; gap: 40px;}",
+        ".feature-text-paired h2 {font-size: 1.777rem; font-weight: 600;}",
+        ".flexible-layout .column,.fixed-layout .column {padding-left: 0px;}",
+        "a {border-radius: 8px;}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image_width": 370,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_JU3E69": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_CzdnNE": {
+          "type": "heading",
+          "settings": {
+            "title": "Durable Aluminium Chair Base for Everyday Use",
+            "use_h1": false
+          }
+        },
+        "text_4YgqJP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The aluminium chair base provides stable support and smooth mobility while maintaining a clean modern ergonomic office chair design suitable for daily work environments.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_CzdnNE",
+        "text_4YgqJP"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".use-color-scheme {background-color: #f4f4f4;}",
+        "@media (min-width: 768px) {.use-color-scheme {padding: 54px; }}",
+        ".feature-text-paired {margin: 0px;}",
+        ".feature-text-paired h2 {font-size: 1.777rem; font-weight: 600;}",
+        ".container {max-width: 1200px;}",
+        ".flexible-layout,.fixed-layout {flex-wrap: nowrap; gap: 40px;}",
+        ".feature-text-paired h2 {font-size: 1.777rem; font-weight: 600;}",
+        ".flexible-layout .column,.fixed-layout .column {padding-left: 0px;}",
+        "a {border-radius: 8px;}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/4_2f6c4792-3622-452e-8f5d-55d06ac46377.jpg",
+        "image_width": 370,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_zUxDpB": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_BBVaXf": {
+          "type": "heading",
+          "settings": {
+            "title": "Durable Aluminium Chair Base for Everyday Use",
+            "use_h1": false
+          }
+        },
+        "text_YV6Czq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The aluminium chair base provides stable support and smooth mobility while maintaining a clean modern ergonomic office chair design suitable for daily work environments.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_BBVaXf",
+        "text_YV6Czq"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".use-color-scheme {background-color: #f4f4f4;}",
+        "@media (min-width: 768px) {.use-color-scheme {padding: 54px; }}",
+        ".feature-text-paired {margin: 0px;}",
+        ".feature-text-paired h2 {font-size: 1.777rem; font-weight: 600;}",
+        ".container {max-width: 1200px;}",
+        ".flexible-layout,.fixed-layout {flex-wrap: nowrap; gap: 40px;}",
+        ".feature-text-paired h2 {font-size: 1.777rem; font-weight: 600;}",
+        ".flexible-layout .column,.fixed-layout .column {padding-left: 0px;}",
+        "a {border-radius: 8px;}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/4_2f6c4792-3622-452e-8f5d-55d06ac46377.jpg",
+        "image_width": 370,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "1726717200db5c7e8b": {
+      "type": "sihoo-product-reviews",
+      "blocks": {
+        "klaviyo_reviews_product_reviews_feXhBH": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "reviews_to_display": "product_reviews_only",
+            "default_tab": "automatic",
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 10,
+            "hide_thumbnails": false,
+            "maxwidth": 1160,
+            "is_sample": false
+          }
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_product_reviews_feXhBH"
+      ],
+      "settings": {
+        "heading": "Customer reviews",
+        "show_source_note": false
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "title": "You may also like",
+        "show_vendor": false,
+        "grid": 4
+      }
+    },
+    "specs_table": {
+      "type": "specs-table",
+      "settings": {
+        "heading": "Specifications",
+        "show_fit_guide": true
+      }
+    },
+    "sihoo_highlights": {
+      "type": "sihoo-product-highlights",
+      "blocks": {
+        "benefit_0": {
+          "type": "feature",
+          "settings": {
+            "heading": "Cushioned seat",
+            "text": "A padded seat pairs with a mesh backrest for a different feel from a full-mesh chair."
+          }
+        },
+        "benefit_1": {
+          "type": "feature",
+          "settings": {
+            "heading": "Adjustable lumbar support",
+            "text": "Adjust the lumbar support to suit your sitting position."
+          }
+        },
+        "benefit_2": {
+          "type": "feature",
+          "settings": {
+            "heading": "Choose your footrest option",
+            "text": "A footrest is included only with the Black with Leg Rest option. Check availability before ordering."
+          }
+        }
+      },
+      "block_order": [
+        "benefit_0",
+        "benefit_1",
+        "benefit_2"
+      ],
+      "settings": {
+        "heading": "Find your fit",
+        "fit_note": "Check your desk clearance and chosen chair options before ordering. Contact our Australian team if you need help choosing."
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_main_product_JXkkKe",
+    "sihoo_highlights",
+    "specs_table",
+    "1786558889ff94005e",
+    "image_with_text_DnMLeR",
+    "key_features_dyBe6t",
+    "faq_accordion_CDiF4M",
+    "faq_Mf8LwQ",
+    "rich_text_UGQFwh",
+    "image_with_text_J9h4Dj",
+    "image_with_text_JU3E69",
+    "image_with_text_zUxDpB",
+    "1726717200db5c7e8b",
+    "related-products"
+  ]
+}

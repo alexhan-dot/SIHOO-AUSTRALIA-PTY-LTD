@@ -3,13 +3,14 @@
   Four Australian warehouses → typical delivery windows by state. All copy lives in section settings/blocks
   (store-level facts, not product copy). Add a "city" block per warehouse.
 {%- endcomment -%}
-{%- if section.blocks.size > 0 -%}
+{%- if section.settings.text != blank or section.blocks.size > 0 -%}
 <div class="delivery-promise fully-spaced-row--{{ section.settings.height }}" data-cc-animate>
   <div class="container">
     <div class="delivery-promise__head">
       {%- if section.settings.heading != blank -%}<h2 class="delivery-promise__heading majortitle in-content h1">{{ section.settings.heading | escape }}</h2>{%- endif -%}
       {%- if section.settings.text != blank -%}<div class="delivery-promise__text rte">{{ section.settings.text }}</div>{%- endif -%}
     </div>
+    {%- if section.settings.show_warehouse_grid and section.blocks.size > 0 -%}
     <ul class="delivery-promise__grid">
       {%- for block in section.blocks -%}
         <li class="delivery-promise__city" {{ block.shopify_attributes }}>
@@ -20,6 +21,7 @@
         </li>
       {%- endfor -%}
     </ul>
+    {%- endif -%}
     {%- if section.settings.footnote != blank -%}<p class="delivery-promise__footnote">{{ section.settings.footnote | escape }}</p>{%- endif -%}
     {%- if section.settings.link_label != blank and section.settings.link_url != blank -%}
       <p class="delivery-promise__link"><a href="{{ section.settings.link_url }}">{{ section.settings.link_label | escape }}</a></p>
@@ -50,8 +52,9 @@
   "class": "section-delivery-promise",
   "disabled_on": { "groups": ["aside", "header", "footer"] },
   "settings": [
-    { "type": "text", "id": "heading", "label": "Heading", "default": "Shipped from the warehouse nearest you" },
-    { "type": "richtext", "id": "text", "label": "Text", "default": "<p>SIHOO Australia holds stock in four warehouses. Orders are dispatched the next business day from the one nearest you and usually arrive within 1–3 business days.</p>" },
+    { "type": "checkbox", "id": "show_warehouse_grid", "label": "Show confirmed warehouse delivery estimates", "default": false, "info": "Confirm stock routing and postcode estimates against the published shipping policy before enabling." },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Delivery to your address" },
+    { "type": "richtext", "id": "text", "label": "Text", "default": "<p>Delivery timing depends on stock availability and your postcode. Check any pre-order or dispatch notice for your selected option. For regional or remote addresses, contact us for delivery availability and a quote before ordering. See our <a href=\"/pages/shipping-policy\">shipping policy</a>.</p>" },
     { "type": "text", "id": "footnote", "label": "Footnote", "default": "Delivery windows are typical courier times after dispatch. Regional and remote addresses can take longer; we will send tracking as soon as your chair ships." },
     { "type": "text", "id": "link_label", "label": "Link label", "default": "Read our delivery policy" },
     { "type": "url", "id": "link_url", "label": "Link URL" },

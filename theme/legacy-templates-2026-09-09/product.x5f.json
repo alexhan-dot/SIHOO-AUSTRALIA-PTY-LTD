@@ -1,0 +1,563 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "klaviyo_reviews_average_rating_gckbyV": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "disabled": true,
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "divider": {
+          "type": "divider",
+          "settings": {
+            "show_in_quickbuy": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant-picker",
+          "settings": {
+            "show_single": true,
+            "selector_style": "listed",
+            "dynamic_availability": "show",
+            "enable_size_chart": false,
+            "size_chart_label": "Size guide",
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "5048318b-3d9e-4a57-b9a4-5761293955e9": {
+          "type": "inventory-level",
+          "disabled": true,
+          "settings": {
+            "show_inventory_notice": "low",
+            "show_inventory_count": "low",
+            "inventory_threshold": 10,
+            "enable_box": false,
+            "enable_pulse": true,
+            "show_in_quickbuy": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_backorder_text": true,
+            "show_pickup_availability": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "text_d8qqgx": {
+          "type": "text",
+          "settings": {
+            "text": "Free shipping with delivery in 1-5 days.",
+            "icon": "plane",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#c16452",
+            "show_in_quickbuy": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "show_in_tab": false,
+            "open_tab": false,
+            "icon": "",
+            "show_in_quickbuy": false
+          }
+        },
+        "ff72739d-90fa-44b3-896f-ca72e4704c77": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "title": "Description",
+            "icon": "",
+            "content": "{{ block.settings.page.content }}",
+            "page": "",
+            "custom_liquid": "",
+            "open": true,
+            "show_in_quickbuy": false
+          }
+        },
+        "ae5c0b7e-ed16-49ec-a868-6b6e2ba54cc3": {
+          "type": "related-products",
+          "disabled": true,
+          "settings": {
+            "title": "Related products",
+            "product_list": "{{ product.metafields[\"app--31615844353--specifications\"].compare_with.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "klaviyo_reviews_average_rating_gckbyV",
+        "divider",
+        "variant_picker",
+        "5048318b-3d9e-4a57-b9a4-5761293955e9",
+        "buy_buttons",
+        "text_d8qqgx",
+        "description",
+        "ff72739d-90fa-44b3-896f-ca72e4704c77",
+        "ae5c0b7e-ed16-49ec-a868-6b6e2ba54cc3"
+      ],
+      "custom_css": [
+        ".product-title {margin: 0 0 0.5em; font-size: 2.18rem; font-weight: 500; line-height: 1.2em;}",
+        ".price__default {font-size: 1.4rem !important; color: #000;}",
+        "span.with-icon__beside {color: #000;}",
+        ".product-description {margin-top: 0px;}",
+        ".product-form .label {color: #000;}",
+        ".media-gallery {border-right: 1px solid #e1e1e1;}",
+        "ul.slider__grid {justify-content: center; align-items: center;}",
+        ".product-description {color: #000;}",
+        ".product-media.product-media--image {padding: 50px;}"
+      ],
+      "settings": {
+        "show_breadcrumbs": false,
+        "select_first_variant": true,
+        "show_location_underneath": false,
+        "inventory_transfers_enable": true,
+        "enable_sticky_columns": true,
+        "enable_sticky_atc": true,
+        "sticky_atc_position": "center",
+        "sticky_atc_mobile": false,
+        "sticky_atc_behavior": "add_to_cart",
+        "sticky_atc_button_style": "primary",
+        "gallery_size": "large",
+        "gallery_layout": "carousel-beside",
+        "enable_zoom": true,
+        "show_alt_text": false,
+        "alt_text_icon": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_media_grouping": true,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe"
+      }
+    },
+    "172649452298bf6fcf": {
+      "type": "apps",
+      "blocks": {
+        "specification_compare_specification_table_MNnxw7": {
+          "type": "shopify://apps/spec-compare/blocks/specification-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
+          "settings": {
+            "product": "{{product}}",
+            "show_group_names": true,
+            "maximum_rows": 10,
+            "app_block_margin": 0,
+            "app_block_max_width": "custom",
+            "app_block_custom_max_width": 1000,
+            "append_parent_target_selector": ""
+          }
+        }
+      },
+      "block_order": [
+        "specification_compare_specification_table_MNnxw7"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_space": true
+      }
+    },
+    "background_video_hWARzy": {
+      "type": "background-video",
+      "name": "Background video",
+      "settings": {
+        "video_shopify": "shopify://files/videos/X5-PRODUCT-VIDEO.mp4",
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_description": "",
+        "text_alignment": "center center",
+        "height_desktop": 800,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style": "shadow"
+      }
+    },
+    "gallery_BYX7Lz": {
+      "type": "gallery",
+      "blocks": {
+        "media_DVknHy": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/img-2_8b8fe606-fe94-4f84-839d-d91bbcba98ce.jpg",
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_mEmjcM": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/img-1_fc30e8cf-6155-47a8-bb67-67313583fe0e.jpg",
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_yE8wn6": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/x5fs_1200x_d3a3a4c1-327a-4501-82f7-f8a12ca02673.webp",
+            "enlarge_media": true,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "media_DVknHy",
+        "media_mEmjcM",
+        "media_yE8wn6"
+      ],
+      "settings": {
+        "grid_desktop": 2,
+        "grid_mobile": "2",
+        "height": "fixed",
+        "desktop_image_height": 460,
+        "mobile_image_height": 200,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": true,
+        "full_width": false,
+        "color_scheme": "default",
+        "enable_carousel": true,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "rich_text_HEPaR9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_KxdgeD": {
+          "type": "heading",
+          "settings": {
+            "title": "XALLKING X5F Ergonomic Gaming Chair Features",
+            "use_h1": false
+          }
+        },
+        "text_kYawRJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover what makes our <a href=\"https://xallking.com.au/products/x5f-ergonomic-gaming-chair-australia\" target=\"_blank\" title=\"https://xallking.com.au/products/x5f-ergonomic-gaming-chair-australia\">ergonomic gaming chairs</a> truly exceptional</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_KxdgeD",
+        "text_kYawRJ"
+      ],
+      "custom_css": [
+        "h2 {font-size: 2.44rem; font-weight: 500; margin-bottom: 10px;}",
+        "p {font-size: 1.25rem; color: #000;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "image_with_text_zEV4Yc": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_dNpKGx": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "C-Shaped Lumbar Cradle",
+            "use_h1": false
+          }
+        },
+        "text_VTqqTD": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>C-Shaped Lumbar Cradle</h3><p>A hug of support for your lower back<br/>Targeted relief, all-day comfort</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_dNpKGx",
+        "text_VTqqTD"
+      ],
+      "custom_css": [
+        "h2 {font-size: 1.95rem; font-weight: 500;}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/img-3_98c66d40-00dd-4caf-b292-5187cef77d3c.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_Ft39UE": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_HCjzHM": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Ergonomic Butterfly Design",
+            "use_h1": false
+          }
+        },
+        "text_RwFr6d": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Ergonomic Butterfly Design</h3><p>Active contouring that moves with you<br/>Precision support for shoulders and spine</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_HCjzHM",
+        "text_RwFr6d"
+      ],
+      "custom_css": [
+        "h2 {font-size: 1.95rem; font-weight: 500;}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/img-2_8b8fe606-fe94-4f84-839d-d91bbcba98ce.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_DVDB6b": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_LgEPJt": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "4D Adjustable Armrest",
+            "use_h1": false
+          }
+        },
+        "text_Y7RjQk": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>4D Adjustable Armrest</h3><p>Your agile, ergonomic extension<br/>Dynamic support for any task</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_LgEPJt",
+        "text_Y7RjQk"
+      ],
+      "custom_css": [
+        "h2 {font-size: 1.95rem; font-weight: 500;}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/img-4_2d07588b-e288-4a81-8cd6-8e4bc491cda7.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_WX39N9": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_WRGA39": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "3D Headrest",
+            "use_h1": false
+          }
+        },
+        "text_UCcmWj": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>3D Headrest</h3><ul><li>6-way support</li><li>Dynamic neck contouring</li></ul>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_WRGA39",
+        "text_UCcmWj"
+      ],
+      "custom_css": [
+        "h2 {font-size: 1.95rem; font-weight: 500;}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/img-1_fc30e8cf-6155-47a8-bb67-67313583fe0e.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "multi_column_TCjRPn": {
+      "type": "multi-column",
+      "blocks": {
+        "text_block_adjqgL": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/x5fs-img-2.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_ddTM7t": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/x5fs-img-13.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_jkcUGR": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/x5fs-img-18.jpg",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_adjqgL",
+        "text_block_ddTM7t",
+        "text_block_jkcUGR"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "title": "",
+        "media_aspect_ratio": "s",
+        "media_width": 700,
+        "text_alignment": "center",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
+    },
+    "1726495174ce454bc4": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_qfzGna": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "reviews_to_display": "",
+            "default_tab": "automatic",
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 10,
+            "hide_thumbnails": false,
+            "maxwidth": 1160,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_qfzGna"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_space": true
+      }
+    },
+    "recommendations": {
+      "type": "related-products",
+      "custom_css": [
+        "h4 {font-size: 2.44rem; font-weight: 500; margin-bottom: 40px;}"
+      ],
+      "settings": {
+        "title": "You may also like",
+        "show_vendor": false,
+        "grid": 4
+      }
+    },
+    "product_grid_aJ74dT": {
+      "type": "product-grid",
+      "disabled": true,
+      "name": "Product Grid",
+      "settings": {
+        "title": "You may also like",
+        "collection": "xallking-gaming-chairs",
+        "products_to_show": 8
+      }
+    }
+  },
+  "order": [
+    "main",
+    "172649452298bf6fcf",
+    "background_video_hWARzy",
+    "gallery_BYX7Lz",
+    "rich_text_HEPaR9",
+    "image_with_text_zEV4Yc",
+    "image_with_text_Ft39UE",
+    "image_with_text_DVDB6b",
+    "image_with_text_WX39N9",
+    "multi_column_TCjRPn",
+    "1726495174ce454bc4",
+    "recommendations",
+    "product_grid_aJ74dT"
+  ]
+}

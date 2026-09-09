@@ -40,26 +40,31 @@
 <section class="specs-table container" id="specs-{{ section.id }}" data-section-type="specs-table">
   <h2 class="specs-table__heading">{{ heading | escape }}</h2>
 
-  {%- if section.settings.show_fit_guide and sp.user_height_min_cm.value != blank -%}
+  {%- if request.design_mode and sp.needs_confirmation.value != blank -%}
+  <p class="specs-table__fit">Editor note: This product has pending specification checks. Review its specification sources before release. The fit guide is hidden while checks remain open.</p>
+  {%- endif -%}
+
+  {%- if section.settings.show_fit_guide and sp.needs_confirmation.value == blank and sp.user_height_min_cm.value != blank and sp.user_height_max_cm.value != blank -%}
   <div class="specs-table__fit">
     <strong>Fit guide:</strong>
     Recommended for users {{ sp.user_height_min_cm.value }}&ndash;{{ sp.user_height_max_cm.value }} cm tall
     {%- if sp.max_load_kg.value != blank %}, rated to {{ sp.max_load_kg.value }} kg{% endif -%}.
-    {%- if sp.seat_height_min_cm.value != blank %} Seat height adjusts {{ sh_min }}&ndash;{{ sh_max }} cm, so it suits standard 72&ndash;75 cm Australian desks.{% endif -%}
+    {%- if sp.seat_height_min_cm.value != blank and sp.seat_height_max_cm.value != blank %} Seat height adjusts {{ sh_min }}&ndash;{{ sh_max }} cm.{% endif %}
+    Compare these measurements with your desk clearance and seated position before choosing.
   </div>
   {%- endif -%}
 
   <div class="specs-table__grid">
     <table class="specs-table__table">
       <tbody>
-        {%- if sp.user_height_min_cm.value != blank -%}
+        {%- if sp.user_height_min_cm.value != blank and sp.user_height_max_cm.value != blank -%}
         <tr><th scope="row">Recommended user height</th><td>{{ sp.user_height_min_cm.value }}&ndash;{{ sp.user_height_max_cm.value }} cm</td></tr>
         {%- endif -%}
         {%- if sp.max_load_kg.value != blank -%}
         <tr><th scope="row">Maximum load</th><td>{{ sp.max_load_kg.value }} kg</td></tr>
         {%- endif -%}
         {%- if sp.seat_height_min_cm.value != blank -%}
-        <tr><th scope="row">Seat height</th><td>{{ sh_min }}&ndash;{{ sh_max }} cm{% if sp.gas_lift_class.value != blank %} ({{ sp.gas_lift_class.value }} gas lift){% endif %}</td></tr>
+        <tr><th scope="row">Seat height</th><td>{{ sh_min }}{% if sp.seat_height_max_cm.value != blank %}&ndash;{{ sh_max }}{% endif %} cm{% if sp.gas_lift_class.value != blank %} ({{ sp.gas_lift_class.value }} gas lift){% endif %}</td></tr>
         {%- endif -%}
         {%- if sp.seat_width_cm.value != blank -%}
         <tr><th scope="row">Seat width</th><td>{{ sw }} cm</td></tr>
@@ -68,7 +73,7 @@
         <tr><th scope="row">Seat depth</th><td>{% if sp.seat_depth_max_cm.value != blank and sp.seat_depth_max_cm.value != sp.seat_depth_min_cm.value %}{{ sd_min }}&ndash;{{ sd_max }} cm (adjustable){% else %}{{ sd_min }} cm{% endif %}</td></tr>
         {%- endif -%}
         {%- if sp.overall_height_min_cm.value != blank -%}
-        <tr><th scope="row">Overall height</th><td>{{ oh_min }}&ndash;{{ oh_max }} cm</td></tr>
+        <tr><th scope="row">Overall height</th><td>{{ oh_min }}{% if sp.overall_height_max_cm.value != blank %}&ndash;{{ oh_max }}{% endif %} cm</td></tr>
         {%- endif -%}
         {%- if sp.recline_positions_deg.value != blank -%}
         <tr><th scope="row">Recline positions</th><td>{{ sp.recline_positions_deg.value | join: '&deg; / ' }}&deg;</td></tr>
@@ -128,14 +133,14 @@
 
 {% schema %}
 {
-  "name": "Specs table (metafields)",
+  "name": "SIHOO Specs & fit guide",
   "tag": "section",
   "class": "section-specs-table",
   "settings": [
-    { "type": "paragraph", "content": "Reads the specs.* product metafields (Settings > Custom data > Products). Nothing renders if the product has no specs." },
+    { "type": "paragraph", "content": "Layout settings affect every product using this template. Specification values come from each product's specs fields; editing those values in Products also affects the live store. This section is hidden when the product has no supported specification fields." },
     { "type": "text", "id": "heading", "label": "Heading", "default": "Specifications" },
-    { "type": "checkbox", "id": "show_fit_guide", "label": "Show fit guide sentence (height / load / desk height)", "default": true }
+    { "type": "checkbox", "id": "show_fit_guide", "label": "Show fit guide when checks are clear", "info": "Requires both user-height limits and an empty needs_confirmation field. An empty field alone does not verify the product data; confirm sources before release.", "default": true }
   ],
-  "presets": [ { "name": "Specs table (metafields)" } ]
+  "presets": [ { "name": "SIHOO Specs & fit guide" } ]
 }
 {% endschema %}

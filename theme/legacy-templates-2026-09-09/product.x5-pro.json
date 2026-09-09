@@ -1,0 +1,898 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_zMwRgC": {
+      "type": "slideshow",
+      "blocks": {
+        "image_LVibNj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/XALLKING.jpg",
+            "mobile_image": "shopify://shop_images/xallking-x5pro_b2898ec7-e04c-4901-b316-28d387a6cac7.jpg",
+            "slide_link": "",
+            "subheading": "",
+            "title": "",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "use_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_label_1": "",
+            "button_url_1": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "image_LVibNj"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 460,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "shadow",
+        "transition": "fade",
+        "navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "accessibility_info": ""
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "klaviyo_reviews_average_rating_gckbyV": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/average-rating/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "disabled": true,
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "divider": {
+          "type": "divider",
+          "settings": {
+            "show_in_quickbuy": true
+          }
+        },
+        "text_d8qqgx": {
+          "type": "text",
+          "settings": {
+            "text": "Free shipping with delivery in 1-5 days.",
+            "icon": "plane",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#c16452",
+            "show_in_quickbuy": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant-picker",
+          "settings": {
+            "show_single": true,
+            "selector_style": "listed",
+            "dynamic_availability": "show",
+            "enable_size_chart": false,
+            "size_chart_label": "Size guide",
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "5048318b-3d9e-4a57-b9a4-5761293955e9": {
+          "type": "inventory-level",
+          "disabled": true,
+          "settings": {
+            "show_inventory_notice": "low",
+            "show_inventory_count": "low",
+            "inventory_threshold": 10,
+            "enable_box": false,
+            "enable_pulse": true,
+            "show_in_quickbuy": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_backorder_text": true,
+            "show_pickup_availability": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "show_in_tab": false,
+            "open_tab": false,
+            "icon": "",
+            "show_in_quickbuy": false
+          }
+        },
+        "ff72739d-90fa-44b3-896f-ca72e4704c77": {
+          "type": "accordion",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "icon": "",
+            "content": "<p>Experience the future of gaming comfort with the <strong>SIHOO X5 Gaming Chair Series</strong>.</p><p>Effortlessly switch between vibrant backrests to suit your style, enjoy dynamic armrests that move with you, and customise every detail to fit your comfort needs with this <a href=\"https://xallking.com.au/\" target=\"_blank\" title=\"https://xallking.com.au/\">ergonomic gaming chair</a>. With a generous recline range and adaptable support, this <a href=\"https://sihoo.com.au/\" target=\"_blank\" title=\"https://sihoo.com.au/\">ergonomic chair</a> takes your gaming experience to the next level. Built to the highest safety standards, it’s a reliable upgrade to any gaming setup. Transform your space with the X5—where style meets performance, tailored for Australian gamers!</p><ul><li><strong>Headrest</strong>: <strong>Double Joint Headrest</strong> – Offers adjustable support with two-way movement to fit your neck comfortably, reducing strain and enhancing ergonomic support.</li><li><strong>Lumbar Support</strong>: <strong>C-Type Adjustable Lumbar Support</strong> – Designed to provide personalised lower back support, ensuring comfort and reducing fatigue over extended sitting periods.</li><li><strong>Backrest</strong>: <strong>3-Zone Elastic Backrest</strong> – Divided into three ergonomic zones, this backrest adapts to your body’s contours, delivering targeted support for your upper, mid, and lower back.</li><li><strong>Armrest</strong>: <strong>3D/6D Synchronous Tilting Armrest</strong> – These versatile armrests move in multiple directions and synchronise with the backrest’s recline, allowing you to maintain natural arm support in any position.</li><li><strong>Cushion</strong>: <strong>Saddle-Type Pressure Dividing Seat Cushion</strong> – Shaped to evenly distribute pressure, this saddle-style cushion reduces discomfort, making it perfect for long gaming or work sessions.</li></ul>",
+            "page": "",
+            "custom_liquid": "",
+            "open": true,
+            "show_in_quickbuy": false
+          }
+        },
+        "ae5c0b7e-ed16-49ec-a868-6b6e2ba54cc3": {
+          "type": "related-products",
+          "disabled": true,
+          "settings": {
+            "title": "Related products",
+            "product_list": "{{ product.metafields[\"app--31615844353--specifications\"].compare_with.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "klaviyo_reviews_average_rating_gckbyV",
+        "divider",
+        "text_d8qqgx",
+        "variant_picker",
+        "5048318b-3d9e-4a57-b9a4-5761293955e9",
+        "buy_buttons",
+        "description",
+        "ff72739d-90fa-44b3-896f-ca72e4704c77",
+        "ae5c0b7e-ed16-49ec-a868-6b6e2ba54cc3"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "select_first_variant": true,
+        "show_location_underneath": false,
+        "inventory_transfers_enable": true,
+        "enable_sticky_columns": true,
+        "enable_sticky_atc": true,
+        "sticky_atc_position": "center",
+        "sticky_atc_mobile": false,
+        "sticky_atc_behavior": "add_to_cart",
+        "sticky_atc_button_style": "primary",
+        "gallery_size": "large",
+        "gallery_layout": "carousel-beside",
+        "enable_zoom": true,
+        "show_alt_text": false,
+        "alt_text_icon": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_media_grouping": true,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe"
+      }
+    },
+    "172649452298bf6fcf": {
+      "type": "apps",
+      "blocks": {
+        "specification_compare_specification_table_MNnxw7": {
+          "type": "shopify://apps/spec-compare/blocks/specification-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
+          "settings": {
+            "product": "{{product}}",
+            "show_group_names": true,
+            "maximum_rows": 10,
+            "app_block_margin": 0,
+            "app_block_max_width": "custom",
+            "app_block_custom_max_width": 1000,
+            "append_parent_target_selector": ""
+          }
+        }
+      },
+      "block_order": [
+        "specification_compare_specification_table_MNnxw7"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_space": true
+      }
+    },
+    "background_video_VRGpGN": {
+      "type": "background-video",
+      "blocks": {
+        "subheading_74qCM8": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Tell your story"
+          }
+        },
+        "heading_yRW86z": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Background video",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text_TDy7zd": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use a video to get a customer's attention</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_74qCM8",
+        "heading_yRW86z",
+        "text_TDy7zd"
+      ],
+      "settings": {
+        "video_shopify": "shopify://files/videos/X5-PRODUCT-VIDEO.mp4",
+        "video_external": "",
+        "video_description": "",
+        "text_alignment": "center center",
+        "height_desktop": 540,
+        "height_mobile": 220,
+        "full_width": true,
+        "overlay_style": "shadow"
+      }
+    },
+    "custom_content_AcyUG6": {
+      "type": "custom-content",
+      "blocks": {
+        "image_yidBey": {
+          "type": "image",
+          "settings": {
+            "width": "quarter",
+            "image": "shopify://shop_images/x5-pro-1.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "image_QarVXM": {
+          "type": "image",
+          "settings": {
+            "width": "half",
+            "image": "shopify://shop_images/X5pro-_logo__27.jpg",
+            "height": "adapt",
+            "height_desktop": 480,
+            "height_mobile": 360,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "image_pDTJCy": {
+          "type": "image",
+          "settings": {
+            "width": "quarter",
+            "image": "shopify://shop_images/2-tic.webp",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "center center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        }
+      },
+      "block_order": [
+        "image_yidBey",
+        "image_QarVXM",
+        "image_pDTJCy"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "rich_text_EjcAFq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_9daDKh": {
+          "type": "heading",
+          "settings": {
+            "title": "X5Pro Ergonomic Gaming Chair Features",
+            "use_h1": false
+          }
+        },
+        "text_MHHFMd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover what makes our <a href=\"https://xallking.com.au/products/x5pro-ergonomic-gaming-chair-australia\" target=\"_blank\" title=\"https://xallking.com.au/products/x5pro-ergonomic-gaming-chair-australia\">ergonomic gaming chairs</a> truly exceptional</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_9daDKh",
+        "text_MHHFMd"
+      ],
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    },
+    "image_with_text_emAkdX": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Ezenpy": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Enhanced Lumbar Protection with Dual 'C' Lumbar Support",
+            "use_h1": false
+          }
+        },
+        "text_zTWjfW": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Enhanced Lumbar Protection with Dual 'C' Lumbar Support<br/></h3><p>Alleviate lower back strain with the dual ‘C’ design, offering multidimensional support, vertical adjustments by 5cm, and horizontal coverage for the waist muscles.</p><p></p><h4>3-Zone Elastic Backrest</h4><p>The <strong>3-Zone Elastic Backrest</strong> is structured to offer focused support for your upper, middle, and lower back. This ergonomic design aligns with your spine's natural shape, giving you the support you need to maintain comfort and posture throughout the day.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_UyLx7m": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Check Out How Doro S300 Was Designed",
+            "button_link": "shopify://blogs/all-about-ergonomic-chair/sihoo-doro-s300-design-story",
+            "button_style": "primary",
+            "open_loox_modal": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ezenpy",
+        "text_zTWjfW",
+        "button_UyLx7m"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/X5P-2_1.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_cgmn3V": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_wrwT34": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Double C-Shaped Wrap Waist Pillow",
+            "use_h1": false
+          }
+        },
+        "text_JMmVtJ": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Double C-Shaped Wrap Waist Pillow</h3><p>It offers tailored lumbar support, perfectly aligning with the natural curve of your lower back. This ergonomic design helps alleviate pressure on the spine, supporting a healthy posture for extended gaming or work sessions.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_wrwT34",
+        "text_JMmVtJ"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/X5P-2_2.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_awWNt6": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_qmG7iK": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Double Joint Headrest",
+            "use_h1": false
+          }
+        },
+        "text_axbVMa": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Double Joint Headrest</h3><p>It is designed for precise neck support. With 44° rotation and 7 cm of vertical adjustment, you can easily position the headrest to suit your preferred posture, reducing neck strain and enhancing overall comfort.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_qmG7iK",
+        "text_axbVMa"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/750_05.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_exBAbL": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_BcqGEn": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "6D Bionic Joint Armrests",
+            "use_h1": false
+          }
+        },
+        "text_cM73X7": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>6D Bionic Joint Armrests</h3><p>Enjoy complete adjustability with <strong>6D Bionic Joint Armrests</strong>. These armrests move in sync with the chair’s recline, offering adjustments in height, depth, angle, and rotation. This full range of motion provides the support you need, whether you’re working or gaming.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_BcqGEn",
+        "text_cM73X7"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/750_02.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_UiDj6e": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_GmmkxF": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Saddle-Type Pressure Dividing Seat Cushion",
+            "use_h1": false
+          }
+        },
+        "text_EM8cPi": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Saddle-Type Pressure Dividing Seat Cushion</h3><p>It is engineered to distribute pressure evenly, reducing fatigue during long sitting periods. Its contoured shape provides excellent support, enhancing comfort and allowing for healthy circulation.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_GmmkxF",
+        "text_EM8cPi"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/750_06.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_D4TiKX": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_mEUwWD": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Recline Range and Footrest",
+            "use_h1": false
+          }
+        },
+        "text_R4je3R": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Recline Range and Footrest</h3><p>Achieve your ideal seating position with the <strong>Adjustable Recline Range</strong> from 95° to 138°. Combined with the retractable footrest, this feature allows you to fully relax, making it easy to take a break without leaving your chair.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_mEUwWD",
+        "text_R4je3R"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/750_04.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_H8cx7F": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_aDbrPk": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "One-touch Adjustment in 3 Modes",
+            "use_h1": false
+          }
+        },
+        "text_fFLU3g": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>One-touch Adjustment in 3 Modes</h3><p>Simplify adjustments with a flick upwards for a 9cm lift, backward for a 138° recline, and forward for a 4cm seat slide—no more complicated settings.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_aDbrPk",
+        "text_fFLU3g"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/750_03.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "image_with_text_Wmx7jQ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_63cNhF": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Adjustable Ergonomic Design for All Heights",
+            "use_h1": false
+          }
+        },
+        "text_zzrkWd": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Adjustable Ergonomic Design for All Heights</h3><p>The SIHOO X5 Pro Gaming Chair adapts perfectly to users of different heights, offering personalised support and comfort for everyone. Adjustable headrest, armrests, and lumbar support ensure an ideal fit, whether you’re 180 cm or 172 cm tall, making it the go-to choice for all body types.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_63cNhF",
+        "text_zzrkWd"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/5-tic-32.webp",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "default",
+        "background_color": ""
+      }
+    },
+    "custom_content_QaWjQY": {
+      "type": "custom-content",
+      "blocks": {
+        "image_TDt6pU": {
+          "type": "image",
+          "settings": {
+            "width": "quarter",
+            "image": "shopify://shop_images/X5P-2_3.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "bottom center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "image_neqKMW": {
+          "type": "image",
+          "settings": {
+            "width": "quarter",
+            "image": "shopify://shop_images/5_1.jpg",
+            "mobile_image": "shopify://shop_images/5_1.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "bottom center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "image_YyyxfL": {
+          "type": "image",
+          "settings": {
+            "width": "quarter",
+            "image": "shopify://shop_images/6_ea01c9ac-c9a3-4f8f-968f-432969e9790b.jpg",
+            "height": "adapt",
+            "height_desktop": 600,
+            "height_mobile": 500,
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "enlarge_text": false,
+            "button_label": "",
+            "button_style": "primary",
+            "image_link": "",
+            "text_alignment": "bottom center",
+            "mobile_overlay_under": false,
+            "overlay_style": "shadow"
+          }
+        },
+        "text_UWrthP": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "subheading": "",
+            "title": "",
+            "text": "<h3>Sturdy Aluminium Alloy Base, Certified Gas Lift & Smooth PU Wheels</h3><p>Built with a <strong>sturdy aluminium alloy base</strong>, the Xallking X5 Pro ergonomic gaming chair offers remarkable stability and durability, supporting up to 150 kg with ease. The <strong>silent PU wheels</strong> glide smoothly on any floor type, protecting surfaces and providing a quiet, seamless experience.</p><p>The chair is equipped with a <strong>TUV/SGS certified 4-level gas lift</strong>, ensuring secure and smooth height adjustments. This certified lift not only meets top safety standards but also offers flexibility for various seating preferences, making it a reliable choice for all-day comfort and support.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "text_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_TDt6pU",
+        "image_neqKMW",
+        "image_YyyxfL",
+        "text_UWrthP"
+      ],
+      "settings": {
+        "alignment": "middle"
+      }
+    },
+    "gallery_BYX7Lz": {
+      "type": "gallery",
+      "blocks": {
+        "media_DVknHy": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/301.jpg",
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_mEmjcM": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/302.jpg",
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_yE8wn6": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/X5-2-tic.webp",
+            "enlarge_media": true,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "media_DVknHy",
+        "media_mEmjcM",
+        "media_yE8wn6"
+      ],
+      "settings": {
+        "grid_desktop": 2,
+        "grid_mobile": "2",
+        "height": "adapt",
+        "desktop_image_height": 460,
+        "mobile_image_height": 400,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": true,
+        "full_width": false,
+        "color_scheme": "default",
+        "enable_carousel": true,
+        "overlay_style": "full",
+        "button_style": "primary"
+      }
+    },
+    "17264907824a3b621e": {
+      "type": "apps",
+      "blocks": {
+        "specification_compare_comparison_table_EE8bnJ": {
+          "type": "shopify://apps/spec-compare/blocks/comparison-table/a9d09772-f36d-4539-a4c4-7bd785bc12c0",
+          "settings": {
+            "product": "{{ product }}",
+            "product_list": [
+              "sihoo-m18-ergonomics-task-office-chair",
+              "sihoo-a3-doro-c300-ergonomic-office-chair",
+              "sihoo-doro-s300-ergonomic-office-chair",
+              "sihoo-m57-ergonomic-office-chair",
+              "sihoo-vito-m90-ergonomic-office-chair",
+              "sihoo-v1-ergonomic-office-chair",
+              "sihoo-a3-doro-c100-ergonomic-office-chair"
+            ],
+            "fallback_to_related_products": true,
+            "exclude_sold_out_products": true,
+            "enable_show_differences_switch": true,
+            "differences_switch_mode": "highlight_differences",
+            "show_variant_selector": true,
+            "show_group_names": true,
+            "maximum_rows": 15,
+            "maximum_visible_products": 4,
+            "show_in_modal": false,
+            "modal_trigger_button_text": "",
+            "app_block_margin": 0,
+            "app_block_max_width": "full_width",
+            "app_block_custom_max_width": 800,
+            "show_product_image": false,
+            "show_product_vendor": false,
+            "show_product_price": true,
+            "show_product_rating": false,
+            "show_view_details_button": false,
+            "enable_ai_analysis": false,
+            "append_parent_target_selector": ""
+          }
+        }
+      },
+      "block_order": [
+        "specification_compare_comparison_table_EE8bnJ"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_space": true
+      }
+    },
+    "1726495174ce454bc4": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_qfzGna": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "reviews_to_display": "",
+            "default_tab": "automatic",
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 10,
+            "hide_thumbnails": false,
+            "maxwidth": 1160,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_qfzGna"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_space": true
+      }
+    },
+    "recommendations": {
+      "type": "related-products",
+      "settings": {
+        "title": "You may also like",
+        "show_vendor": false,
+        "grid": 4
+      }
+    }
+  },
+  "order": [
+    "slideshow_zMwRgC",
+    "main",
+    "172649452298bf6fcf",
+    "background_video_VRGpGN",
+    "custom_content_AcyUG6",
+    "rich_text_EjcAFq",
+    "image_with_text_emAkdX",
+    "image_with_text_cgmn3V",
+    "image_with_text_awWNt6",
+    "image_with_text_exBAbL",
+    "image_with_text_UiDj6e",
+    "image_with_text_D4TiKX",
+    "image_with_text_H8cx7F",
+    "image_with_text_Wmx7jQ",
+    "custom_content_QaWjQY",
+    "gallery_BYX7Lz",
+    "17264907824a3b621e",
+    "1726495174ce454bc4",
+    "recommendations"
+  ]
+}
