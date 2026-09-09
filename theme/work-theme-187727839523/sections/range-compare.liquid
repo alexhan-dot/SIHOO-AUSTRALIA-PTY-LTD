@@ -65,7 +65,7 @@
               <td>{{ sh | default: '–' }}</td>
               <td>{{ rec | default: '–' }}</td>
               <td>{{ sp.armrest_type.value | default: '–' | escape }}</td>
-              <td>{{ sp.lumbar_detail.value | default: '–' | strip_newlines | truncate: 60 | escape }}</td>
+              <td>{% if sp.lumbar_detail.value != blank %}{{ sp.lumbar_detail.value | newline_to_br | split: '<br />' | join: ' · ' | strip | truncate: 70 | escape }}{% else %}–{% endif %}</td>
               <td>{% if sp.warranty_years.value != blank %}{{ sp.warranty_years.value }} years{% else %}–{% endif %}</td>
               {%- if section.settings.show_price -%}<td>{{ p.price | money }}</td>{%- endif -%}
             </tr>

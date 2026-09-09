@@ -53,7 +53,7 @@
     assign props = props | append: ',{"@type":"PropertyValue","name":"Armrests","value":' | append: arm_j | append: '}'
   endif
   if sp.lumbar_detail.value != blank
-    assign lum_j = sp.lumbar_detail.value | strip_newlines | json
+    assign lum_j = sp.lumbar_detail.value | newline_to_br | split: '<br />' | join: '; ' | strip | json
     assign props = props | append: ',{"@type":"PropertyValue","name":"Lumbar support","value":' | append: lum_j | append: '}'
   endif
   if sp.certifications.value != blank
