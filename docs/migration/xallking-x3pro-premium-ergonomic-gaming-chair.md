@@ -46,3 +46,14 @@ Note: `specs.*` has no headrest value; copy describes the integrated "waterfall 
 - faq_item: x3-pro-faq-1…8 → 316807414051, 316807446819, 316807479587, 316807512355, 316807545123, 316807577891, 316807610659, 316807643427 (ACTIVE)
 - faqs: faqs-x3-pro → 316807905571 (ACTIVE)
 - File uploads: none.
+
+## Specs alignment 2026-09-09 (page copy wins — owner decision)
+
+Description and template checked against `specs.*`: no conflicts (waterfall back 4 positions / 7 cm, lumbar 90°–105°, 6D armrests, anti-gravity recline all consistent; no figures for load, seat or recline on the page). No `specs.*` values changed.
+
+| Key | Old | New |
+|---|---|---|
+| `specs.data_source` | AU sc_attributes 메타필드 | AU page copy 2026-09-09 (owner decision) + sc_attributes |
+| `specs.needs_confirmation` | 3 lines | same 3 open items (headrest note expanded: page describes an integrated waterfall back, not a headrest) + alignment line |
+
+Migrated content updated for sibling changes only: `custom.compare_intro` and faq_item `x3-pro-faq-8` (X5 Pro now 95°–138° / 150 kg, X5S now 110°–143°). Description pre-existed → untouched. Still open: headrest value (none / waterfall back), no gallery video, X3S VIDEO.mp4 model unverified.

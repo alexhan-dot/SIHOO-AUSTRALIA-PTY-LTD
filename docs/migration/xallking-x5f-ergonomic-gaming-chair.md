@@ -44,3 +44,13 @@ Flags: the AU template's feature images are labelled "X5FS"; the armrest image s
 - faq_item: x5f-faq-1…8 → 316801712419, 316801745187, 316801777955, 316801810723, 316801843491, 316801876259, 316801909027, 316801941795 (ACTIVE)
 - faqs: faqs-x5f → 316803449123 (ACTIVE)
 - File uploads: none.
+
+## Specs alignment 2026-09-09 (page copy wins — owner decision)
+
+| Key | Old | New | Source |
+|---|---|---|---|
+| `specs.armrest_detail` | 4D armrest: Up and down: 6.5 CM / Front and back: 4 CM / Left and right: 70° / Linked Recline | 4D armrest: Up and down: 8 CM / Front and back: 4 CM / Left and right: 60° in / 15° out / Linked Recline | armrest feature image img-4_2d07588b (8 cm / 60° in / 15° out); front-back 4 cm kept (page gives no value) |
+| `specs.data_source` | AU sc_attributes 메타필드 | AU page copy 2026-09-09 (owner decision) + sc_attributes | |
+| `specs.needs_confirmation` | 3 lines | 갤러리 영상 없음 + X5FS label item + alignment line | armrest conflict resolved |
+
+Migrated content updated: `custom.highlights` [3] (8 cm / 60° inward / 15° outward); `custom.compare_intro` (X5F 8 cm armrest, X5S 110°–143°, X5C 150 kg); feature_story `x5f-story-3`; faq_item `x5f-faq-4`, `x5f-faq-8` (X5C 150 kg, X5F armrest, X5S 110°–143°). Cross-reference in `x5c-faq-8` also updated. Description pre-existed → untouched. Still open: no gallery video; feature images labelled X5FS (model unverifiable from copy).

@@ -56,3 +56,14 @@ Description: 333 words, already AU English — unchanged.
 - faq_item: x5-pro-faq-1…8 → 316796043555, 316796076323, 316796109091, 316796141859, 316796174627, 316796207395, 316796240163, 316796272931 (ACTIVE)
 - faqs: faqs-x5-pro → 316796567843 (ACTIVE)
 - File uploads: none (all AU shop_images). YouTube `_9VUPq3SxOc` on sibling templates is Shopify's stock placeholder, not SIHOO_AU.
+
+## Specs alignment 2026-09-09 (page copy wins — owner decision)
+
+| Key | Old | New | Source |
+|---|---|---|---|
+| `specs.max_load_kg` | 136 | 150 | description "hold up to 150 kg" + custom-content block "supporting up to 150 kg" |
+| `specs.recline_positions_deg` | [100,110,130] | [95,138] | description + image-with-text "Recline Range from 95° to 138°" (range → min/max) |
+| `specs.data_source` | AU sc_attributes 메타필드 | AU page copy 2026-09-09 (owner decision) + sc_attributes | |
+| `specs.needs_confirmation` | 3 lines | 갤러리 영상 없음 + alignment line | both conflicts resolved |
+
+Migrated content updated: `custom.highlights` [3] (150 kg), [6] (95°–138° recline range + footrest); `custom.compare_intro` (X5 Pro 150 kg / 95°–138°, X5S 110°–143°); feature_story `x5-pro-story-5` (recline range), `x5-pro-story-6` (150 kg); faq_item `x5-pro-faq-2` (150 kg), `x5-pro-faq-4` (recline range), `x5-pro-faq-8` (X5 Pro + X5S figures). Description pre-existed → untouched. Still open: no gallery video. Note: 750_04.jpg (recline "95°–138°") no longer conflicts and could be added to story-5 if wanted.

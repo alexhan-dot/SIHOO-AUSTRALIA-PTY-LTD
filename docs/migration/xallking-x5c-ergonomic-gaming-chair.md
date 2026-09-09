@@ -45,3 +45,14 @@ Description: 211 words, already AU English — unchanged. It says "up to 150 kg"
 - faq_item: x5c-faq-1…8 → 316797518115, 316797550883, 316797583651, 316797616419, 316797649187, 316797681955, 316797714723, 316797747491 (ACTIVE)
 - faqs: faqs-x5c → 316799582499 (ACTIVE)
 - File uploads: none.
+
+## Specs alignment 2026-09-09 (page copy wins — owner decision)
+
+| Key | Old | New | Source |
+|---|---|---|---|
+| `specs.max_load_kg` | 136 | 150 | description "Tested to hold up to 150 kg" |
+| `specs.armrest_type` | (unset) | 4D | X5C-1.gif feature image ("4D biomimetic armrests"); closes the "팔걸이 유형 미표준" item |
+| `specs.data_source` | AU sc_attributes 메타필드 | AU page copy 2026-09-09 (owner decision) + sc_attributes | |
+| `specs.needs_confirmation` | 3 lines | 갤러리 영상 없음 + alignment line | |
+
+Migrated content updated: `custom.highlights` [6] (150 kg); `custom.compare_intro` (X5C 150 kg, X5F 8 cm armrest, X5S 110°–143°); feature_story `x5c-story-5` (150 kg); faq_item `x5c-faq-2` (150 kg), `x5c-faq-8` (X5C 150 kg, X5F armrest 8 cm / 60° in / 15° out, X5S 110°–143°). Description pre-existed → untouched. Still open: no gallery video.

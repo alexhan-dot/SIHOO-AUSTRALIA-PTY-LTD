@@ -47,3 +47,13 @@ Flag: template copy and feature images say "110°–143°" recline; `specs.recli
 - faq_item: x5s-faq-1…8 → 316804661539, 316804694307, 316804759843, 316804825379, 316804890915, 316804923683, 316804989219, 316805054755 (ACTIVE)
 - faqs: faqs-x5s → 316806955299 (ACTIVE)
 - File uploads: none.
+
+## Specs alignment 2026-09-09 (page copy wins — owner decision)
+
+| Key | Old | New | Source |
+|---|---|---|---|
+| `specs.recline_positions_deg` | [108,118,128,140] | [110,143] | image-with-text "143° of Reclining Comfort — from 110° to 143°" (range → min/max) |
+| `specs.data_source` | AU sc_attributes 메타필드 | AU page copy 2026-09-09 (owner decision) + sc_attributes | |
+| `specs.needs_confirmation` | 2 lines | 갤러리 영상 없음 + alignment line | recline conflict resolved |
+
+Migrated content updated: `custom.highlights` [1] (110°–143° recline); `custom.compare_intro` (X5S 110°–143°, X5C 150 kg, X5 Pro 95°–138° / 150 kg); feature_story `x5s-story-1` (title "143° of reclining comfort for focus and rest" + body); faq_item `x5s-faq-3`, `x5s-faq-4`, `x5s-faq-8` (X5S recline, X5 Pro 95°–138° / 150 kg, X5C 150 kg). `specs.mechanism` ("four-speed") left as is — page gives no lock count. Description pre-existed → untouched. Still open: no gallery video; X5 Pro shot in gallery (gallery untouched). Note: x5s-img-16 / x5s-img-2 ("143°") no longer conflict with specs (x5s-img-2 still shows 108°–144°).
