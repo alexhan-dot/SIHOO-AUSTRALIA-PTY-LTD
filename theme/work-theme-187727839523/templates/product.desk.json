@@ -47,8 +47,8 @@
         "shipping_note": {
           "type": "shipping-note",
           "settings": {
-            "text": "Delivery timing depends on stock and your postcode",
-            "subtext": "Check the delivery details below, including any dispatch notice for your selected option."
+            "text": "Free delivery Australia-wide, usually 1–3 business days",
+            "subtext": "Dispatched next business day from Sydney, Melbourne, Brisbane or Perth · Afterpay and Zip available at checkout"
           }
         },
         "variant_picker": {
@@ -81,9 +81,9 @@
             "badge_1_icon": "award",
             "badge_1_text": "10-Year Warranty",
             "badge_2_icon": "return",
-            "badge_2_text": "Returns: conditions apply",
+            "badge_2_text": "30-Day Returns",
             "badge_3_icon": "truck",
-            "badge_3_text": "Australian delivery"
+            "badge_3_text": "Free AU Shipping"
           }
         },
         "description": {
@@ -112,7 +112,7 @@
           "settings": {
             "title": "Delivery, returns & warranty",
             "icon": "",
-            "content": "<p>Delivery timing depends on stock availability and your postcode. Check any pre-order or dispatch notice for your selected option. For regional or remote addresses, contact us for delivery availability and a quote before ordering. See our <a href=\"/pages/shipping-policy\">shipping policy</a>.</p><p><strong>Returns:</strong> eligibility, item condition, return freight and any change-of-mind charges are set out in our <a href=\"/pages/returns\">returns policy</a>. Contact support before sending an item back.</p><p><strong>Warranty:</strong> 10-year warranty against faulty workmanship and materials, supported by SIHOO Australia in Sydney.</p>",
+            "content": "<p><strong>Delivery:</strong> free Australia-wide. Orders are dispatched the next business day from the warehouse nearest you (Sydney, Melbourne, Brisbane or Perth) and usually arrive within 1–3 business days; regional and remote addresses can take longer.</p><p><strong>Returns:</strong> 30-day change-of-mind returns in original packaging. See our <a href=\"/pages/returns\">returns policy</a>.</p><p><strong>Warranty:</strong> 10-year warranty against faulty workmanship and materials, supported by SIHOO Australia in Sydney.</p>",
             "page": "",
             "custom_liquid": "",
             "open": false,
@@ -259,11 +259,11 @@
         "certifications_label": "Independently tested and certified",
         "warehouses_count": "4",
         "warehouses": "Australian warehouses: Sydney, Melbourne, Brisbane, Perth",
-        "footnote": "Amazon figures recorded on 8 September 2026. Ratings on Amazon.com.au are separate from reviews on sihoo.com.au and may have changed; open the listing for the latest figures.",
+        "footnote": "Amazon rating and count are read from the Amazon.com.au listing and updated periodically.",
         "color_scheme": "auto",
         "height": "small",
-        "show_verified_claims": false,
-        "show_amazon_badge": false
+        "show_verified_claims": true,
+        "show_amazon_badge": true
       }
     },
     "video_gallery": {
@@ -331,13 +331,13 @@
         "per"
       ],
       "settings": {
-        "heading": "Delivery to your address",
-        "text": "<p>Delivery timing depends on stock availability and your postcode. Check any pre-order or dispatch notice for your selected option. For regional or remote addresses, contact us for delivery availability and a quote before ordering. See our <a href=\"/pages/shipping-policy\">shipping policy</a>.</p>",
-        "footnote": "For pre-orders and back-orders, use the stated availability date. Dispatch and delivery are separate stages; tracking is emailed after dispatch.",
+        "heading": "Shipped from the warehouse nearest you",
+        "text": "<p>SIHOO Australia holds stock in four warehouses. Orders are dispatched the next business day from the one nearest you and usually arrive within 1–3 business days.</p>",
+        "footnote": "Delivery windows are typical courier times after dispatch. Regional and remote addresses can take longer; we send tracking as soon as your chair ships.",
         "link_label": "Read our delivery policy",
         "link_url": "shopify://pages/shipping-policy",
         "height": "medium",
-        "show_warehouse_grid": false
+        "show_warehouse_grid": true
       }
     },
     "related_articles": {

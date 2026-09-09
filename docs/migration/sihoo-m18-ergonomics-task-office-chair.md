@@ -83,3 +83,7 @@ Source of truth: description (136 kg, 150–190 cm, 110–126° tilt-lock) + tem
 
 Edited: `custom.highlights[6]` (tilt-lock 110–126°), `custom.compare_intro` (136 / 110 / 150 kg), faq_item m18-faq-1, -2, -3, -4, -9, feature_story m18-story-5. Description untouched (pre-existing).
 Still open: headrest/lumbar/armrest travel figures remain the M18 Pro numbers (no AU page figure); baked-angle images 7_97d170d1 / M18-14 unused.
+
+## 2026-09-09 owner correction: M18 Pro 136 kg
+
+Owner confirmed the M18 Pro's max load is 136 kg (not 110 kg per the description used in yesterday's alignment). M18's own `specs.max_load_kg` was already correct at 136 kg — no change there. Fixed cross-references that misstated the M18 Pro's rating: `custom.compare_intro` ("...the M18 Pro to 110 kg..." → 136 kg) and faq_item `m18-faq-9` ("...the M18 Pro to 110 kg..." → 136 kg). Both chairs now read 136 kg max load; the M18 vs M18 Pro difference remains armrests/mechanism.

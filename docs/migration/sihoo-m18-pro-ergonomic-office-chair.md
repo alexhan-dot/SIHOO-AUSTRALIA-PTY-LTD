@@ -74,3 +74,13 @@ Source of truth: description (4D linked armrests; 90°–130° with three lockab
 
 Edited: `custom.highlights[2]` (4D linked), `[6]` (90–130°, 110 kg), `custom.compare_intro`, faq_item m18-pro-faq-2, -3, -4, -9, feature_story m18-pro-story-2 (title + body), m18-pro-story-6 (title + body). Description untouched.
 Still open: template rich-text "Why the M18 Pro?" says 136 kg (description 110 kg used); story-6 image M18_750_11 has "134°" baked in; description cites BIFMA & CNAS vs specs.certifications BIFMA/SGS; stray table markup in description.
+
+## 2026-09-09 owner correction: M18 Pro 136 kg
+
+Owner confirmed actual max load is 136 kg (yesterday's 2026-09-09 alignment had set it to 110 kg from the description text, which was wrong). Edited:
+- `specs.max_load_kg`: 110 → 136 (number_integer); appended note to `specs.needs_confirmation`.
+- `descriptionHtml`: 2 replacements ("supports up to 110 kg safe working load" and comparison-table "Up to 110 kg" → 136 kg); nothing else changed.
+- `custom.highlights[6]`, `custom.compare_intro` (M18 Pro's own "110 kg" figure): 110 → 136.
+- `custom.best_for`: no "110 kg" mention, unchanged.
+- Metaobjects: faq_item `m18-pro-faq-2`, `m18-pro-faq-9`, feature_story `m18-pro-story-6`.
+- Cross-reference fix on the M18 product: `custom.compare_intro` and faq_item `m18-faq-9` also updated so both chairs read 136 kg (contrast is now armrests/mechanism, not load).

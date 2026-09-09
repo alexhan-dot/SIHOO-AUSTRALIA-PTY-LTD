@@ -1,0 +1,44 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "chairs": {
+      "type": "range-compare",
+      "settings": {
+        "collection": "sihoo-ergonomic-office-chair",
+        "heading": "Compare every SIHOO ergonomic office chair",
+        "text": "<p>One table, every current SIHOO office chair sold in Australia. Recommended user height, weight rating, seat height, recline positions, armrests, lumbar support and warranty come straight from each product's specification sheet.</p>",
+        "limit": 30,
+        "show_price": true,
+        "footnote": "All measurements in centimetres and kilograms. Recline shows the lockable positions. Prices in AUD including GST and change with promotions.",
+        "height": "medium"
+      }
+    },
+    "gaming": {
+      "type": "range-compare",
+      "settings": {
+        "collection": "xallking-gaming-chairs",
+        "heading": "Compare every XALLKING gaming chair",
+        "text": "<p>The XALLKING range pairs a racing-style look with the same ergonomic adjustments as our office chairs.</p>",
+        "limit": 10,
+        "show_price": true,
+        "footnote": "All measurements in centimetres and kilograms.",
+        "height": "medium"
+      }
+    },
+    "faq": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "q1": { "type": "question", "settings": { "title": "Which SIHOO chair is best for most people?", "answer": "<p>For a home office used four to eight hours a day, the M57 (adjustable lumbar, 3D armrests, headrest, 150 kg) is the best-value all-rounder. If you sit longer, or want self-adjusting lumbar support and a 5-year warranty, step up to the Doro C300 Pro V2 or Doro S300.</p>" } },
+        "q2": { "type": "question", "settings": { "title": "How do I use the user-height column?", "answer": "<p>Pick a chair whose range covers your height with some margin at both ends. If you are near the top of a range, prefer a model with a higher seat-height maximum and an adjustable headrest; near the bottom, prefer a lower minimum seat height and adjustable seat depth.</p>" } },
+        "q3": { "type": "question", "settings": { "title": "What does the recline column mean?", "answer": "<p>The angles are the positions the backrest can lock at. Chairs listed with two angles recline freely between them; chairs with three or four angles lock at each step.</p>" } },
+        "q4": { "type": "question", "settings": { "title": "Where are the chairs shipped from?", "answer": "<p>From the SIHOO Australia warehouse nearest you – Sydney, Melbourne, Brisbane or Perth. Orders are dispatched the next business day and usually arrive within 1–3 business days; delivery is free Australia-wide.</p>" } }
+      },
+      "block_order": ["q1", "q2", "q3", "q4"],
+      "settings": { "title": "Choosing between models" }
+    }
+  },
+  "order": ["main", "chairs", "gaming", "faq"]
+}

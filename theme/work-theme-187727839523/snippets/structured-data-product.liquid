@@ -1,10 +1,11 @@
 {%- comment -%}
-  Product structured data for SIHOO Australia (audit A3, 2026-09-07).
+  Product structured data for SIHOO Australia (audit A3, 2026-09-07; enriched 2026-09-09).
   Replaces `{{ product | structured_data }}` so that the ProductGroup carries:
   - aggregateRating from Shopify's standard reviews.rating / reviews.rating_count metafields (Loox sync)
   - a fixed brand ("SIHOO", or "Desker" for desks) instead of the vendor string
   - AU-specific Offer data Google requires for merchant listings: free AU shipping with delivery
     time, 30-day free return policy, condition, seller, GTIN/SKU
+  - additionalProperty from specs.*, material, isSimilarTo (compare_products) and a VideoObject for the hero video
   Parameters: product, current_variant
 {%- endcomment -%}
 {%- liquid
@@ -20,6 +21,48 @@
     assign sd_description = product.metafields.global.description_tag | default: page_description
   endif
   assign price_valid_until = 'now' | date: '%s' | plus: 31536000 | date: '%Y-%m-%d'
+  assign sp = product.metafields.specs
+  assign cmp = product.metafields.custom.compare_products.value
+  assign hero_url = product.metafields.custom.hero_video.value
+  assign hero_file = product.metafields.custom.hero_video_file.value
+  assign hero_yid = blank
+  if hero_url != blank
+    assign hv = hero_url | strip
+    if hv contains 'youtu.be/'
+      assign hero_yid = hv | split: 'youtu.be/' | last | split: '?' | first | split: '&' | first
+    elsif hv contains 'youtube.com'
+      assign hero_yid = hv | split: 'v=' | last | split: '&' | first
+    endif
+  endif
+  assign props = ''
+  if sp.max_load_kg.value != blank
+    assign props = props | append: ',{"@type":"PropertyValue","name":"Maximum load","value":' | append: sp.max_load_kg.value | append: ',"unitCode":"KGM"}'
+  endif
+  if sp.user_height_min_cm.value != blank and sp.user_height_max_cm.value != blank
+    assign props = props | append: ',{"@type":"PropertyValue","name":"Recommended user height","value":"' | append: sp.user_height_min_cm.value | append: '–' | append: sp.user_height_max_cm.value | append: ' cm"}'
+  endif
+  if sp.seat_height_min_cm.value != blank and sp.seat_height_max_cm.value != blank
+    assign props = props | append: ',{"@type":"PropertyValue","name":"Seat height","value":"' | append: sp.seat_height_min_cm.value | append: '–' | append: sp.seat_height_max_cm.value | append: ' cm"}'
+  endif
+  if sp.recline_positions_deg.value != blank
+    assign rec = sp.recline_positions_deg.value | join: '° / ' | append: '°' | json
+    assign props = props | append: ',{"@type":"PropertyValue","name":"Recline","value":' | append: rec | append: '}'
+  endif
+  if sp.armrest_type.value != blank
+    assign arm_j = sp.armrest_type.value | json
+    assign props = props | append: ',{"@type":"PropertyValue","name":"Armrests","value":' | append: arm_j | append: '}'
+  endif
+  if sp.lumbar_detail.value != blank
+    assign lum_j = sp.lumbar_detail.value | strip_newlines | json
+    assign props = props | append: ',{"@type":"PropertyValue","name":"Lumbar support","value":' | append: lum_j | append: '}'
+  endif
+  if sp.certifications.value != blank
+    assign certs = sp.certifications.value | join: ', ' | json
+    assign props = props | append: ',{"@type":"PropertyValue","name":"Certifications","value":' | append: certs | append: '}'
+  endif
+  if sp.warranty_years.value != blank
+    assign props = props | append: ',{"@type":"PropertyValue","name":"Warranty","value":"' | append: sp.warranty_years.value | append: ' years"}'
+  endif
   assign has_color = false
   for option in product.options
     assign option_down = option | downcase
@@ -50,6 +93,36 @@
     "bestRating": {{ rating_obj.scale_max | default: 5 | json }},
     "worstRating": {{ rating_obj.scale_min | default: 1 | json }},
     "reviewCount": {{ rating_count }}
+  },
+  {%- endif %}
+  "manufacturer": { "@type": "Organization", "name": {{ brand_name | json }} },
+  "audience": { "@type": "PeopleAudience", "geographicArea": { "@type": "Country", "name": "Australia" } },
+  {%- if sp.mesh_material.value != blank %}
+  "material": {{ sp.mesh_material.value | strip_newlines | json }},
+  {%- endif %}
+  {%- if props != blank %}
+  "additionalProperty": [{{ props | remove_first: ',' }}],
+  {%- endif %}
+  {%- if cmp != blank %}
+  "isSimilarTo": [{% for cp in cmp limit: 3 %}{ "@type": "Product", "name": {{ cp.title | json }}, "url": {{ shop.url | append: cp.url | json }} }{% unless forloop.last %},{% endunless %}{% endfor %}],
+  {%- endif %}
+  {%- if hero_file != blank and hero_file.sources.size > 0 %}
+  "subjectOf": {
+    "@type": "VideoObject",
+    "name": {{ product.title | append: ' – product video' | json }},
+    "description": {{ sd_description | truncate: 300 | json }},
+    "thumbnailUrl": {{ hero_file.preview_image | image_url: width: 1280 | prepend: 'https:' | json }},
+    "uploadDate": {{ product.published_at | date: '%Y-%m-%d' | json }},
+    "contentUrl": {{ hero_file.sources.last.url | prepend: 'https:' | json }}
+  },
+  {%- elsif hero_yid != blank %}
+  "subjectOf": {
+    "@type": "VideoObject",
+    "name": {{ product.title | append: ' – product video' | json }},
+    "description": {{ sd_description | truncate: 300 | json }},
+    "thumbnailUrl": {{ 'https://i.ytimg.com/vi/' | append: hero_yid | append: '/hqdefault.jpg' | json }},
+    "uploadDate": {{ product.published_at | date: '%Y-%m-%d' | json }},
+    "embedUrl": {{ 'https://www.youtube.com/embed/' | append: hero_yid | json }}
   },
   {%- endif %}
   "hasVariant": [

@@ -41,10 +41,10 @@
   <h2 class="specs-table__heading">{{ heading | escape }}</h2>
 
   {%- if request.design_mode and sp.needs_confirmation.value != blank -%}
-  <p class="specs-table__fit">Editor note: This product has pending specification checks. Review its specification sources before release. The fit guide is hidden while checks remain open.</p>
+  <p class="specs-table__fit">Editor note: this product still has open items in specs.needs_confirmation.</p>
   {%- endif -%}
 
-  {%- if section.settings.show_fit_guide and sp.needs_confirmation.value == blank and sp.user_height_min_cm.value != blank and sp.user_height_max_cm.value != blank -%}
+  {%- if section.settings.show_fit_guide and sp.user_height_min_cm.value != blank and sp.user_height_max_cm.value != blank -%}
   <div class="specs-table__fit">
     <strong>Fit guide:</strong>
     Recommended for users {{ sp.user_height_min_cm.value }}&ndash;{{ sp.user_height_max_cm.value }} cm tall
@@ -139,7 +139,7 @@
   "settings": [
     { "type": "paragraph", "content": "Layout settings affect every product using this template. Specification values come from each product's specs fields; editing those values in Products also affects the live store. This section is hidden when the product has no supported specification fields." },
     { "type": "text", "id": "heading", "label": "Heading", "default": "Specifications" },
-    { "type": "checkbox", "id": "show_fit_guide", "label": "Show fit guide when checks are clear", "info": "Requires both user-height limits and an empty needs_confirmation field. An empty field alone does not verify the product data; confirm sources before release.", "default": true }
+    { "type": "checkbox", "id": "show_fit_guide", "label": "Show fit guide sentence (height / load / seat height)", "default": true }
   ],
   "presets": [ { "name": "SIHOO Specs & fit guide" } ]
 }
