@@ -479,7 +479,7 @@
     "prod_new_show": false,
     "prod_sale_show": true,
     "prod_sold_out_show": true,
-    "enable_product_reviews_collection": true,
+    "enable_product_reviews_collection": false,
     "swatch_option_name": "Color",
     "swatch_method": "swatches",
     "swatch_style": "icon_circle",
@@ -508,15 +508,15 @@
     "after_add_to_cart": "drawer",
     "free_shipping_bar_col_under": "#171717",
     "image_quality": "1",
-    "lcp_index_image_desktop": "shopify://shop_images/Homepage_Banner_2000_x_800_V2_599c8fb8-ee86-4fe2-be7d-70dc2b21840f.jpg",
-    "lcp_index_image_mobile": "shopify://shop_images/Homepage_Web_Banner_751_x_1360.jpg",
+    "lcp_index_image_desktop": "shopify://shop_images/Homepage_Banner_2000_x_800_V2_80607c45-62bd-4bec-b671-9ff89fb2a480.jpg",
+    "lcp_index_image_mobile": "shopify://shop_images/Homepage_Web_Banner_751_x_1364_a61ddffd-230a-43eb-8124-d2f4feef9ba0.jpg",
     "delay_third_party_homepage": false,
     "delay_third_party_homepage_ms": 4500,
     "custom_html_head": "<meta name=\"google-site-verification\" content=\"dNGdLJwZESBRzhkApvF_T3sgiFZGP7z2rpMFEM2jxac\">",
     "klaviyo_digest_product": "sihoo-a3-doro-c300-pro-v2-ergonomic-office-chair",
-    "klaviyo_digest_banner_image": "shopify://shop_images/Landing_Page_Website_Banner_A_2000_x_800_aa0af6e2-ce98-4806-8792-9c36745950a2.jpg",
-    "klaviyo_digest_banner_url": "https://sihoo.myshopify.com/pages/fathers-day-office-chair-sale-australia",
-    "klaviyo_digest_banner_alt": "For Dad with love",
+    "klaviyo_digest_banner_image": "shopify://shop_images/Homepage_Banner_2000_x_800_V2_52f0449b-22a6-42be-a813-78e3c3339999.jpg",
+    "klaviyo_digest_banner_url": "shopify://pages/oktoberfest-sale-ergonomic-chairs",
+    "klaviyo_digest_banner_alt": "Good seats. Good times.",
     "content_for_index": [],
     "blocks": {
       "855628211100114053": {
@@ -530,8 +530,8 @@
         "settings": {}
       },
       "pagefly-page-builder": {
-        "type": "shopify://apps/pagefly-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
-        "disabled": false,
+        "type": "shopify://apps/pagefly-ai-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
+        "disabled": true,
         "settings": {}
       }
     }

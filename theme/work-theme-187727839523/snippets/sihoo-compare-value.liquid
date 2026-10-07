@@ -1,0 +1,85 @@
+{%- comment -%}One comparison value; pass cp and key_s. Iterate product-reference lists directly in the caller.{%- endcomment -%}
+{%- liquid
+assign sp = cp.metafields.specs
+assign val = ''
+case key_s
+  when 'user_height'
+    if sp.user_height_min_cm != blank and sp.user_height_max_cm != blank
+      assign val = sp.user_height_min_cm.value | append: '–' | append: sp.user_height_max_cm.value | append: ' cm'
+    endif
+  when 'seat_height'
+    if sp.seat_height_min_cm != blank and sp.seat_height_max_cm != blank
+      capture a
+        render 'spec-num', value: sp.seat_height_min_cm.value
+      endcapture
+      capture b
+        render 'spec-num', value: sp.seat_height_max_cm.value
+      endcapture
+      assign val = a | append: '–' | append: b | append: ' cm'
+    endif
+  when 'seat_depth'
+    if sp.seat_depth_min_cm != blank and sp.seat_depth_max_cm != blank
+      capture a
+        render 'spec-num', value: sp.seat_depth_min_cm.value
+      endcapture
+      capture b
+        render 'spec-num', value: sp.seat_depth_max_cm.value
+      endcapture
+      assign val = a | append: '–' | append: b | append: ' cm'
+    elsif sp.seat_depth_min_cm != blank
+      capture a
+        render 'spec-num', value: sp.seat_depth_min_cm.value
+      endcapture
+      assign val = a | append: ' cm'
+    endif
+  when 'overall_height'
+    if sp.overall_height_min_cm != blank and sp.overall_height_max_cm != blank
+      capture a
+        render 'spec-num', value: sp.overall_height_min_cm.value
+      endcapture
+      capture b
+        render 'spec-num', value: sp.overall_height_max_cm.value
+      endcapture
+      assign val = a | append: '–' | append: b | append: ' cm'
+    endif
+  when 'max_load_kg'
+    if sp.max_load_kg != blank
+      assign val = sp.max_load_kg.value | append: ' kg'
+    endif
+  when 'seat_width_cm'
+    if sp.seat_width_cm != blank
+      capture a
+        render 'spec-num', value: sp.seat_width_cm.value
+      endcapture
+      assign val = a | append: ' cm'
+    endif
+  when 'net_weight_kg'
+    if sp.net_weight_kg != blank
+      capture a
+        render 'spec-num', value: sp.net_weight_kg.value
+      endcapture
+      assign val = a | append: ' kg'
+    endif
+  when 'recline_positions_deg'
+    if sp.recline_positions_deg.value != blank
+      assign val = sp.recline_positions_deg.value | join: '° / ' | append: '°'
+    endif
+  when 'suspension'
+    if sp.suspension.value == true
+      assign val = 'Yes'
+    elsif sp.suspension.value == false
+      assign val = 'No'
+    endif
+  when 'certifications'
+    if sp.certifications.value != blank
+      assign val = sp.certifications.value | join: ', '
+    endif
+  when 'warranty_years'
+    if sp.warranty_years != blank
+      assign val = sp.warranty_years.value | append: '-year'
+    endif
+  else
+    assign val = sp[key_s].value
+endcase
+-%}
+{{- val | strip -}}
